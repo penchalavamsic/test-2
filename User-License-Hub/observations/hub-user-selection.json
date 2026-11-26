@@ -1,0 +1,207 @@
+{
+  "at": "2026-11-25T18:25:11.455Z",
+  "initial": [
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    }
+  ],
+  "afterSelectingFirst": [
+    {
+      "class": "rounded-lg border bg-card text-card-foreground hover:shadow-md transition-all cursor-pointer ring-2 ring-primary shadow-md",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 0px, rgb(188, 255, 71) 0px 0px 0px 2px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all cursor-pointer",
+      "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "selected": null
+    }
+  ]
+}

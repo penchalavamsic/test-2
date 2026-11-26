@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-11-26T05:43:30.859Z",
+  "scope": "Independent edit-date inspection; no Save or mutation",
+  "card": "Profile\n\nDatabaseDesigner NG Floating\n\nRole\n\n2020-R1\n\nMaintenance\n\n2021-12-30\n\nExpiration\n\n2021-12-30\n\nHardware ID\n\n1288905383\n\nAssigned to\n\nsaikrishnan ananthanarayanan\n\nsaikrishnan.a@olaelectric.com",
+  "immediate": "2021-12-30",
+  "after700ms": "2021-12-30",
+  "afterInvalidKeyboard": "",
+  "validity": {
+    "type": "date",
+    "badInput": false,
+    "valid": true
+  },
+  "restoredBeforeCancel": "2021-12-30"
+}

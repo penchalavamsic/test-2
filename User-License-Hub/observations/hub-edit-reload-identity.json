@@ -1,0 +1,78 @@
+{
+  "observedAt": "2026-11-26T05:55:14.490Z",
+  "scope": "Read-only reload/identity and date-population check; no form save",
+  "observations": [
+    {
+      "iteration": 1,
+      "cardText": "Profile\n\nCI-CD OTXT Transcompiler Floating\n\nRole\n\n1.0.0\n\nMaintenance\n\n2021-12-30\n\nExpiration\n\n2021-12-30\n\nHardware ID\n\n1693578168\n\nAssigned to\n\nRajesh Kumar\n\nrajesh.kumar2@kpit.com",
+      "values": [
+        {
+          "delay": 0,
+          "hardware": "1693578168",
+          "expiration": "2021-12-30",
+          "profile": "CI-CD OTXT Transcompiler Floating"
+        },
+        {
+          "delay": 700,
+          "hardware": "1693578168",
+          "expiration": "2021-12-30",
+          "profile": "CI-CD OTXT Transcompiler Floating"
+        },
+        {
+          "delay": 1200,
+          "hardware": "1693578168",
+          "expiration": "2021-12-30",
+          "profile": "CI-CD OTXT Transcompiler Floating"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "cardText": "Profile\n\nAuthoring Suite 2 Floating\n\nRole\n\n2020-R1\n\nMaintenance\n\n2021-12-30\n\nExpiration\n\n2021-12-30\n\nHardware ID\n\n1288905383\n\nAssigned to\n\nsaikrishnan ananthanarayanan\n\nsaikrishnan.a@olaelectric.com",
+      "values": [
+        {
+          "delay": 0,
+          "hardware": "1288905383",
+          "expiration": "2021-12-30",
+          "profile": "Authoring Suite 2 Floating"
+        },
+        {
+          "delay": 700,
+          "hardware": "1288905383",
+          "expiration": "2021-12-30",
+          "profile": "Authoring Suite 2 Floating"
+        },
+        {
+          "delay": 1200,
+          "hardware": "1288905383",
+          "expiration": "2021-12-30",
+          "profile": "Authoring Suite 2 Floating"
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "cardText": "Profile\n\nDatabaseDesigner NG\n\nRole\n\n2020-R1\n\nMaintenance\n\n2022-12-30\n\nExpiration\n\n2022-12-30\n\nHardware ID\n\n-893187708\n\nAssigned to\n\nRajesh Kumar\n\nrajesh.kumar2@kpit.com",
+      "values": [
+        {
+          "delay": 0,
+          "hardware": "-893187708",
+          "expiration": "2022-12-30",
+          "profile": "DatabaseDesigner NG"
+        },
+        {
+          "delay": 700,
+          "hardware": "-893187708",
+          "expiration": "2022-12-30",
+          "profile": "DatabaseDesigner NG"
+        },
+        {
+          "delay": 1200,
+          "hardware": "-893187708",
+          "expiration": "2022-12-30",
+          "profile": "DatabaseDesigner NG"
+        }
+      ]
+    }
+  ]
+}

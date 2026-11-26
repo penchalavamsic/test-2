@@ -1,0 +1,77 @@
+{
+  "at": "2026-11-25T17:53:38.773Z",
+  "date": {
+    "placeholder": null,
+    "parent": "<div class=\"space-y-1.5\"><label class=\"peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-xs font-semibold uppercase tracking-wider text-black dark:text-white\" for=\"floating-expires-before\">Expires until</label><input type=\"date\" class=\"flex h-10 rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm w-44 cursor-pointer\" id=\"floating-expires-before\" value=\"\"></div>"
+  },
+  "nativeButton": {
+    "tag": "BUTTON",
+    "roleAttribute": null,
+    "tabIndexAttribute": null,
+    "tabIndexProperty": 0
+  },
+  "focus": [
+    {
+      "tag": "INPUT",
+      "id": "",
+      "type": "radio",
+      "aria": null,
+      "text": null
+    },
+    {
+      "tag": "INPUT",
+      "id": "floating-expires-before",
+      "type": "date",
+      "aria": null,
+      "text": null
+    },
+    {
+      "tag": "INPUT",
+      "id": "floating-expires-before",
+      "type": "date",
+      "aria": null,
+      "text": null
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "type": "button",
+      "aria": null,
+      "text": "Floating License Configurations"
+    },
+    {
+      "tag": "INPUT",
+      "id": "",
+      "type": "search",
+      "aria": null,
+      "text": null
+    },
+    {
+      "tag": "BODY",
+      "id": "",
+      "aria": null,
+      "text": null
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "type": "submit",
+      "aria": null,
+      "text": ""
+    }
+  ],
+  "invalid": {
+    "value": "",
+    "requests": [
+      {
+        "path": "/limas/api/flconfig/e/December%2025%2C%202026/67",
+        "method": "GET"
+      }
+    ],
+    "note": "This initial probe did not await the initial EFC GET before collecting requests. Its request cannot be attributed to invalid typing. Use dashboard-efc-invalid-date.json for the synchronized verification."
+  },
+  "searchIcon": {
+    "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-search absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-black dark:text-white\"><circle cx=\"11\" cy=\"11\" r=\"8\"></circle><path d=\"m21 21-4.3-4.3\"></path></svg>",
+    "tabIndex": -1
+  }
+}

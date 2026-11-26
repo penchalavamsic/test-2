@@ -1,0 +1,134 @@
+{
+  "observedAt": "2026-11-26T05:59:07.680Z",
+  "scope": "Read-only keyboard focus inspection",
+  "initial": {
+    "tag": "INPUT",
+    "role": null,
+    "text": "",
+    "label": null,
+    "insideDialog": true
+  },
+  "afterSettling": {
+    "tag": "INPUT",
+    "role": null,
+    "text": "",
+    "label": null,
+    "insideDialog": true
+  },
+  "expectedRoleText": "2018-R2",
+  "tabSequence": [
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Cancel",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Save",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Close",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": "combobox",
+      "text": "2018-R2",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "text": "",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Cancel",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Save",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Close",
+      "label": null,
+      "insideDialog": true
+    },
+    {
+      "tag": "BUTTON",
+      "role": "combobox",
+      "text": "2018-R2",
+      "label": null,
+      "insideDialog": true
+    }
+  ],
+  "afterCancel": {
+    "tag": "BODY",
+    "role": null,
+    "text": "rb193bdea-6021-70d1-1d73-62f448b0f827User & License HubFiltersAdd Usersravanthi perumallaSravanthi.Perumalla@kpit.comGroup: KPIT Bangalore -",
+    "label": null,
+    "insideDialog": false
+  },
+  "focusReturnedToEdit": false
+}

@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-11-25T17:06:52.230Z",
+  "dialog": "radix-:rp:",
+  "headings": [
+    "Extend License· DatabaseDesigner · 1725686671"
+  ],
+  "fields": [
+    {
+      "type": "date",
+      "value": "",
+      "min": "2026-10-31T23:59:59.000+00:00",
+      "max": "",
+      "labels": [
+        "New Expiration Date"
+      ],
+      "ariaLabel": null
+    },
+    {
+      "type": "number",
+      "value": "",
+      "min": "1",
+      "max": "",
+      "labels": [
+        "Extend by Days"
+      ],
+      "ariaLabel": null
+    },
+    {
+      "type": "checkbox",
+      "value": "on",
+      "min": "",
+      "max": "",
+      "labels": [
+        "Synchronise Maintenance Date with Expiration"
+      ],
+      "ariaLabel": null
+    },
+    {
+      "type": "date",
+      "value": "",
+      "min": "2026-10-31T23:59:59.000+00:00",
+      "max": "",
+      "labels": [
+        "New Maintenance Date"
+      ],
+      "ariaLabel": null
+    },
+    {
+      "type": "number",
+      "value": "",
+      "min": "1",
+      "max": "",
+      "labels": [
+        "Extend by Days"
+      ],
+      "ariaLabel": null
+    }
+  ],
+  "buttons": [
+    "",
+    "",
+    "Cancel",
+    "Apply Extension",
+    "Close"
+  ],
+  "browserDate": "2026-11-25"
+}

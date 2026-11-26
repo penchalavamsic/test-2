@@ -1,0 +1,59 @@
+{
+  "observedAt": "2026-11-26T05:26:29.111Z",
+  "snapshot": "- dialog \"Edit License\":\n  - heading \"Edit License\" [level=2]\n  - paragraph: Edit license details\n  - text: Hardware IDs (minimum 1 required) *\n  - textbox [disabled]: \"-893187708\"\n  - paragraph: Hardware ID cannot be changed for existing licenses\n  - text: Profile *\n  - combobox [disabled]: Diagnostic Communicator\n  - paragraph: Profile cannot be changed for existing licenses\n  - text: Role *\n  - combobox: 2018-R2\n  - text: Expiration Date *\n  - textbox \"Expiration Date *\": 2022-12-30\n  - text: Maintenance Date\n  - textbox \"Maintenance Date\": 2022-12-30\n  - button \"Cancel\"\n  - button \"Save\"\n  - button \"Close\":\n    - img\n    - text: Close",
+  "controls": [
+    {
+      "tag": "INPUT",
+      "type": null,
+      "id": "",
+      "value": "-893187708",
+      "text": "",
+      "disabled": true,
+      "readonly": false,
+      "labelledby": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "id": "",
+      "value": "",
+      "text": "Diagnostic Communicator",
+      "disabled": true,
+      "labelledby": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "id": "",
+      "value": "",
+      "text": "2018-R2",
+      "disabled": false,
+      "labelledby": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "id": "expirationDate",
+      "value": "2022-12-30",
+      "text": "",
+      "disabled": false,
+      "readonly": false,
+      "labelledby": null,
+      "ariaLabel": null
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "id": "maintenanceDate",
+      "value": "2022-12-30",
+      "text": "",
+      "disabled": false,
+      "readonly": false,
+      "labelledby": null,
+      "ariaLabel": null
+    }
+  ]
+}

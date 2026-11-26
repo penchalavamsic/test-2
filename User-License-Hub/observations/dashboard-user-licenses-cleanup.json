@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-25T17:11:18.520Z",
+  "userLicensesButtonVisible": true,
+  "programmatic": {
+    "focused": true,
+    "focusVisible": false,
+    "outline": "none",
+    "shadow": "none"
+  },
+  "keyboard": {
+    "focused": true,
+    "focusVisible": true,
+    "outline": "solid",
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(188, 255, 71) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  },
+  "afterUnnecessaryBack": "about:blank",
+  "initialVisibilityNote": "Initial instantaneous check occurred before load settled; the control is visible after waiting for it.",
+  "destination": {
+    "path": "/users-licenses",
+    "headings": [
+      "User & License Hub"
+    ],
+    "backToDashboard": true
+  }
+}

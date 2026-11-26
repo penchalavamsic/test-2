@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-25T18:30:45.832Z",
+  "fields": [
+    {
+      "text": "Profile",
+      "next": "ECU Validator"
+    },
+    {
+      "text": "ECU Validator"
+    },
+    {
+      "text": "Role",
+      "next": "1.2.0"
+    },
+    {
+      "text": "1.2.0"
+    },
+    {
+      "text": "Maintenance",
+      "next": "2023-12-30"
+    },
+    {
+      "text": "2023-12-30"
+    },
+    {
+      "text": "Expiration",
+      "next": "2023-12-30"
+    },
+    {
+      "text": "2023-12-30"
+    },
+    {
+      "text": "Hardware ID",
+      "next": "1993712744"
+    },
+    {
+      "text": "Assigned to",
+      "next": "sravanthi perumalla"
+    },
+    {
+      "text": "sravanthi perumalla",
+      "next": "Sravanthi.Perumalla@kpit.com"
+    },
+    {
+      "text": "Sravanthi.Perumalla@kpit.com"
+    }
+  ],
+  "count": 0,
+  "buttons": [
+    {
+      "name": "Download license file",
+      "disabled": false
+    },
+    {
+      "name": "Send license file by email",
+      "disabled": false
+    }
+  ]
+}

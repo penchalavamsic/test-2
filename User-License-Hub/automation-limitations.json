@@ -1,0 +1,31 @@
+{
+  "updatedAt": "2026-11-26T06:15:28.062Z",
+  "items": [
+    {
+      "ids": [
+        "LIMAS-SUD-138",
+        "LIMAS-SUD-141"
+      ],
+      "area": "Dashboard approval calendar",
+      "observation": "The deployed inputs are native date controls. Existing scripts look for an in-page MUI/dialog/grid calendar.",
+      "review": "Date entry works after correcting ISO serialization. Opening and selecting through the browser-native popup requires a native UI check.",
+      "blocker": "Both available native UI helpers failed to start: The directory name is invalid (os error 267), including a reset and retry.",
+      "status": "Existing failed results retained; not classified as an application defect or a pass."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1359"
+      ],
+      "area": "Runtime date prerequisite",
+      "observation": "The baseline returned an empty expiration value and date arithmetic failed. A populated-date assertion was added; the targeted rerun passed with a populated runtime date. Independent reload inspection showed different first records.",
+      "status": "Latest rerun passed. The origin of the original empty value is not confirmed; this does not establish that every license has a date.",
+      "evidence": "observations/hub-edit-reload-identity.json"
+    },
+    {
+      "ids": [],
+      "area": "Baseline source excerpts",
+      "observation": "Some baseline code excerpts can reflect source edits prepared while the sequence was running. Original test IDs, errors and traces are retained. Final targeted reruns use the stable source-after/ulh-resume-20261126 snapshot and recorded hashes.",
+      "status": "Use final verified source and test IDs when correlating repaired scenarios; do not rely on an earlier baseline line number alone."
+    }
+  ]
+}

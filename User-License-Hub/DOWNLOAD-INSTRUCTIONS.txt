@@ -1,0 +1,7 @@
+Open index.html for screenshots, videos and results.
+Large traces are split only for GitHub transport; original files are preserved losslessly.
+To restore them, open PowerShell in this User-License-Hub folder and run:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Restore-Large-Traces.ps1
+The restore script verifies SHA-256 hashes and retains the part files.
+Do not delete or rename report subfolders.
+The branch root UPLOAD-COMPLETE.json confirms the entire transfer finished.

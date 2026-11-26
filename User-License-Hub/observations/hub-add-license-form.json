@@ -1,0 +1,45 @@
+{
+  "profile": "ECU Validator",
+  "selectedBefore": 0,
+  "selectedAfter": 1,
+  "addEnabled": true,
+  "dialog": "Add License\n\nAdd a new license for this user\n\nHardware IDs (minimum 1 required) *\nProfile *\nSelect profile\nExpiration Date *\nMaintenance Date\nCancel\nSave\nClose",
+  "fields": [
+    {
+      "tag": "INPUT",
+      "type": null,
+      "id": "",
+      "placeholder": "e.g., HW001",
+      "ariaLabel": null,
+      "value": "",
+      "text": ""
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "id": "",
+      "placeholder": null,
+      "ariaLabel": null,
+      "value": "",
+      "text": "Select profile"
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "id": "expirationDate",
+      "placeholder": null,
+      "ariaLabel": null,
+      "value": "",
+      "text": ""
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "id": "maintenanceDate",
+      "placeholder": null,
+      "ariaLabel": null,
+      "value": "",
+      "text": ""
+    }
+  ]
+}

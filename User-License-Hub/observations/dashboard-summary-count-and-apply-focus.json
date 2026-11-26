@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-25T17:35:11.585Z",
+  "floatingConfigurationCount": {
+    "wholeText": "0Expiring Floating Configurations",
+    "zeroElements": 1,
+    "badge": {
+      "tag": "DIV",
+      "text": "0"
+    }
+  },
+  "applyFocus": {
+    "programmatic": {
+      "focused": true,
+      "focusVisible": false,
+      "outline": "none",
+      "shadow": "none"
+    },
+    "keyboard": {
+      "focused": true,
+      "focusVisible": true,
+      "outline": "solid",
+      "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(188, 255, 71) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+    }
+  }
+}

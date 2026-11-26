@@ -1,0 +1,159 @@
+{
+  "confirmedAt": "2026-11-25T16:46:43.808Z",
+  "issues": [
+    {
+      "ids": [
+        "LIMAS-SUD-946",
+        "LIMAS-SUD-976",
+        "LIMAS-SUD-977",
+        "LIMAS-SUD-979",
+        "LIMAS-SUD-986",
+        "LIMAS-SUD-994",
+        "LIMAS-SUD-995",
+        "LIMAS-SUD-996",
+        "LIMAS-SUD-997",
+        "LIMAS-SUD-998",
+        "LIMAS-SUD-1000",
+        "LIMAS-SUD-1006",
+        "LIMAS-SUD-1011",
+        "LIMAS-SUD-1054",
+        "LIMAS-SUD-1055",
+        "LIMAS-SUD-1056",
+        "LIMAS-SUD-1058",
+        "LIMAS-SUD-1001"
+      ],
+      "tab": "User & License Hub",
+      "problem": "No user card is selected on initial load; the first user gains its selected ring only after clicking.",
+      "expected": "First user auto-selected on page load.",
+      "classification": "Independently confirmed UI requirement failure; added explicit selection assertion to prevent a false pass based only on unrelated initial license records.",
+      "evidence": "r/005/index.html#test-5",
+      "independentObservation": "observations/hub-user-selection.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-944",
+        "LIMAS-SUD-966",
+        "LIMAS-SUD-1250"
+      ],
+      "tab": "User & License Hub / Edit controls",
+      "problem": "User and license Edit icon buttons have no accessible label; Delete buttons do.",
+      "expected": "Edit controls discoverable by their accessible names.",
+      "classification": "Independently observed accessibility issue. Existing Edit-name assertions retained.",
+      "evidence": "r/003/index.html#test-0",
+      "independentObservation": "observations/hub-license-cards.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1017",
+        "LIMAS-SUD-1023",
+        "LIMAS-SUD-1031",
+        "LIMAS-SUD-1033",
+        "LIMAS-SUD-1036",
+        "LIMAS-SUD-1045",
+        "LIMAS-SUD-1047",
+        "LIMAS-SUD-1048",
+        "LIMAS-SUD-1057",
+        "LIMAS-SUD-1061"
+      ],
+      "tab": "User & License Hub",
+      "problem": "Rapid typing sends one debounced request; revisiting page 1 and clearing search reuse cached results without a new GET.",
+      "classification": "Observed behavior conflicts with existing no-debounce/fresh-request expectations. Retained for requirement review, not automatically classified as a product defect.",
+      "evidence": "r/014/index.html#test-20",
+      "independentObservation": "observations/hub-search-pagination-runtime.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1128"
+      ],
+      "tab": "User & License Hub / Hardware search",
+      "problem": "Hardware-ID filtering returns matching users but the license panel includes their other hardware IDs as well.",
+      "expected": "Every displayed license hardware ID matches the search term.",
+      "classification": "Independently verified requirement failure; assertion retained.",
+      "evidence": "r/025/index.html#test-8",
+      "independentObservation": "observations/hub-license-search-clear.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1167"
+      ],
+      "tab": "User & License Hub / Download prerequisites",
+      "problem": "Download becomes enabled after selecting a user even while All Profiles is active.",
+      "expected": "This scenario expects Download disabled until a specific profile is applied.",
+      "classification": "Verified requirement mismatch; original disabled-state assertion retained.",
+      "evidence": "r/031/index.html#test-3",
+      "independentObservation": "observations/hub-license-field-structure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1189"
+      ],
+      "tab": "User & License Hub / Hardware search with selection",
+      "problem": "Changing the hardware search clears user selection and disables Download.",
+      "expected": "This scenario expects Download to remain enabled with a selected user and active profile.",
+      "classification": "Consistent with independently observed filter-induced selection reset; original assertion retained.",
+      "evidence": "r/033/index.html#test-12",
+      "independentObservation": "observations/hub-add-license-form.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1188",
+        "LIMAS-SUD-1191"
+      ],
+      "tab": "User & License Hub / Download after All Profiles reset",
+      "problem": "Download remains enabled after All Profiles is restored while a user remains selected.",
+      "expected": "The scenarios require Download disabled after restoring All Profiles.",
+      "classification": "Observed requirement mismatch consistent with Download requiring user selection but not a specific profile; disabled-state assertions retained.",
+      "evidence": "r/034/index.html#test-4",
+      "independentObservation": "observations/hub-license-field-structure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1228"
+      ],
+      "tab": "User & License Hub / Add License",
+      "problem": "Cancelling and reopening Add License retains the unsaved Hardware ID.",
+      "expected": "Reopened dialog is empty.",
+      "classification": "Independently confirmed UI requirement failure; no license submitted.",
+      "evidence": "r/037/index.html#test-11",
+      "independentObservation": "observations/hub-add-license-cancel-retains.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1272",
+        "LIMAS-SUD-1414"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "Opening Edit License places initial focus on a date input rather than the expected Role combobox. It remains on the input after the dialog settles.",
+      "expected": "Initial keyboard focus is on Role.",
+      "classification": "Independently confirmed UI requirement failure; assertions retained.",
+      "evidence": "r/040/index.html#test-7",
+      "independentObservation": "observations/hub-edit-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1395",
+        "LIMAS-SUD-1429"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "After Cancel closes the dialog, document focus falls back to BODY instead of returning to the Edit trigger.",
+      "expected": "Focus returns to the invoking Edit button.",
+      "classification": "Independently confirmed UI requirement failure; assertions retained.",
+      "evidence": "r/050/index.html#test-4",
+      "independentObservation": "observations/hub-edit-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1273",
+        "LIMAS-SUD-1415"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "The automated focus-trap assertion found no focused descendant after 15 Tab presses. An independent 15-Tab inspection kept document.activeElement inside the dialog on every step.",
+      "expected": "Keyboard focus stays within the modal.",
+      "classification": "Intermittent focus observation requires review; not classified as a confirmed application defect.",
+      "evidence": "r/040/index.html#test-8",
+      "followUp": "LIMAS-SUD-1415 passed the final diagnostic rerun with activeInsideDialog=true, cssFocusedDescendants=1 and documentHasFocus=true. Earlier failures remain recorded; no underlying application fix is claimed.",
+      "independentObservation": "observations/hub-edit-focus.json"
+    }
+  ],
+  "updatedAt": "2026-11-26T06:21:00.794Z"
+}

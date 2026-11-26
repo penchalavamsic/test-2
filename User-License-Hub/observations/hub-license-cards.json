@@ -1,0 +1,4320 @@
+{
+  "at": "2026-11-25T18:22:27.782Z",
+  "scrollRegions": [
+    [
+      {
+        "class": "flex-1 min-h-0 overflow-y-auto overflow-x-hidden mt-4 space-y-3 pr-2 relative",
+        "childCount": 1
+      }
+    ],
+    [
+      {
+        "class": "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 flex-1 min-h-0 overflow-y-auto overflow-x-hidden mt-4 pr-2 relative content-start items-start auto-rows-min",
+        "childCount": 1
+      }
+    ]
+  ],
+  "licenseCardCandidates": [
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "1.2.0",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "1.2.0",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "CI-CD OTXT Transcompiler Floating",
+        "Role",
+        "9.99.999",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "CI-CD PTX Creator Floating",
+        "Role",
+        "1.0.0",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2 Floating",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2025-12-06",
+        "Expiration",
+        "2025-12-06"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "1.1.0",
+        "Maintenance",
+        "2020-12-30",
+        "Expiration",
+        "2020-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2019-12-30",
+        "Expiration",
+        "2019-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "0.1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2020-R2",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-06-30",
+        "Expiration",
+        "2022-06-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-05-08",
+        "Expiration",
+        "2026-05-08"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2021-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2024-01-28",
+        "Expiration",
+        "2024-01-28"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "AGCO ST122 / CAPI / Runtime",
+        "Role",
+        "All",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "1.2.0",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Stack",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "1.2.0",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2023-12-30",
+        "Expiration",
+        "2023-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2020-R2",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "2020-R2",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Dynamic ECU Simulation",
+        "Role",
+        "Dev",
+        "Maintenance",
+        "2025-01-01",
+        "Expiration",
+        "2025-01-01"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-10-31",
+        "Expiration",
+        "2026-10-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2024-12-31",
+        "Expiration",
+        "2024-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "0.1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "Basic with DTC",
+        "Maintenance",
+        "2024-12-30",
+        "Expiration",
+        "2024-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-03-29",
+        "Expiration",
+        "2026-03-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-23",
+        "Expiration",
+        "2022-12-23"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2025-01-01",
+        "Expiration",
+        "2025-01-01"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-03-29",
+        "Expiration",
+        "2026-03-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-10-05",
+        "Expiration",
+        "2023-10-05"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2021-R1",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-03-29",
+        "Expiration",
+        "2026-03-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2025-01-01",
+        "Expiration",
+        "2025-01-01"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2018-12-13",
+        "Expiration",
+        "2018-12-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Stack",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2025-08-22",
+        "Expiration",
+        "2025-08-22"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-07-07",
+        "Expiration",
+        "2023-07-07"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-09-29",
+        "Expiration",
+        "2023-09-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-01-31",
+        "Expiration",
+        "2026-01-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2025-05-31",
+        "Expiration",
+        "2025-05-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-07-07",
+        "Expiration",
+        "2023-07-07"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "1.2.0",
+        "Maintenance",
+        "2021-06-29",
+        "Expiration",
+        "2021-06-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-01-31",
+        "Expiration",
+        "2026-01-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-01-31",
+        "Expiration",
+        "2026-01-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "2020-R2",
+        "Maintenance",
+        "2021-12-30",
+        "Expiration",
+        "2021-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "2.2.0",
+        "Maintenance",
+        "2021-06-29",
+        "Expiration",
+        "2021-06-29"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-12-31",
+        "Expiration",
+        "2023-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "K-DCP Engineering Tester",
+        "Role",
+        "ALL",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Stack",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2025-10-08",
+        "Expiration",
+        "2025-10-08"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-12-31",
+        "Expiration",
+        "2026-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-12-31",
+        "Expiration",
+        "2026-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Validator",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2021-R1",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2023-10-13",
+        "Expiration",
+        "2023-10-13"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-12-31",
+        "Expiration",
+        "2026-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2018-12-15",
+        "Expiration",
+        "2018-12-15"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Viewer",
+        "Maintenance",
+        "2019-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "GM Ebike Service Tool",
+        "Role",
+        "Technician",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2020-12-30",
+        "Expiration",
+        "2020-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2019-12-30",
+        "Expiration",
+        "2019-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2019-12-30",
+        "Expiration",
+        "2019-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2019-R1",
+        "Maintenance",
+        "2020-12-30",
+        "Expiration",
+        "2020-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2020-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Service Tester",
+        "Role",
+        "All",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner",
+        "Role",
+        "2020-R1",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "CI-CD OTXT Transcompiler Floating",
+        "Role",
+        "1.0.0",
+        "Maintenance",
+        "2021-12-30",
+        "Expiration",
+        "2021-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-03-31",
+        "Expiration",
+        "2022-03-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Diagnostic Communicator",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "Authoring Suite 2",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-30",
+        "Expiration",
+        "2022-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "CI-CD OTXT Transcompiler",
+        "Role",
+        "1.0.0",
+        "Maintenance",
+        "2021-12-30",
+        "Expiration",
+        "2021-12-30"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-06-01",
+        "Expiration",
+        "2026-06-01"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "2021-R1",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "K-DCP Engineering Tester",
+        "Role",
+        "ALL",
+        "Maintenance",
+        "2026-12-31",
+        "Expiration",
+        "2026-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "OTX-Authoring",
+        "Role",
+        "2018-R2",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Comparator",
+        "Role",
+        "1.01.00",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "DatabaseDesigner NG",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2026-12-31",
+        "Expiration",
+        "2026-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    },
+    {
+      "class": "rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-shadow",
+      "labels": [
+        "Profile",
+        "ECU Editor",
+        "Role",
+        "Intern",
+        "Maintenance",
+        "2022-12-31",
+        "Expiration",
+        "2022-12-31"
+      ],
+      "buttons": [
+        {
+          "label": null,
+          "title": null
+        },
+        {
+          "label": "Delete license",
+          "title": null
+        }
+      ]
+    }
+  ]
+}
