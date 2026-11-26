@@ -1,0 +1,15 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: authentication - 2 batches
+
+# AUTH-001: 20 cases; LIMAS-AUTH-009 through LIMAS-AUTH-028
+# Covers: login page logos and controls, Sign In button navigation, Keycloak username and password fields, password masking, successful login and dashboard redirect, session after refresh, invalid password rejection
+.\scripts\run-tests-with-report.ps1 -Suite authentication -Batch AUTH-001 -DetailedEvidence -TestReport
+
+# AUTH-002: 13 cases; LIMAS-AUTH-029 through LIMAS-AUTH-041
+# Covers: invalid and empty credential rejection, whitespace credential rejection, sign out, sign in again, repeated login and logout, dashboard access blocked after logout, session cleared after logout
+.\scripts\run-tests-with-report.ps1 -Suite authentication -Batch AUTH-002 -DetailedEvidence -TestReport

@@ -1,0 +1,43 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: features - 9 batches
+
+# FTR-001: 20 cases; LIMAS-SUD-2029 through LIMAS-SUD-2048
+# Covers: Features page opening, feature list and columns, expand and collapse hierarchy, search by name and ID, clear search, row action buttons, Used in Profiles badge
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-001 -DetailedEvidence -TestReport
+
+# FTR-002: 20 cases; LIMAS-SUD-2049 through LIMAS-SUD-2068
+# Covers: Used in Profiles dialog opening and closing, profile count comparison, navigation to selected profile, return to Features, Add Root Feature dialog opening, required name and ID fields
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-002 -DetailedEvidence -TestReport
+
+# FTR-003: 20 cases; LIMAS-SUD-2069 through LIMAS-SUD-2088
+# Covers: root feature required-field checks, description length and counter, version chips, access level chips, duplicate and empty entries, Save button state, Cancel and Close actions
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-003 -DetailedEvidence -TestReport
+
+# FTR-004: 20 cases; LIMAS-SUD-2089 through LIMAS-SUD-2108
+# Covers: root feature form reset, gated root feature creation and cleanup, Add Child Feature dialog opening, inherited access levels, parent selection, required child fields, description and version entry
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-004 -DetailedEvidence -TestReport
+
+# FTR-005: 20 cases; LIMAS-SUD-2109 through LIMAS-SUD-2128
+# Covers: child feature version validation, Save button state, child form closing and reset, gated child creation and cleanup, Edit Feature dialog opening, existing values, locked feature ID, root and child access levels
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-005 -DetailedEvidence -TestReport
+
+# FTR-006: 20 cases; LIMAS-SUD-2129 through LIMAS-SUD-2148
+# Covers: feature description editing, version and access level changes, Save button state, cancelled edits discarded, duplicate entry checks, gated feature update, Delete button availability and profile restrictions
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-006 -DetailedEvidence -TestReport
+
+# FTR-007: 20 cases; LIMAS-SUD-2149 through LIMAS-SUD-2168
+# Covers: Delete restrictions and tooltips, Delete confirmation opening, warning text, Cancel and Escape without deletion, gated feature creation and deletion, Feature Update Management opening from a version
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-007 -DetailedEvidence -TestReport
+
+# FTR-008: 20 cases; LIMAS-SUD-2169 through LIMAS-SUD-2188
+# Covers: update file selection and replacement, displayed filename, Save button state, optional release comments, Cancel and Close without upload, form reset on reopening, upload field focus and label
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-008 -DetailedEvidence -TestReport
+
+# FTR-009: 3 cases; LIMAS-SUD-2189 through LIMAS-SUD-2191
+# Covers: update dialog keyboard order, gated update file upload, Features page restored after update dialog checks
+.\scripts\run-tests-with-report.ps1 -Suite features -Batch FTR-009 -DetailedEvidence -TestReport

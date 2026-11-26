@@ -1,0 +1,464 @@
+{
+  "confirmedAt": "2026-11-25T16:46:43.808Z",
+  "issues": [
+    {
+      "ids": [
+        "LIMAS-SUD-2182",
+        "LIMAS-SUD-2185"
+      ],
+      "tab": "Features",
+      "problem": "Update dialog retains unsaved comments after Cancel or Close and reopening.",
+      "expected": "Comments reset to empty when reopening the dialog.",
+      "observed": [
+        "Cancel test",
+        "Before close"
+      ],
+      "classification": "Deployed application behavior; test assertions retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1816"
+      ],
+      "tab": "Floating License Configurations",
+      "problem": "Group tree rows are buttons and do not expose role=treeitem.",
+      "expected": "Tree items provide the treeitem accessibility role.",
+      "classification": "Observed deployed UI accessibility difference; assertion retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2237"
+      ],
+      "tab": "Profiles / Manage / Features",
+      "problem": "Features tab renders its table and controls without the expected Manage Features heading.",
+      "expected": "Visible Manage Features heading.",
+      "classification": "Observed deployed UI difference; assertion retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2264",
+        "LIMAS-SUD-2267",
+        "LIMAS-SUD-2278"
+      ],
+      "tab": "Profiles / Add Role",
+      "problem": "Save remains enabled with empty required fields.",
+      "expected": "Save disabled while required role fields are empty.",
+      "classification": "Deployed UI behavior differs from disabled-state assertions; assertions retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-024"
+      ],
+      "tab": "System User Dashboard / Account header",
+      "problem": "The account header displays an identity-provider identifier instead of the required email address.",
+      "expected": "The signed-in account email is visible in the header.",
+      "observed": "Live header inspection found a 36-character account identifier in the account label; no email was present.",
+      "classification": "Confirmed application defect. User confirmed the email requirement. Original email assertion restored and failure retained.",
+      "evidence": "system-user-dashboard/SUD-002_2026-11-25T16-14-37-038Z_7fa546f3/Test-Reports/Complete-Suite-Test-Report.zip"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-103",
+        "LIMAS-SUD-104",
+        "LIMAS-SUD-105",
+        "LIMAS-SUD-114",
+        "LIMAS-SUD-137",
+        "LIMAS-SUD-149",
+        "LIMAS-SUD-150"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Approval",
+      "problem": "The Role combobox has no accessible name or association with the visible Role label.",
+      "expected": "Role control is discoverable by its label after profile selection.",
+      "observed": "Independent live inspection: button role=combobox, no id, aria-label, or aria-labelledby; visible Select Role control and adjacent Role text.",
+      "classification": "Confirmed accessibility defect; affected scenarios remain failed. Dependent role selection checks did not complete.",
+      "evidence": "ui-observations/dashboard-role-label.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-117"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Search",
+      "problem": "Hardware ID is displayed as an unquoted signed number; the existing scenario explicitly requires a quoted numeric value.",
+      "expected": "Quoted numeric hardware ID per reviewed test plan.",
+      "classification": "Observed UI and scenario mismatch retained as failure. Hardware-ID search behavior was not reached."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-119"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Search",
+      "problem": "Delete is an icon button with an accessible Delete LR identifier but no visible text; the scenario extracts visible button text.",
+      "expected": "Visible Delete LR-XXXXX text per reviewed test plan.",
+      "classification": "Observed UI and scenario mismatch retained as failure. Request-ID search behavior was not reached."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-122",
+        "LIMAS-SUD-200"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Search",
+      "problem": "Pressing Escape leaves the entered search text unchanged.",
+      "expected": "Escape clears search and restores the list.",
+      "observed": "Independent check: search value remained Test after Escape.",
+      "classification": "Confirmed application behavior violates the scenario; assertion retained.",
+      "evidence": "ui-observations/dashboard-escape-and-profile-reset.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-136"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Approval",
+      "problem": "Changing the selected user group retains the previously selected profile.",
+      "expected": "Profile resets to Select Profile on user group change.",
+      "observed": "Changed from LIMAS-Root-Group to Default; DatabaseDesigner NG remained selected.",
+      "classification": "Confirmed application behavior violates the scenario; assertion retained.",
+      "evidence": "ui-observations/dashboard-escape-and-profile-reset.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-146"
+      ],
+      "tab": "System User Dashboard / Pending Requests / Approval",
+      "problem": "Escape does not close the inline approval form.",
+      "expected": "Escape closes the form without submission.",
+      "observed": "Independent check: License Assignment remained visible after Escape.",
+      "classification": "Confirmed application defect. Locator repaired and rerun still fails the Escape-close assertion.",
+      "evidence": "ui-observations/dashboard-escape-and-profile-reset.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-197"
+      ],
+      "tab": "System User Dashboard / Processed History / Search",
+      "problem": "Search input preserves leading whitespace instead of trimming it.",
+      "expected": "Leading whitespace is trimmed by the input control.",
+      "classification": "Confirmed by rerun using actual input events; requirement retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-205"
+      ],
+      "tab": "System User Dashboard / Processed History / Search",
+      "problem": "Typing a search term triggers a processed-request API call.",
+      "expected": "Client-side filtering without a new processed-request API call.",
+      "classification": "Reproduced after repairing search data selection; requirement retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-236"
+      ],
+      "tab": "System User Dashboard / Processed History",
+      "problem": "The loading footer exposes aria-live=polite, while the existing scenario expects no live region.",
+      "expected": "No live region per the existing absence-check scenario.",
+      "classification": "Accessibility behavior differs from the existing scenario; presence of a live region is not itself a product defect. Requirement review needed; assertion retained.",
+      "evidence": "ui-observations/dashboard-history-identities.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-314"
+      ],
+      "tab": "System User Dashboard / Expiring Licenses",
+      "problem": "The Expires before caption is a semantic label, while the existing scenario expects a non-label element.",
+      "expected": "Non-label element per the existing limitation-documentation scenario.",
+      "classification": "Accessibility improvement differs from the existing scenario; not classified as a product defect. Requirement review needed; assertion retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-267"
+      ],
+      "tab": "System User Dashboard / Processed History",
+      "problem": "Returning to Pending Requests reuses the loaded list without issuing a new pending request API call.",
+      "expected": "The existing scenario requires a new pending API response after disabling history.",
+      "classification": "Independent UI observation confirms list restoration with no second pending response. Requirement difference retained as failed; API path was correct.",
+      "evidence": "ui-observations/dashboard-approval-labels-and-api.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-155",
+        "LIMAS-SUD-160"
+      ],
+      "tab": "System User Dashboard / Approval",
+      "problem": "Date fields are hidden until a profile is selected; existing scenarios inspect them immediately after opening the form.",
+      "expected": "Existing steps expect the date labels to be visible immediately.",
+      "classification": "Conditional UI behavior confirmed. Failed assertions retained pending requirement review; labels are associated correctly once fields appear.",
+      "evidence": "ui-observations/dashboard-approval-labels-and-api.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-341"
+      ],
+      "tab": "System User Dashboard / Expiring Licenses",
+      "problem": "The specified ArrowUp/Tab segment sequence leaves the date incomplete in Edge.",
+      "expected": "A complete ISO date after the specified keyboard sequence.",
+      "classification": "Reproduced independently. ArrowRight segment navigation sets a date; prescribed Tab sequence does not. Failure retained, browser-native keyboard behavior requires scenario review.",
+      "evidence": "ui-observations/dashboard-date-keyboard.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-297"
+      ],
+      "tab": "System User Dashboard / Expiring Licenses",
+      "problem": "Tab from the Expiring Licenses card focuses the two following summary cards before reaching the Expiration radio.",
+      "expected": "The existing scenario expects the radio after one Tab.",
+      "classification": "Keyboard navigation works in visual DOM order; old one-Tab assumption differs from UI. Failed result retained for requirement review.",
+      "evidence": "ui-observations/dashboard-expiring-focus-and-empty-state.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-402"
+      ],
+      "tab": "System User Dashboard / Expiring Licenses",
+      "problem": "Empty search results display a heading and guidance text.",
+      "expected": "The existing scenario explicitly expects no no-match message.",
+      "classification": "Helpful empty-state messaging differs from the old absence-check scenario; not classified as a product defect. Failure retained for requirement review.",
+      "evidence": "ui-observations/dashboard-expiring-focus-and-empty-state.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-145"
+      ],
+      "tab": "System User Dashboard / Approval",
+      "problem": "The prescribed focus sequence includes disabled Maintenance and Approve controls; after Cancel, focus leaves the document.",
+      "expected": "All listed fields and buttons reachable through the fixed Tab sequence.",
+      "classification": "Independent focus sequence recorded. Disabled controls are skipped by native keyboard navigation; requirement and setup review needed. Original failure retained.",
+      "evidence": "ui-observations/dashboard-approval-focus-and-filter-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-440"
+      ],
+      "tab": "System User Dashboard / Expiring Licenses",
+      "problem": "Focus remains on the Expiration radio after switching filters.",
+      "expected": "The old absence-check scenario expects document BODY to be active.",
+      "classification": "Focus preservation verified independently; not classified as a product defect. Failed absence assertion retained for requirement review.",
+      "evidence": "ui-observations/dashboard-approval-focus-and-filter-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-485"
+      ],
+      "tab": "System User Dashboard / Extension dialog",
+      "problem": "The background Extend button has no accessible name while its ancestor is aria-hidden under the open modal.",
+      "expected": "The existing scenario expects the background button accessible name to remain Extend.",
+      "classification": "Standard modal accessibility isolation differs from the scenario; not classified as a product defect. Failure retained after repairing locator scope.",
+      "evidence": "ui-observations/dashboard-extension-modal-locators.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-541"
+      ],
+      "tab": "System User Dashboard / Extension days",
+      "problem": "The numeric Extend by Days control rejects alphabetic keyboard input.",
+      "expected": "The existing scenario expects the input value abc.",
+      "observed": "Typing abc leaves the value empty. The same result occurs independently and in the corrected test.",
+      "classification": "Confirmed scenario failure; numeric-control behavior conflicts with the old acceptance expectation. Expected value retained for requirement review.",
+      "evidence": "ui-observations/dashboard-native-invalid-input.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-750",
+        "LIMAS-SUD-751"
+      ],
+      "tab": "System User Dashboard / Expiring Floating Configurations",
+      "problem": "Tab from the native date control proceeds through its remaining segment and following controls; it does not reach the preceding radio group.",
+      "expected": "The prescribed step expects the radio group immediately after the date control.",
+      "classification": "Observed keyboard order differs from the scenario. Original focus assertions retained for requirement review.",
+      "evidence": "ui-observations/dashboard-efc-radio-keyboard.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-754",
+        "LIMAS-SUD-756",
+        "LIMAS-SUD-759"
+      ],
+      "tab": "System User Dashboard / Expiring Floating Configurations",
+      "problem": "Changing the radio filter loses keyboard focus after the data response.",
+      "expected": "Focus remains on the selected radio and subsequent arrow keys change selection.",
+      "observed": "After switching to Maintenance, the active element becomes BODY. ArrowLeft then leaves Maintenance selected.",
+      "classification": "Independently confirmed application keyboard-focus defect; original expectations retained.",
+      "evidence": "ui-observations/dashboard-efc-radio-keyboard.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-813"
+      ],
+      "tab": "System User Dashboard / Expiring Floating Configurations",
+      "problem": "Typing invalid alphabetic text in the empty native date control leaves it empty and sends no request.",
+      "expected": "The scenario expects a default-date GET after invalid input.",
+      "classification": "Native date input rejects alphabetic characters without changing its value. Scenario expectation retained as failed for requirement review; not classified as a confirmed application defect.",
+      "evidence": "ui-observations/dashboard-efc-invalid-date.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2302",
+        "LIMAS-SUD-2308"
+      ],
+      "tab": "Profiles / Create Profile",
+      "problem": "Save remains enabled when required inputs are empty, including after clearing the name.",
+      "expected": "Save disabled until required fields are populated.",
+      "classification": "Independently confirmed UI requirement failure; no submission performed and assertions retained.",
+      "evidence": "ui-observations/profiles-create-empty-save.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-946",
+        "LIMAS-SUD-976",
+        "LIMAS-SUD-977",
+        "LIMAS-SUD-979",
+        "LIMAS-SUD-986",
+        "LIMAS-SUD-994",
+        "LIMAS-SUD-995",
+        "LIMAS-SUD-996",
+        "LIMAS-SUD-997",
+        "LIMAS-SUD-998",
+        "LIMAS-SUD-1000",
+        "LIMAS-SUD-1006",
+        "LIMAS-SUD-1011",
+        "LIMAS-SUD-1054",
+        "LIMAS-SUD-1055",
+        "LIMAS-SUD-1056",
+        "LIMAS-SUD-1058",
+        "LIMAS-SUD-1001"
+      ],
+      "tab": "User & License Hub",
+      "problem": "No user card is selected on initial load; the first user gains its selected ring only after clicking.",
+      "expected": "First user auto-selected on page load.",
+      "classification": "Independently confirmed UI requirement failure; added explicit selection assertion to prevent a false pass based only on unrelated initial license records.",
+      "evidence": "ui-observations/hub-user-selection.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-944",
+        "LIMAS-SUD-966",
+        "LIMAS-SUD-1250"
+      ],
+      "tab": "User & License Hub / Edit controls",
+      "problem": "User and license Edit icon buttons have no accessible label; Delete buttons do.",
+      "expected": "Edit controls discoverable by their accessible names.",
+      "classification": "Independently observed accessibility issue. Existing Edit-name assertions retained.",
+      "evidence": "ui-observations/hub-license-cards.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1017",
+        "LIMAS-SUD-1023",
+        "LIMAS-SUD-1031",
+        "LIMAS-SUD-1033",
+        "LIMAS-SUD-1036",
+        "LIMAS-SUD-1045",
+        "LIMAS-SUD-1047",
+        "LIMAS-SUD-1048",
+        "LIMAS-SUD-1057",
+        "LIMAS-SUD-1061"
+      ],
+      "tab": "User & License Hub",
+      "problem": "Rapid typing sends one debounced request; revisiting page 1 and clearing search reuse cached results without a new GET.",
+      "classification": "Observed behavior conflicts with existing no-debounce/fresh-request expectations. Retained for requirement review, not automatically classified as a product defect.",
+      "evidence": "ui-observations/hub-search-pagination-runtime.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1128"
+      ],
+      "tab": "User & License Hub / Hardware search",
+      "problem": "Hardware-ID filtering returns matching users but the license panel includes their other hardware IDs as well.",
+      "expected": "Every displayed license hardware ID matches the search term.",
+      "classification": "Independently verified requirement failure; assertion retained.",
+      "evidence": "ui-observations/hub-license-search-clear.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1167"
+      ],
+      "tab": "User & License Hub / Download prerequisites",
+      "problem": "Download becomes enabled after selecting a user even while All Profiles is active.",
+      "expected": "This scenario expects Download disabled until a specific profile is applied.",
+      "classification": "Verified requirement mismatch; original disabled-state assertion retained.",
+      "evidence": "ui-observations/hub-license-field-structure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1189"
+      ],
+      "tab": "User & License Hub / Hardware search with selection",
+      "problem": "Changing the hardware search clears user selection and disables Download.",
+      "expected": "This scenario expects Download to remain enabled with a selected user and active profile.",
+      "classification": "Consistent with independently observed filter-induced selection reset; original assertion retained.",
+      "evidence": "ui-observations/hub-add-license-form.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1188",
+        "LIMAS-SUD-1191"
+      ],
+      "tab": "User & License Hub / Download after All Profiles reset",
+      "problem": "Download remains enabled after All Profiles is restored while a user remains selected.",
+      "expected": "The scenarios require Download disabled after restoring All Profiles.",
+      "classification": "Observed requirement mismatch consistent with Download requiring user selection but not a specific profile; disabled-state assertions retained.",
+      "evidence": "ui-observations/hub-license-field-structure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1228"
+      ],
+      "tab": "User & License Hub / Add License",
+      "problem": "Cancelling and reopening Add License retains the unsaved Hardware ID.",
+      "expected": "Reopened dialog is empty.",
+      "classification": "Independently confirmed UI requirement failure; no license submitted.",
+      "evidence": "ui-observations/hub-add-license-cancel-retains.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-151"
+      ],
+      "classification": "Confirmed application failure after authorized live approval",
+      "problem": "Approving Test User request LR-15803 creates the user (POST /limas/api/users: 201), then PUT /limas/api/users returns 500. UI shows Failed to approve the request. Please try again. Request remains pending after fresh navigation; User & License Hub shows Test User in Default group with 0 licenses.",
+      "expected": "Selected request is approved, the license is assigned, and the pending count decreases by one.",
+      "settings": {
+        "group": "Default",
+        "profile": "ECU Validator",
+        "role": "1.0.0",
+        "expirationDate": "2026-12-03",
+        "maintenanceDate": "2026-12-03"
+      },
+      "evidence": "system-user-dashboard/SUD-008_2026-11-25T19-54-11-546Z_dd1fe94d/Test-Reports/Complete-Suite-Test-Report.zip",
+      "independentEvidence": "observations/approval-test-user/independent-check.json",
+      "submissionCount": 1,
+      "notes": "Original skip was superseded by an executed failure. No second approval was submitted. The response observer was subsequently narrowed to the observed PUT update endpoint; the original failing result is preserved."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1272",
+        "LIMAS-SUD-1414"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "Opening Edit License places initial focus on a date input rather than the expected Role combobox. It remains on the input after the dialog settles.",
+      "expected": "Initial keyboard focus is on Role.",
+      "classification": "Independently confirmed UI requirement failure; assertions retained.",
+      "evidence": "ui-observations/hub-edit-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1395",
+        "LIMAS-SUD-1429"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "After Cancel closes the dialog, document focus falls back to BODY instead of returning to the Edit trigger.",
+      "expected": "Focus returns to the invoking Edit button.",
+      "classification": "Independently confirmed UI requirement failure; assertions retained.",
+      "evidence": "ui-observations/hub-edit-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1273",
+        "LIMAS-SUD-1415"
+      ],
+      "tab": "User & License Hub / Edit License",
+      "problem": "The automated focus-trap assertion found no focused descendant after 15 Tab presses. An independent 15-Tab inspection kept document.activeElement inside the dialog on every step.",
+      "expected": "Keyboard focus stays within the modal.",
+      "classification": "Intermittent focus observation requires review; not classified as a confirmed application defect.",
+      "evidence": "ui-observations/hub-edit-focus.json",
+      "followUp": "LIMAS-SUD-1415 passed the final diagnostic rerun with activeInsideDialog=true, cssFocusedDescendants=1 and documentHasFocus=true. Earlier failures remain recorded; no underlying application fix is claimed."
+    }
+  ],
+  "updatedAt": "2026-11-26T06:21:00.794Z"
+}

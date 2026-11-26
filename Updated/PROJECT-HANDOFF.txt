@@ -1,0 +1,59 @@
+CURRENT EXECUTION AND SCRIPT HANDOFF
+Updated: 26 November 2026 (IST)
+
+1. OVERALL STATUS
+Authorized User & License Hub execution finished; other pending tabs remain stopped.
+2599 planned cases: 1745 passed; 111 failed; 232 skipped; 511 remaining.
+134 planned batches: 107 finished; 27 with remaining cases. 223 attempts.
+Server Licensing remains excluded.
+
+2. TAB SUMMARY
+Sign-in / Authentication: 33 passed, 0 failed, 0 skipped, 0 remaining; 2/2 batches finished.
+System User Dashboard: 857 passed, 37 failed, 22 skipped, 0 remaining; 46/46 batches finished.
+Profiles: 185 passed, 6 failed, 8 skipped, 0 remaining; 10/10 batches finished.
+User & License Hub: 432 passed, 44 failed, 80 skipped, 0 remaining; 28/28 batches finished.
+Reports: 1 passed, 19 failed, 0 skipped, 306 remaining; 1/17 batches finished.
+Features: 155 passed, 2 failed, 6 skipped, 0 remaining; 9/9 batches finished.
+Floating License Configurations: 82 passed, 3 failed, 116 skipped, 0 remaining; 11/11 batches finished.
+Standard License Configurations: 0 passed, 0 failed, 0 skipped, 20 remaining; 0/1 batches finished.
+System Users: 0 passed, 0 failed, 0 skipped, 53 remaining; 0/3 batches finished.
+User Groups: 0 passed, 0 failed, 0 skipped, 132 remaining; 0/7 batches finished.
+See USER-LICENSE-HUB-STATUS.txt for the ten resumed batches and verified corrections.
+
+3. SCRIPT CORRECTIONS AND VERIFICATION
+The tests folder contains the current corrected source. Read docs/execution-records/automation-repairs.json for change reasons and verification.
+The changed-source-files CSV/JSON lists 256 files that differ from available pre-change backups; it is not an exhaustive change history.
+A changed script is not automatically a passed test. execution-status/06-all-case-results.csv records the latest observed outcome for each case.
+Account email expectations remain intact; displaying an account identifier instead of an email remains a failure.
+The framework supports the observed sign-in UI, isolated authentication sessions, selected-case batch reruns, important screenshots, and portable report paths.
+The approval response-observer/history-control refinement after the last failed submission was typechecked only; no second approval was executed.
+
+4. TEST USER APPROVAL FOLLOW-UP
+LIMAS-SUD-151: FAILED, replacing its previous skipped status.
+Request LR-15803; Test User; Default group; ECU Validator profile; role 1.0.0; expiration and maintenance 3 December 2026.
+The automation clicked Approve Request once. POST /limas/api/users returned 201; subsequent PUT /limas/api/users returned 500.
+The UI displayed an approval failure. Fresh navigation confirmed the request remains pending and the created user has 0 licenses.
+Do not treat this as an approved license or a passed test. See docs/execution-records/approval-outcome.json.
+
+5. REPORT AND MEDIA DELIVERY
+This Updated snapshot includes the current Hub source and documentation. The separate media upload may still be in progress; check UPLOAD-COMPLETE.json at the branch root.
+Completed transfers reported by the user: Dashboard, Profiles, Features and Floating License Configurations to test; Authentication to test-2.
+The uploaded local Dashboard, Profiles, Features and Floating License Configurations delivery copies were removed after verification and explicit user authorization. Original raw runs are retained.
+Authentication was downloaded by the user and its local copy remains.
+Hub report packaging and validation: see USER-LICENSE-HUB-STATUS.txt and per-run path-verification.json.
+Evidence is separate from Updated. Preserve the complete extracted report ZIP structure.
+
+6. USING THE SOURCE ON ANOTHER COMPUTER
+Open Updated as the project folder. Install Node.js 20 or newer, then run npm ci.
+Copy .env.example to .env and configure the deployed URL and credentials locally. Saved sessions and real credentials are excluded.
+Run npm run typecheck to check TypeScript. npm run batches:list lists batches without launching application tests.
+Use the batch runner with an explicit profile and batch when further execution is authorized. Do not launch all tests by default.
+Approval and other data-changing tests require intentionally configured target records and settings.
+
+7. DOCUMENTS TO READ
+EXECUTION-STATUS.html / EXECUTION-STATUS.txt: readable totals and failure/skip summaries.
+execution-status/02-all-batches.csv: every batch and execution status.
+execution-status/03-failed-cases.csv: latest failures and review findings.
+execution-status/04-skipped-cases.csv: skips and exact reasons.
+execution-status/08-remaining-batches.csv: remaining batches and test IDs.
+docs/execution-records: repair explanations, known limitations, data gaps, coverage mismatches, and approval outcome.

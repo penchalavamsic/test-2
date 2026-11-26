@@ -1,10 +1,10 @@
-USER & LICENSE HUB REPORTS
+LIMAS Updated source and User & License Hub reports
 
-This branch is reserved for User & License Hub reports only.
-Report media upload is pending. This is not yet a complete evidence download.
+Updated/: current scripts and execution documents.
+Updated/Updated-source.zip: source-only download.
+User-License-Hub/: reports, screenshots, videos, trace parts and restoration script.
 
-Latest execution: all 28 batches processed.
-556 cases: 432 passed, 44 failed, 80 skipped.
-Failures and skips remain explicitly documented.
+The upload is complete only when UPLOAD-COMPLETE.json is present.
+A branch Download ZIP contains both folders. Use the Updated-source.zip file for scripts alone.
 
-Source scripts and Updated are maintained separately from report media.
+Read User-License-Hub/DOWNLOAD-INSTRUCTIONS.txt before opening split traces.

@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-11-26T06:49:45.498Z",
+  "files": 4121,
+  "zipSha256": "86de4f6f6bc1f6e29fb575c4d75c96381bdebbfa948ad0fbb7609f93df8331bf",
+  "hub": {
+    "tab": "User & License Hub",
+    "suite": "user-license-hub",
+    "planned": 556,
+    "passed": 432,
+    "failed": 44,
+    "skipped": 80,
+    "remaining": 0,
+    "batches": 28,
+    "finishedBatches": 28,
+    "remainingBatches": 0
+  }
+}

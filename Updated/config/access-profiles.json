@@ -1,0 +1,42 @@
+{
+  "SUPER_USER": {
+    "usernameEnv": "LIMAS_SUPER_USER_USERNAME",
+    "passwordEnv": "LIMAS_SUPER_USER_PASSWORD",
+    "expectedTabs": [
+      "System User Dashboard",
+      "User Licenses",
+      "Reports",
+      "Floating License Configurations",
+      "Standard License Configurations"
+    ]
+  },
+  "ADMIN": {
+    "usernameEnv": "LIMAS_ADMIN_USERNAME",
+    "passwordEnv": "LIMAS_ADMIN_PASSWORD",
+    "expectedTabs": [
+      "Features & Updates",
+      "Profiles",
+      "User Groups",
+      "System Users",
+      "Server Licensing",
+      "Server License Import"
+    ]
+  },
+  "SUPER_USER_ADMIN_USER": {
+    "usernameEnv": "LIMAS_SUPER_USER_ADMIN_USER_USERNAME",
+    "passwordEnv": "LIMAS_SUPER_USER_ADMIN_USER_PASSWORD",
+    "expectedTabs": [
+      "System User Dashboard",
+      "User Licenses",
+      "Reports",
+      "Floating License Configurations",
+      "Standard License Configurations",
+      "Features & Updates",
+      "Profiles",
+      "User Groups",
+      "System Users",
+      "Server Licensing",
+      "Server License Import"
+    ]
+  }
+}

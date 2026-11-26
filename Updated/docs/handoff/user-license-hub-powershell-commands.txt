@@ -1,0 +1,119 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: user-license-hub - 28 batches
+
+# ULH-001: 20 cases; LIMAS-SUD-926 through LIMAS-SUD-945
+# Covers: User and License Hub opening, Users and Licenses panel layout, user search controls, Filters button state, Add User button, user card structure and scrolling
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-001 -DetailedEvidence -TestReport
+
+# ULH-002: 20 cases; LIMAS-SUD-946 through LIMAS-SUD-965
+# Covers: initial user selection, pagination counts and page controls, rows per page, hardware ID search, license Filters button, Download and Email and Add License states, selected user license card fields
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-002 -DetailedEvidence -TestReport
+
+# ULH-003: 20 cases; LIMAS-SUD-966 through LIMAS-SUD-985
+# Covers: license card actions and dates, initial user data request, search and filter accessibility, user card selection, license panel updates, selection without navigation or extra requests, Edit and Delete do not select another card
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-003 -DetailedEvidence -TestReport
+
+# ULH-004: 20 cases; LIMAS-SUD-986 through LIMAS-SUD-1005
+# Covers: user selection styling and accessibility gaps, matching selected user and license counts, no stale or duplicate license cards, toolbar state, selection and scroll preservation, independent panel scrolling
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-004 -DetailedEvidence -TestReport
+
+# ULH-005: 20 cases; LIMAS-SUD-1006 through LIMAS-SUD-1025
+# Covers: selection after scrolling, license badge wording, user card accessibility limitations, user and email search requests, no-match search, search clearing, user Filters dialog opening
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-005 -DetailedEvidence -TestReport
+
+# ULH-006: 20 cases; LIMAS-SUD-1026 through LIMAS-SUD-1045
+# Covers: user Filters dialog closing, group selection and clearing, All Groups restoration, filter badge, combined group and search filtering, filter accessibility, pagination counts, Next and Previous navigation
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-006 -DetailedEvidence -TestReport
+
+# ULH-007: 20 cases; LIMAS-SUD-1046 through LIMAS-SUD-1065
+# Covers: pagination request numbers, fresh user cards after page changes, rows-per-page selection, page reset and totals, user auto-selection and license panel synchronization, page boundaries, Add User dialog opening
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-007 -DetailedEvidence -TestReport
+
+# ULH-008: 20 cases; LIMAS-SUD-1066 through LIMAS-SUD-1085
+# Covers: Add User dialog closing and discarded changes, focus containment and scrolling, required and optional user fields, required user group, Save button validation, language selection, gated user creation
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-008 -DetailedEvidence -TestReport
+
+# ULH-009: 20 cases; LIMAS-SUD-1086 through LIMAS-SUD-1105
+# Covers: Edit User opens the correct user, existing field values, required field editing and validation, optional fields, user group and language selection, cancelled changes, keyboard focus containment
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-009 -DetailedEvidence -TestReport
+
+# ULH-010: 20 cases; LIMAS-SUD-1106 through LIMAS-SUD-1125
+# Covers: user GDPR and group selection, gated user update and API checks, Edit accessibility, direct user deletion, list refresh and count changes, last user on page handling, license panel and hardware ID search
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-010 -DetailedEvidence -TestReport
+
+# ULH-011: 20 cases; LIMAS-SUD-1126 through LIMAS-SUD-1145
+# Covers: hardware ID license search and clearing, filter badge, License Filters dialog opening and closing, profile options and search, default All Profiles selection, toolbar button states, no data changes during filtering
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-011 -DetailedEvidence -TestReport
+
+# ULH-012: 20 cases; LIMAS-SUD-1146 through LIMAS-SUD-1165
+# Covers: license profile selection and clearing, filter dismissal without applying, combined profile and hardware filters, no-match results and restoration, license card actions and ownership, Download button baseline state
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-012 -DetailedEvidence -TestReport
+
+# ULH-013: 20 cases; LIMAS-SUD-1166 through LIMAS-SUD-1185
+# Covers: Download and Email and Add License availability by user and profile, license download request, file naming and contents, base64 license data, one download per activation, selected user and profile preserved
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-013 -DetailedEvidence -TestReport
+
+# ULH-014: 20 cases; LIMAS-SUD-1186 through LIMAS-SUD-1205
+# Covers: download read-only requests and file cleanup, download with hardware filters, button state reset, keyboard activation, conditional download failure scenarios, Add License baseline state
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-014 -DetailedEvidence -TestReport
+
+# ULH-015: 20 cases; LIMAS-SUD-1206 through LIMAS-SUD-1225
+# Covers: Add License enabled for selected user and profile, dialog opening, hardware ID entry, profile and role selection, role reset after profile change, expiration and maintenance dates, Save state, Cancel and Close
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-015 -DetailedEvidence -TestReport
+
+# ULH-016: 20 cases; LIMAS-SUD-1226 through LIMAS-SUD-1245
+# Covers: Add License dismissal and reset, license creation and display, user badge count increase, created license deletion and cleanup, dialog focus and required labels, conditional duplicate and invalid and server-error scenarios
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-016 -DetailedEvidence -TestReport
+
+# ULH-017: 20 cases; LIMAS-SUD-1246 through LIMAS-SUD-1265
+# Covers: conditional license creation network and double-submit and cleanup failures, Edit License button availability, mouse and keyboard activation, correct license targeted, Edit dialog opening without mutation
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-017 -DetailedEvidence -TestReport
+
+# ULH-018: 20 cases; LIMAS-SUD-1266 through LIMAS-SUD-1285
+# Covers: Edit License dialog name and description, backdrop behavior, focus containment and keyboard order, Save and Cancel controls, focus return after closing, hardware and profile explanations, matching hardware ID
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-018 -DetailedEvidence -TestReport
+
+# ULH-019: 20 cases; LIMAS-SUD-1286 through LIMAS-SUD-1305
+# Covers: Edit License values match selected card, no data from another license, locked hardware ID, hardware ID prefilled value, blocked keyboard and mouse editing, explanatory message and disabled-state accessibility
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-019 -DetailedEvidence -TestReport
+
+# ULH-020: 20 cases; LIMAS-SUD-1306 through LIMAS-SUD-1325
+# Covers: hardware ID read-only checks, locked profile selector and existing value, profile interaction blocked, profile explanation and accessibility, editable role field, runtime role options
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-020 -DetailedEvidence -TestReport
+
+# ULH-021: 20 cases; LIMAS-SUD-1326 through LIMAS-SUD-1345
+# Covers: role selection and keyboard navigation, role popover closing and focus, Save state after role change, expiration date value and picker, date focus and clearing, future and past dates
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-021 -DetailedEvidence -TestReport
+
+# ULH-022: 20 cases; LIMAS-SUD-1346 through LIMAS-SUD-1365
+# Covers: expiration date restoration and invalid text, optional maintenance date, maintenance picker and clearing, future and past maintenance dates, date relationships, maintenance focus, expiration without maintenance
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-022 -DetailedEvidence -TestReport
+
+# ULH-023: 20 cases; LIMAS-SUD-1366 through LIMAS-SUD-1385
+# Covers: expiration and maintenance date validation, clearing both dates, Save states after edits and reverting, unchanged Save behavior, required-field validation, validation accessibility, no invalid submission request
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-023 -DetailedEvidence -TestReport
+
+# ULH-024: 20 cases; LIMAS-SUD-1386 through LIMAS-SUD-1405
+# Covers: Edit License Cancel and Close and Escape, outside-click dismissal, unsaved changes discarded, original values on reopening, focus return, conditional invalid-value and permission and stale-record and server-error scenarios
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-024 -DetailedEvidence -TestReport
+
+# ULH-025: 20 cases; LIMAS-SUD-1406 through LIMAS-SUD-1425
+# Covers: conditional license update network and duplicate-submit and cleanup failures, Edit dialog accessibility, initial role focus, focus containment, locked-field explanations, date labels, required-field and validation messages
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-025 -DetailedEvidence -TestReport
+
+# ULH-026: 20 cases; LIMAS-SUD-1426 through LIMAS-SUD-1445
+# Covers: Edit License keyboard access and focus, Save and Cancel accessibility, error and success announcements, role and date updates, clearing maintenance date, combined update, dialog closing on Save, saved values verified
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-026 -DetailedEvidence -TestReport
+
+# ULH-027: 20 cases; LIMAS-SUD-1446 through LIMAS-SUD-1465
+# Covers: hardware ID and profile unchanged after update, unchanged license counts, one update request, test license cleanup, update API fields and response, Delete button visibility and state, required user and profile selection
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-027 -DetailedEvidence -TestReport
+
+# ULH-028: 16 cases; LIMAS-SUD-1466 through LIMAS-SUD-1481
+# Covers: direct license deletion without confirmation, correct license targeted, DELETE request and response, card removal and count updates, panel synchronization, duplicate protection, conditional deletion failures, cleanup and state restoration
+.\scripts\run-tests-with-report.ps1 -Suite user-license-hub -Batch ULH-028 -DetailedEvidence -TestReport

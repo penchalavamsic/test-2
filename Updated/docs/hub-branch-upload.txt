@@ -1,0 +1,51 @@
+MANUAL UPLOAD: UPDATED SOURCE + USER & LICENSE HUB
+
+Open a terminal in the automation project folder containing package.json.
+Run:
+  node .\scripts\upload-hub-branch.cjs
+
+Optional read-only preparation check:
+  node .\scripts\upload-hub-branch.cjs --check
+
+Repository: https://github.com/penchalavamsic/test-2.git
+Branch: user-license-hub-reports
+
+The command prepares and uploads two separate folders:
+  Updated             Current scripts and execution documentation.
+  User-License-Hub    All recorded Hub report attempts and their evidence.
+
+Updated is uploaded first. Media follows in numbered batches.
+If interrupted, run exactly the same command to resume.
+Do not edit the prepared export or run two copies of the command together.
+The command verifies uploaded Git file hashes after each batch.
+UPLOAD-COMPLETE.json at the branch root confirms the full upload completed.
+Existing branches are not changed. No application tests run during upload.
+
+PRIVATE DATA AND PORTABILITY
+Credentials, saved login sessions, dependency folders and temporary files
+are excluded from Updated. Evidence copies are sanitized and checked for
+computer paths, authentication tokens and known credentials before upload.
+Paths in the shared reports remain relative. Original evidence is retained.
+Only the uploader's own verified temporary Git checkout is recycled between
+batches to limit disk use; original reports and source files are preserved.
+
+DOWNLOADING
+The branch Download ZIP contains both Updated and User-License-Hub.
+Updated/Updated-source.zip provides a smaller source-only download.
+Extract downloads completely before opening reports.
+Open User-License-Hub/index.html for the reports, screenshots and videos.
+
+RESTORING LARGE TEST TRACES
+Playwright test traces are retained. Traces too large for GitHub are divided
+into lossless parts for transfer. On the destination laptop, open PowerShell
+inside User-License-Hub and run:
+  powershell -NoProfile -ExecutionPolicy Bypass -File .\Restore-Large-Traces.ps1
+The script checks every part and the restored file using SHA-256 hashes.
+It preserves the part files. Other screenshots, videos and reports do not
+require this restoration step.
+
+EXECUTION STATUS
+All 28 Hub batches were processed: 556 unique cases, with 432 passed,
+44 failed and 80 skipped. All 58 recorded report runs are included.
+Read USER-LICENSE-HUB-STATUS.txt and execution-status for remaining failures,
+skipped prerequisites, reruns and pending batches in other tabs.

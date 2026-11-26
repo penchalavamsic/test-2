@@ -1,0 +1,51 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: floating-license-configurations - 11 batches
+
+# FLC-001: 20 cases; LIMAS-SUD-1808 through LIMAS-SUD-1827
+# Covers: Floating License Configurations opening, group selection tree, group search and clearing, no-match groups, parent expansion and collapse, Expand All and Collapse All
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-001 -DetailedEvidence -TestReport
+
+# FLC-002: 20 cases; LIMAS-SUD-1828 through LIMAS-SUD-1847
+# Covers: group and subgroup selection, correct selected group, Back and Change Group actions, tree restoration, configuration count, Search and Filters and Refresh and Create buttons, Include Subgroups control
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-002 -DetailedEvidence -TestReport
+
+# FLC-003: 20 cases; LIMAS-SUD-1848 through LIMAS-SUD-1867
+# Covers: configuration search and clearing, no-match and case handling, filter panel opening and cancellation, filter chips and reset, refresh preserves group and cards, Include Subgroups state, card count and uniqueness
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-003 -DetailedEvidence -TestReport
+
+# FLC-004: 20 cases; LIMAS-SUD-1868 through LIMAS-SUD-1887
+# Covers: configuration card fields, card selection and deselection, selection counts, Clear selection, selection during search, Actions menu opening, View Details and Edit and Delete items, keyboard and field accessibility
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-004 -DetailedEvidence -TestReport
+
+# FLC-005: 20 cases; LIMAS-SUD-1888 through LIMAS-SUD-1907
+# Covers: selection toolbar counts and keyboard access, Select loaded cards, select search results only, Clear selection, bulk Dates panel opening, expiration and maintenance fields, date synchronization control, cancellation and reset
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-005 -DetailedEvidence -TestReport
+
+# FLC-006: 20 cases; LIMAS-SUD-1908 through LIMAS-SUD-1927
+# Covers: bulk Capacity panel opening, numeric capacity and checkout fields, cancellation and reset, direct bulk Delete behavior, Create Configuration inline form opening, selected user group, product profile options and required fields
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-006 -DetailedEvidence -TestReport
+
+# FLC-007: 20 cases; LIMAS-SUD-1928 through LIMAS-SUD-1947
+# Covers: configuration profile and role dependency, license capacity and checkout inputs, availability selection, expiration and maintenance dates, required fields and Save state, Cancel and Escape, Reset form, View Details menu item
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-007 -DetailedEvidence -TestReport
+
+# FLC-008: 20 cases; LIMAS-SUD-1948 through LIMAS-SUD-1967
+# Covers: View Details opened by keyboard, inline details panel, profile and role and group, license totals and availability, checkout duration, dates and creator, configuration identifiers, missing feature information, Close details
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-008 -DetailedEvidence -TestReport
+
+# FLC-009: 20 cases; LIMAS-SUD-1968 through LIMAS-SUD-1987
+# Covers: Edit Configuration inline form opening, existing configuration values, locked user group, role and capacity changes, checkout and availability changes, expiration date changes, numeric validation, Save button states
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-009 -DetailedEvidence -TestReport
+
+# FLC-010: 20 cases; LIMAS-SUD-1988 through LIMAS-SUD-2007
+# Covers: Edit reset and cancelled changes, gated configuration creation and editing and deletion, card Delete and bulk Delete behavior, selection counts, conditional deletion failures, already-removed configuration handling, cleanup
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-010 -DetailedEvidence -TestReport
+
+# FLC-011: 1 cases; LIMAS-SUD-2008 through LIMAS-SUD-2008
+# Covers: configuration count restored after controlled lifecycle cleanup
+.\scripts\run-tests-with-report.ps1 -Suite floating-license-configurations -Batch FLC-011 -DetailedEvidence -TestReport
