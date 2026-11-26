@@ -1,0 +1,11 @@
+LATEST OFFICE-REPAIR EVIDENCE
+
+After downloading this branch ZIP, extract it fully.
+Open PowerShell in Latest-Evidence and run:
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Restore-Report-Packages.ps1
+This joins lossless package parts and verifies SHA-256 hashes. Parts are retained.
+Then extract the desired Complete-Suite-Test-Report.zip fully and open its HTML report.
+Packages contain captured reports and evidence. Cases LIMAS-SUD-628 and LIMAS-SUD-638 have trace-finalization limitations; missing recordings were not recreated.
+Keep each extracted package together so its relative evidence links work.
+Updated contains scripts/docs separately; its current status overrides older attempts inside batch packages.
+UPLOAD-COMPLETE.json at branch root confirms the whole transfer finished.
