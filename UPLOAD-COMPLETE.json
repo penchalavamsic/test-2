@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/penchalavamsic/test-2.git",
+  "branch": "user-license-hub-reports",
+  "preparedAt": "2026-11-26T07:24:16.857Z",
+  "folders": [
+    "Updated",
+    "User-License-Hub"
+  ],
+  "hubCases": 556,
+  "counts": {
+    "passed": 432,
+    "failed": 44,
+    "skipped": 80
+  },
+  "reportRuns": 58,
+  "largeTracesToRestore": 8,
+  "traceRestore": "User-License-Hub/Restore-Large-Traces.ps1",
+  "filesBeforeCompletionMarker": 9246,
+  "sourceZip": "Updated/Updated-source.zip"
+}
