@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-25T17:26:08.745Z",
+  "records": [
+    {
+      "label": "expiration alphabetic",
+      "attempted": "abc",
+      "state": {
+        "value": "",
+        "type": "date",
+        "badInput": false,
+        "ariaInvalid": null
+      }
+    },
+    {
+      "label": "expiration invalid text",
+      "attempted": "not-a-date",
+      "state": {
+        "value": "",
+        "type": "date",
+        "badInput": false,
+        "ariaInvalid": null
+      }
+    },
+    {
+      "label": "days alphabetic",
+      "attempted": "abc",
+      "state": {
+        "value": "",
+        "type": "number",
+        "badInput": false,
+        "ariaInvalid": null
+      }
+    },
+    {
+      "label": "maintenance alphabetic",
+      "attempted": "abc",
+      "state": {
+        "value": "",
+        "type": "date",
+        "badInput": false,
+        "ariaInvalid": null
+      }
+    }
+  ]
+}

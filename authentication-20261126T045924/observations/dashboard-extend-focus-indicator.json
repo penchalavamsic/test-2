@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-25T17:09:04.286Z",
+  "programmatic": {
+    "focused": true,
+    "focusVisible": false,
+    "outlineStyle": "none",
+    "outlineWidth": "3px",
+    "boxShadow": "none"
+  },
+  "keyboard": {
+    "focused": true,
+    "focusVisible": true,
+    "outlineStyle": "solid",
+    "outlineWidth": "2px",
+    "boxShadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(188, 255, 71) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  }
+}

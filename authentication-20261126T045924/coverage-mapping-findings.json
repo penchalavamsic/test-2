@@ -1,0 +1,547 @@
+{
+  "reviewedAt": "2026-11-25T16:59:04.942Z",
+  "findings": [
+    {
+      "id": "LIMAS-SUD-190",
+      "scriptScenario": "LIMAS-SUD-190: should focus the search field via Tab in history mode",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Placeholder\"",
+      "workbookExpected": "The search placeholder is \"Search license requests...\".",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-191",
+      "scriptScenario": "LIMAS-SUD-191: should filter processed list by user name substring",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Enabled\"",
+      "workbookExpected": "The search field is enabled and accepts typed input.",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-192",
+      "scriptScenario": "LIMAS-SUD-192: should filter processed list by email substring",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Keyboard focus\"",
+      "workbookExpected": "The search field is keyboard-focusable via Tab.",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-193",
+      "scriptScenario": "LIMAS-SUD-193: should filter processed list by feature name substring",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Client-side filtering\"",
+      "workbookExpected": "Search filtering is client-side — no new API request occurs on typing.",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-194",
+      "scriptScenario": "LIMAS-SUD-194: should filter processed list by hardware ID substring",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Full match\"",
+      "workbookExpected": "Full substring match retains matching records and filters others.",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-195",
+      "scriptScenario": "LIMAS-SUD-195: should filter processed list by request ID substring",
+      "workbookGoal": "To verify the functionality of \"System User Dashboard\" → \"Pending License Requests\" → \"Processed View\" → \"Search\" → \"Partial match\"",
+      "workbookExpected": "Partial substring matching works via contains logic.",
+      "status": "Existing script and workbook scenario mismatch; execution results describe the script, not proof of full workbook coverage."
+    },
+    {
+      "id": "LIMAS-SUD-211",
+      "scriptScenario": "Processed Record Card Container",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-212",
+      "scriptScenario": "Processed Record — User Name Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-213",
+      "scriptScenario": "Processed Record — User Email Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-214",
+      "scriptScenario": "Processed Record — User Email Format",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-215",
+      "scriptScenario": "Processed Record — Feature Name Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-216",
+      "scriptScenario": "Processed Record — Feature Version Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-217",
+      "scriptScenario": "Processed Record — Feature Version Format",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-218",
+      "scriptScenario": "Processed Record — Hardware ID Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-219",
+      "scriptScenario": "Processed Record — Created Date Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-220",
+      "scriptScenario": "Processed Record — Created Date Format",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-221",
+      "scriptScenario": "Processed Record — No Approve Button",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-222",
+      "scriptScenario": "Processed Record — No Delete Button",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-223",
+      "scriptScenario": "Processed Record — No Per-Record Status Badge",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-224",
+      "scriptScenario": "Processed Record — No User Group Field",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-225",
+      "scriptScenario": "Processed Record — No Profile Field",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-226",
+      "scriptScenario": "Processed Record — No Role Field",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-227",
+      "scriptScenario": "Processed Record — No Expiration Date",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-228",
+      "scriptScenario": "Processed Record — No Maintenance Date",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-229",
+      "scriptScenario": "Processed Record — No Approver Info",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-230",
+      "scriptScenario": "Processed Record — No Comment Field",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-231",
+      "scriptScenario": "Processed Record — Load More Note Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-232",
+      "scriptScenario": "Processed Record — Cards No Semantic Role (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-233",
+      "scriptScenario": "Processed Record — Labels Not Associated (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-234",
+      "scriptScenario": "Processed Record — Email Not Distinguished (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-235",
+      "scriptScenario": "Processed Record — No Keyboard Focus (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-236",
+      "scriptScenario": "Processed Record — No Live Region (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-237",
+      "scriptScenario": "Processed Record — No Loading Indicator (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-238",
+      "scriptScenario": "Processed Record — Heading Structure Incomplete (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-239",
+      "scriptScenario": "Processed Record — No Accessible Name (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-240",
+      "scriptScenario": "Processed Record — Multiple Cards Rendered",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-241",
+      "scriptScenario": "Incremental — Auto-Load Indicator Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-242",
+      "scriptScenario": "Incremental — Initial Loaded Count Positive",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-243",
+      "scriptScenario": "Incremental — Initial Total Count Positive",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-244",
+      "scriptScenario": "Incremental — Scroll Triggers Load",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-245",
+      "scriptScenario": "Incremental — Next Page API Request",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-246",
+      "scriptScenario": "Incremental — Page Number Increments",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-247",
+      "scriptScenario": "Incremental — Page Size Consistent",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-248",
+      "scriptScenario": "Incremental — No Loading Spinner (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-249",
+      "scriptScenario": "Incremental — Records Appended",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-250",
+      "scriptScenario": "Incremental — Loaded Count Increases",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-251",
+      "scriptScenario": "Incremental — Total Count Consistent",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-252",
+      "scriptScenario": "Incremental — Existing Records Preserved",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-253",
+      "scriptScenario": "Incremental — No Duplicate Records",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-254",
+      "scriptScenario": "Incremental — Session Stability",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-255",
+      "scriptScenario": "Incremental — Accessibility Limitations",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-256",
+      "scriptScenario": "History — Switch Deactivation",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-257",
+      "scriptScenario": "History — Switch Unchecked State",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-258",
+      "scriptScenario": "History — Pending Subtitle Restoration",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-259",
+      "scriptScenario": "History — Pending Search Restoration",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-260",
+      "scriptScenario": "History — Pending Count Restoration",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-261",
+      "scriptScenario": "History — Pending Request List Restoration",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-262",
+      "scriptScenario": "History — Processed Content Removal",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-263",
+      "scriptScenario": "History — Route Preservation After Toggle",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-264",
+      "scriptScenario": "History — Dashboard Heading Preservation",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-265",
+      "scriptScenario": "History — Session Stability After Toggle",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-266",
+      "scriptScenario": "History — No Processed API After Disable",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-267",
+      "scriptScenario": "History — Pending API Resumes After Disable",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-268",
+      "scriptScenario": "History — Keyboard Deactivation (A11y)",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-273",
+      "scriptScenario": "Expiring Licenses — Card Visibility",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-274",
+      "scriptScenario": "Expiring Licenses — Card Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-275",
+      "scriptScenario": "Expiring Licenses — Card Dynamic Count",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-276",
+      "scriptScenario": "Expiring Licenses — Card Selected State",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-277",
+      "scriptScenario": "Expiring Licenses — Single Card Selection",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-278",
+      "scriptScenario": "Expiring Licenses — Section Heading Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-279",
+      "scriptScenario": "Expiring Licenses — Section Heading Text",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-280",
+      "scriptScenario": "Expiring Licenses — Section Subtitle Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-281",
+      "scriptScenario": "Expiring Licenses — Section Subtitle Text",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-282",
+      "scriptScenario": "Expiring Licenses — Section Icon/Content",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-283",
+      "scriptScenario": "Expiring Licenses — Section Container",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-284",
+      "scriptScenario": "Expiring Licenses — Initial Render Complete",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-285",
+      "scriptScenario": "Expiring Licenses — Loaded Count Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-286",
+      "scriptScenario": "Expiring Licenses — Loaded Count Numeric",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-287",
+      "scriptScenario": "Expiring Licenses — Total Count Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-288",
+      "scriptScenario": "Expiring Licenses — Total Count Numeric",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-289",
+      "scriptScenario": "Expiring Licenses — Card Count/Total Consistency",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-290",
+      "scriptScenario": "Expiring Licenses — Filter Container Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-291",
+      "scriptScenario": "Expiring Licenses — Expiration Radio Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-292",
+      "scriptScenario": "Expiring Licenses — Expiration Radio Checked",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-293",
+      "scriptScenario": "Expiring Licenses — Expiration Radio Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-294",
+      "scriptScenario": "Expiring Licenses — Maintenance Radio Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-295",
+      "scriptScenario": "Expiring Licenses — Maintenance Radio Unchecked",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-296",
+      "scriptScenario": "Expiring Licenses — Maintenance Radio Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-297",
+      "scriptScenario": "Expiring Licenses — Radio Group Keyboard Focus",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-298",
+      "scriptScenario": "Expiring Licenses — Radio Group Label",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-299",
+      "scriptScenario": "Expiring Licenses — Single Radio Selection",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-300",
+      "scriptScenario": "Expiring Licenses — Expires Before Label",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-301",
+      "scriptScenario": "Expiring Licenses — Expires Before Input Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-302",
+      "scriptScenario": "Expiring Licenses — Expires Before Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-303",
+      "scriptScenario": "Expiring Licenses — Expires Before Placeholder",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-304",
+      "scriptScenario": "Expiring Licenses — Calendar Control",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-305",
+      "scriptScenario": "Expiring Licenses — User Licenses Button Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-306",
+      "scriptScenario": "Expiring Licenses — User Licenses Button Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-307",
+      "scriptScenario": "Expiring Licenses — Search Visibility",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-308",
+      "scriptScenario": "Expiring Licenses — Search Placeholder",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-309",
+      "scriptScenario": "Expiring Licenses — Search Enabled",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-310",
+      "scriptScenario": "Expiring Licenses — Search Keyboard Focus",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-311",
+      "scriptScenario": "Expiring Licenses — Initial License List Visible",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-312",
+      "scriptScenario": "Expiring Licenses — All Displayed Note",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-313",
+      "scriptScenario": "Expiring Licenses — No Loading Spinner",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    },
+    {
+      "id": "LIMAS-SUD-314",
+      "scriptScenario": "Expiring Licenses — Section Shell Accessibility",
+      "status": "Workbook row uses a different column layout; Expected Result contains a classification. Existing atomic plan used for report reference where available; workbook coverage needs review."
+    }
+  ]
+}

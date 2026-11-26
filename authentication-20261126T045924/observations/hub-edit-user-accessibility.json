@@ -1,0 +1,7 @@
+{
+  "role": "dialog",
+  "label": null,
+  "labelledby": "radix-:rk:",
+  "name": "Edit User",
+  "description": "Edit user details"
+}

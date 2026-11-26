@@ -1,0 +1,365 @@
+{
+  "repairs": [
+    {
+      "ids": [
+        "LIMAS-SUD-441",
+        "LIMAS-SUD-442",
+        "LIMAS-SUD-443",
+        "LIMAS-SUD-444",
+        "LIMAS-SUD-445",
+        "LIMAS-SUD-446",
+        "LIMAS-SUD-447",
+        "LIMAS-SUD-448",
+        "LIMAS-SUD-449",
+        "LIMAS-SUD-450",
+        "LIMAS-SUD-451",
+        "LIMAS-SUD-452",
+        "LIMAS-SUD-453",
+        "LIMAS-SUD-454",
+        "LIMAS-SUD-455",
+        "LIMAS-SUD-456",
+        "LIMAS-SUD-457",
+        "LIMAS-SUD-458",
+        "LIMAS-SUD-459",
+        "LIMAS-SUD-460",
+        "LIMAS-SUD-461",
+        "LIMAS-SUD-462",
+        "LIMAS-SUD-463",
+        "LIMAS-SUD-464",
+        "LIMAS-SUD-465",
+        "LIMAS-SUD-466"
+      ],
+      "change": "Resolve the containing license card before matching its email or hardware text. Inspect the first matching card for sample field assertions; email is not assumed unique.",
+      "reason": "Live UI had 97 Extend buttons; zero buttons contain email text, while 56 cards matched the first sampled email.",
+      "assertions": "Visibility, field content, semantics and keyboard expectations preserved.",
+      "verification": "All 26 record-field cases passed across the card-locator rerun and separate keyboard-focus rerun.",
+      "evidence": "observations/dashboard-expiring-card-lookup.json"
+    },
+    {
+      "area": "Dashboard extension runtime data",
+      "change": "Generate current, future and past dates from the actual execution date using the existing day-offset constants.",
+      "reason": "The helper called 2026-11-06 current, while the independently observed browser date is 2026-11-25. There is no frozen clock in the test configuration.",
+      "assertions": "Date acceptance and validation expectations remain unchanged.",
+      "evidence": "observations/dashboard-extension-dialog.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-463"
+      ],
+      "change": "Reach the Extend button by keyboard before checking its visible focus outline.",
+      "reason": "Live UI shows no focus-visible outline after programmatic focus in mouse modality; Shift+Tab/Tab produces a visible 2px outline and ring.",
+      "assertions": "Existing outline-or-shadow assertion retained; explicit keyboard-focus assertion added.",
+      "evidence": "observations/dashboard-extend-focus-indicator.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-467",
+        "LIMAS-SUD-468",
+        "LIMAS-SUD-469",
+        "LIMAS-SUD-470",
+        "LIMAS-SUD-471",
+        "LIMAS-SUD-472",
+        "LIMAS-SUD-473",
+        "LIMAS-SUD-474",
+        "LIMAS-SUD-475",
+        "LIMAS-SUD-476",
+        "LIMAS-SUD-477",
+        "LIMAS-SUD-478",
+        "LIMAS-SUD-479",
+        "LIMAS-SUD-480"
+      ],
+      "change": "Only navigate Back during cleanup when the case actually left the Dashboard. Use keyboard navigation for the User Licenses focus-indicator check.",
+      "reason": "Non-navigation cases called Back from their initial Dashboard entry, leaving about:blank and timing out during cleanup. Independent keyboard check confirmed the focus ring.",
+      "assertions": "Control visibility, semantics and navigation expectations retained.",
+      "evidence": "observations/dashboard-user-licenses-cleanup.json",
+      "verification": "All 14 User Licenses cases passed on rerun."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-483",
+        "LIMAS-SUD-484",
+        "LIMAS-SUD-485",
+        "LIMAS-SUD-493",
+        "LIMAS-SUD-495",
+        "LIMAS-SUD-496",
+        "LIMAS-SUD-498",
+        "LIMAS-SUD-499"
+      ],
+      "change": "Use exact date labels to distinguish inputs from calendar buttons. Allow locating the background Extend button for the three explicit modal-background checks.",
+      "reason": "Date substring locators matched two controls. Opening the modal applies aria-hidden to the background while buttons remain visually present.",
+      "assertions": "Visibility, enabled state, accessible name and initial focus expectations retained. The background accessible-name check still fails in independent observation.",
+      "evidence": "observations/dashboard-extension-modal-locators.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-524",
+        "LIMAS-SUD-541",
+        "LIMAS-SUD-549",
+        "LIMAS-SUD-563"
+      ],
+      "change": "Attempt invalid native-control input through keyboard typing rather than Playwright fill, which rejects malformed values before dispatching UI input.",
+      "reason": "Independent keyboard observation shows native date and number inputs reject the alphabetic characters and retain an empty value.",
+      "assertions": "Original value and aria-invalid expectations retained. The case expecting a number input to retain abc is expected to remain a failed requirement mismatch.",
+      "evidence": "observations/dashboard-native-invalid-input.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-635",
+        "LIMAS-SUD-636"
+      ],
+      "change": "Implemented previously empty failure-scenario bodies using browser-scoped HTTP 500 interception, a response-status assertion, visible failure toast and dialog-retention assertions.",
+      "verification": "Both controlled HTTP 500 scenarios passed; simulated response mode is recorded in test annotations.",
+      "evidence": "observations/dashboard-extension-controlled-failure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-637",
+        "LIMAS-SUD-643"
+      ],
+      "change": "Use actual keyboard focus for Apply; assert the visible zero badge directly instead of a word-boundary regex against concatenated card text.",
+      "reason": "UI verification showed a visible focus ring during keyboard navigation and a separate DIV containing 0; concatenated text was 0Expiring Floating Configurations.",
+      "assertions": "Visible focus and zero-count requirements retained.",
+      "evidence": "observations/dashboard-summary-count-and-apply-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-642",
+        "LIMAS-SUD-661",
+        "LIMAS-SUD-688",
+        "LIMAS-SUD-711",
+        "LIMAS-SUD-768",
+        "LIMAS-SUD-778"
+      ],
+      "change": "Check the native button role through toHaveRole and accept whitespace before the count separator.",
+      "reason": "The live card is a native button with aria-pressed. The rendered count is exactly 0 loaded · 0 total configurations; the old regex omitted whitespace before the middle dot.",
+      "assertions": "Button semantics, aria-pressed and zero loaded/total configuration counts retained.",
+      "evidence": "system-user-dashboard/SUD-034_2026-11-25T17-34-55-758Z_245ca75e"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-793",
+        "LIMAS-SUD-795",
+        "LIMAS-SUD-800",
+        "LIMAS-SUD-813",
+        "LIMAS-SUD-860",
+        "LIMAS-SUD-861",
+        "LIMAS-SUD-863",
+        "LIMAS-SUD-880"
+      ],
+      "change": "Correct absent-attribute checks, native role/tabIndex properties, date-segment navigation, and invalid-date keyboard input. Check separate icons rather than counting the associated label as an icon.",
+      "reason": "Independent DOM and keyboard checks confirmed absent placeholder, label-only date sibling, native button semantics and planned control order. Invalid-date action now uses real typing; a synchronized follow-up found no GET, and 813 remains failed.",
+      "assertions": "Original no-placeholder, no-separate-icon, date-after-radio, button/search order, keyboard focusability, and successful default request requirements retained.",
+      "evidence": "observations/dashboard-efc-date-controls.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-885",
+        "LIMAS-SUD-893"
+      ],
+      "change": "Match the whitespace in the floating-license count. Populate the date before testing clear, as explicitly required by plan 893.",
+      "reason": "Independent live check observed 0 loaded · 0 total licenses and successful GETs for both setting and clearing a future date. Original test attempted to clear an already empty input.",
+      "evidence": "observations/dashboard-floating-date-clear.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-860"
+      ],
+      "change": "Focus the date input as specified by the plan, rather than clicking and opening its native picker. Traverse internal native date segments before asserting the next controls.",
+      "evidence": "observations/dashboard-efc-date-controls.json",
+      "assertions": "Date → Floating License Configurations button → search order preserved."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2323",
+        "LIMAS-SUD-2324",
+        "LIMAS-SUD-2325",
+        "LIMAS-SUD-2326",
+        "LIMAS-SUD-2327",
+        "LIMAS-SUD-2332",
+        "LIMAS-SUD-2333",
+        "LIMAS-SUD-2334",
+        "LIMAS-SUD-2335",
+        "LIMAS-SUD-2336"
+      ],
+      "change": "Exclude the Add Feature colspan row using a relative cell locator inside hasNot.",
+      "reason": "Independent UI inspection found two assigned feature rows, each with Version and Access Level comboboxes. The old nested table locator failed to exclude the add-control row and treated it as an assigned feature.",
+      "assertions": "Per-assigned-feature requirements preserved; every actual feature row remains checked.",
+      "evidence": "observations/profiles-feature-controls.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2342"
+      ],
+      "change": "Wait for the original assignment count after reopening instead of comparing during asynchronous loading.",
+      "reason": "Independent UI check: initial 2, immediate reopened count 0, loaded reopened count 2.",
+      "assertions": "The reopened assignment count must still equal the original count.",
+      "evidence": "observations/profiles-feature-reopen.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-929",
+        "LIMAS-SUD-931",
+        "LIMAS-SUD-934",
+        "LIMAS-SUD-942",
+        "LIMAS-SUD-943",
+        "LIMAS-SUD-944",
+        "LIMAS-SUD-945",
+        "LIMAS-SUD-946",
+        "LIMAS-SUD-955",
+        "LIMAS-SUD-964",
+        "LIMAS-SUD-965",
+        "LIMAS-SUD-966",
+        "LIMAS-SUD-967",
+        "LIMAS-SUD-968"
+      ],
+      "change": "Locate the actual two-panel grid, scroll regions and individual card wrappers. Check native heading role and input type properties. Wait for loaded user pagination and use outer cards for selection state.",
+      "reason": "Independent live DOM showed one main wrapper, two nested panels, inner scroll containers, twenty individual user cards, and native H1/text controls without explicit role/type attributes.",
+      "assertions": "Two-panel, scroll, card, native semantic and selection requirements retained. Missing Edit accessible names and other unmet requirements will remain failures.",
+      "evidence": "observations/hub-panels-and-user-cards.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-944",
+        "LIMAS-SUD-946"
+      ],
+      "change": "Match ordinary singular/plural License badge text; explicitly assert first-user selection before claiming auto-selection.",
+      "reason": "Plan 944 requires a count badge, not literal parentheses. Independent inspection shows no selected user initially; the broad initial license list alone cannot prove the first user is selected.",
+      "assertions": "Edit accessible-name assertion preserved. First-user auto-selection remains required and is expected to fail on the current UI.",
+      "evidence": "observations/hub-user-selection.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-944",
+        "LIMAS-SUD-964",
+        "LIMAS-SUD-969",
+        "LIMAS-SUD-970",
+        "LIMAS-SUD-971",
+        "LIMAS-SUD-973",
+        "LIMAS-SUD-978",
+        "LIMAS-SUD-984"
+      ],
+      "change": "Wait for license loading placeholders to disappear. Register Hub network observers after the dashboard request to the same endpoint completes.",
+      "reason": "Live UI exposes animate-pulse license placeholders. Independent traffic shows dashboard size=50 with a date cutoff and Hub size=20 with empty cutoff; the old observer could capture the dashboard response.",
+      "assertions": "Original loaded-card counts and page=0, size=20, groupids assertions retained. One evidence stream failure is rerun as infrastructure failure.",
+      "evidence": "observations/hub-network-pagination.json"
+    },
+    {
+      "area": "User & License Hub runtime license data",
+      "change": "Read each visible card through its actual label/value siblings instead of guessing an ancestor by dimensions and parsing concatenated text with whitespace regexes. Wait for initial Hub traffic to settle.",
+      "reason": "Independent DOM inspection found separate Profile, Role, Maintenance, Expiration, Hardware ID and Assigned to labels with adjacent values. Two startup GETs can temporarily replace cards with loading placeholders.",
+      "evidence": "observations/hub-license-field-structure.json"
+    },
+    {
+      "area": "Hub search, filter and pagination controls",
+      "change": "Read Filters1 without requiring a text-node space; choose an observed populated group rather than the empty root group; scope email fields to actual cards; wait for rendered search results; match page-size options exactly; assert native button roles. Enter test now checks at most one new request and unchanged results per its plan. Remove unrelated cached-clear GET wait from search-value persistence setup.",
+      "reason": "Independent DOM and traffic inspection: badge has adjacent text nodes, root group has no users, Previous and clearing search reuse cached results, Enter does not repeat the request.",
+      "evidence": "observations/hub-search-pagination-runtime.json",
+      "assertions": "Explicit fresh-GET and no-debounce requirements remain unchanged and failures retained."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-996",
+        "LIMAS-SUD-997"
+      ],
+      "change": "Complete the original planned user-switching sequences, first-user auto-selection precondition, exact badge counts, return-to-original checks and no-additional-API requirement.",
+      "reason": "Review found the generated scripts tested only one switch or initial uniqueness and could falsely pass despite missing planned coverage. Requirements were restored without weakening assertions."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1110"
+      ],
+      "change": "Assert computed accessible name and description instead of requiring aria-label specifically.",
+      "reason": "Independent DOM confirms aria-labelledby resolves to Edit User and aria-describedby resolves to Edit user details.",
+      "evidence": "observations/hub-edit-user-accessibility.json"
+    },
+    {
+      "area": "Hub license setup",
+      "change": "No-op clearing and local card selection wait for actual settled UI instead of a request that is not sent. Preserve explicit request assertions in scenarios.",
+      "evidence": "observations/hub-user-selection.json"
+    },
+    {
+      "area": "Hub Add/Edit/Download license prerequisites",
+      "change": "Apply a profile observed on existing license data, then explicitly select a user from the filtered results. Keep the dedicated scenario that expects profile application alone to preserve selection unchanged. Downloads use the current test output folder.",
+      "reason": "Live UI resets the selected user after profile filtering; clicking a filtered user then enables Add License. Previous setup chose a possibly empty profile and selected the user before the reset.",
+      "evidence": "observations/hub-add-license-form.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1127",
+        "LIMAS-SUD-1142",
+        "LIMAS-SUD-1143",
+        "LIMAS-SUD-1148",
+        "LIMAS-SUD-1149",
+        "LIMAS-SUD-1157"
+      ],
+      "change": "Wait for restored UI after cached clear/reset; register search response wait before typing. Reopen the filter dialog to inspect the selection after Clear applies and closes it.",
+      "reason": "Independent UI shows Clear resets All Profiles and closes the dialog. Restore-only scenarios do not require a new network request; explicit request-contract tests remain unchanged.",
+      "evidence": "observations/hub-license-search-clear.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1127",
+        "LIMAS-SUD-1143",
+        "LIMAS-SUD-1157",
+        "LIMAS-SUD-1154",
+        "LIMAS-SUD-1180"
+      ],
+      "change": "Poll the actual restored card count through the debounce; establish an active profile before testing its removal; verify the cleared profile query value rather than URL-key omission. Await the actual download event instead of a fixed two-second delay.",
+      "reason": "Independent settled-state probe restored all 187 licenses after clearing. The original Clear Profile setup had never applied a profile. Existing successful download scenarios prove asynchronous completion can exceed two seconds.",
+      "evidence": "observations/hub-license-clear-settled.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1191",
+        "LIMAS-SUD-1194"
+      ],
+      "change": "Check the actual common toolbar div above each tooltip span, and wait for the applied All Profiles UI reset rather than a cached request.",
+      "evidence": "observations/hub-license-toolbar-structure.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1001"
+      ],
+      "change": "Select an actually visible card at a runtime scroll offset, remove swallowed selection errors, and verify selected state plus unchanged scroll and no API calls. Soft-assert the original first-user auto-selection requirement so the independent scroll check still runs.",
+      "reason": "The generated test selected off-screen card 0 when no user was selected, causing Playwright itself to scroll back to the top."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1218",
+        "LIMAS-SUD-1220"
+      ],
+      "change": "Close any open profile/role listbox before closing the license dialog, and await the dialog disappearing before restoring page filters.",
+      "reason": "The test assertions passed, but teardown pressed Escape once, closing only the dropdown; the remaining modal made the background search input inaccessible."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1236"
+      ],
+      "change": "Verify document.activeElement remains inside the dialog after every Tab, including native date-input internal segments.",
+      "reason": "Independent keyboard inspection shows native date inputs can remain active inside the dialog while the CSS :focus descendant count is zero.",
+      "evidence": "observations/hub-add-license-focus.json"
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1229",
+        "LIMAS-SUD-1230",
+        "LIMAS-SUD-1231",
+        "LIMAS-SUD-1232",
+        "LIMAS-SUD-1233"
+      ],
+      "change": "Skip teardown when a mutation gate skipped setup before the page object was created.",
+      "reason": "Skipped mutation scenarios were incorrectly converted into failures by accessing an undefined page object in afterEach. The mutation gates remain unchanged."
+    },
+    {
+      "area": "Authorized Test User approval follow-up",
+      "ids": [
+        "LIMAS-SUD-151"
+      ],
+      "change": "Use the exact selected request, verified inline-form locators and required settings; capture the filled form, API response and subsequent UI; disable automatic retries. After the failed execution, narrow the response observer to PUT /limas/api/users and correct the history control to switch.",
+      "reason": "User requested an actual approval for Test User and allowed choosing the settings. The original skip was caused by absent mutation settings. The live role control has no associated accessible label; the API creates a user before attempting the update.",
+      "verification": "The one authorized submission failed in the application: POST /limas/api/users 201, then PUT /limas/api/users 500. Fresh navigation confirmed LR-15803 remains pending and Test User has 0 licenses. Final observer/history locator adjustments passed TypeScript checking but have not been rerun because approval must not be repeated automatically.",
+      "assertions": "Successful approval, pending-count decrease and HTTP 200 expectations retained. Failure has not been converted to a pass."
+    }
+  ],
+  "updatedAt": "2026-11-25T20:13:46.166Z"
+}

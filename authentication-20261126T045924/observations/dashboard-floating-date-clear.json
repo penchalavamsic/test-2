@@ -1,0 +1,19 @@
+{
+  "at": "2026-11-25T17:56:37.031Z",
+  "count": [
+    "0 loaded · 0 total licenses"
+  ],
+  "initialValue": "",
+  "requests": [
+    {
+      "path": "/limas/api/flicense/ex/January%2024%2C%202027/67",
+      "status": 200
+    },
+    {
+      "path": "/limas/api/flicense/ex/December%2025%2C%202026/67",
+      "status": 200
+    }
+  ],
+  "afterSet": "2027-01-24",
+  "afterClear": ""
+}

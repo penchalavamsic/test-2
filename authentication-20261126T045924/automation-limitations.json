@@ -1,0 +1,16 @@
+{
+  "updatedAt": "2026-11-25T16:50:46.652Z",
+  "items": [
+    {
+      "ids": [
+        "LIMAS-SUD-138",
+        "LIMAS-SUD-141"
+      ],
+      "area": "Dashboard approval calendar",
+      "observation": "The deployed inputs are native date controls. Existing scripts look for an in-page MUI/dialog/grid calendar.",
+      "review": "Date entry works after correcting ISO serialization. Opening and selecting through the browser-native popup requires a native UI check.",
+      "blocker": "Both available native UI helpers failed to start: The directory name is invalid (os error 267), including a reset and retry.",
+      "status": "Existing failed results retained; not classified as an application defect or a pass."
+    }
+  ]
+}

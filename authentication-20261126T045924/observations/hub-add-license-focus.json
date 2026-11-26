@@ -1,0 +1,172 @@
+{
+  "states": [
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Select profile",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "expirationDate",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "expirationDate",
+      "inside": true,
+      "cssFocus": 0
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "maintenanceDate",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "maintenanceDate",
+      "inside": true,
+      "cssFocus": 0
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "text": "Cancel",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "text": "Save",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Close",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Select profile",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "expirationDate",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "expirationDate",
+      "inside": true,
+      "cssFocus": 0
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "maintenanceDate",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "maintenanceDate",
+      "inside": true,
+      "cssFocus": 0
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "text": "Cancel",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": null,
+      "text": "Save",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Close",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": null,
+      "text": "",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "BUTTON",
+      "type": "button",
+      "text": "Select profile",
+      "id": "",
+      "inside": true,
+      "cssFocus": 1
+    },
+    {
+      "tag": "INPUT",
+      "type": "date",
+      "text": "",
+      "id": "expirationDate",
+      "inside": true,
+      "cssFocus": 1
+    }
+  ],
+  "final": {
+    "tag": "INPUT",
+    "type": "date",
+    "text": "",
+    "id": "expirationDate",
+    "inside": true,
+    "cssFocus": 1
+  }
+}

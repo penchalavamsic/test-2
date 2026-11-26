@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-25T17:04:06.385Z",
+  "extendButtons": 97,
+  "oldEmailLookup": 0,
+  "cardEmailLookup": 56,
+  "structure": [
+    {
+      "tag": "DIV",
+      "class": "min-w-0",
+      "childTags": [
+        "P",
+        "P"
+      ],
+      "paragraphCount": 2,
+      "spanCount": 0
+    },
+    {
+      "tag": "DIV",
+      "class": "",
+      "childTags": [
+        "DIV"
+      ],
+      "paragraphCount": 0,
+      "spanCount": 0
+    },
+    {
+      "tag": "DIV",
+      "class": "space-y-0.5",
+      "childTags": [
+        "DIV",
+        "DIV"
+      ],
+      "paragraphCount": 0,
+      "spanCount": 4
+    },
+    {
+      "tag": "DIV",
+      "class": "min-w-0",
+      "childTags": [
+        "P"
+      ],
+      "paragraphCount": 1,
+      "spanCount": 0
+    },
+    {
+      "tag": "DIV",
+      "class": "",
+      "childTags": [
+        "BUTTON"
+      ],
+      "paragraphCount": 0,
+      "spanCount": 0
+    }
+  ]
+}

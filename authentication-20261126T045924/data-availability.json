@@ -1,0 +1,77 @@
+{
+  "updatedAt": "2026-11-25T16:25:07.904Z",
+  "policy": "Skip scenarios requiring absent data; continue page, navigation, empty-state and form checks. Skips are not passes.",
+  "observations": [
+    {
+      "tab": "Floating License Configurations",
+      "groupsInspected": 304,
+      "configurationCount": 0,
+      "source": "Deployed usergroups response and rendered group configuration views",
+      "affectedScenarios": "Existing configuration cards, selection, details, edit and delete",
+      "status": "No configuration data returned to the management tab",
+      "note": "Reports separately shows 142 active Floating Configuration records. The group-data versus report-data discrepancy is recorded; this does not justify skipping Reports."
+    },
+    {
+      "tab": "Profiles",
+      "status": "Data present",
+      "visibleProfiles": 72
+    },
+    {
+      "tab": "Reports / Standard Licenses / Active",
+      "status": "Data present",
+      "records": 4639
+    },
+    {
+      "tab": "Reports / Floating Configurations / Active",
+      "status": "Data present",
+      "records": 142
+    },
+    {
+      "tab": "Reports / Floating Configurations / Deleted",
+      "status": "Data present",
+      "records": 183
+    },
+    {
+      "tab": "System User Dashboard / Pending License Requests",
+      "loaded": 1,
+      "total": 1,
+      "observedAt": "2026-11-25T16:20:30.562Z",
+      "source": "Independent live UI inspection, observations/dashboard-role-label.png",
+      "affectedScenarios": [
+        "LIMAS-SUD-128",
+        "LIMAS-SUD-129",
+        "LIMAS-SUD-133",
+        "LIMAS-SUD-134"
+      ],
+      "status": "Insufficient records for incremental-loading and two-row scenarios; other pending-request cases continue."
+    },
+    {
+      "tab": "System User Dashboard / Extension success and submission",
+      "observedAt": "2026-11-25T17:23:17.117Z",
+      "status": "Dedicated mutable license fixture not configured",
+      "source": "Runtime configuration keys and scenario preconditions",
+      "affectedScenarios": [
+        "LIMAS-SUD-623",
+        "LIMAS-SUD-625",
+        "LIMAS-SUD-626",
+        "LIMAS-SUD-627",
+        "LIMAS-SUD-628",
+        "LIMAS-SUD-629",
+        "LIMAS-SUD-630",
+        "LIMAS-SUD-631",
+        "LIMAS-SUD-632",
+        "LIMAS-SUD-633",
+        "LIMAS-SUD-634",
+        "LIMAS-SUD-638"
+      ],
+      "note": "UI field and validation checks continue. Failure scenarios use an explicitly documented intercepted HTTP 500."
+    },
+    {
+      "tab": "User & License Hub",
+      "status": "LIMAS-Root-Group has no users or licenses",
+      "source": "UI filter inspection",
+      "note": "Group-dependent read-only tests select a populated group observed on an existing user card, rather than assuming the first group contains data.",
+      "evidence": "observations/hub-search-pagination-runtime.json"
+    }
+  ]
+}
