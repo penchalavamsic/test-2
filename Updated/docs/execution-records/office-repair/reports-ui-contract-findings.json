@@ -1,0 +1,212 @@
+{
+  "observations": [
+    {
+      "area": "Date clear",
+      "observed": "Clearing the final date input restores unfiltered data without a report network request.",
+      "affectedIds": [
+        1566,
+        1568,
+        1570,
+        1572,
+        1574,
+        1575,
+        1576
+      ],
+      "expected": "Reviewed plans require a fresh report POST.",
+      "nextAction": "Confirm caching versus the required request contract; retain failing assertions."
+    },
+    {
+      "area": "No-result state",
+      "observed": "No-result date produces zero records and removes table headers.",
+      "affectedIds": [
+        1581
+      ],
+      "expected": "Reviewed plan requires visible column headers with no rows.",
+      "nextAction": "Application change or explicit requirement revision."
+    },
+    {
+      "area": "Next-page error",
+      "observed": "Browser-only 500 simulation hides the previously displayed table.",
+      "affectedIds": [
+        1524
+      ],
+      "expected": "Existing rows remain visible after a failed next-page request.",
+      "nextAction": "Correct application error rendering; retry assertions remain pending beyond this first failure."
+    },
+    {
+      "area": "Report announcements",
+      "observed": "No main-content aria-live or status region exists; the only live region is the global notifications area.",
+      "affectedIds": [
+        1525
+      ],
+      "expected": "Report row-update announcements.",
+      "nextAction": "Add report-specific status announcements."
+    },
+    {
+      "area": "Deleted Standard Licenses filtering",
+      "observed": "The view fetches all deleted rows in pages of 500, renders a window of 100 rows initially, and filters email locally without a new report request. Counts are runtime values.",
+      "expected": "Several reviewed tests expect server POST filtering or server requests on scroll.",
+      "nextAction": "Retain network assertions and document contract mismatch; correct independent load/selector errors."
+    },
+    {
+      "area": "Standard export errors",
+      "observed": "Excel is built in the browser after JSON page requests with size=500. Controlled 403,500,empty,invalid JSON,aborted request,and truncated JSON scenarios passed without downloads or unhandled errors.",
+      "affectedIds": [
+        1633,
+        1634,
+        1635
+      ],
+      "nextAction": "Keep route fixtures; never simulate outages on the live backend."
+    },
+    {
+      "area": "Deleted export scope",
+      "observed": "The runtime Deleted export matched all 2235 source rows by exported identity fields and duplicate multiplicity. Literal undefined contacts are rendered as dashes by the deployed code. Eleven source records have no deletion date; this alone is not evidence of Active data leakage.",
+      "affectedIds": [
+        1626
+      ],
+      "nextAction": "Keep runtime dataset comparison; do not restore the unsupported fixed-column or mandatory-date assumptions."
+    },
+    {
+      "area": "Zero-result Excel export",
+      "observed": "An empty export opens as a workbook but contains no header row.",
+      "affectedIds": [
+        1623
+      ],
+      "expected": "The reviewed plan requires a header-only workbook when no rows match.",
+      "nextAction": "Application export should explicitly supply headers for an empty dataset."
+    },
+    {
+      "area": "Mode filter persistence",
+      "observed": "After an email filter is applied, switching to Deleted clears its displayed chip, but returning to Active restores it even after report requests settle.",
+      "affectedIds": [
+        1591
+      ],
+      "expected": "The reviewed plan requires each mode switch to load without the previous filter.",
+      "nextAction": "Confirm the desired filter-reset behavior and correct the application if the reviewed expectation is required."
+    },
+    {
+      "area": "Late mode response",
+      "affectedIds": [
+        1602
+      ],
+      "observed": "Passed: a controlled late Deleted response did not replace the visible Active row count or row fingerprints.",
+      "nextAction": "Keep the controlled response fixture and rendered-data assertions."
+    },
+    {
+      "area": "Mode loading indicator",
+      "affectedIds": [
+        1604
+      ],
+      "observed": "Failed: no matching loading indicator appeared during the 30-second assertion while the Active response was held in the browser. Final rerun had no route-handling or global fixture errors.",
+      "expected": "A loading indicator remains visible while the report response is pending.",
+      "nextAction": "Confirm the loading UI requirement and correct the application. Retain the assertion."
+    },
+    {
+      "area": "Floating Deleted filter inventory",
+      "affectedIds": [
+        1688,
+        1694,
+        1696,
+        1704,
+        1732,
+        1734
+      ],
+      "observed": "Independent inspection of the fully loaded Deleted Floating Licenses panel found Hardware IDs, Expiration Date and Deletion Date. Email, Product Profile and Profile Role are absent.",
+      "expected": "These reviewed scenarios require the missing Email/Profile/Role controls.",
+      "nextAction": "Retain failures and resolve the required filter inventory with the application owner."
+    },
+    {
+      "area": "Single-filter Clear all",
+      "affectedIds": [
+        1664
+      ],
+      "observed": "The email chip appears and its Remove button works. Clear all is absent after re-adding a single email filter; multi-filter Clear all works.",
+      "expected": "The reviewed email-chip case requires Clear all for a single filter.",
+      "nextAction": "Confirm whether Clear all should be available for one filter; preserve the assertion."
+    },
+    {
+      "area": "Floating report scroll owner",
+      "affectedIds": [
+        1710,
+        1712,
+        1716
+      ],
+      "observed": "The table wrapper expands to its content height; the document owns the vertical scrollbar. Deleted data is fetched up front while only a window of rows is rendered.",
+      "nextAction": "Use the actual scroll owner for UI scroll checks. Preserve reviewed network assertions separately."
+    },
+    {
+      "area": "Floating workbook verification",
+      "affectedIds": [
+        1727,
+        1733
+      ],
+      "observed": "Passed after correcting the script to accept the reviewed 31-character sheet-name limit. The full workbook contains eight required columns and all 25318 runtime source rows; the filtered export count also matches.",
+      "nextAction": "Retain exact row-count and schema checks."
+    },
+    {
+      "area": "Configuration Clear counts",
+      "affectedIds": [
+        1787,
+        1791,
+        1795
+      ],
+      "observed": "Initial Deleted view shows 100 loaded of 183 total. Clear resets the rendered window to 50 while total remains 183, including after an independent 2.1-second settled check. Filter application itself works.",
+      "expected": "Reviewed Clear scenarios require restoration of the initial visible-row count.",
+      "nextAction": "Resolve visible-window reset behavior versus the reviewed restoration expectation; no total data loss was observed."
+    },
+    {
+      "area": "Configuration selected-mode cue",
+      "affectedIds": [
+        1745
+      ],
+      "observed": "Selected and unselected controls have the same font weight, border width, outline, shadow and icon count. aria-pressed works, but the visible selection cue is color only.",
+      "nextAction": "Add the reviewed non-color visual cue."
+    },
+    {
+      "area": "Configuration controlled errors",
+      "affectedIds": [
+        1760,
+        1764,
+        1774
+      ],
+      "observed": "Passed: two deliberate browser-only 500 retries preserve the card/mode, and a delayed Active error does not pollute Deleted mode.",
+      "nextAction": "Keep these fixtures enabled; they do not alter the live backend."
+    },
+    {
+      "area": "Configuration error heading",
+      "affectedIds": [
+        1761,
+        1778
+      ],
+      "observed": "Controlled errors display a paragraph with the error text. The reviewed named error heading is absent; the accessible-name assertion fails. Final runs have no global fixture errors.",
+      "nextAction": "Provide the reviewed error heading/status semantics."
+    },
+    {
+      "area": "Floating HTTP export scenarios",
+      "affectedIds": [
+        1739,
+        1740
+      ],
+      "observed": "The actual export uses loaded data in the browser and issues no HTTP export request. Therefore the reviewed hypothetical 401/500 interceptor is never invoked; these failures are not observed backend outages.",
+      "nextAction": "Agree a client-export failure scenario or an actual server-export contract. No permanent skip was substituted."
+    },
+    {
+      "area": "Empty Active fixtures",
+      "affectedIds": [
+        1705,
+        1722,
+        1723,
+        1737,
+        1738
+      ],
+      "observed": "Passed using explicitly annotated browser-only empty responses, after verifying the actual endpoint is healthy. Live Active data has 11 records and remains unchanged.",
+      "nextAction": "Keep empty-condition tests separate from real-data count tests."
+    }
+  ],
+  "source": "Local completed test evidence and independent read-only browser inspections",
+  "completed": false,
+  "officeFailureReviewComplete": true,
+  "currentReview": "current-failure-review.json",
+  "historicalObservationsNotice": "Earlier observations below are history; they may describe assumptions now superseded by the approved deployed-workflow baseline. Use current-failure-review.json and status.json for current dispositions.",
+  "manualExportPolicy": "config/manual-verification-cases.json"
+}

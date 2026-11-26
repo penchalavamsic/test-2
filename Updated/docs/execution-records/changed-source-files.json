@@ -1,0 +1,2150 @@
+{
+  "generatedAt": "2026-11-25T20:13:46.721Z",
+  "basis": "Comparison against retained pre-change source backups. This is not an exhaustive history of all files; listed changes are not automatically verified passes.",
+  "files": [
+    {
+      "file": "framework-tests/offline.spec.ts",
+      "beforeSha256": "af1bb9a83140e111a102f87719799a9afb414494cb8cf1c504382a001b97e8a1",
+      "currentSha256": "88878641144821b09b9a415e2b9eba7bb2ec78af2d37ddb710bb863613dc9513",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "framework-tests/report.test.cjs",
+      "beforeSha256": "3ad44cfa6f3e084a89524da5cedf558ead2e061a65fc72b2f126810ec636b413",
+      "currentSha256": "3edea5dcbaf964b68878ec396d2815984489f2d1b9683feb2246292b5a60c7f6",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "playwright.config.ts",
+      "beforeSha256": "7d32682ffc14793ac7d743e96009d121f3bf6af46692d80eff287531870bfa05",
+      "currentSha256": "ceb59aafe9034118187cac6aab64f973037c5bf20483943b2b02a8a178503120",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "playwright.offline.config.ts",
+      "beforeSha256": "c09908466b3390c1f18eca563d070848b32cce1ae01ff856f24918619f48d421",
+      "currentSha256": "1178ef01bf421bd93939d6aa5121653524aba5502bffa05dbab461426c98aca5",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append_rsl_a_xlsx.py",
+      "beforeSha256": "49ead46ef356924f7263d66533a97e4c893f329224d7d222f605d61a4eb2de59",
+      "currentSha256": "f020564d2fa4185a3a0bc9e72f48b623b4d8743f28d06cb8d6cc8ce3f660286c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append_rsl_b_xlsx.py",
+      "beforeSha256": "e18afff3614dc15b668a15eabf60f72f6f88546f2b05881dab3bdb608ea563d9",
+      "currentSha256": "71cb15d10da73f92dc3d0888b1c159b6b96fd065895bd2adfa6364703020255c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append_rsl_c_xlsx.py",
+      "beforeSha256": "3365ed03e031c4a33f80932fac728b52b096e059e7ac2dd88d97effdc581d43f",
+      "currentSha256": "def75dbbfe238b38656bdbac3ad417f521922ef8311682db5e84247f2565c9c6",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append_rsl_d_xlsx.py",
+      "beforeSha256": "809b26cd20d124d08ad95c604a189443ab9b720a4b46a86676050bf5f1ab4eed",
+      "currentSha256": "d4c9c3583c3d519195fddc032ee14da25710a298c278b910d737294cc6e502bc",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append_rsl_e_xlsx.py",
+      "beforeSha256": "1184460c034505859a57c08c1f7a8754f114b5183d9763d9e8581056bd5db5b6",
+      "currentSha256": "76a7d517ad1edd10dac90821ce03bb141153c479b5f8203d7b5c7e0a563d4dc9",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-fl-a-checklist.js",
+      "beforeSha256": "6610c99f7749e402ba0a554b5dd913adbf473f5202b83051e2da4ee4987bfe6f",
+      "currentSha256": "7f9b0a75970894b8ff9383f69b6703debf3f00d4c1f86d72afcc124098b6b816",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-fl-b-checklist.js",
+      "beforeSha256": "8f3ab56a2960ce6774e74aca9674fd26479de484488d6b05433bc84b56fed9b7",
+      "currentSha256": "9a5b44b54332019227be93280a25fd1186595040e819d00b1cda0c987edd2216",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-flc-d-checklist.js",
+      "beforeSha256": "66bedddb7d8e0e1c15a863b39f4bf0fe1fe29c5370cb0432174379e7077d906c",
+      "currentSha256": "793451ee9909b1001a5580ade7433b39c5695ac38576c326451101608de27996",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-flc-e-checklist.js",
+      "beforeSha256": "7c209d028fa37a67abfd644dca3609d6709804b3224081b492267a162d2f365d",
+      "currentSha256": "8e570fc9b48629218f54d69b57cae33c84b6ac1126f9a80f0c5275fbd9a3baa8",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-flc-f-checklist.js",
+      "beforeSha256": "9f00026c713290cac7b4b5e88c6744c4492cf49e1c0d70544b564cea8d323ba4",
+      "currentSha256": "381ee57c6e93d3b1af47a04a650ff20bfa5233788ed462c7983e10059af9597a",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-flc-g-checklist.js",
+      "beforeSha256": "fcbc41d77acc5466fc352ff4180058962a035f0f82d492fd89d010aa77dbd8ae",
+      "currentSha256": "f6231be0fa3dd91073980987ba054d2662712a000d721057de6628cc2a4ac545",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-flc-h-checklist.js",
+      "beforeSha256": "10175972ffe31cd868e6acfd41e7ac44e987db80b20084b2126ce181c01032cf",
+      "currentSha256": "697da812376a51a5bbc87e71ae5ae4a3151290ca40979cb75769e99f96dc24a3",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-a-checklist.js",
+      "beforeSha256": "c7643305e709872e02e60e22775d4233ea7666e5bdf227db0e94042ab1c07f37",
+      "currentSha256": "4d6c290799f008f946bda7806848c4a27334b0949e78434dc310ee244a4e5890",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-b-checklist.js",
+      "beforeSha256": "916c9977938c5801daede4e60b3a1262735b3bc3928eba608cfd24b982563e16",
+      "currentSha256": "1aee6125aab643d4fd3b9bde97e9d10ca8ae2d3c85f3028bd37d895a3cba453a",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-c-checklist.js",
+      "beforeSha256": "c5dbdd473c0a4f67052f3208be4e261d034d9b5b7e63dde22c0fe14bf5558186",
+      "currentSha256": "ce374b7d8a3202a2eff512ad64cfe3372eb5518f08b45b76b22cffad373fd715",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-d-checklist.js",
+      "beforeSha256": "8659d18c6eea28431448c77ab5178062663419fb748cc3c4bdebe1a2261a5bc0",
+      "currentSha256": "a8affdb3ea3cdf113dd8a0ac1ce3479755f4aa894f66268c3f1f548dc6dbccf0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-e-checklist.js",
+      "beforeSha256": "5d6c42131d7a181bf4c18e35749e1a6d9ccceaf3f047e1a29845b57a48b48e66",
+      "currentSha256": "f6cc8982f6f4c2c158a06c3ad82ff7de8ff0a1b9be3f3c605f1b645a9ef317fd",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ftr-f-checklist.js",
+      "beforeSha256": "b834eabffb3444a2a4a2e60cf53285d0c48249ad19b57a6150745a39685eea97",
+      "currentSha256": "d95a0c4140189d1fdfea03067138af972d5ce1f6003356709c46c249a3a3570a",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-prf-a-checklist.js",
+      "beforeSha256": "9cc7d9e2f636749e0d089f9422d9d9ebb5489bc53222ff46ae1bda1ee291b3df",
+      "currentSha256": "0c50f190c20a65d9b0412468210c5d84fec092897af4c61570ca37a524a9b9d3",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-prf-b-checklist.js",
+      "beforeSha256": "f51b00e13021e4d1a7b240724b6c22e43efc6d66a8b93f35ea14663931dfa7d8",
+      "currentSha256": "85a655779085a4c2defa469f8601e5e2415decc0e3ad46975fea653617b50a07",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfc-a-checklist.js",
+      "beforeSha256": "cd02fb646ec292acb36d658bf2b86203a3d5da143bb0fbd7eaaf6f4d2eae923e",
+      "currentSha256": "8978616c2e2a1884f36258d64f1fc09bf74e7608e159270a05f174bcc11a3f54",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfc-b-checklist.js",
+      "beforeSha256": "bff057ef12b83608ee428cfe233ffdb87199c0b800a57eb5596db1a4de2a9ebc",
+      "currentSha256": "a551d2e9af1a0bbe9d81ac2cfaf1fa5533d0731b5bc4a8e70c6e5b83c9123532",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfc-c-checklist.js",
+      "beforeSha256": "2228f8bc38c265f34a6d5f22c79d0336944e765dc8ed4e58be7138fb87c460a7",
+      "currentSha256": "8b03912466d0b2f58d8f14e1e76dd25715d32ab83b6a9c0398e330244708ea66",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfl-a-checklist.js",
+      "beforeSha256": "caa9480fd2204a6d002d975de0d07cad0a5ef134fdd1d1d9daf79d9258d5b00e",
+      "currentSha256": "ea9402fea980bc1b2db07499922fe6e47d0031dbbbd297821adc1042fc86cc0d",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfl-b-checklist.js",
+      "beforeSha256": "00dafb252614440fb4d973bdf8c0989ee383b6168b27d9eda69db6afbb99c452",
+      "currentSha256": "6f14cc7ace2b19bba604e9b121671ecc210cb18ab04225867fd656f7579dcd87",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfl-c-checklist.js",
+      "beforeSha256": "9cd8649ba852fd1caba935fded870b47b39fb0b8bf9cffc43a4ff85c05a36ca0",
+      "currentSha256": "7103574be4cc42f2ecbb6dde2e9d96680b49298962599542eb20fa63f3e8ff86",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfl-d-checklist.js",
+      "beforeSha256": "8896f16a1661ef90aa7e68cb1abd3ba3d27d8c643dccadcaed12881ea75802b7",
+      "currentSha256": "2dab2b68bb109529f25ef59a1d8e1238d9d99d3981e461878117dcdbd35320d0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rfl-e-checklist.js",
+      "beforeSha256": "8c773e0eea7a6b937e013712f5454a615d0cf1f1b8e9267cb7d8d4f596c8caae",
+      "currentSha256": "60e7fad85fbee64c81f769dbcc52020dd5375d933d44935f32813b3a9b657160",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-rsl-f-checklist.js",
+      "beforeSha256": "58b0e49b623ec71c2cd726cd5dd6796f3cba7fc6fb37fa32a9c947a53a5194d7",
+      "currentSha256": "56fb92072dbdf0682546cde991582325d501f9b90403db4a276c6e86933ee9ae",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-slc-a-checklist.js",
+      "beforeSha256": "9790b3463f6f9fa564faae679e52fa5881d4ef2304d31c03be990a5f1983f0ce",
+      "currentSha256": "778f101313faa2f0fda15a904f8d612d34090f92543f28cd59928133d3bfb413",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-a-checklist.js",
+      "beforeSha256": "eefb0d205cbac573fbc869f70775710f56c9d602c17cce3e78a898a116748e35",
+      "currentSha256": "54376c1638e731b7e3e5bebba7d938fd57d55f0e54ae49581676c03d403a2499",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-b-checklist.js",
+      "beforeSha256": "8985cc6546939b7a294fd1a1068392cf47c018c287b233177df77a365484f425",
+      "currentSha256": "93d2a75a26b29544d6a25ff45bb22b5156d4ec35f9e1b6e40d9cee9e209de201",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-c-checklist.js",
+      "beforeSha256": "117816d576c828749dc8a3be1c42400828e719e3467819cf97a9ac7c21989d7c",
+      "currentSha256": "d59cd42ab45e637675d53c53ca82f41135c32112e60c482b0e46730b1bac8b1c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-d-checklist.js",
+      "beforeSha256": "e27bcb875093615602190c0b9a163de8b9c88eeae3c38a16b2aa74852db73a55",
+      "currentSha256": "7d3326d9255c3472697e18b672c99d1d40f16c2fcb5f4580c52c993a79b10adc",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-e-checklist.js",
+      "beforeSha256": "6aa38e98966872992e6763e8f00b3570700cda4c950e294c378777e63cb5f937",
+      "currentSha256": "75748f77dfc057c1dfc0e664ee02ef338a9c68a59f0268456c8f802f8a644c8e",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/append-ulh-f-checklist.js",
+      "beforeSha256": "043ced55ad055ed226d7e67baac40773f3d86778e8096f644ce8721bfbb6391b",
+      "currentSha256": "7804947273c8b2b7fa130ca39bfd4fe16e7eaccccc51f49cd301a4ac4dfcd368",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/build-review-package.cjs",
+      "beforeSha256": "2ac3d427aa737f6424fa18e772b8a189e93dc6786fdd6e40d839a9662a3e3757",
+      "currentSha256": "9ddabaf3cbff5c59485039ac1a8c73f10d53d1c89675a6301b35edab4ab8a8a6",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/build-shareable-report.js",
+      "beforeSha256": "67d2072f01a62a335ac5247e9f7ead98d7fc3d6a520ad522a885cec07667f42f",
+      "currentSha256": "5787648d48b847b57aead640be9729e761e40ec2b93a7a01ea3513dea293f989",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/check_xlsx.py",
+      "beforeSha256": "49a450f10b419ecab84edc6a887a5c005d05ebacf8383b9a2b324677bf22ed08",
+      "currentSha256": "c7a03e387e371478ddc174fe21348723cccee61ef37804a6fbea05d569977bdf",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/color-checklist.py",
+      "beforeSha256": "900b5438f06c2b38c6f35545568a0f974d1583f648e2e19ec94c0e6083ca8f9d",
+      "currentSha256": "83f69f469bf290e9b473118464ec680426c2193cbbf5c60214b3603b2c85bd67",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/color-how-to-use.py",
+      "beforeSha256": "f116f88877499de3e0b313e1c55726af9b189f9a8927119b092016b8e9f8537c",
+      "currentSha256": "c1c8c54cb6ac4b03f5910a37260a3b364bf70b416b1cf830de885502fa679c23",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/color-summary.py",
+      "beforeSha256": "f8191ed3288f93f9cd98e3b5b9b7e6e48b80e27552b1731c67adb6d9dea1ee3e",
+      "currentSha256": "79b5ec979efd159dccb43f170a69e0a0c5da9a5ff53e6e37db82c6f8e334d31a",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/fix-hidden-grid.py",
+      "beforeSha256": "3486f29eb6a47475a4de07c4fbab7174ba3076d118db8e9e25704d7e1ed7c214",
+      "currentSha256": "64b15a612e5b0e062665b080cd23bf5db2c6cce62e6329bd55fb3a31c473ef6c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-flc-e-plans.js",
+      "beforeSha256": "d1e910c2a011b25616473daa49b801b40e513032c2fea6c5a2c4ae8a65b2c251",
+      "currentSha256": "459679cc81551a4976164caa87683e20c6ece900639bdee668d205bba5f3113a",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-flc-f-plans.js",
+      "beforeSha256": "cefc59db59dccec3bac0ffe2ac489f7fcd6309c3062681cd821b6715ace50c9b",
+      "currentSha256": "9b7b41c0b3b61722e9b9097d416e1f80021981f26c3711f61b866049e8280e45",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-flc-g-plans.js",
+      "beforeSha256": "f6b8e6ad32cb49ab9be32e99e65f7f558a89fe742a7b1968d3d6bc201baf3c78",
+      "currentSha256": "9d28d8b1939150a8fbb02e26578fbd9fd24306186b3511f538317a10ed3e678f",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-flc-h-plans.js",
+      "beforeSha256": "62b5d85228248cdda317ced581e113105fc11c5f4e575a407ea6d0ebe47e5403",
+      "currentSha256": "c9303b30046f27ce765c8453f0c965b99593aa2bf8765defbcdd0112ec2b0cb5",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ftr-a-plans.js",
+      "beforeSha256": "738ba0965b9da8ae336aeecfd70b2a64bac99dd6b2172ae928f27f8edcb9032f",
+      "currentSha256": "aff7ec2748542aa5cdb2e24e6fc2bfcdac0c35d4ee2092a8cb40fa7fab119e12",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ftr-e-plans.js",
+      "beforeSha256": "7a3d88b32e3327b918fdf86cef6d435fd2961b9f69f5269ad597ff7533cb0e32",
+      "currentSha256": "03a9599c66dd9bc0058a33e4d250f34594db381ca87035a018166d80c5c666d7",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ftr-f-plans.js",
+      "beforeSha256": "bed7d21c6dd31fd7a061af0e1a84873f5cf0a2a8ca671a600a1f171783e1de62",
+      "currentSha256": "a5f896e3cde5b477cc29bfda5f5ba2fc0b65d942fab411b3cf523f6286d95b24",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-prf-a-plans.js",
+      "beforeSha256": "f91a5a31103fd33ab28992e04cedbb28918b82f71149e3c3dc6e31fccc4c0218",
+      "currentSha256": "b4500fbf8b5f5eb2a9dfc2f6f2fd493501bc758238b811d363f6665e8eed5cdf",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-prf-b-plans.js",
+      "beforeSha256": "1e51c3e3ee3de32a84b4c5ad301c63684484402f7ade004036c2be34eb5cedd7",
+      "currentSha256": "9b89320359c22dd004eeda3db6a6d4b656e6584434dcc422c614481c592d1508",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-prf-g-plans.js",
+      "beforeSha256": "03b7cc4e1194fb4c6939c328104db9058731a395cedd9d5164527050423423d4",
+      "currentSha256": "07cead07645737dceff7cb5df2f591979e52a660a16180563df255502130d1ff",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-slc-a-plans.js",
+      "beforeSha256": "b2ca6544520078afea2f82bfc33982dc26a5345e668b90d6270a8aa3effa5546",
+      "currentSha256": "9eb3f5b564b1ec1ce324ad5ef75560e4614ab36a659adf6520d066867423e0c7",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ugr-a-plans.js",
+      "beforeSha256": "7244165604a53227a9b17475f300865a435c84ed8691f89fb7e241e879f39735",
+      "currentSha256": "fca680954df150d1a3e40b3d2ae2d61082eab363b1bf97f480b54e9c26ae2200",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ugr-b-plans.js",
+      "beforeSha256": "25d707f91d37af20c83aa846a0ea40a2287788fdbb4b75499ec245de3f6cc4d2",
+      "currentSha256": "765df5458d35651ad4b55b54e9403e9d712250f7646f2bc40107b9eafbea15e0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ugr-c-plans.js",
+      "beforeSha256": "a912034c83bf3459d5844ccd4a2ba48fbf99001f9897eb2165352ab0f1fe3024",
+      "currentSha256": "92e08a2b813f9fa77af2bae6d9475abda46a8abbad140cc91432d6c2c937d1c1",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ugr-d-plans.js",
+      "beforeSha256": "13f864e50873499228c3082a8bdee6abfd9452d7cc43c086301b601ab568ba55",
+      "currentSha256": "943672f423d59955233399e4e727cd0f63f99a1e4b72d0c325f338e2d17fd207",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ugr-e-plans.js",
+      "beforeSha256": "35b0eb4f63105b7a3392f0273929bdc487ef3bddc699212b0ffb440a819195da",
+      "currentSha256": "b85bee34595d670c4b8b4efba6ec5fbaef8afcbe855717c2fc6a477b6053c8c6",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/generate-ulh-f-plans.ps1",
+      "beforeSha256": "6b8f8a19a287ce76d9fadcc07a339ed91f0257e87b7e1447f9777e1c82cf5035",
+      "currentSha256": "1a7ae7e330d2465e35271ec2eb80245a5b0aef116817424026696156f49f06d9",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/inspect-how-to-use.py",
+      "beforeSha256": "b21a0b167ffda10f7b9b617aae6f561ac3b1ab30db7f6e846202993c383a5d7e",
+      "currentSha256": "ce75a863baab585ef05545d18301d58ab30a5adf1da5e6783d83b5110e03883f",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/investigate-blocked.py",
+      "beforeSha256": "95246239ff78ee9bdc92a9b790054bed142bf6e77485b85b78fbd025e6ae2d83",
+      "currentSha256": "7831e2395da70a9d67827a552ce16541077455fdcc23fb4e6803068e765d675e",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/lib/report-builder.js",
+      "beforeSha256": "c8f87535e3730b25104f5053e354e296aff58ff955e8d9a2ae9b90023b9ec2bb",
+      "currentSha256": "c0d8e07826127c41afb8d590d7643171506ce325237d74997179d62e1d776fcd",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/open-latest-report.cjs",
+      "beforeSha256": "de88634f27894e3a1c35f226c4e8cb5a15e5baf7316cdfaa7bda72c060d0d94e",
+      "currentSha256": "d59aaba6c98e8d1003d1c7d57b96a0b0a5cfb65a79120c20d4aa9aea069c06d0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/restore-summary.py",
+      "beforeSha256": "cd419db08218006f93be725dbbe2002a159cee7c10e1600ae691adf7a4007afd",
+      "currentSha256": "39c4c14d5ec2f773111e319e23a93038e77f4a02fa77d47da20918855831dc76",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/run-batches.cjs",
+      "beforeSha256": "dc400bdaa72fed0434aeea7af4ced2d7acd30c104bc2eba463ca22e27809492b",
+      "currentSha256": "1d22bd0859a733ea097054a44fde5923101141a247cc9b943380be2b5d0dfde3",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/validate_rsl_a.py",
+      "beforeSha256": "af2291231506443d08cf3d2c60419af947387c32bc31564dd91d618e1f6fa933",
+      "currentSha256": "ba2b05be0df8ec70810bdfdb9dc1c8c24f9da60cd6962bea5bdcffdcf4d5eb94",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/validate_rsl_b.py",
+      "beforeSha256": "61af9a6bd6e784e44fb1c3166679274c2760f5bd39f4ecd3768a5c1f42451cde",
+      "currentSha256": "22b5f6246da7c2d841210d3d8daf53af283c9cffcc67167ea25a3085c799fcb0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "scripts/verify-summary.py",
+      "beforeSha256": "cff76b3cb9fad09b304729f737aacdbedaf6c68b3cd5cae9cc8c2b7e469132ab",
+      "currentSha256": "61e1cfaa4a6907848b04983b3e0a7a4216f026c70c008581516164b94cddda27",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/check_attachments.py",
+      "beforeSha256": "95cb2a3aaf5a26a44e572a25ef81ce82a25866476cf30abfb29952ce82a77799",
+      "currentSha256": "f9153dfba8187429fea9b1841dd35384fa8d2b062c4c2be20c66e169c94386d3",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/inspect_results.py",
+      "beforeSha256": "457fa54fe8aa1459db4e415f976da309b2cb176249eddf9939427bc112d2b64b",
+      "currentSha256": "5dc38c0e3068bffd360340be8bc48b2caf7bf4b50c0860063afd26f4fa91c192",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/inspect_wb.py",
+      "beforeSha256": "0d3aac9999bbd13d79643d977b9421bf8ff4689dd410e614b43c1c3b1c73cf0c",
+      "currentSha256": "b8e25d5b0a1cae955560fdaa5568b4c7e5f5ea82bcbcfb3d8cd68a9b906a06cd",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/inspect_wb2.py",
+      "beforeSha256": "7b0c131c6d01129e0098767cbf82b51c7fd1b953f7f0cb515b8c7635861ea59f",
+      "currentSha256": "ece203d0aca651ac728f53a401dedd969da6b990ffc4d5a2da16022cefa78186",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/inspect_wb3.py",
+      "beforeSha256": "6a328f5369e50ede3a8081f893b3e565dc819bc0504ed2c84891a7297e6b9618",
+      "currentSha256": "eb8ee46fc8c1f618f27ea218a1c086d949607c994cc9a3f6de1ee06c4786fa10",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/inspect_wb4.py",
+      "beforeSha256": "039f1b4ba6c6d6897e329aaf29ece84496c93145c34796d78924ca8f244817e8",
+      "currentSha256": "3fa75473b20d9eadc035e2fa9e2bfbb97c06300590fd0d73d719f8b376fefcac",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/parse_results.py",
+      "beforeSha256": "539fa9a5bc88c35af5c888e20a546f37e42fb5f1e1ba855a8fea41fd1de6dc9e",
+      "currentSha256": "24292b186e85455c8849e0da2b4155f474bc1155809375e592e4458ba900e88f",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "temp/zip_inspect.py",
+      "beforeSha256": "1d4b81f0ec06947da7956c86ba720d062144c3a8b71863fb502ee624c20a8501",
+      "currentSha256": "010b59cb09f7028b62384c12777e036f64f6d5fc5200cdb47886babdbfd46cac",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-015-keycloak-password-visible.spec.ts",
+      "beforeSha256": "a4bebcf405ecc3898194968f7fca8d06172065d7d090464e5b077dfd0c44fbd0",
+      "currentSha256": "ad4744feab7619a2c81783907b5936a03e284b3dfce012f20832d07eef5418b4",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-016-keycloak-password-masked.spec.ts",
+      "beforeSha256": "2f6334412e12a29d1611ee637f6687d79b8e923d001ee0421d075265a664f2df",
+      "currentSha256": "db03e91c6276cd83d0bbbe13f5538bb758f3ad6bc470da105a3a669f8977aecc",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-017-keycloak-signin-visible.spec.ts",
+      "beforeSha256": "0aef4500b45071784ebafcd8f681a7b50e65694bd23c2f4e1f42a1e070823872",
+      "currentSha256": "5a58160230ca7652e733d412eb41855d87ece152c743723c0934c0b0ddae71a9",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-018-keycloak-signin-enabled.spec.ts",
+      "beforeSha256": "f2a8d925e25d05aad4320615cc2fb4d8f7adfd44ed3cd685f58dacf03abdab6e",
+      "currentSha256": "5bcfc36e56f9a1f0f7c1c19a7e96dca0a44e7aba07f5d746c07d29107fc17b1c",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-025-show-password-toggle.spec.ts",
+      "beforeSha256": "f2d4f3853b0b9c08760f9ae009bebe555bccf180e00d9ef298ca9703999e0f45",
+      "currentSha256": "f3f7cb39fee2eb228bd24df06391c92597994514e535cb5bcd8b5d508aa61d51",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-027-valid-username-valid-password.spec.ts",
+      "beforeSha256": "5068b24e9e29955558511cbcd098aa10757951e2683f3e81daf44f1d02ea3cde",
+      "currentSha256": "a8b020f70d5eef53213ae498725231cf8c6d7d34b031cdac25016eb595326d96",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-028-valid-username-invalid-password.spec.ts",
+      "beforeSha256": "8e808fa1acf434f3d80ab0df62eaa2448975fb564f7e6ea83d352c7e812156be",
+      "currentSha256": "ed582a175269677b9acb7f1dd9a3d0365cfe1782b8e9ca8c5a5a861e3ad0d0fa",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-029-invalid-username-valid-password.spec.ts",
+      "beforeSha256": "b457df31d834f7fff8794fc8ad78aecd1679cf1799f64dc0bad5edfe00366f30",
+      "currentSha256": "033f8ddcbc0c5a27f31fef15c6d53d01d335943af8ef86fc1d8bf6db01196574",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-030-invalid-username-invalid-password.spec.ts",
+      "beforeSha256": "186cb7482805c417aecaef8a979090b153690b1a7c958366200a594d51efe5c9",
+      "currentSha256": "ff7c03854574b84039a81718e44936bd35413e7113c32dfda0666fdc462297bd",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-031-empty-username-valid-password.spec.ts",
+      "beforeSha256": "ef452ce9030791aa72efe682fb98dd497e37a044a7c6892152556dcf26546b19",
+      "currentSha256": "3d2cc792b2edd4b8372f61637c1561c55f890e44abd63beabc116da4079f6a3d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-032-valid-username-empty-password.spec.ts",
+      "beforeSha256": "d931e24affeb1ce51ab333255a761ce15b7265000b300f440fe0af4a892dc21c",
+      "currentSha256": "95170be807fb2800a9fcfee78e5ea786bb9b5e6be349e27a6ed37b6609ef9ae1",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-033-empty-username-empty-password.spec.ts",
+      "beforeSha256": "a48c87b44b1e62c08c78976ca0c969b9846bfacaa07c82a9c646ff27032b8bf6",
+      "currentSha256": "1a164d6941696582b70f04bdd5d05e8f6fe9041c645b091cfa6bd40018b53f85",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-034-username-only-signin.spec.ts",
+      "beforeSha256": "e134d6ec20efbc2f31f60b60332d472173ed3edc239d962d0a921dfb1c2eb519",
+      "currentSha256": "f92a654c9085c8cd3223e78f953ca14c571387aa5abd8a48dcaec59d5953c941",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-035-password-only-signin.spec.ts",
+      "beforeSha256": "b96bf78c4f56728b8e489d92424f7c8fe4ed523317e74d3e1cfe1e46966cd40d",
+      "currentSha256": "868b25b1d023fbb0743c7c6014a5e44272e43a2450fda6088175f7df4b743b08",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-036-whitespace-only-credentials.spec.ts",
+      "beforeSha256": "29badcd4459a8348c10effa62f88acbbb8669e3b56645adab97728fe62eb3967",
+      "currentSha256": "b1d2ed206ade3ae3c52282217add71ea09baa98b7059c022c61405a34ed4470e",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-037-login-then-sign-out.spec.ts",
+      "beforeSha256": "0290598fd611d621ede06fc51bd626dd85e2bf035dd715764a766d6169968849",
+      "currentSha256": "314d3fc9890e4b10ebc38150d20ff7fb6d8de5cf4f617c91cefde24c957cc438",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-038-re-login-after-sign-out.spec.ts",
+      "beforeSha256": "7baf3c0360073597d23812805d86ed821551859361f40fe1e7804297c4e1adf0",
+      "currentSha256": "dc25d0a02868eaa8f799a58a093d7ca737953ec34e1963be9e91fc621146dfd4",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-039-five-cycle-login-signout.spec.ts",
+      "beforeSha256": "0846b5e1596effa610ef0fc83733225bcffe2c4628f2f44900d7d5719758f9f9",
+      "currentSha256": "ae56ef88f8603f1c85eb3ca54d5a08db7e08da58bdfe712d5ef8b1b593ab1254",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-040-protected-content-inaccessible-after-signout.spec.ts",
+      "beforeSha256": "5019ac106ad5794395f4de6b6b171bf0111414afc3eab0ca4cf0113a593979d3",
+      "currentSha256": "1456ba632215a4fcf12eff97ad89cbd49bec9aee98713d63c48421d2efd725e6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/authentication/LIMAS-AUTH-041-session-state-cleared-after-signout.spec.ts",
+      "beforeSha256": "7859ed2d78855fedbb04fefdbe71eb97923c34d841188fb135cd8bc2e9d0fb42",
+      "currentSha256": "05239e996b18ee1ea8c5738b9e0170782c2d3ac8202840edd714da596e5d34f8",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/features/features-add-child.spec.ts",
+      "beforeSha256": "4203667def934ae9fcfc9ea24bbb215f87e6e0dab5b275f91dce2a6d1e54048d",
+      "currentSha256": "fd10e600e54c9ea532babb5d5680a896ba9a85f7e31acf9830cae33e57046244",
+      "mappedCases": 25,
+      "latestResults": {
+        "Passed": 24,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/features/features-edit.spec.ts",
+      "beforeSha256": "10a8b3828e0dcf2386579310d5f6c5bfd217a7f7acbbf451f4bad8169f63d462",
+      "currentSha256": "527a024e2f405bf43648413f9c8c61db0b28d7c34b9a63f3df1633c567de7511",
+      "mappedCases": 27,
+      "latestResults": {
+        "Passed": 26,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/features/features-profiles-navigation.spec.ts",
+      "beforeSha256": "ded1a87fba1077eb7a7f7e7aa6a014957f0664b6c241f0058fbe19a2ea227df7",
+      "currentSha256": "fb38d8269339dc8cea71f4a49d6e7c290ff57f1790d5c45e831be45636ec5afe",
+      "mappedCases": 31,
+      "latestResults": {
+        "Passed": 31
+      }
+    },
+    {
+      "file": "tests/features/features-update-management.spec.ts",
+      "beforeSha256": "9be4d0e0ccedae61fb13af4e8c7a4719863e7f8ce2630f8997dc2d06934bf05a",
+      "currentSha256": "8be04dd33e748f9fd94a511d3448a97f6e9bf97fa1f608f5e88dd17e9783228c",
+      "mappedCases": 27,
+      "latestResults": {
+        "Passed": 24,
+        "Failed": 2,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/fixtures/evidence-test.ts",
+      "beforeSha256": "a7776b2c1d6b3c815165be26d39a3806b6e17fdda04fb3690f21e822d7ce481c",
+      "currentSha256": "6a8f7201ddf4a519952ad1ba092f4e0ca52d19dc414712306603b7ea755d9bcd",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/fixtures/observed-test.ts",
+      "beforeSha256": "498ff0da668df85d993bd9b19cb9c92dceed19421335b4f769b18177fdd5e427",
+      "currentSha256": "fac909ec36b308a57f816280bcff5907ddd97cedfefbd53e5e9d89c8d2396fc0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-bulk-actions.spec.ts",
+      "beforeSha256": "59bc32a373f6b547508147eb78a08f9423ce4ec2ddd3460dc18d3b55eda78bbf",
+      "currentSha256": "34d14df20e8d157f6f66756752d56fcede46bba4da359216c74d82726b93dd38",
+      "mappedCases": 28,
+      "latestResults": {
+        "Skipped": 26,
+        "Passed": 2
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-cards.spec.ts",
+      "beforeSha256": "50af75b091f49870cc64855bafab1b6f12b85a16e7c7e41868d8008c7602c5bb",
+      "currentSha256": "1fdd0a6836cccb78062d0b3850d7d78c6ea1b47abafee12df8de2fd55d883df7",
+      "mappedCases": 24,
+      "latestResults": {
+        "Skipped": 23,
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-create.spec.ts",
+      "beforeSha256": "70b9143ae45059df5fe91e31a60c76a8eb33d51dc3f65aa616efbd643aafb9dc",
+      "currentSha256": "e7f7d4f257a6685afd6e9aabdff480998c5dbe2e0d5f959149a897d29c052263",
+      "mappedCases": 29,
+      "latestResults": {
+        "Passed": 27,
+        "Failed": 2
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-delete.spec.ts",
+      "beforeSha256": "70e16e584d00a6e434f86b7a765e5ca88426f0fe42d51d66508292d35b2e4fa0",
+      "currentSha256": "8aac0063e6cb37c1b07241e55fb6f50e1f7b16f3fdd6055ec6c25c1feb65f644",
+      "mappedCases": 16,
+      "latestResults": {
+        "Skipped": 15,
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-edit.spec.ts",
+      "beforeSha256": "58b90d0c7ffe6b0215a0a224330e26a4b424321426246dfc89b09c9e48f174db",
+      "currentSha256": "e6fde323690030d29bc432e65e00864e99b32394b977b5279c9bd3ed7cc7f259",
+      "mappedCases": 25,
+      "latestResults": {
+        "Skipped": 25
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-group-selection.spec.ts",
+      "beforeSha256": "d55626a077c6b085e83a541c600d2c7222fc4a2af121963279a4ac6c0335f408",
+      "currentSha256": "f8ad29b99cb54ea03b4b73b4dea5c1aa4a82a789595ea70e00d85a635af3ff6d",
+      "mappedCases": 33,
+      "latestResults": {
+        "Passed": 32,
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-list-controls.spec.ts",
+      "beforeSha256": "d4e0a0fdda02b06a401d316583b8cd93760bbe5e0bad130eebaf33888e9aab4d",
+      "currentSha256": "0f7935a99ddcdf0e4f200a6e26b60635d4b6b58bccdfd5f1fde7209c2716cfcd",
+      "mappedCases": 24,
+      "latestResults": {
+        "Passed": 19,
+        "Skipped": 5
+      }
+    },
+    {
+      "file": "tests/floating-license-configurations/floating-license-configurations-view-details.spec.ts",
+      "beforeSha256": "6d2690c9a7dfcc485c440c5440285fada6c974d7f72ddbe9d898c6dc4400cdc9",
+      "currentSha256": "661219f92f21ce75a2ac2d6e937f4bc72db0c5f90965cd419693772d07257bcd",
+      "mappedCases": 22,
+      "latestResults": {
+        "Skipped": 22
+      }
+    },
+    {
+      "file": "tests/flows/expiring-licenses.flow.ts",
+      "beforeSha256": "81fa93a5b7e4dd8f330225f40387d1d475becb3c397c71b38691b3e33fc2de77",
+      "currentSha256": "17565fa9fb6a670bbe8b7b65f50d378d5a16eb94646afff89a0068d9043f6983",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/helpers/auth.ts",
+      "beforeSha256": "23b91744a16cd9a1b241679393e2b2f855ea8addacdd722f3c5e6e7b6ac587e3",
+      "currentSha256": "393e1b9259e8f27cdcaf8a996de41e9659a18b921b75b60868d96dc336b11db8",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/helpers/evidence.ts",
+      "beforeSha256": "c0fa4eeb2031a035058901bf342136b83910ba54969b6cb132f011e501bc1693",
+      "currentSha256": "a96ccf4cf5af5b6ad031091737f36f24d698d03a8465ac782986b0017686abc0",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/helpers/step-evidence.ts",
+      "beforeSha256": "5299f102c2d3dae2ffb976c98f84099d856ae6a18c47ed1ca721d204daaf175e",
+      "currentSha256": "1415b5209bf5f7714d2a23e09ca51a86cde28743f7f3407502a045da19eb0974",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/features.page.ts",
+      "beforeSha256": "fa32962c4bd09b228e67fe90bd7fd72233e860b27960d0f53cd41be66d7a0f82",
+      "currentSha256": "df2fa3dd453a7fe1c3efd8e03546dfb90d3a5c787b7f8229560dc682f640d403",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/floating-license-configurations.page.ts",
+      "beforeSha256": "53a698f2a0c09300726e5a5d611a6e6331912fa334c59f6aa935cc29c775b59f",
+      "currentSha256": "a4c4d30f6cd5624d5b378f63502a3c5f90f13f6bbd40f6a03af35d59e707fd1c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/login.page.ts",
+      "beforeSha256": "9e282a9f0ecdc35914e19971661ffc053b7c68e2e30bf0e5e66fd375798be810",
+      "currentSha256": "67fefb972ccf932b43bcc09db471515e042112ef3fe8d2fae3dbda9efa4d1e9e",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/profiles.page.ts",
+      "beforeSha256": "611c9a40f51dd3375844fe136ab003311a6d62ac64239b738e969a0c4770ed8d",
+      "currentSha256": "b81b7f3bc0f2010f81cec8e305e2f0074c4e427c81c0bde8dc1013e905ea897c",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/reports.page.ts",
+      "beforeSha256": "4bea4af6e1155348ab232a66bdd5aa69540b3c9a0c9932575706768fd9fa9c41",
+      "currentSha256": "f3b9633b03a6488bc8f503e1105bcff29b16ff6354292fc5c81d5a78c373c289",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/system-user-dashboard.page.ts",
+      "beforeSha256": "380ef46cbf2d7b9424bfafe2c6eebb631a4130096728e73d4d41b9af4aa88315",
+      "currentSha256": "68d92c8421697d2bf8cba7aeec7fd41b4e2e1df63a4b3af3707890d55ddd33a7",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/pages/user-license-hub.page.ts",
+      "beforeSha256": "b36fc2bd0c2cc6ee258c1510a16218af9174777fa9f3ce9e1508914f40e2a7a5",
+      "currentSha256": "198b9791d7db32a2fddc8102e471c2619117d866ed237b72a568843323d36ce6",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/profiles/profiles-edit.spec.ts",
+      "beforeSha256": "41ae8b36bca735dabdddb31c25c208e3099285c6644e440ebd1993f9ff1d24c4",
+      "currentSha256": "241a10632d151b0f5f621a07237ca733b5abf55195c4ade6f00eb8e55960bfd8",
+      "mappedCases": 27,
+      "latestResults": {
+        "Passed": 26,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/profiles/profiles-manage-features.spec.ts",
+      "beforeSha256": "7dcff34b07cf9fe5fbe2fd9ab75bd262a8a50f9c4e3fb52e7696ceeaeb1e37d7",
+      "currentSha256": "2d380b3bc417a587621d3000b95a2ee859333ae365477234566f967b3f3984ec",
+      "mappedCases": 28,
+      "latestResults": {
+        "Passed": 27,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/profiles/profiles-manage-roles.spec.ts",
+      "beforeSha256": "b485d81779e80a521c8d4cee4031f12bad6d48c99e300355d2e8e010a06c3d0a",
+      "currentSha256": "27460545cde42b44c4ee3bc87507233e13a24eba7a0304d76823a627d2e7c4e3",
+      "mappedCases": 42,
+      "latestResults": {
+        "Passed": 38,
+        "Failed": 3,
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/profiles/profiles-manage.spec.ts",
+      "beforeSha256": "27112d2058d9ee210b77036929aec14ace78d14899af8e6e4f5e31d199bb92ba",
+      "currentSha256": "3b6015440e4ce7bdb47496a19ad46c4674aafeac7a0d68ae605bcd7d20651be4",
+      "mappedCases": 24,
+      "latestResults": {
+        "Passed": 23,
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/profiles/profiles-search-sorting-cards.spec.ts",
+      "beforeSha256": "4ca47b1f6e597b4c683a398ccfc5758bd83bde9554f7fc0ef97a4c45bcdf335c",
+      "currentSha256": "6c5b0deaa8c0d888c43f5dbf21ade066bb79790b8e95bed27cb7dabef162677c",
+      "mappedCases": 32,
+      "latestResults": {
+        "Passed": 32
+      }
+    },
+    {
+      "file": "tests/reports/reports-floating-configurations-deleted.spec.ts",
+      "beforeSha256": "21dae29b5d81edf6504ecf145bad269e9b7dd0e67e448e254837c0262d6bb98d",
+      "currentSha256": "f7bfdd8de4d3308e14ea926df776ce53c55a00cd978a501070a60d5017afeb6a",
+      "mappedCases": 27,
+      "latestResults": {
+        "Not started": 27
+      }
+    },
+    {
+      "file": "tests/reports/reports-floating-configurations-error-deleted.spec.ts",
+      "beforeSha256": "9f5cb5f09219e28e4f7e27af12622cb0b45761cb90556020feae7cbe60e62dc2",
+      "currentSha256": "30667302fe1f9950657a292830498ffadbcf6e1ff559ca5c5d38b79b86faf579",
+      "mappedCases": 18,
+      "latestResults": {
+        "Not started": 18
+      }
+    },
+    {
+      "file": "tests/reports/reports-floating-configurations-shell.spec.ts",
+      "beforeSha256": "26b2f0f86468b5acd177e704ee0d1f94bafeb0963edbe13dd403ac6897628f80",
+      "currentSha256": "06c51c28cb1aab9b6c68f73d3fb72161635832e941116a22d7b25d0f83c99407",
+      "mappedCases": 22,
+      "latestResults": {
+        "Not started": 22
+      }
+    },
+    {
+      "file": "tests/standard-license-configurations/standard-license-configurations-data.spec.ts",
+      "beforeSha256": "d50d6cf2e478d8cdf3f5bdcd8142b1bf945978adb47a98930da83ae0f8c82310",
+      "currentSha256": "3058ee270fbbd6a2e50d63496b21da9f1717ed5dba464ae7c26c1e66fb037a0f",
+      "mappedCases": 20,
+      "latestResults": {
+        "Not started": 20
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/floating-licenses/floating-licenses-date-behavior.spec.ts",
+      "beforeSha256": "2e93617faa9dd66fe7c57c40a2fcdc96ba2fdff3a707c4c2c57000cb63922bb1",
+      "currentSha256": "b9fb4f7f21198f84ee98b62549b2dabcbf82fe0982ab4e86f5b370808f9b50d2",
+      "mappedCases": 8,
+      "latestResults": {
+        "Passed": 8
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/floating-licenses/floating-licenses-search-control.spec.ts",
+      "beforeSha256": "160783cc5437714fee8b5a402f430d9526d339bc15fe88be90fa16f8cd15e4bc",
+      "currentSha256": "5786b06fd12babc9ed7575d92397a37793501f6f83454e57a782a9e028cbd42b",
+      "mappedCases": 7,
+      "latestResults": {
+        "Passed": 7
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/floating-licenses/floating-licenses-summary-card.spec.ts",
+      "beforeSha256": "d2aba90c92f9d01523a6283fd671144f79b62447baee230dfe1e49f3f91f4e24",
+      "currentSha256": "b1a8b4137827f596955026d10b7a095cb373e0596bcb4230e2d04b81b1df4ccc",
+      "mappedCases": 3,
+      "latestResults": {
+        "Passed": 3
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/floating-licenses/floating-licenses-zero-state.spec.ts",
+      "beforeSha256": "3e828eed6ce3c77cfb34f37b38cab53bf096e4cf92df6c40c2d634c15ad56287",
+      "currentSha256": "ca56fe5217ba3c0dab35f5fbc69e14685a60c9a10fef32a958a4933e7cc3f7c5",
+      "mappedCases": 3,
+      "latestResults": {
+        "Passed": 3
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-014-language-options.spec.ts",
+      "beforeSha256": "39825063bc1070b4937de2344b3d750c8a37593a40b503a0e1d02c7255fc6d24",
+      "currentSha256": "9a98fa96ec4b8a65d947496c0172cb8552771c0d6b1f9a797e45ccbe3a9a3117",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-024-account-text.spec.ts",
+      "beforeSha256": "a11c0ca6426a165f896b53dec6c74220620e7fdec064d5140de8583060bc60b7",
+      "currentSha256": "328eeeb0067572fe9ffab47edc5d5dacebbeedb953bcb758bcf70a9b7cb9bd55",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-047-summary-cards-rendered.spec.ts",
+      "beforeSha256": "6c1141b381f03d689533f0e36c45b10dcf6aeb08a9ee578b50c5d928a857f496",
+      "currentSha256": "e058b73df43a21e9bac2053a7087443c78a8f17d91ef1819e076b41c3e0bbcc1",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-121-search-keyboard-focus.spec.ts",
+      "beforeSha256": "3a8344c870ea1a6ef1c5b476e4f5063af9f07a18db0d480edadb59f08de704b9",
+      "currentSha256": "00614b7e7e810484d55d97451eed942357302edb6c708641ebf36253fab2fdd8",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-131-table-dark-mode-readability.spec.ts",
+      "beforeSha256": "e902eb9a1b4f472d8490accc441acc81a46f3368f4401a048aaacf06a93e3936",
+      "currentSha256": "622f06ae7ea7d6d365c9f7a4941fd8afe5708c9967ca52e0baa7f0ba282c2a92",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-132-table-light-mode-readability.spec.ts",
+      "beforeSha256": "45154982868ec59bedfae24d71b754d1e7b5b370048b4fdd0c834ae8445ae47c",
+      "currentSha256": "b7f7c1b388ac5d666c895a6f865fada6d3a9ee535b76e731a647e2b8399450c1",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-133-single-form-open-at-a-time.spec.ts",
+      "beforeSha256": "00f943bf1b98dc868a1dacf06055dd5e48ebfe4a485017f907c0b948431cd490",
+      "currentSha256": "75818e677bb349ab21e410fd818a0af419c15889a92586e7a70522e04edf76b2",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-134-selected-row-identifiability.spec.ts",
+      "beforeSha256": "6cf713f76716e1040bd9820ce72f0ed63304f9788dd93224d8952bfa62403c2d",
+      "currentSha256": "62d9fffa2bbb97916e5c1efb5fe4c819dedafe3b461d6a7e11e5d62e32d32596",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-139-expiration-date-manual-input.spec.ts",
+      "beforeSha256": "6adcaa664a4d5b51b316e9685a3833e4cf11fdda69e0aaf7dd9f3327f16a050b",
+      "currentSha256": "1368f3d5c49d57d96634b585dffeed1200922893b3edf643c531374b3b7d602d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-140-expiration-date-clear.spec.ts",
+      "beforeSha256": "67b02124c1e75dac182a17f5e01c9842000b1b4db6e43393d1ee89bfd3768114",
+      "currentSha256": "ee1b7da2e8c3b89aa53a04a2ae25d9e77c8b2078ea2c0ff2fc9ae497889ee860",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-142-maintenance-date-enabled-after-expiration.spec.ts",
+      "beforeSha256": "e96dfdcbd9b6fbe6823d17cfc85d31b881dae74c3c0a4cc654af42dc32ed4880",
+      "currentSha256": "0625d1f1d37701da8169aa0ade99eba64c840a4b51eccf6cb030c875e6bc2716",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-143-maintenance-date-before-expiration.spec.ts",
+      "beforeSha256": "09481112202cea7db06fcbcbf2eccef0413a7e93126153502b659491c8a920eb",
+      "currentSha256": "89880a41555ca4abc3916f1e95f112807a72bbe8ac520458a562e0f7728de3d3",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-144-maintenance-date-equal-to-expiration.spec.ts",
+      "beforeSha256": "9a74df93f9e7400dd4f4a9ed2defbfe5a52bad9582c2450d0fc074ad57cd230a",
+      "currentSha256": "6937944ec1c7a3447bf45f4b7b61139b5cc027777dcc8d456606209a02109f44",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-146-escape-key-closes-form.spec.ts",
+      "beforeSha256": "884602a299de7ab01033a44bf127e46df74546940945d595fe364b4753b71339",
+      "currentSha256": "05b8bc842c960a460515f926a270e043371bfd9fc6e36fe6bffeaeb967afa766",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-151-approval-submission.spec.ts",
+      "beforeSha256": "a1bbd1f9657d1298adb8da31c571fa6324ebb4d458e82dcab30b5f4d067569ed",
+      "currentSha256": "b9a731170c163290a01fe6414ef76a8ab891ef94e4b588b719c8b18cef812b40",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-190-history-search-keyboard-focus.spec.ts",
+      "beforeSha256": "f1f38851771d16afc20ec5ac2106b6ca24efec9f1ca88976a7944d7790711d16",
+      "currentSha256": "176b6e8d030be7b377e7cb8295f7efd07f6b233007f036dcab0a3fae0a050169",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-191-history-search-by-username.spec.ts",
+      "beforeSha256": "36eb455e776e333267be6b2a27179162fe46926ef76606f3672dda5f76bc42aa",
+      "currentSha256": "ce6e31af813be2ecc0ecb0ed0ec0840a52fb3bd8e66244ae2829326cc8835349",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-192-history-search-by-email.spec.ts",
+      "beforeSha256": "5431180eac95ea0722603e0785ac387eac3db35d8ab4178cb96176ca8ca49bd6",
+      "currentSha256": "16a49fd5b0ac73b129da8c3bcd3d7a79385e0836cb361c3e1d84add5f723c959",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-193-history-search-by-feature-name.spec.ts",
+      "beforeSha256": "c5a183b190b365cabedd10e1cb3223ff291015c28e1164c212e24565270509c8",
+      "currentSha256": "ac93ab542399af66fa3a170b80d02044ddd73bb32988013d44e3e4808aa7cf66",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-194-history-search-by-hardware-id.spec.ts",
+      "beforeSha256": "b5ebdd10106243e3c9611565675702b85b239d75f5cd1c09fe80549e12b7f6ae",
+      "currentSha256": "aa30e9677f980c19b1fe15b8019cdf18a26b3bb41d67f6afdbd9fc06d055cc03",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-195-history-search-by-request-id.spec.ts",
+      "beforeSha256": "984a13d43249919424a324ccbc8147e8f5530fb06fceffe1362903779cbdd919",
+      "currentSha256": "d12dfd33f768ca37fd8dca5ca70673bb3b21497c5ace9769461f9bca6e22acf5",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-196-history-search-case-insensitivity.spec.ts",
+      "beforeSha256": "4b3de05816393a083dfeb28be9bc04351530c555a5b595b37f27db6b9c30591b",
+      "currentSha256": "8dc6c6c1e83910f7ee1bcac175a1793304538043585d1f13f6d99b687d9fd5db",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-197-history-search-whitespace-trimming.spec.ts",
+      "beforeSha256": "9b50e8fe8b6dc85a6da402183c84562bb0327be3356016830fb96f476999ebf0",
+      "currentSha256": "14f05ab04bc9819e4d407b78fb9100d462ab429db11c87109532457eadaf15fb",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-198-history-search-count-updates.spec.ts",
+      "beforeSha256": "7986a28bc19b1f031edf18b0ff6f56c766a6417763b41508ff9fae3f563e535e",
+      "currentSha256": "39ee22e112747db019ed189e52601a4f5a39310ed57804ba34cc99563927edc6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-199-history-search-clear-restores-list.spec.ts",
+      "beforeSha256": "6ba78af22674c490af64c2c537e8bd2bee5a14ed253d71263aeeb04e14214629",
+      "currentSha256": "2590c4dae0458dcad7effc14dd0a052c40dfc4a2e2537b8692a90d3dc08d69e6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-205-history-search-client-side.spec.ts",
+      "beforeSha256": "8897e1230ba00e18144a5ce0c3915b5e6766dc2270e630498838fde550187ff2",
+      "currentSha256": "2aff9311925a52b915db14553df8981e263b4d0689098039f09cb19452f3b271",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-208-history-search-partial-substring.spec.ts",
+      "beforeSha256": "6083343c4f1cb9df471c4e09b79860e6cf7bb70194e1eb339316e81121e5cd46",
+      "currentSha256": "396c622827a848589178702470b386c19e7b0ebc9af5cece5a3ceb4461a67f99",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-209-history-search-immediate-no-debounce.spec.ts",
+      "beforeSha256": "d5f37649dbf04b524068756ac65727d42241a48691d9e4aa4668a5ff8929f4e6",
+      "currentSha256": "4c761029edd9b3b29bbafdacde51a8a461dd72cbb18330e4512f9105ec8d1828",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-212-processed-record-user-name-visible.spec.ts",
+      "beforeSha256": "b6b0a0bc7fe3570ccf9dcce1e9a0e67b06486bbe5ea13ce9a36aa11e7f874f76",
+      "currentSha256": "49d2d22ec87752470de16f2c1255626a8c7a2fe5d0eb19f562c9b97189d33757",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-213-processed-record-user-email-visible.spec.ts",
+      "beforeSha256": "377e408e10677be70c611c92b593f07349cf830dc5ca69a5e4c0d1e96513a2d8",
+      "currentSha256": "a02e488899650a86d98f8459935f6debc9d5ec002f714ee0c94e5c5deeb27488",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-214-processed-record-user-email-format.spec.ts",
+      "beforeSha256": "3ec6b3e142e092b2e2d14b4db2a32551f21c7eac08aec46979f7c6576025a19a",
+      "currentSha256": "1de0741f071c398bae9d3d42bdef21c988750f8120bedd7bc904b0ea75d4dd4d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-215-processed-record-feature-name-visible.spec.ts",
+      "beforeSha256": "71e3487a96e8163794f0ca7a49fbeb6103d194e76a17ca4d2f40bdc008837419",
+      "currentSha256": "e077f825af0e04fb88e2959a556cf3fbd42ab218ac102b039410dcb456059c48",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-216-processed-record-feature-version-visible.spec.ts",
+      "beforeSha256": "9d2282287189aa982cbfe7eda44e836ebc2eb656ff1c9d0146fa50c44f48f1b7",
+      "currentSha256": "893368c18ae34c3d6162ff2d0a6d5887dd167a352d9f6110d981aeaaec14197b",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-217-processed-record-feature-version-format.spec.ts",
+      "beforeSha256": "dec258e5aefc5dbf7972beca981703ee32656468c0a2066727353d4d50f87ba3",
+      "currentSha256": "dbac397c150ab2c89e23385fb31ac6b383320de95026428f01686f8efdb09873",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-218-processed-record-hardware-id-visible.spec.ts",
+      "beforeSha256": "ae03c60a2c52c36e5d1f49fe4e9b62f4cd06473f053a2e942ee380c7aaab9157",
+      "currentSha256": "a1ba317ec392d6526a71e171baa22943a4bde1dcdc84319aef529b76cd2d0cde",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-219-processed-record-created-date-visible.spec.ts",
+      "beforeSha256": "8c1f0c972fcabfaa6172baa31779631c5a25636184950a8dc29a6201375d1e28",
+      "currentSha256": "6f92f893ad4f36d3eb81843e2f12ac30aee5c87641a894c025b35b831093836b",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-220-processed-record-created-date-format.spec.ts",
+      "beforeSha256": "73723cf36d088f9eb068ec1e7e50e02835fdceb950adb5d1440a24dc63d67228",
+      "currentSha256": "46fc24d738938f5be7c50e111efd8f23bcc5750e9c349d10753e69c83f552bc6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-234-processed-record-email-not-distinguished.spec.ts",
+      "beforeSha256": "b84a0fc0f08909583de9bba3d2e6da3ce0014e7b38435c6f55be6a09653fd1f1",
+      "currentSha256": "2719bdebf825697f5a81dcd7048c2594fbb2275661b6ca28813c882d3a462e8d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-253-incremental-no-duplicate-records.spec.ts",
+      "beforeSha256": "241f39502b62be14f27d849ca52e8a91f0c5f75aad8cfc20cda880ad18dd9a9b",
+      "currentSha256": "5c2e9e45d1d3bd76e2fccf066b67cfa56add6c61d5d3e26a39986e8f818aa4dd",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-463-extend-button-focus-indicator.spec.ts",
+      "beforeSha256": "ad2ab8ecb3c51274c153f6d3946d149e69e04795a9d99e95577c3f6f7d7b01e5",
+      "currentSha256": "bdef2ff12db5a2794657f71eaaa32ef3bb2b52cac2b994118a236deea96e2908",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-467-user-licenses-button-visible.spec.ts",
+      "beforeSha256": "c4cd28b2ff473c3f4f95dd2302229808f043a4efb3ba10aa274961d4eaa61818",
+      "currentSha256": "c5549c19bdab6f727bf29d165b4ddde911b07b897470f18e4e500e1cecf5d415",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-468-user-licenses-button-role-a11y.spec.ts",
+      "beforeSha256": "b8759fd61197d1cd436a47c26f9d6485086e05bc702e6eb0ab8411ff40127093",
+      "currentSha256": "58283fb4293d6ac0f8ec2921b268153f63b152e12d926fdfb62e6efbccb2c609",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-469-user-licenses-button-accessible-name.spec.ts",
+      "beforeSha256": "35cc472b04e3f5813277b131c2658833ffd871b6844e27ac3a673b8c0f3800d1",
+      "currentSha256": "b5d04ff2e23fc7681f627556d74f5f86414f4f7cd11e41e406ac29b597212c13",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-470-user-licenses-button-enabled.spec.ts",
+      "beforeSha256": "1262efe24c13bc4eddd8af7648e525ff277718599469a04ec54ab9c3e0462d5c",
+      "currentSha256": "98a9412375e27cad6a80c1900c9c1c68086c0e8de79776ff93a316b42856fdac",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-471-user-licenses-button-keyboard-focusable.spec.ts",
+      "beforeSha256": "606b2375ff9aff20b1e8818197e2449e2d044c82e5ce81cabc4368e569379a89",
+      "currentSha256": "599367e1913cd5e34ffd6a5afc75538dbfae0243bdf86e51ad72bb7ea6cb8fca",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-472-user-licenses-button-focus-indicator.spec.ts",
+      "beforeSha256": "2e95123a2bbf85cd610287fda4d6aaeae185866b0ab70fd4dcdb97f9bdca8c42",
+      "currentSha256": "35aa13b4c1e11047fd77639d25000a6ad74be27e31a1735a4e3ca134f0a1f3a4",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-473-user-licenses-button-svg-visible.spec.ts",
+      "beforeSha256": "92b027916bd2f1ef15e3356e6a8f641529abd0552d80b3aaa111dbd9a1c6606d",
+      "currentSha256": "47d906cbde6486e931d19e16a030e47923077fb097f3ca7dcf5bfaf0a053ca57",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-474-user-licenses-button-svg-not-aria-hidden.spec.ts",
+      "beforeSha256": "596bbf65502c469d9a6ee1f78b44ed2556f7789d511de76c482ff7d8715729e7",
+      "currentSha256": "815cd3dde15af8a2940f14f9b4f25868d229224638f8e2f552a1a2e8919648e5",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-475-user-licenses-click-navigates.spec.ts",
+      "beforeSha256": "e7687cec1324ab24d498b6ca340a29db619117a0a515e01054cbf551c5de664f",
+      "currentSha256": "cabff00351ae5cb513e3bf3d3b2c5859f979330fcf8de5aa8b0383da416ad44d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-476-user-licenses-keyboard-enter-navigates.spec.ts",
+      "beforeSha256": "95dc2d7349fb1b738c831b129e3b23b346d09e6a515567326b572d1574f3c4b9",
+      "currentSha256": "33c513de1c7f394c996a8fa2ef5c7eeec7c430db5d1b1a9a656066197e300301",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-477-user-licenses-keyboard-space-navigates.spec.ts",
+      "beforeSha256": "0bd5ae636c2005cfe8d4609e3cf55cb017396fd8930f768802239976cbc2af62",
+      "currentSha256": "492c6089179902876a6a4833c16a11210dc89c22f7f483c78ccc49831cef1030",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-478-user-licenses-destination-heading.spec.ts",
+      "beforeSha256": "7e21cc222a9d19a964184bb67d6c8f2088f3b34b743303d92dc217e9d9e7f82d",
+      "currentSha256": "d2fa25295d6ad815b711e84933b03739abee0335d2d862201ffa4612daa66bb6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-479-user-licenses-same-tab.spec.ts",
+      "beforeSha256": "10e257fabf71c84a85d1b58e6217627ba520511a1389c609f2c0d6390b75bbc8",
+      "currentSha256": "0930f0f52fa51424d5cdf0254ef7caa2befaed9b17d2dfd9e22376baf6b1b678",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-480-user-licenses-session-preserved.spec.ts",
+      "beforeSha256": "78350e675f676bd7804dfe9f438f5473e08cc86803b7fc53095d3eb94f68b0fc",
+      "currentSha256": "2bab2ee73b9bdba6fe12aa3e4366d31cd6d4779483b15932cc4f4d9336a53c4d",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-483-extend-button-visible.spec.ts",
+      "beforeSha256": "1e8db870892554cf6f449d6a6b6c483218941f8a863c5ca84331f8d760a74e57",
+      "currentSha256": "907d0812aacbc5760782fea4b7ffbf58f3cba0624a723b6ae872f52809537419",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-484-extend-button-enabled-open.spec.ts",
+      "beforeSha256": "34b4f44f150b7699cc3a6f1577cc31b7523e2322931ada625cd0f28ea3551ff2",
+      "currentSha256": "99bee58051e6c8a97b5841e34801ae935a375bb057b1bb836e2f907ec8183625",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-485-extend-button-accessible-name.spec.ts",
+      "beforeSha256": "55bc4d5b6b409625c1f249b939946f8b01b57071868317ad9114643f8971cb0f",
+      "currentSha256": "f8fd8390ea30d9c885653e6e12ccf98bbab4f2e2c6b10bdc41bc5097f2d788b9",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-524-new-expiration-date-rejects-alphabetic.spec.ts",
+      "beforeSha256": "fdf6200b0b876535f51bc95a8933f2422fcc9610127e780f9146d21baa4465af",
+      "currentSha256": "2b64977ed6b7e059d125c40d8d575e1af7ecec7a7c261b76c1d183a5401b03d4",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-541-extend-by-days-accepts-alphabetic.spec.ts",
+      "beforeSha256": "85ac32342dc5c6688a838990e792991ece3180b4b17a98b69c909db1ec845eb0",
+      "currentSha256": "dbb347ed2f284b28764887061f1bac927dacfab4ccaa8251ac21468556ff42d8",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-549-no-pre-submission-validation-date.spec.ts",
+      "beforeSha256": "b20fd937d31e822936bc7a0221d332c045dba134a568bdcb7e0c8bcc9a498892",
+      "currentSha256": "a42d1d539ad46ab75478eade4438004c96c9388029ecddd0d4a47c1c34d7ff16",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-563-maint-date-rejects-alphabetic.spec.ts",
+      "beforeSha256": "0f620947f7b490cc470b5e36182b6a7361974dddf218bec7960bcf945129a5be",
+      "currentSha256": "83e639505cf5235f03a2645d8ca0c939924a05d74aba93043bd04d6f94aa7335",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-620-apply-extension-visible.spec.ts",
+      "beforeSha256": "4b188219fa7f3d857f8d01c1e655b6ee653b8ede7d81f85aad8af70dfdf83745",
+      "currentSha256": "5119f8eb5f26ed94bb203714768a65418cd7a9d5f47ff16903bc28e75d352350",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-621-apply-extension-enabled.spec.ts",
+      "beforeSha256": "3948db6b95042572e83ce28afef1d1f60b89a5b64a4d58aade24ad19c7998eaa",
+      "currentSha256": "5a0888a48ba0c2e88801c1b98bd73ab7cb852820221637d6727d48670166f123",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-622-apply-extension-accessible-name.spec.ts",
+      "beforeSha256": "7e2bdb96b20314d33492d8d17696ed245aab08fc8e7a0e4a4c9944b877544365",
+      "currentSha256": "552009f3297fb0e2642fef78f5cc4ad69cb90a917ae49913bda74d5be021cd4b",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-623-apply-extension-loading-state.spec.ts",
+      "beforeSha256": "92c9f76eca53ac459ba7c536b70f0ef5adccdc5016e6c9a1ee6db3783a2913d5",
+      "currentSha256": "59b7ab13483082755b511534ac82786bf3a35dc0d4340d6e6f747e2f307b047f",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-624-apply-extension-keyboard-focus.spec.ts",
+      "beforeSha256": "a9a8b236635c0f0b19290295e862ac9928cbedf69aed24ca51800f4783af4304",
+      "currentSha256": "fb1b93f674381bd37603040875b5bffab693b85f92d8728e3376a6be587a5a44",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-625-apply-with-valid-expiration-date.spec.ts",
+      "beforeSha256": "8dfabec7f27d8785d0d3ec5f959fb9c199a96113fb03896ecfe044b37e34121c",
+      "currentSha256": "6a5f39b64f95352a98ba6f61bea87819c6fe40a566f3c84a07f888f5ddaf0c80",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-626-apply-with-valid-expiration-days.spec.ts",
+      "beforeSha256": "88cf3afab3c474a39c3ae14576e7a0acac7ba1054174df05599a209d9e6d041f",
+      "currentSha256": "776f3fc1c9144d424fa5dcc97ab6d5d60e90d37822630142cb353352ff92c615",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-627-apply-with-sync-expiration-date.spec.ts",
+      "beforeSha256": "f42602d95e265fd61bf825c8cdb1b468740f9cbcc7aa50e65c4aa184ad8f0840",
+      "currentSha256": "2c3a023f82920931aa7cf1fe20fb71ffb5c7ff715674e9b611d1b4b26a9dc860",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-628-apply-with-sync-expiration-days.spec.ts",
+      "beforeSha256": "9d812cae5743cbc88712840c52981f488d34bc231d550229cce7fab93c4db278",
+      "currentSha256": "1d332aff75cc2bad75d6e26cfdbe31bb9e3ea2904dd5e4cd917d92cb8037b2f6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-629-apply-with-maint-after-exp.spec.ts",
+      "beforeSha256": "8b9e1765362de77f3ad47f86dd55c49290e1e11e27ab26d02e8e89dae7b7e2c0",
+      "currentSha256": "9c04a788afb0567cceb86b297582a10a803a09722aa3f47298b657e82691a760",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-630-apply-single-submit-protection.spec.ts",
+      "beforeSha256": "929ee9aa7fbf4ee028b6c009bbebed2b68ae726f61f5382c534c4091ce0f18f4",
+      "currentSha256": "60b30bda53450f8ac5a0cf70ae6261b25be43bb2eb6b82288522d601e0710a72",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-631-apply-dialog-closes-on-success.spec.ts",
+      "beforeSha256": "caa689c0f28dd276a2812f9b11b207b6a5f511e2ae17b3acd1b6b30802da6555",
+      "currentSha256": "1072334b45cdbfc4193c341524a3bc51b86f0f4d24a2ad51e7574f5b8bb89000",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-632-apply-success-toast.spec.ts",
+      "beforeSha256": "b0843bc14cf9f5268e98fd1c31bede3d2239ad5c5cc40f4b10387c7a0e4a765c",
+      "currentSha256": "6224522306401b03e870b95e4a2a97ebb0bff45af3ee504ca92b5eaf5ce6e8e0",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-633-apply-count-refresh.spec.ts",
+      "beforeSha256": "06d74aa07b66aa9940924cc97eef117f2a9c93b08e6128809e47d9a421dcd5bc",
+      "currentSha256": "c966e4c740e32bc51a8d1f84b68ce67958bc6bfd48ef46939fa6328dde14f148",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-634-apply-record-visible-after-extension.spec.ts",
+      "beforeSha256": "d7728f46506de4f327c1ee0d463a9e173883d9adb7e8874ca6850e3812a85d5d",
+      "currentSha256": "9c7a2bdf8f94b77f3f1e097f2bf0f23d4e0d7c47c6478c2dff0774da224129c9",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-635-apply-failure-toast.spec.ts",
+      "beforeSha256": "b45fc6614dd80edd6ecc0eb8b582eed129aa6b51ba0a665913e1daff45f1764a",
+      "currentSha256": "0b87f55cef509253583b7a994b2996e2c33bf6ef70ce8b2f3343f97430d74da8",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-636-apply-dialog-stays-on-failure.spec.ts",
+      "beforeSha256": "f9ae637bee4a9b359832c4b521b878f168832049464278675d766e27100ac9f4",
+      "currentSha256": "fd3caeb374ea9cc13aa9d7150f9284037e5101a3a18b9e56d96f3efeb21c1b0f",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-637-a11y-apply-focus-indicator.spec.ts",
+      "beforeSha256": "9767b2f5479a513305084ac1796d0eeadd6fe4bb0244d1652c98c2a0d6433bdc",
+      "currentSha256": "65bfdc2fd1c1f3b7bbc8e707fceb29c37b99f1f81def35f6e4c63061f1c6a995",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-638-a11y-apply-loading-announcement.spec.ts",
+      "beforeSha256": "0161746da028da4dd6651fd13d55fffb0e2f7e9b48f7919b75704a64052690bf",
+      "currentSha256": "03ff864f4c80a6273c4198d99b5a4a9315883141b927c141be658d3f57944ead",
+      "mappedCases": 1,
+      "latestResults": {
+        "Skipped": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-639-apply-validation-empty-fields.spec.ts",
+      "beforeSha256": "bdd04b3bb42d9281d3ffb0b9131af599aa9413955a1636db0834b8547b9b14f3",
+      "currentSha256": "993f312d2a64d777be604ea66bb8d2aa78a3ce266d10c3bfb454098a71acc0ef",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-640-apply-validation-maint-after-exp.spec.ts",
+      "beforeSha256": "18335f299abb36f6c25efab0a85eea86060e62b32049ae41d55f3debb8498e59",
+      "currentSha256": "cfb5b6592e3f571e61d4396c1fb9ba527ab1330a92db00657f645b2c844a17f6",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-642-efc-summary-card-role.spec.ts",
+      "beforeSha256": "f5728fe30397a66d03d8573f3ecdf6835ff22efcd4d1f49bf31314818c971b33",
+      "currentSha256": "eb3354c13619681b1877c3ec9951eb7579239c85042c1c35f8195cef03855571",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-643-efc-summary-card-count.spec.ts",
+      "beforeSha256": "9e0a69d00ac33839e04f28ef269e7dc0419733de8b454578d6152987d0d05f3f",
+      "currentSha256": "294430ba9bc60853b283d6177678ba782d80cb47a3642f5e5515dccd11697e20",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-661-efc-count-text-zero.spec.ts",
+      "beforeSha256": "782f37436c0b8437a2766aa9aad02bec4a20c612cf20d4a70fc00db2433d464c",
+      "currentSha256": "e680ec186c04f6b84578ee6f251117b2607c34a051923a59ba481f89eee5d686",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-688-efc-counts-appear-after-response.spec.ts",
+      "beforeSha256": "e1ff47a9735bbb559545bfcb54afe5a92bed0569434d658932ab0bf01bfba736",
+      "currentSha256": "522d8fc6eedf1781851adb996e432b6f1dc59776a7b6a5701dde2ed3ca44ebb5",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-711-efc-zero-counts-displayed-after-empty-response.spec.ts",
+      "beforeSha256": "9b2f4db17939fedcec7f59bb11a34a69ddfd6ae2a36e5ceec84607c397e41d58",
+      "currentSha256": "e225690d91dc61b9f9d89bd1afc4b6c323798a368b6f5e17f606c5257865784a",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-760-efc-c-selection-vs-focus.spec.ts",
+      "beforeSha256": "58692ab2aeeb50b86a4ed9c5cff78d5b949b20325348ce61415b9ce70f41ca46",
+      "currentSha256": "499466d62aff6e15c44ac941b03b8a518ad3578996e042f86d2b605220a06919",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-768-efc-c-transition-counts-preserved.spec.ts",
+      "beforeSha256": "1417c6814d3a54bfa96ba52b29e2d6b8de0a6d24a872314fbf5d75e9aae232dc",
+      "currentSha256": "4d2dfd84a8a6b4d654d2eb29c96e66ffff88286ead86a13124856c85d9b1792b",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-778-efc-c-state-count-reflects-current-filter.spec.ts",
+      "beforeSha256": "37c87bffe88ca0cfa875ae2baada666c38a53653bbdcaa780c28a8329ea84469",
+      "currentSha256": "2aad20598e52b0c1a219b1b6d3a11fc21019bcaee2b478d390865620f034755c",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-793-efc-d-no-placeholder.spec.ts",
+      "beforeSha256": "80f670657bdd1947ba4da3e93e532e61bb754c7ba9b5dc50a9edbd31f6f45b81",
+      "currentSha256": "cee2c0aa9a1eadbe23fd2bc142e6c8c7852009c70dab3cebf945e03a34a177dc",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-795-efc-d-tab-order.spec.ts",
+      "beforeSha256": "c22a17176944f423c72045f375162e674090086eff58a3b3b9e7d7bd10437aa4",
+      "currentSha256": "0cc304e860e39b82da8041a138c33213a50985acdaa7f342567eaed7b9686fb7",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-800-efc-d-no-separate-icon.spec.ts",
+      "beforeSha256": "73caf676cb8808b2f414d27ad7071f642800c252e0543ed2fdff66abb22d6b40",
+      "currentSha256": "4ba95521ba4557f014c2d63bb156cef03d0fac0f6466bace1a139ce36ba87fac",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-813-efc-d-invalid-triggers-default.spec.ts",
+      "beforeSha256": "0adb665e26f7ef172665c56ef4f8586f90a11dc2b4720e5224a62d3f39ed2b1b",
+      "currentSha256": "6c6d3a5f4822b5b0fdf977058b495e9f6d86d792aea95113db9e2f3cdb667256",
+      "mappedCases": 1,
+      "latestResults": {
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/system-user-dashboard/LIMAS-SUD-860-efc-f-tab-order-date-button-search.spec.ts",
+      "beforeSha256": "f6c91c9f28b6e9d642fc4496ad769b0d8a76c3117832da3953903aac4547a4a1",
+      "currentSha256": "4fe961239059bfd2e506f1cdd6869bbd0c12459e678472cce253b3eb47337bda",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/system-users/system-users-edit-assignments.spec.ts",
+      "beforeSha256": "66713f007a40f77fd7f13712b7baaadeccd0717acc3761a13378eb1f8fe632e8",
+      "currentSha256": "4fe224bbf54fcb59ed15c23567daac20a6248dbb879d4385f79fce7f93e9588d",
+      "mappedCases": 24,
+      "latestResults": {
+        "Not started": 24
+      }
+    },
+    {
+      "file": "tests/system-users/system-users-search-filters.spec.ts",
+      "beforeSha256": "1749e4f4999c2ffca669c6a68cc741bd23dc64cdee67504f99325a0ccef4f4bd",
+      "currentSha256": "7d52799479fe87a5723325821a7b4198bde2b9dae449557275b8dfe4eac21183",
+      "mappedCases": 29,
+      "latestResults": {
+        "Not started": 29
+      }
+    },
+    {
+      "file": "tests/test-data/runtime-data.ts",
+      "beforeSha256": "a0a7b0a6565f4a371550b63aad131260485c48a300eb312049bbafc258fe3c1c",
+      "currentSha256": "b9702da5baffa60521f9e850f4449b6be0fb3769678e34d74af9015c178b9194",
+      "mappedCases": 0,
+      "latestResults": {}
+    },
+    {
+      "file": "tests/user-groups/user-groups-edit.spec.ts",
+      "beforeSha256": "12856375b77a4261e25d458de399f50db0274ba3da41f4797d3b90cdb053143c",
+      "currentSha256": "ca8a163c62ea529946b77958b69de3e866375f027dd70ab8b77dd0b2639cd313",
+      "mappedCases": 21,
+      "latestResults": {
+        "Not started": 21
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-add-license.spec.ts",
+      "beforeSha256": "329f42b87b9fd7b97488bb2e7576d07237f7b02c434f4b436a3b2ba65f109f02",
+      "currentSha256": "1518b3311d814eae10b17608f82342a81ddcd9eb20e645c4633fe9ca0fc03c0a",
+      "mappedCases": 46,
+      "latestResults": {
+        "Passed": 33,
+        "Failed": 1,
+        "Skipped": 12
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-delete-license.spec.ts",
+      "beforeSha256": "fd55d6e54b3a3b41f94cacdfb3a45f31d584f8ec78cdb4238fe6f3307e3080fe",
+      "currentSha256": "d858ac48e7cf105b22c187f4e9ca7f5ad51aec62091d0f8680e2c20a56bd2f35",
+      "mappedCases": 21,
+      "latestResults": {
+        "Not started": 21
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-download-license.spec.ts",
+      "beforeSha256": "953163ef973ae711223ef2911f184cd4a552e30c5c6842390d30a49e6a7e18d6",
+      "currentSha256": "c4e7560f64006ab15030c60443bc1a050f60ac93cc46ebaebd037ebfcdab4bae",
+      "mappedCases": 40,
+      "latestResults": {
+        "Passed": 28,
+        "Failed": 4,
+        "Skipped": 8
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-edit-license.spec.ts",
+      "beforeSha256": "2af51bdefdf3d224e64c4ad62a39c68352367a92395f4c69fe1ec108221eb4cd",
+      "currentSha256": "fea19bcb44baff5105276eed5af8c42dafc307291b2a87aac519b31eb3a714d5",
+      "mappedCases": 212,
+      "latestResults": {
+        "Passed": 32,
+        "Failed": 5,
+        "Not started": 175
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-edit-user.spec.ts",
+      "beforeSha256": "bdca98b43293505330a2b59c06a1d62b8119c80b68be21f99462e9e37ea689fa",
+      "currentSha256": "0c95a08ba2e8a07d101ca038f9e7e14f3ece5f043816ecb74a116d157f4fb781",
+      "mappedCases": 26,
+      "latestResults": {
+        "Passed": 24,
+        "Skipped": 2
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-license-controls.spec.ts",
+      "beforeSha256": "88c1ed6856a6b814fb3b68993a159e85e58e7ad2b6e86ae706ebea97b6107d30",
+      "currentSha256": "a29095fda69e9e59fde935ee639fef2d6f75b9ae28e1a6b8e6d07828ce5ebe36",
+      "mappedCases": 10,
+      "latestResults": {
+        "Passed": 10
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-license-search-filters.spec.ts",
+      "beforeSha256": "0625c85f6380b436d434334fd8d45a20bb392e44fd6fc2496283ed0e24a5340f",
+      "currentSha256": "447d0c0d853729b14f67cba681cecc805c9b8f3d0a1eaca6dbae272714c97bf9",
+      "mappedCases": 41,
+      "latestResults": {
+        "Passed": 40,
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-license-synchronization.spec.ts",
+      "beforeSha256": "4bd59d7a38f453d035561c3c02d1ddb7ccea3f75e318458db8fbe10f728c9abe",
+      "currentSha256": "1c24d8a05c342184b6165a37cc71dbb1e1b92eba5fe61af92e2182749fd7af2d",
+      "mappedCases": 6,
+      "latestResults": {
+        "Failed": 5,
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-navigation-shell.spec.ts",
+      "beforeSha256": "bbb622059a6d5329c7b5a83c7761f961de37c56f0ddd76872b16c095e5ac9ca4",
+      "currentSha256": "7c3b526795f97281ecac81ad58219b2fc1b26635b2ac4cfd0571b17a0ddf56fb",
+      "mappedCases": 7,
+      "latestResults": {
+        "Passed": 7
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-network.spec.ts",
+      "beforeSha256": "10c361fa2085a807e67a8e27063db63d667bb494197c12ca5143e68c1cc0b958",
+      "currentSha256": "180a70881d2541be77b8f9fadc889a6afaf47d0ee8489d0d5528e2749a0ba758",
+      "mappedCases": 3,
+      "latestResults": {
+        "Passed": 3
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-pagination-accessibility.spec.ts",
+      "beforeSha256": "619d52ab3c6e37dedfd37e7c78ab98faa47e0b6552d8900a0f050625eca18c49",
+      "currentSha256": "661ed084667c41424179ecf7500151f768fa69eabf4d535bf37a7a1460e4f9bb",
+      "mappedCases": 1,
+      "latestResults": {
+        "Passed": 1
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-panel-scrolling.spec.ts",
+      "beforeSha256": "840b4af58c8c399915b5bea03fe0f595b9b3574633f78bd08f3eb040c2491791",
+      "currentSha256": "62f0dcc90a63fe3e3ff2c6fb3b279b13635fb9229c15bbb513297eb4327b7ec5",
+      "mappedCases": 7,
+      "latestResults": {
+        "Failed": 3,
+        "Passed": 4
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-search-filter-combination.spec.ts",
+      "beforeSha256": "c3a85d71fb20594c9b95c50cb18623b1154be110770841aa18b7205e7a0a9440",
+      "currentSha256": "9d623a1357509fdca1c59f79057793f1b26ce23f707e87d9af8ba2a93fe5c13e",
+      "mappedCases": 3,
+      "latestResults": {
+        "Passed": 2,
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-user-controls.spec.ts",
+      "beforeSha256": "09c584d9b0731c5e3463adb168372a544f25fa2f2cb9bdeee18b465ee0b0bf43",
+      "currentSha256": "1d9bb2de0c988e31991693ff5cd67da27ddb63a808112d9b020e24da186ddd7b",
+      "mappedCases": 9,
+      "latestResults": {
+        "Passed": 9
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-user-group-filter.spec.ts",
+      "beforeSha256": "cf777771cd947e7f23252f8f444fb168490054e84c2acd6039ef5477c7a8e175",
+      "currentSha256": "87773119383ea811a749bf68e7c0a5aecc6c8d9debcd9ab31e7516f702bd600d",
+      "mappedCases": 5,
+      "latestResults": {
+        "Passed": 3,
+        "Failed": 2
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-user-list.spec.ts",
+      "beforeSha256": "371e1ef7b0bdda4e793948158e677b0d1cd50b23a070496f3a50b25595fc85a7",
+      "currentSha256": "83e845aa97425090cc78fc728a129d23151c1af4f7647e4f108c9ee0804938e4",
+      "mappedCases": 5,
+      "latestResults": {
+        "Passed": 3,
+        "Failed": 2
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-user-search-states.spec.ts",
+      "beforeSha256": "ac2da675d1ff71c9f1494d5cc3facf468888e49a13fa7abec58785e38c962071",
+      "currentSha256": "e47d925af42156bffe2d4b2a1956352c99456619f2ef52cb3589b58229cccfa0",
+      "mappedCases": 5,
+      "latestResults": {
+        "Passed": 4,
+        "Failed": 1
+      }
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-user-search.spec.ts",
+      "beforeSha256": "4b9e22e1cf74bdb24f5a14e9cab46b55b593a1823538b1a7134e437c04c7917c",
+      "currentSha256": "c90964f36c3d4167662993798e41a365e5ddfdbcdc3250a4f1495def3c75abaa",
+      "mappedCases": 4,
+      "latestResults": {
+        "Passed": 3,
+        "Failed": 1
+      }
+    }
+  ]
+}

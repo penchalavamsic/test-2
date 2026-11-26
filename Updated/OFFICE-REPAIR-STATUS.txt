@@ -1,0 +1,58 @@
+OFFICE FAILURE REPAIR STATUS
+Updated: 26/11/2026, 19:15:39 IST
+
+1. WHAT THESE NUMBERS MEAN
+Original office execution: 531 cases; 368 passed, 146 failed, 17 skipped, across 28 batches.
+Current disposition (including user-designated manual skips): 446 passed, 18 failed, 67 skipped.
+These totals combine office results, latest completed reruns, and the explicit manual-verification decision. Actual execution history is preserved in latestExecutionTotals and lastExecutionStatus; manual designations are not claimed as newly executed skips.
+
+2. TAB STATUS
+standard-license-configurations: 20 passed, 0 failed, 0 skipped; 20 distinct cases rerun here.
+system-users: 52 passed, 0 failed, 1 skipped; 53 distinct cases rerun here.
+user-groups: 128 passed, 4 failed, 0 skipped; 4 distinct cases rerun here.
+reports: 246 passed, 14 failed, 66 skipped; 152 distinct cases rerun here.
+
+3. EXECUTION BATCHES
+77 completed repair attempts, including targeted reruns. See docs/execution-records/office-repair/execution-attempts.json.
+All original office failed/skipped cases have now had a completed local review run.
+
+4. FAILED: REASON AND NEXT ACTION
+User Groups 2462, 2483, 2504, 2522: create/subgroup/edit succeeded where applicable, but deletion did not persist. DELETE returned 200; fresh GET and the UI still show the records enabled. Investigate the application delete handler and persistence; do not make these tests pass by removing the removal assertion.
+System Users 2530: the deployed search covers names, usernames, email, company, role, groups and profiles. The corrected case verifies the target name/email identity and full-count restoration; see its latest outcome in all-cases.csv.
+Reports: confirmed findings and pending script corrections are listed in reports-ui-contract-findings.json. failed-cases.csv now includes reason and nextAction columns.
+Reports: examine failed-cases.csv and each completed run. New failures remain failures until the UI/API behavior and requirement are checked.
+
+5. SKIPPED
+System Users 2575: designated Test User is absent; a full-table search returned Showing 0 of 56. User agreed to skip this case for now. Set TEST_SYSTEM_USER_NAME or TEST_SYSTEM_USER_EMAIL when a disposable record is available; the implementation saves, reloads, verifies, restores, and cleans up. This path is typechecked, not live-verified.
+Reports export/download cases are skipped by explicit user request and require manual verification. See manual-verification-cases.csv. This is separate from unavailable-data skips. Other cases may skip only for genuine absent data.
+
+6. TEST-CREATED GROUPS STILL PRESENT
+- LIMAS-AUTO-2462-a175501b
+- LIMAS-AUTO-2483-14481693-child
+- LIMAS-AUTO-2483-14481693
+- LIMAS-AUTO-2504-babae98b-edited
+- LIMAS-AUTO-2522-67cd5ed3
+No business group was targeted for deletion. Cleanup requires an application fix or an authorized administrator follow-up.
+
+7. SCRIPTS AND EVIDENCE
+Current source is in tests/ and plans/. New evidence is under test-runs/office-repair-20261126/<suite>/<run>/Test-Reports/. Copy complete report ZIP contents to preserve media links.
+Important screenshots, videos, and traces are retained. Sanitization and path verification are tracked separately. New repair runs still require final verification before sharing; existing path-verification.json files apply only to their recorded coverage.
+No new GitHub push was performed. Existing uploaded Updated snapshots do not include these latest changes.
+
+8. REMAINING WORK
+Resolve the retained application/requirement failures listed in failed-cases.csv. Earlier-suite CRUD remains a separate pending stage; those tests need disposable records instead of selecting an existing business record. Server Licensing remains excluded.
+
+9. SIMPLE RESULT FILES
+docs/execution-records/office-repair/all-cases.csv
+docs/execution-records/office-repair/failed-cases.csv
+docs/execution-records/office-repair/skipped-cases.csv
+docs/execution-records/office-repair/pending-review-cases.csv
+docs/execution-records/office-repair/status.json
+
+10. LOCAL MEDIA CLEANUP
+Removed 1,126 old Dashboard report ZIP packages already confirmed uploaded and downloaded by the user: 21.40 GiB. Raw Dashboard evidence, current repair runs, source scripts, and Updated snapshots remain. Details: docs/execution-records/office-repair/dashboard-report-package-cleanup.json
+
+11. USER-REQUESTED MANUAL VERIFICATION
+66 Reports export/download cases are designated manual verification, pending manual results. 1 case is skipped for unavailable data. Historical automated outcomes remain recorded. See MANUAL-EXPORT-VERIFICATION.txt and docs/execution-records/office-repair/manual-verification-cases.csv.
+
+Additional cleanup: 56 backed-up Dashboard Technical-Evidence ZIPs removed, freeing 18.43 GiB. See docs/execution-records/office-repair/dashboard-technical-package-cleanup.json.

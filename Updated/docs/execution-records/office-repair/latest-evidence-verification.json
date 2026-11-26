@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-26T13:44:17.921Z",
+  "runs": [
+    "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+    "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T13-23-33-381Z_6d9d8f92",
+    "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e",
+    "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-20-15-603Z_fe13493e",
+    "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+    "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-17-54-361Z_8f7d9f2b",
+    "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-20-47-837Z_a22232e1"
+  ],
+  "findings": 0,
+  "scope": "Completed runs started after 13:15 UTC; older root coverage is tracked separately."
+}

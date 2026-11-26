@@ -1,0 +1,88 @@
+DOWNLOAD / EXCEL EXPORT - MANUAL VERIFICATION
+
+User decision: skip automated download/export scenarios and verify them manually.
+Current scope: 66 Reports cases. This is an explicit exception to the data-only skip rule.
+Automated report/evidence packaging remains enabled; it is not the application Excel export action.
+
+STATUS
+All listed cases: SKIPPED BY AUTOMATION - MANUAL VERIFICATION REQUIRED.
+Manual result: PENDING. Previous automated results and evidence are preserved, not changed to passes.
+
+HOW TO VERIFY
+1. Open the specified Reports card and Active/Deleted mode.
+2. Apply the case filters and note the total matching records (not only visible rows).
+3. Export/download and open the workbook. Check filename, sheet, columns, matching records, dates, and row count.
+4. For empty results, verify download is disabled or produces a valid workbook with zero data records.
+5. Clear filters and verify normal data and export state return.
+6. Record Passed/Failed, reason, and screenshot/file evidence when needed. For keyboard/error scenarios follow the case plan; error injection belongs in an approved test environment.
+
+CASE LIST
+RPT-001 | LIMAS-SUD-1493 | Export Excel button is visible and enabled without activation
+RPT-007 | LIMAS-SUD-1610 | Export button structure — visible, role=button, accessible name, enabled, toolbar, icon SVG, tabindex=0
+RPT-007 | LIMAS-SUD-1611 | Export button keyboard — Tab focus, focus-visible, Enter triggers download listener, Space triggers download listener
+RPT-007 | LIMAS-SUD-1612 | Export state zero results — no-match filter, button state, header-only if exported
+RPT-007 | LIMAS-SUD-1613 | Export pending state — observe button during active export
+RPT-007 | LIMAS-SUD-1614 | Export workflow — successful JSON fetch and valid complete workbook
+RPT-007 | LIMAS-SUD-1615 | Unfiltered export scope — dataRowCount consistent with runtime base total, no active filters
+RPT-007 | LIMAS-SUD-1616 | Export preserves UI — page still /reports, Standard Licenses selected, Active pressed, filters unchanged, no data-changing request
+RPT-007 | LIMAS-SUD-1617 | Filename — nonempty, .xlsx extension, no path separators, no credential-like strings
+RPT-007 | LIMAS-SUD-1618 | Workbook validation — opens without corruption, sheetCount≥1, hasHeaders, headerCount>0, columnCount>0, not HTML error
+RPT-007 | LIMAS-SUD-1619 | MIME and size — fileSizeBytes>0, mime consistent with spreadsheet
+RPT-007 | LIMAS-SUD-1620 | Core-filtered export — profile filter, export, row count ≤ filtered total
+RPT-007 | LIMAS-SUD-1621 | Date-filtered export — currentDate filter, export, verify contract
+RPT-008 | LIMAS-SUD-1622 | Combined-filter export — profile + role + currentDate, all fields in request, scope matches
+RPT-008 | LIMAS-SUD-1623 | Zero-result export — valid empty workbook or disabled download
+RPT-008 | LIMAS-SUD-1624 | Post-export restoration — filtered export, restore, unfiltered counts match baseTotal, all filters cleared, Active selected
+RPT-008 | LIMAS-SUD-1625 | Deleted export availability — switch to Deleted, clear filters, observe Export button
+RPT-008 | LIMAS-SUD-1626 | Deleted export scope — if button present, export, validate runtime rows against Deleted API data, no Active data leakage
+RPT-008 | LIMAS-SUD-1627 | One click one download — waitForStandardLicenseExport, downloadEventCount === 1
+RPT-008 | LIMAS-SUD-1628 | Repeated export — two exports, both produce files, filenames safe, no overwrite, no duplicate requests
+RPT-008 | LIMAS-SUD-1629 | File cleanup — export, validate, cleanupExportArtifacts, file gone, dir removed
+RPT-008 | LIMAS-SUD-1630 | Export a11y — accessible name, SVG aria-hidden, button role
+RPT-008 | LIMAS-SUD-1631 | Keyboard activation — Tab to focus, Enter download, Space download
+RPT-008 | LIMAS-SUD-1632 | State communication — visible text "Export Excel", not color-only state change
+RPT-008 | LIMAS-SUD-1633 | Unauthorized/forbidden export
+RPT-008 | LIMAS-SUD-1634 | Export server error, empty response, and corrupt payload
+RPT-008 | LIMAS-SUD-1635 | Export network interruption and truncated response
+RPT-009 | LIMAS-SUD-1651 | Export Excel button â€” structure, disabled state when zero records, SVG, accessible name
+RPT-009 | LIMAS-SUD-1655 | Request count â€” exactly one GET, no PUT/PATCH/DELETE/export
+RPT-009 | LIMAS-SUD-1661 | Filters and Export accessibility â€” labels, types, disabled announcement, aria-expanded gap
+RPT-010 | LIMAS-SUD-1679 | Filtered empty state â€” message stable, Export disabled, no table
+RPT-011 | LIMAS-SUD-1688 | Deleted data availability â€” totalElements > 0, rows rendered, Export enabled, filters available, counts match
+RPT-011 | LIMAS-SUD-1691 | Export Excel enabled (when records present), no accidental activation
+RPT-012 | LIMAS-SUD-1705 | Safe restoration â€” FL selected, Active pressed, filters empty and collapsed, Profile Role disabled, Active counts 0/0, Export disabled, route /reports, browser open
+RPT-013 | LIMAS-SUD-1722 | Safe restoration â€” Active, clear filters, collapse, 0/0, empty-state, Export disabled, route /reports
+RPT-013 | LIMAS-SUD-1723 | Export disabled in Active mode â€” 0 records, button visible but disabled, no download fires
+RPT-013 | LIMAS-SUD-1724 | Export enabled in Deleted mode â€” button visible, enabled, accessible name, tabindex=0
+RPT-013 | LIMAS-SUD-1725 | Keyboard â€” Tab focus on Export, Enter triggers download, Space triggers download, focus-visible
+RPT-013 | LIMAS-SUD-1726 | Client-side export â€” no server request, download event fires, filename limas-reports.xlsx, one click = one download
+RPT-013 | LIMAS-SUD-1727 | Unfiltered scope â€” 1 sheet "Exported Deleted Floating Licenses", 8 columns, dataRowCount matches runtime totalElements, file size > 1MB
+RPT-013 | LIMAS-SUD-1728 | Workbook validation â€” opens without corruption, not HTML error, .xlsx extension, nonempty
+RPT-013 | LIMAS-SUD-1729 | UI preservation â€” Deleted stays selected, FL card stays selected, filters collapsed, counts unchanged after export
+RPT-013 | LIMAS-SUD-1730 | Filename â€” limas-reports.xlsx, no path separators, no credential-like strings
+RPT-013 | LIMAS-SUD-1731 | MIME and size â€” application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, size > 0
+RPT-013 | LIMAS-SUD-1732 | Product Profile filter â€” apply, export, rows â‰¤ unfiltered total, headers unchanged, clear after
+RPT-013 | LIMAS-SUD-1733 | Date filter â€” apply Expiration Date, export, rows â‰¤ total, headers unchanged, clear after
+RPT-013 | LIMAS-SUD-1734 | Zero-result filter behavior â€” no-match filter, export behavior, no crash
+RPT-013 | LIMAS-SUD-1735 | Duplicate protection â€” click twice, one download per click, both valid
+RPT-013 | LIMAS-SUD-1736 | Cleanup â€” export, temp dir removed after cleanupExportArtifacts, no stray files
+RPT-013 | LIMAS-SUD-1737 | Accessibility â€” accessible name "Export Excel", disabled state in Active, keyboard reachable, focus-visible
+RPT-013 | LIMAS-SUD-1738 | Restore Active â€” FL selected, Active pressed, 0/0 counts, Export disabled, route /reports
+RPT-013 | LIMAS-SUD-1739 | Unauthorized 401
+RPT-013 | LIMAS-SUD-1740 | Server error 500
+RPT-014 | LIMAS-SUD-1750 | Toolbar order ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â record count, mode group, Filters button, Export Excel button
+RPT-014 | LIMAS-SUD-1756 | Export Excel ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â button role, accessible name "Export Excel", tabindex, enabled state (even during error)
+RPT-015 | LIMAS-SUD-1770 | Export state ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabled when data loaded
+RPT-016 | LIMAS-SUD-1796 | Export button state ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabled, accessible name, tabindex
+RPT-016 | LIMAS-SUD-1797 | Client-side contract ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no server request, download fires, filename received
+RPT-016 | LIMAS-SUD-1798 | Workbook validation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â valid .xlsx, nonempty, not corrupt, sheet present
+RPT-016 | LIMAS-SUD-1799 | Headers/schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â correct columns present in exported workbook
+RPT-016 | LIMAS-SUD-1800 | Row count ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â data rows match totalElements from UI, header row present
+RPT-016 | LIMAS-SUD-1801 | Filtered scope ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â filtered export has fewer rows, unfiltered restores full
+RPT-017 | LIMAS-SUD-1802 | UI preservation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â mode, card, counts, table preserved during export
+RPT-017 | LIMAS-SUD-1803 | Duplicate protection ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â two clicks, two downloads, both valid
+RPT-017 | LIMAS-SUD-1804 | Cleanup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â file removed, temp cleaned, finally block executes
+RPT-017 | LIMAS-SUD-1806 | Export a11y ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â button accessible name, keyboard, state, download notification
+
+Machine-readable policy: config/manual-verification-cases.json
+Current disposition and historical outcome: docs/execution-records/office-repair/manual-verification-cases.csv

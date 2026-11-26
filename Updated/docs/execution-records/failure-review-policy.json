@@ -1,0 +1,5 @@
+{
+  "updatedAt": "2026-11-25T16:19:31.372Z",
+  "instruction": "Compare every failure with the scenario requirement and observed UI before changing a test. Repair automation defects only; retain failures when the deployed application violates the requirement.",
+  "confirmedRequirement": "The Dashboard account header must display an email address, not an identity-provider identifier."
+}

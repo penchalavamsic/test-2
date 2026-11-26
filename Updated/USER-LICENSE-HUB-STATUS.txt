@@ -1,0 +1,76 @@
+USER & LICENSE HUB - CURRENT EXECUTION STATUS
+Updated: 26 Nov 2026, 11:52 IST
+Scope: ULH-019 through ULH-028; Super Admin; important screenshots, videos and traces.
+Status: complete
+All requested batches processed, script corrections verified and reports checked; failed and skipped cases remain explicitly recorded.
+
+1. THIS RESUME (196 PLANNED CASES)
+144 passed; 3 failed; 49 skipped; 0 remaining.
+Latest results only. Original failed attempts remain. Skips are not passes.
+
+2. BATCH RESULTS
+ULH-019: 20 passed / 0 failed / 0 skipped / 0 remaining (20 cases).
+ULH-020: 20 passed / 0 failed / 0 skipped / 0 remaining (20 cases).
+ULH-021: 20 passed / 0 failed / 0 skipped / 0 remaining (20 cases).
+ULH-022: 20 passed / 0 failed / 0 skipped / 0 remaining (20 cases).
+ULH-023: 20 passed / 0 failed / 0 skipped / 0 remaining (20 cases).
+ULH-024: 10 passed / 1 failed / 9 skipped / 0 remaining (20 cases).
+ULH-025: 15 passed / 1 failed / 4 skipped / 0 remaining (20 cases).
+ULH-026: 10 passed / 1 failed / 9 skipped / 0 remaining (20 cases).
+ULH-027: 5 passed / 0 failed / 15 skipped / 0 remaining (20 cases).
+ULH-028: 4 passed / 0 failed / 12 skipped / 0 remaining (16 cases).
+
+3. ENTIRE USER & LICENSE HUB
+556 planned; 432 passed; 44 failed; 80 skipped; 0 remaining.
+Previously recorded failures from ULH-001 through ULH-018 are included; they were not automatically rerun in this resume.
+
+4. FAILURES IN THESE TEN BATCHES
+LIMAS-SUD-1395: LIMAS-SUD-1395: Focus return Edit after Cancel
+  Evidence: test-runs/super-admin-live-20261125/user-license-hub/ULH-024_2026-11-26T06-14-32-603Z_13e2144b/Test-Reports/Complete-Suite-Test-Report.zip
+LIMAS-SUD-1414: LIMAS-SUD-1414: A11y initial focus Role
+  Evidence: test-runs/super-admin-live-20261125/user-license-hub/ULH-025_2026-11-26T06-17-19-208Z_b7ba3f0d/Test-Reports/Complete-Suite-Test-Report.zip
+LIMAS-SUD-1429: LIMAS-SUD-1429: A11y focus return
+  Evidence: test-runs/super-admin-live-20261125/user-license-hub/ULH-026_2026-11-26T06-18-45-201Z_b298ce20/Test-Reports/Complete-Suite-Test-Report.zip
+All Hub failures and classifications are listed in execution-status/03-failed-cases.csv.
+
+5. SKIPPED CASES
+Requires controlled CI/CD fixture
+  LIMAS-SUD-1397, LIMAS-SUD-1398, LIMAS-SUD-1399, LIMAS-SUD-1400, LIMAS-SUD-1401, LIMAS-SUD-1402, LIMAS-SUD-1403, LIMAS-SUD-1404, LIMAS-SUD-1405, LIMAS-SUD-1406, LIMAS-SUD-1407, LIMAS-SUD-1408, LIMAS-SUD-1409, LIMAS-SUD-1479, LIMAS-SUD-1480
+TEST_ULH_ALLOW_LICENSE_MUTATION not set
+  LIMAS-SUD-1437, LIMAS-SUD-1438, LIMAS-SUD-1439, LIMAS-SUD-1440, LIMAS-SUD-1441, LIMAS-SUD-1442, LIMAS-SUD-1443, LIMAS-SUD-1444, LIMAS-SUD-1445, LIMAS-SUD-1446, LIMAS-SUD-1447, LIMAS-SUD-1448, LIMAS-SUD-1449, LIMAS-SUD-1450, LIMAS-SUD-1451, LIMAS-SUD-1452, LIMAS-SUD-1469, LIMAS-SUD-1470, LIMAS-SUD-1471, LIMAS-SUD-1472, LIMAS-SUD-1473, LIMAS-SUD-1474, LIMAS-SUD-1475, LIMAS-SUD-1476, LIMAS-SUD-1477, LIMAS-SUD-1481
+Gated: requires mutation execution
+  LIMAS-SUD-1453, LIMAS-SUD-1454, LIMAS-SUD-1455, LIMAS-SUD-1456, LIMAS-SUD-1457, LIMAS-SUD-1458, LIMAS-SUD-1459, LIMAS-SUD-1460
+Existing mutation gates and controlled-failure prerequisites remain. No skipped mutation scenario is claimed as executed.
+
+6. SCRIPT CORRECTIONS
+LIMAS-SUD-1308: Scope the assertion to the exact Profile * label instead of matching both the label and the explanatory paragraph.
+  Verification: LIMAS-SUD-1308: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1314: Verify disabled state first, send the pointer click without waiting for enabled state, and verify disabled state plus aria-expanded=false and no listbox.
+  Verification: LIMAS-SUD-1314: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1465: Block any outgoing DELETE at the browser route while preserving the request-observation assertion.
+  Verification: LIMAS-SUD-1465: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1347: Clear the field, type invalid text through keyboard events, assert the value stays empty, and restore the original date.
+  Verification: LIMAS-SUD-1347: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1359: Assert a populated ISO date before date arithmetic, allowing the normal assertion wait for rendering.
+  Verification: LIMAS-SUD-1359: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1390: Wait for the dialog to become hidden after Cancel before checking requests and running teardown.
+  Verification: LIMAS-SUD-1390: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1392, LIMAS-SUD-1393: Capture hardware ID and profile, reapply that profile after reload, find the exact same license card and compare its fields.
+  Verification: LIMAS-SUD-1392: passed; LIMAS-SUD-1393: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1392, LIMAS-SUD-1393: Capture the original license owner email and reselect that exact owner after reload before resolving the hardware/profile card.
+  Verification: LIMAS-SUD-1392: passed; LIMAS-SUD-1393: passed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+LIMAS-SUD-1395, LIMAS-SUD-1414, LIMAS-SUD-1429: Assert focus on Role at opening and on the Edit trigger after dismissal, waiting for dismissal to finish.
+  Verification: LIMAS-SUD-1395: failed; LIMAS-SUD-1414: failed; LIMAS-SUD-1429: failed. Latest execution is linked in latestVerification; earlier failed attempts remain.
+
+7. EVIDENCE
+Batch reports: test-runs/super-admin-live-20261125/user-license-hub/
+Each run contains Test-Reports/Complete-Suite-Test-Report.zip and individual test report ZIPs.
+Extract the whole report ZIP before opening index.html. Keep all internal folders together.
+ULH-018 packaging was completed without rerunning its application tests.
+Privacy/path verification results are in each processed run/path-verification.json.
+Coverage gaps in existing scripts remain documented in docs/execution-records/coverage-mapping-findings.json. A pass covers the implemented assertions, not missing assertions.
+No GitHub upload of this resumed Hub execution has been performed. Original report media remains local.
+
+8. OTHER TABS
+Other pending tabs were not resumed. Server Licensing remains excluded.
+See EXECUTION-STATUS.html for the whole project and execution-status/08-remaining-batches.csv for remaining batches.

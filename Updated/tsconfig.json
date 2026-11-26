@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "declaration": false,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "tests/**/*.ts",
+    "playwright.config.ts",
+    "reporters/**/*.ts",
+    "framework-tests/**/*.ts",
+    "playwright.offline.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "playwright-report",
+    "test-results",
+    "backup"
+  ]
+}

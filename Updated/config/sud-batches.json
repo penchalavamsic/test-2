@@ -1,0 +1,295 @@
+{
+  "description": "System User Dashboard batch definitions for local execution. Each batch has a name, functional section, Test ID range, and grep pattern. Max 50 tests per batch. Order follows the execution priority: Pending License Requests → Active User Licenses → Floating Licenses → Floating License Configurations → Standard License Configurations → Remaining.",
+  "batchCount": 25,
+  "totalTests": 917,
+  "maxTestsPerBatch": 50,
+  "batches": [
+    {
+      "name": "SUD-PL-01",
+      "section": "Pending License Requests",
+      "description": "Dashboard shell, nav, summary cards, count badge, card labels, card icons, color schemes, exclusive selection, content update, section heading + subtitle (IDs 1-46)",
+      "idRange": "1-46",
+      "testCount": 46,
+      "grep": "/(LIMAS-SUD-00[1-9]:|LIMAS-SUD-0[1-3][0-9]:|LIMAS-SUD-04[0-6]:)/",
+      "specFiles": ["LIMAS-SUD-001-dashboard-route.spec.ts through LIMAS-SUD-046-nav-items-accessibility.spec.ts"],
+      "subBatches": [
+        { "name": "SUD-PL-01-A", "idRange": "1-20",  "testCount": 20, "grep": "/(LIMAS-SUD-00[1-9]:|LIMAS-SUD-01[0-9]:|LIMAS-SUD-020:)/" },
+        { "name": "SUD-PL-01-B", "idRange": "21-40", "testCount": 20, "grep": "/(LIMAS-SUD-02[1-9]:|LIMAS-SUD-03[0-9]:|LIMAS-SUD-040:)/",
+          "executionViews": [
+            { "name": "SUD-PL-01-B1", "idRange": "21-30", "testCount": 10, "grep": "/(LIMAS-SUD-02[1-9]:|LIMAS-SUD-030:)/" },
+            { "name": "SUD-PL-01-B2", "idRange": "31-40", "testCount": 10, "grep": "/(LIMAS-SUD-03[1-9]:|LIMAS-SUD-040:)/" }
+          ]
+        },
+        { "name": "SUD-PL-01-C", "idRange": "41-46", "testCount": 6,  "grep": "/(LIMAS-SUD-04[1-6]:)/" }
+      ]
+    },
+    {
+      "name": "SUD-PL-02",
+      "section": "Pending License Requests",
+      "description": "Pending section shell, search field, history switch, count display, table, column headings (IDs 47-81)",
+      "idRange": "47-81",
+      "testCount": 35,
+      "grep": "/(LIMAS-SUD-04[7-9]:|LIMAS-SUD-0[5-7][0-9]:|LIMAS-SUD-08[0-1]:)/",
+      "specFiles": ["LIMAS-SUD-047-summary-cards-rendered.spec.ts through LIMAS-SUD-081-row-data-complete.spec.ts"],
+      "subBatches": [
+        { "name": "SUD-PL-02-A", "idRange": "47-58", "testCount": 12, "grep": "/(LIMAS-SUD-04[7-9]:|LIMAS-SUD-05[0-8]:)/" },
+        { "name": "SUD-PL-02-B", "idRange": "59-70", "testCount": 12, "grep": "/(LIMAS-SUD-059:|LIMAS-SUD-06[0-9]:|LIMAS-SUD-070:)/",
+          "executionViews": [
+            { "name": "SUD-PL-02-B1", "idRange": "59-64", "testCount": 6, "grep": "/(LIMAS-SUD-059:|LIMAS-SUD-06[0-4]:)/" },
+            { "name": "SUD-PL-02-B2", "idRange": "65-70", "testCount": 6, "grep": "/(LIMAS-SUD-06[5-9]:|LIMAS-SUD-070:)/" }
+          ]
+        },
+        { "name": "SUD-PL-02-C", "idRange": "71-81", "testCount": 11, "grep": "/(LIMAS-SUD-07[1-9]:|LIMAS-SUD-08[0-1]:)/",
+          "executionViews": [
+            { "name": "SUD-PL-02-C1", "idRange": "71-76", "testCount": 6, "grep": "/(LIMAS-SUD-07[1-6]:)/" },
+            { "name": "SUD-PL-02-C2", "idRange": "77-81", "testCount": 5, "grep": "/(LIMAS-SUD-07[7-9]:|LIMAS-SUD-08[0-1]:)/" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SUD-PL-03",
+      "section": "Pending License Requests",
+      "description": "Search behavior, approve inline form, user group, profile, role, expiration, maintenance, cancel, form restoration (IDs 82-127)",
+      "idRange": "82-127",
+      "testCount": 46,
+      "grep": "/(LIMAS-SUD-08[2-9]:|LIMAS-SUD-09[0-9]:|LIMAS-SUD-1[0-1][0-9]:|LIMAS-SUD-12[0-7]:)/",
+      "specFiles": ["LIMAS-SUD-082-search-by-username.spec.ts through LIMAS-SUD-127-search-api-behavior.spec.ts"],
+      "subBatches": [
+        { "name": "SUD-PL-03-A", "idRange": "82-93", "testCount": 12, "grep": "/(LIMAS-SUD-08[2-9]:|LIMAS-SUD-09[0-3]:)/",
+          "executionViews": [
+            { "name": "SUD-PL-03-A1", "idRange": "82-87", "testCount": 6, "grep": "/(LIMAS-SUD-08[2-7]:)/" },
+            { "name": "SUD-PL-03-A2", "idRange": "88-93", "testCount": 6, "grep": "/(LIMAS-SUD-08[8-9]:|LIMAS-SUD-09[0-3]:)/" }
+          ]
+        },
+        { "name": "SUD-PL-03-B", "idRange": "94-105", "testCount": 12, "grep": "/(LIMAS-SUD-09[4-9]:|LIMAS-SUD-10[0-5]:)/",
+          "executionViews": [
+            { "name": "SUD-PL-03-B1", "idRange": "94-99", "testCount": 6, "grep": "/(LIMAS-SUD-09[4-9]:)/" },
+            { "name": "SUD-PL-03-B2", "idRange": "100-105", "testCount": 6, "grep": "/(LIMAS-SUD-10[0-5]:)/" }
+          ]
+        },
+        { "name": "SUD-PL-03-C", "idRange": "106-117", "testCount": 12, "grep": "/(LIMAS-SUD-10[6-9]:|LIMAS-SUD-11[0-7]:)/",
+          "executionViews": [
+            { "name": "SUD-PL-03-C1", "idRange": "106-111", "testCount": 6, "grep": "/(LIMAS-SUD-10[6-9]:|LIMAS-SUD-11[0-1]:)/" },
+            { "name": "SUD-PL-03-C2", "idRange": "112-117", "testCount": 6, "grep": "/(LIMAS-SUD-11[2-7]:)/" }
+          ]
+        },
+        { "name": "SUD-PL-03-D", "idRange": "118-127", "testCount": 10, "grep": "/(LIMAS-SUD-11[8-9]:|LIMAS-SUD-12[0-7]:)/",
+          "executionViews": [
+            { "name": "SUD-PL-03-D1", "idRange": "118-122", "testCount": 5, "grep": "/(LIMAS-SUD-11[8-9]:|LIMAS-SUD-12[0-2]:)/" },
+            { "name": "SUD-PL-03-D2", "idRange": "123-127", "testCount": 5, "grep": "/(LIMAS-SUD-12[3-7]:)/" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SUD-PL-04",
+      "section": "Pending License Requests",
+      "description": "Incremental loading, table readability, single form, selected row, keyboard, profile reset, role reset (IDs 128-160)",
+      "idRange": "128-160",
+      "testCount": 33,
+      "grep": "/(LIMAS-SUD-12[8-9]:|LIMAS-SUD-1[3-5][0-9]:|LIMAS-SUD-160:)/",
+      "specFiles": ["LIMAS-SUD-128-incremental-loading-trigger.spec.ts through LIMAS-SUD-160-date-field-accessible-labels.spec.ts"]
+    },
+    {
+      "name": "SUD-PL-05",
+      "section": "Pending License Requests",
+      "description": "Processed history switch, heading, search, counts, list, column headings, API request, pagination, rendering, session (IDs 161-210)",
+      "idRange": "161-210",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-16[1-9]:|LIMAS-SUD-1[7-9][0-9]:|LIMAS-SUD-20[0-9]:|LIMAS-SUD-210:)/",
+      "specFiles": ["LIMAS-SUD-161-history-switch-visibility.spec.ts through LIMAS-SUD-210-no-visible-clear-button-history.spec.ts"]
+    },
+    {
+      "name": "SUD-PL-06",
+      "section": "Pending License Requests",
+      "description": "Processed record fields, search by various criteria, case-insensitivity, whitespace, count updates, clear, special chars (IDs 211-268). Negative search (HW, feature, user), scroll loaded-count verification (IDs 269-272).",
+      "idRange": "211-272",
+      "testCount": 54,
+      "grep": "/(LIMAS-SUD-21[1-9]:|LIMAS-SUD-2[2-5][0-9]:|LIMAS-SUD-26[0-8]:|LIMAS-SUD-269:|LIMAS-SUD-27[0-2]:)/",
+      "specFiles": ["LIMAS-SUD-211-processed-record-card-container.spec.ts through LIMAS-SUD-272-scroll-loaded-count-increases.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-01",
+      "section": "Active User Licenses",
+      "description": "Expiring Licenses section shell, summary card, heading, subtitle, filter controls, expires-before input, search, count, empty state, live region (IDs 273-315)",
+      "idRange": "273-315",
+      "testCount": 43,
+      "grep": "/(LIMAS-SUD-27[3-9]:|LIMAS-SUD-2[8-9][0-9]:|LIMAS-SUD-30[0-9]:|LIMAS-SUD-31[0-5]:)/",
+      "specFiles": ["LIMAS-SUD-273-expiring-licenses-summary-card-visible.spec.ts through LIMAS-SUD-315-count-text-uses-loaded-total-format.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-02",
+      "section": "Active User Licenses",
+      "description": "Expiring Licenses loading indicator, count text, empty state behavior (IDs 316-360)",
+      "idRange": "316-360",
+      "testCount": 45,
+      "grep": "/(LIMAS-SUD-31[6-9]:|LIMAS-SUD-3[2-5][0-9]:|LIMAS-SUD-360:)/",
+      "specFiles": ["LIMAS-SUD-316-loading-indicator-container-min-h-36.spec.ts through LIMAS-SUD-360-user-group-column-in-expiring-licenses-records.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-03",
+      "section": "Active User Licenses",
+      "description": "Expiring Licenses extend dialog shell, heading, controls, escape, close, focus, role label (IDs 361-416)",
+      "idRange": "361-416",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-36[1-9]:|LIMAS-SUD-3[7-9][0-9]:|LIMAS-SUD-40[0-9]:|LIMAS-SUD-41[0-6]:)/",
+      "specFiles": ["LIMAS-SUD-361-extend-dialog-visibility.spec.ts through LIMAS-SUD-416-extend-dialog-heading-h2.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-04",
+      "section": "Active User Licenses",
+      "description": "Extend dialog expiration controls: date input, label, min attribute, focus, calendar, future/past/current, extend-by-days (IDs 417-463)",
+      "idRange": "417-463",
+      "testCount": 47,
+      "grep": "/(LIMAS-SUD-41[7-9]:|LIMAS-SUD-4[2-5][0-9]:|LIMAS-SUD-46[0-3]:)/",
+      "specFiles": ["LIMAS-SUD-417-extend-label.spec.ts through LIMAS-SUD-463-extend-by-days-initially-empty.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-05",
+      "section": "Active User Licenses",
+      "description": "Extend dialog days input, stepper, mutual exclusion, apply always enabled, pre-submission validation, a11y gaps (IDs 464-517)",
+      "idRange": "464-517",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-46[4-9]:|LIMAS-SUD-4[7-9][0-9]:|LIMAS-SUD-50[0-9]:|LIMAS-SUD-51[0-7]:)/",
+      "specFiles": ["LIMAS-SUD-464-extend-by-days-enabled.spec.ts through LIMAS-SUD-517-new-expiration-date-label-associated.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-06",
+      "section": "Active User Licenses",
+      "description": "Extend dialog maintenance and sync: maint date, maint days, sync checkbox, cross-date validation, apply, toast, lifecycle (IDs 518-589)",
+      "idRange": "518-589",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-51[8-9]:|LIMAS-SUD-5[2-8][0-9]:|LIMAS-SUD-589:)/",
+      "specFiles": ["LIMAS-SUD-518-new-expiration-date-min-attribute.spec.ts through LIMAS-SUD-589-sync-with-exp-date-populates-maint-date.spec.ts"]
+    },
+    {
+      "name": "SUD-EL-07",
+      "section": "Active User Licenses",
+      "description": "Extend dialog sync, uncheck, apply, success/failure toast, count refresh (IDs 590-640)",
+      "idRange": "590-640",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-59[0-9]:|LIMAS-SUD-6[0-3][0-9]:|LIMAS-SUD-640:)/",
+      "specFiles": ["LIMAS-SUD-590-sync-disables-maint-date.spec.ts through LIMAS-SUD-640-apply-validation-maint-after-exp.spec.ts"]
+    },
+    {
+      "name": "SUD-EFC-01",
+      "section": "Floating License Configurations",
+      "description": "EFC summary card, section shell, filter group, heading, subtitle, expires-until, configs button, search, count, empty state, live region, loading (IDs 641-690)",
+      "idRange": "641-690",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-64[1-9]:|LIMAS-SUD-6[5-8][0-9]:|LIMAS-SUD-690:)/",
+      "specFiles": ["LIMAS-SUD-641-efc-summary-card-visible.spec.ts through LIMAS-SUD-690-efc-counts-hidden-during-loading.spec.ts"]
+    },
+    {
+      "name": "SUD-EFC-02",
+      "section": "Floating License Configurations",
+      "description": "EFC loading: empty state, request lifecycle, GET request, query params, endpoint, no write methods, response contract (IDs 692-743)",
+      "idRange": "692-743",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-69[2-9]:|LIMAS-SUD-70[0-9]:|LIMAS-SUD-7[1-3][0-9]:|LIMAS-SUD-74[0-3]:)/",
+      "specFiles": ["LIMAS-SUD-692-efc-empty-state-not-shown-prematurely.spec.ts through LIMAS-SUD-743-efc-c-maintenance-color-only-identification.spec.ts"]
+    },
+    {
+      "name": "SUD-EFC-03",
+      "section": "Floating License Configurations",
+      "description": "EFC filter group fieldset, mutual exclusion, keyboard navigation, maintenance radio, transitions, date input, date behavior (IDs 744-799)",
+      "idRange": "744-799",
+      "testCount": 50,
+      "grep": "/(LIMAS-SUD-74[4-9]:|LIMAS-SUD-7[5-9][0-9]:|LIMAS-SUD-799:)/",
+      "specFiles": ["LIMAS-SUD-744-efc-c-filter-group-fieldset.spec.ts through LIMAS-SUD-799-efc-d-focus-return.spec.ts"]
+    },
+    {
+      "name": "SUD-EFC-04",
+      "section": "Floating License Configurations",
+      "description": "EFC date control, calendar, past/future date requests, URL format, maintenance path, expiration path, value persistence, invalid text (IDs 800-843)",
+      "idRange": "800-843",
+      "testCount": 44,
+      "grep": "/(LIMAS-SUD-80[0-9]:|LIMAS-SUD-8[1-3][0-9]:|LIMAS-SUD-84[0-3]:)/",
+      "specFiles": ["LIMAS-SUD-800-efc-d-no-separate-icon.spec.ts through LIMAS-SUD-843-efc-e-search-independent-of-date.spec.ts"]
+    },
+    {
+      "name": "SUD-EFC-05",
+      "section": "Floating License Configurations",
+      "description": "EFC combined date+search, interaction, count, filter switching, search control, tab order (IDs 844-860)",
+      "idRange": "844-860",
+      "testCount": 17,
+      "grep": "/(LIMAS-SUD-84[4-9]:|LIMAS-SUD-85[0-9]:|LIMAS-SUD-860:)/",
+      "specFiles": ["LIMAS-SUD-844-efc-f-date-triggers-expiration-get.spec.ts through LIMAS-SUD-860-efc-f-tab-order-date-button-search.spec.ts"]
+    },
+    {
+      "name": "SUD-FL-01",
+      "section": "Floating Licenses",
+      "description": "Floating Licenses summary card, section shell, search/date controls, zero counts, empty state, no action controls (IDs 861-887)",
+      "idRange": "861-887",
+      "testCount": 27,
+      "grep": "LIMAS-SUD-(86[1-9]|87[0-9]|88[0-7]):",
+      "specFiles": ["floating-licenses-summary-card.spec.ts", "floating-licenses-section-shell.spec.ts", "floating-licenses-search-control.spec.ts", "floating-licenses-date-control.spec.ts", "floating-licenses-network.spec.ts", "floating-licenses-zero-state.spec.ts"]
+    },
+    {
+      "name": "SUD-FL-02",
+      "section": "Floating Licenses",
+      "description": "Floating Licenses date behavior, search behavior, combined filters, filtered zero state, network, accessibility (IDs 888-925)",
+      "idRange": "888-925",
+      "testCount": 38,
+      "grep": "LIMAS-SUD-(88[8-9]|89[0-9]|90[0-9]|91[0-9]|92[0-5]):",
+      "specFiles": ["floating-licenses-date-behavior.spec.ts", "floating-licenses-search-behavior.spec.ts", "floating-licenses-combined-filters.spec.ts", "floating-licenses-filtered-zero-state.spec.ts"]
+    },
+    {
+      "name": "AUTH-01",
+      "section": "Authentication",
+      "description": "Login validation (positive/negative), Sign Out, session clearance, and 5-cycle reliability (IDs 27-41)",
+      "idRange": "27-41",
+      "testCount": 15,
+      "grep": "LIMAS-AUTH-(02[7-9]|03[0-9]|04[0-1]):",
+      "suite": "authentication",
+      "project": "default",
+      "specFiles": [
+        "LIMAS-AUTH-027-valid-username-valid-password.spec.ts",
+        "LIMAS-AUTH-028-valid-username-invalid-password.spec.ts",
+        "LIMAS-AUTH-029-invalid-username-valid-password.spec.ts",
+        "LIMAS-AUTH-030-invalid-username-invalid-password.spec.ts",
+        "LIMAS-AUTH-031-empty-username-valid-password.spec.ts",
+        "LIMAS-AUTH-032-valid-username-empty-password.spec.ts",
+        "LIMAS-AUTH-033-empty-username-empty-password.spec.ts",
+        "LIMAS-AUTH-034-username-only-signin.spec.ts",
+        "LIMAS-AUTH-035-password-only-signin.spec.ts",
+        "LIMAS-AUTH-036-whitespace-only-credentials.spec.ts",
+        "LIMAS-AUTH-037-login-then-sign-out.spec.ts",
+        "LIMAS-AUTH-038-re-login-after-sign-out.spec.ts",
+        "LIMAS-AUTH-039-five-cycle-login-signout.spec.ts",
+        "LIMAS-AUTH-040-protected-content-inaccessible-after-signout.spec.ts",
+        "LIMAS-AUTH-041-session-state-cleared-after-signout.spec.ts"
+      ],
+      "subBatches": [
+        {
+          "name": "AUTH-01-A",
+          "idRange": "27-36",
+          "testCount": 10,
+          "grep": "LIMAS-AUTH-(02[7-9]|03[0-6]):",
+          "description": "Login validation scenarios — valid/invalid/empty credentials, whitespace"
+        },
+        {
+          "name": "AUTH-01-B",
+          "idRange": "37-38",
+          "testCount": 2,
+          "grep": "LIMAS-AUTH-(037|038):",
+          "description": "Login, sign-out, and re-login scenarios"
+        },
+        {
+          "name": "AUTH-01-C",
+          "idRange": "39-41",
+          "testCount": 3,
+          "grep": "LIMAS-AUTH-(039|040|041):",
+          "description": "Reliability and session-management scenarios"
+        }
+      ]
+    }
+  ],
+  "_validation": {
+    "note": "Batch counts are approximate based on file count. Exact counts verified via `npx playwright test --list --grep <pattern>`.",
+    "executionOrder": ["SUD-PL-01", "SUD-PL-02", "SUD-PL-03", "SUD-PL-04", "SUD-PL-05", "SUD-PL-06", "SUD-EL-01", "SUD-EL-02", "SUD-EL-03", "SUD-EL-04", "SUD-EL-05", "SUD-EL-06", "SUD-EL-07", "SUD-EFC-01", "SUD-EFC-02", "SUD-EFC-03", "SUD-EFC-04", "SUD-EFC-05", "SUD-FL-01", "SUD-FL-02", "AUTH-01"],
+    "skippedTestIDs": "273 (gap), 690 (gap) — verified not discoverable due to missing spec files",
+    "authSetupExcluded": true
+  }
+}

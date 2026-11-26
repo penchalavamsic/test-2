@@ -1,0 +1,231 @@
+{
+  "reason": "Remove duplicate Technical-Evidence archives for Dashboard already uploaded and confirmed downloaded; retain raw evidence, HTML, scripts, and current repair runs",
+  "completed": true,
+  "files": [
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-005_2026-11-25T16-17-20-037Z_1d03f390/Technical-Evidence.zip",
+      "bytes": 370296893
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-006_2026-11-25T16-18-39-433Z_74a1789e/Technical-Evidence.zip",
+      "bytes": 512130448
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-007_2026-11-25T16-21-21-886Z_6936db53/Technical-Evidence.zip",
+      "bytes": 440653589
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-008_2026-11-25T16-24-52-432Z_14ad08a1/Technical-Evidence.zip",
+      "bytes": 372598486
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-017_2026-11-25T16-46-33-541Z_0edaa0f6/Technical-Evidence.zip",
+      "bytes": 634110646
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-018_2026-11-25T16-48-27-689Z_8be712ab/Technical-Evidence.zip",
+      "bytes": 700672542
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-019_2026-11-25T16-50-42-257Z_a7e99cf2/Technical-Evidence.zip",
+      "bytes": 921757272
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-020_2026-11-25T16-53-12-305Z_ce6b2d47/Technical-Evidence.zip",
+      "bytes": 1190471584
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-021_2026-11-25T16-56-18-264Z_0f67ba45/Technical-Evidence.zip",
+      "bytes": 1121319363
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-022_2026-11-25T16-59-36-935Z_536e9c42/Technical-Evidence.zip",
+      "bytes": 791715650
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-023_2026-11-25T17-01-52-813Z_2f5ec292/Technical-Evidence.zip",
+      "bytes": 917690258
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-023_2026-11-25T17-05-20-010Z_cbb9d9da/Technical-Evidence.zip",
+      "bytes": 633768283
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-024_2026-11-25T17-07-10-491Z_64e60c72/Technical-Evidence.zip",
+      "bytes": 580592508
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-024_2026-11-25T17-12-25-518Z_746603fc/Technical-Evidence.zip",
+      "bytes": 320182614
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-025_2026-11-25T17-13-33-395Z_119b18c5/Technical-Evidence.zip",
+      "bytes": 627617783
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-025_2026-11-25T17-17-34-899Z_2b3d181c/Technical-Evidence.zip",
+      "bytes": 621026692
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-026_2026-11-25T17-16-35-386Z_b336199a/Technical-Evidence.zip",
+      "bytes": 703806240
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-026_2026-11-25T17-24-26-382Z_498d9e36/Technical-Evidence.zip",
+      "bytes": 120366023
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-027_2026-11-25T17-19-08-409Z_92307030/Technical-Evidence.zip",
+      "bytes": 751105764
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-027_2026-11-25T17-28-50-206Z_13fae105/Technical-Evidence.zip",
+      "bytes": 47953526
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-028_2026-11-25T17-21-39-973Z_418ed27d/Technical-Evidence.zip",
+      "bytes": 761761162
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-028_2026-11-25T17-29-19-750Z_1bf0a82e/Technical-Evidence.zip",
+      "bytes": 95739274
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-029_2026-11-25T17-24-07-313Z_eab065d5/Technical-Evidence.zip",
+      "bytes": 851444711
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-029_2026-11-25T17-30-38-731Z_f9064338/Technical-Evidence.zip",
+      "bytes": 58797705
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-030_2026-11-25T17-27-01-469Z_68e4de2e/Technical-Evidence.zip",
+      "bytes": 827902764
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-031_2026-11-25T17-29-41-205Z_e592782e/Technical-Evidence.zip",
+      "bytes": 838990561
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-032_2026-11-25T17-25-24-122Z_e3df1c6b/Technical-Evidence.zip",
+      "bytes": 116101721
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-032_2026-11-25T17-32-25-050Z_674a11f0/Technical-Evidence.zip",
+      "bytes": 306154124
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-032_2026-11-25T17-35-47-637Z_6ad35539/Technical-Evidence.zip",
+      "bytes": 52185524
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-033_2026-11-25T17-33-44-782Z_e88b5485/Technical-Evidence.zip",
+      "bytes": 109975667
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-033_2026-11-25T17-36-26-191Z_a0050ef4/Technical-Evidence.zip",
+      "bytes": 20874389
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-033_2026-11-25T17-40-11-436Z_995cad87/Technical-Evidence.zip",
+      "bytes": 15782805
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-034_2026-11-25T17-34-55-758Z_245ca75e/Technical-Evidence.zip",
+      "bytes": 130593752
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-034_2026-11-25T17-40-36-794Z_eb71a879/Technical-Evidence.zip",
+      "bytes": 22961412
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-035_2026-11-25T17-36-21-898Z_8bd2fb2a/Technical-Evidence.zip",
+      "bytes": 192490083
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-035_2026-11-25T17-41-13-993Z_4bf4b501/Technical-Evidence.zip",
+      "bytes": 24297244
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-036_2026-11-25T17-37-57-823Z_9b9f14cf/Technical-Evidence.zip",
+      "bytes": 169535825
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-037_2026-11-25T17-39-11-664Z_64880a46/Technical-Evidence.zip",
+      "bytes": 154168423
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-038_2026-11-25T17-40-12-362Z_6f9e805b/Technical-Evidence.zip",
+      "bytes": 316071237
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-038_2026-11-25T17-46-24-525Z_21fde7d4/Technical-Evidence.zip",
+      "bytes": 27689535
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-039_2026-11-25T17-42-52-015Z_6865b924/Technical-Evidence.zip",
+      "bytes": 171799849
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-040_2026-11-25T17-44-06-540Z_b33ce360/Technical-Evidence.zip",
+      "bytes": 202365031
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-040_2026-11-25T17-55-12-970Z_3313548b/Technical-Evidence.zip",
+      "bytes": 29607705
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-041_2026-11-25T17-45-54-969Z_0dfe0e95/Technical-Evidence.zip",
+      "bytes": 239642767
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-041_2026-11-25T17-55-45-058Z_f1688a1c/Technical-Evidence.zip",
+      "bytes": 38032001
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-042_2026-11-25T17-47-35-833Z_6aa7f1d6/Technical-Evidence.zip",
+      "bytes": 241057873
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-043_2026-11-25T17-49-04-428Z_db09f71d/Technical-Evidence.zip",
+      "bytes": 279557381
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-043_2026-11-25T17-56-32-073Z_3ae9147b/Technical-Evidence.zip",
+      "bytes": 57528066
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-043_2026-11-25T17-58-48-608Z_234e8fa6/Technical-Evidence.zip",
+      "bytes": 28186426
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-044_2026-11-25T17-51-27-453Z_dba10d1e/Technical-Evidence.zip",
+      "bytes": 228716063
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-044_2026-11-25T17-57-27-631Z_c642335f/Technical-Evidence.zip",
+      "bytes": 22291764
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-044_2026-11-25T17-57-37-016Z_bc66cbe7/Technical-Evidence.zip",
+      "bytes": 24259184
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-045_2026-11-25T17-53-21-693Z_efbbca07/Technical-Evidence.zip",
+      "bytes": 343432937
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-045_2026-11-25T17-57-54-423Z_9d0db7f3/Technical-Evidence.zip",
+      "bytes": 39212084
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-045_2026-11-25T17-59-34-799Z_7e0eddbd/Technical-Evidence.zip",
+      "bytes": 32030236
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/system-user-dashboard/SUD-046_2026-11-25T17-55-07-821Z_f3c4803d/Technical-Evidence.zip",
+      "bytes": 342594177
+    }
+  ],
+  "removedBytes": 19793667626
+}

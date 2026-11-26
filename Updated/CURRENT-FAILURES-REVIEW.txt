@@ -1,0 +1,46 @@
+CURRENT OFFICE-REPAIR RESULTS
+
+Current disposition: 446 passed, 18 failed, 67 skipped.
+Skips: 66 Reports export/download cases require manual verification; 1 System Users case lacks the designated disposable user.
+Historical execution totals: 506 passed, 23 failed, 2 actually skipped. The current disposition applies the user manual-verification decision without rewriting old execution evidence.
+
+REMAINING FAILURES - REASON - NEXT ACTION
+
+Hardware filtering | 2 cases | Functional mismatch reproduced
+LIMAS-SUD-1539, LIMAS-SUD-1540
+Reason: Selected hardware filters leave the full unfiltered total displayed. Request selection uses the actual hardware objects.
+Next: Correct filtered totals/data handling; verify single and multiple hardware selections.
+
+Hardware lookup feedback | 1 cases | UI feedback needs manual verification
+LIMAS-SUD-1542
+Reason: An unavailable hardware lookup returns 404 and no explicit no-match message appears.
+Next: Verify expected no-match feedback and display a clear empty state.
+
+Deleted Standard date filters | 3 cases | Functional mismatch reproduced
+LIMAS-SUD-1595, LIMAS-SUD-1596, LIMAS-SUD-1597
+Reason: Selecting dates that exist in the fetched dataset produces zero matching rows. Deployed conversion uses local midnight -> UTC before comparing the date portion.
+Next: Fix calendar-day/timezone comparison and rerun individual and combined dates.
+
+Deleted report scrolling | 3 cases | Functional mismatch reproduced
+LIMAS-SUD-1590, LIMAS-SUD-1710, LIMAS-SUD-1712
+Reason: More records exist, but scrolling does not append beyond the initial displayed rows. Tests no longer require another HTTP request.
+Next: Fix scroll continuation for cached Standard and Floating Deleted records.
+
+Accessibility | 5 cases | Manual accessibility verification required
+LIMAS-SUD-1525, LIMAS-SUD-1720, LIMAS-SUD-1745, LIMAS-SUD-1761, LIMAS-SUD-1778
+Reason: Tests report missing row-update announcements, color-only mode distinction, or error-heading semantics. These are not automatically confirmed application defects.
+Next: Verify keyboard/screen-reader behavior and the required accessibility baseline before an application change or further assertion revision.
+
+User Group deletion | 4 cases | Persistence failure reproduced
+LIMAS-SUD-2462, LIMAS-SUD-2483, LIMAS-SUD-2504, LIMAS-SUD-2522
+Reason: DELETE returned 200 but the uniquely owned group remained after fresh GET and reload. Create/edit steps succeeded where applicable.
+Next: Fix deletion persistence; retain the removal assertions and clean up only the documented test-created groups.
+
+WHAT WAS CORRECTED
+Cached Clear and refresh behavior; actual hardware checkbox selection and payloads; Deleted filter inventory; empty-state handling; supported multi-filter Clear; real Retry recovery; global System Users search and virtualized row handling. The original plans are preserved under docs/execution-records/office-repair/plan-baselines.
+
+MANUAL EXPORT CHECKS
+See MANUAL-EXPORT-VERIFICATION.txt and docs/execution-records/office-repair/manual-verification-cases.csv. A manual designation is not a manual pass.
+
+NEXT STAGE
+Resolve or manually verify the retained issues, finish evidence portability verification, then prepare the separate branch with Updated scripts/docs and latest media in separate folders. No new GitHub push has been performed. Earlier tabs remain a later stage; Server Licensing stays excluded.

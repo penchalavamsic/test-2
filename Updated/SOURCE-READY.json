@@ -1,0 +1,11 @@
+{
+  "createdAt": "2026-11-26T13:45:52.500Z",
+  "files": 4249,
+  "zipSha256": "6fd70254e70ad420710d7d946b75c150c522ba0b9d4db443eda05f0ef8b57513",
+  "repair": {
+    "cases": 531,
+    "passed": 446,
+    "failed": 18,
+    "skipped": 67
+  }
+}

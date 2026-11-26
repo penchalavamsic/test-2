@@ -1,0 +1,21 @@
+WHY TESTS STILL SHOW FAILED
+
+A failed test is a difference between the script expectation and observed behavior. It is NOT automatically a confirmed application bug. A Reviewed label in an existing plan is not independent proof that its assumptions were approved.
+
+At the start of this continuation, 81 failures included 49 original office failures not yet rerun and 32 failures reproduced locally. All original office failed/skipped cases have now had a local rerun.
+Latest combined results: 446 passed, 18 failed, 67 skipped. Original office passes that were not rerun remain included.
+
+Network or implementation assumptions: 8 cases
+LIMAS-SUD-1539, LIMAS-SUD-1540, LIMAS-SUD-1542, LIMAS-SUD-1590, LIMAS-SUD-1595, LIMAS-SUD-1596, LIMAS-SUD-1710, LIMAS-SUD-1712
+
+UI controls or accessibility expectations needing a confirmed baseline: 6 cases
+LIMAS-SUD-1525, LIMAS-SUD-1597, LIMAS-SUD-1720, LIMAS-SUD-1745, LIMAS-SUD-1761, LIMAS-SUD-1778
+
+Deletion did not persist after successful API response: 4 cases
+LIMAS-SUD-2462, LIMAS-SUD-2483, LIMAS-SUD-2504, LIMAS-SUD-2522
+
+Examples of implementation assumptions: requiring a fresh POST when Clear restores cached data; expecting a server continuation when rows are rendered from already-loaded data; requiring a fixed visible-row count after Clear. The user approved the deployed functional workflow as the baseline; unsupported implementation assumptions are being corrected and rerun.
+
+Requirements explicitly confirmed by the user remain enforced, including email display and actual CRUD persistence. Permitted skip reasons are genuine missing data and the explicit user-requested manual verification of download/Excel export cases. Never change assertions solely to make a test green.
+
+Case-by-case observations and next actions: docs/execution-records/office-repair/failed-cases.csv

@@ -1,0 +1,50 @@
+HOW TO COPY LIMAS REPORTS TO ANOTHER LAPTOP
+
+You do NOT need the entire test-runs folder just to review reports.
+
+1. ONE BATCH
+Copy that completed run's Test-Reports/Complete-Suite-Test-Report.zip.
+On the other laptop, extract the entire ZIP into a folder.
+Open the extracted index.html in Chrome or Edge.
+Keep index.html, Evidence, and all other extracted contents together.
+This includes the screenshots, video recordings, test steps, expected results and recorded outcomes captured for that run. A trace file is included when one was captured.
+The ZIP is self-contained for that run: the original source project and original computer folder are not required to read the HTML evidence report.
+IMPORTANT: Complete-Suite means that particular batch/run. It does not automatically include all batches in the tab.
+
+2. PREVIOUSLY DOWNLOADED TAB PACKAGES
+The Dashboard delivery folder was uploaded and downloaded as dashboard-20261125T180433.
+Its duplicate local delivery copy was removed after verification and user authorization; original raw runs remain.
+Use your downloaded package and keep its index.html, r folder and every other supplied file together.
+Profiles, Features, Floating License Configurations and Authentication were also uploaded and downloaded separately.
+For each downloaded tab package, preserve its complete folder structure before opening its index.html.
+
+3. ANOTHER TAB
+You may copy that tab's completed Complete-Suite-Test-Report.zip files, one per batch/run you want to review.
+Keep each ZIP in a distinct batch/run folder because the filenames repeat.
+Extract each ZIP separately and open the relevant index.html.
+You may alternatively copy the entire tab folder, but it includes extra raw artifacts and duplicate report formats and is much larger.
+A single combined, fully validated delivery folder has not yet been finalized for every other tab.
+
+4. ONE TEST CASE
+Copy its Individual-Test-Reports/<test-id>_test-report.zip and extract it completely.
+It contains only that test's available evidence.
+
+5. AVOID BROKEN SCREENSHOTS
+Do not copy index.html by itself.
+Do not open index.html from inside the ZIP preview: extract first.
+Do not move, rename, or delete individual Evidence/r subfolders after extracting.
+Keep the relative structure unchanged. The destination drive letter and parent folder can be different.
+Normal copying or creating a ZIP preserves the contents of files that share disk storage locally.
+
+6. CURRENT LIMITATIONS
+Skipped and not-started cases do not have completed execution evidence.
+ULH-018 portable packaging was completed during the authorized Hub resume; its original interruption record is retained.
+The full raw-run path/privacy cleanup and final all-tab delivery are unfinished.
+Completed report ZIPs are designed to carry their captured evidence; this is different from saying that every raw artifact is finalized for sharing or GitHub.
+The user separately authorized ULH-019 through ULH-028. See USER-LICENSE-HUB-STATUS.txt for current results, reruns and report validation.
+
+7. STATUS DOCUMENTS
+EXECUTION-STATUS.html and EXECUTION-STATUS.txt explain the overall progress.
+The execution-status folder contains failed/skipped lists, remaining batches, and all case outcomes.
+These status documents do not embed all screenshots. To use their evidence links on another laptop, also copy the referenced evidence folders with the same relative layout.
+For an independent evidence report, use the completed per-run ZIP or a complete downloaded tab delivery folder.

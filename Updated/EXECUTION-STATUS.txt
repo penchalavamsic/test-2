@@ -1,0 +1,80 @@
+HISTORICAL SNAPSHOT: For the supplied office execution and subsequent corrections, use OFFICE-REPAIR-STATUS.txt. The counts below predate those runs.
+
+LIMAS TEST EXECUTION STATUS
+Snapshot: 26 Nov 2026, 11:52:11 IST
+STATUS: Authorized User & License Hub execution finished; other pending tabs remain stopped.
+
+1. OVERALL RESULT
+Planned: 2599; passed: 1745; failed: 111; skipped: 232; remaining: 511.
+Excluded: 230 Server Licensing cases/navigation checks.
+Latest result per case; earlier attempts remain available. A skipped case is not a pass.
+
+2. BATCHES
+Planned: 134; finished execution: 107; partial: 0; not started: 27; remaining: 27.
+Run attempts including reruns: 223. Execution finished can include failures and skips.
+
+3. USER & LICENSE HUB
+28/28 batches finished; 432 passed, 44 failed, 80 skipped, 0 remaining.
+Remaining Hub batches: None
+ULH-018 interrupted packaging was rebuilt during the authorized resume. Its original stop record remains.
+
+4. TAB SUMMARY
+Sign-in / Authentication: 33 passed / 0 failed / 0 skipped / 0 remaining. Batches 2/2.
+System User Dashboard: 857 passed / 37 failed / 22 skipped / 0 remaining. Batches 46/46.
+Profiles: 185 passed / 6 failed / 8 skipped / 0 remaining. Batches 10/10.
+User & License Hub: 432 passed / 44 failed / 80 skipped / 0 remaining. Batches 28/28.
+Reports: 1 passed / 19 failed / 0 skipped / 306 remaining. Batches 1/17.
+Features: 155 passed / 2 failed / 6 skipped / 0 remaining. Batches 9/9.
+Floating License Configurations: 82 passed / 3 failed / 116 skipped / 0 remaining. Batches 11/11.
+Standard License Configurations: 0 passed / 0 failed / 0 skipped / 20 remaining. Batches 0/1.
+System Users: 0 passed / 0 failed / 0 skipped / 53 remaining. Batches 0/3.
+User Groups: 0 passed / 0 failed / 0 skipped / 132 remaining. Batches 0/7.
+
+5. FAILED CASES
+Documented UI / requirement finding: 58
+Review pending: 23
+Requirement review: 28
+Automation / verification limitation: 2
+See execution-status/03-failed-cases.csv for every latest failure, classification and evidence.
+Failures include confirmed UI findings, requirement differences, and unresolved automation limitations. Do not treat all failures as confirmed application defects.
+The required account-email expectation remains unchanged.
+
+6. SKIPPED CASES
+Mutation gate not enabled: 66
+Data or UI prerequisite unavailable: 119
+Other documented skip: 5
+Required test fixture unavailable: 42
+See execution-status/04-skipped-cases.csv for every skip and reason.
+Missing data, mutation gates and controlled failure fixtures are separate prerequisites.
+
+7. REMAINING
+Reports: 306 cases in 16 batches.
+Standard License Configurations: 20 cases in 1 batches.
+System Users: 53 cases in 3 batches.
+User Groups: 132 cases in 7 batches.
+Review unresolved findings and coverage limitations separately from execution totals. No other tab has been automatically resumed.
+
+8. REPORTS AND PORTABILITY
+Original run evidence and earlier failures are retained.
+Uploaded Dashboard, Profiles, Features and Floating License Configurations delivery copies were removed locally after verification and user authorization. Their original raw runs remain.
+Authentication was uploaded to test-2 and downloaded by the user; its local delivery copy is retained.
+GitHub Updated is an earlier source snapshot. The current local Hub corrections and results have not yet been uploaded.
+Hub report packaging attention: None
+New Hub runs are sanitized and checked individually; consult their path-verification.json files. This is not a claim that every historical raw run has finished privacy validation.
+Copy a complete report ZIP, extract it fully, and preserve its internal folders. Do not copy an HTML report alone.
+No combined all-tab delivery has been completed.
+
+9. FILE GUIDE
+EXECUTION-STATUS.html: readable report with failure/skip sections and search.
+execution-status/01-tab-summary.csv: totals by tab.
+execution-status/02-all-batches.csv: every batch.
+execution-status/03-failed-cases.csv: latest failures.
+execution-status/04-skipped-cases.csv: skips and reasons.
+execution-status/05-remaining-cases.csv: unexecuted cases.
+execution-status/06-all-case-results.csv: all latest outcomes.
+execution-status/07-run-attempts.csv: original runs and reruns.
+execution-status/08-remaining-batches.csv: pending batches.
+docs/execution-records: findings, repair records and coverage limitations.
+
+
+AUTHORIZED FOLLOW-UP: LIMAS-SUD-151 was executed once for Test User, LR-15803. Default group; ECU Validator; role 1.0.0; expiration and maintenance 3 December 2026. RESULT: FAILED. POST /limas/api/users returned 201; PUT /limas/api/users returned 500. The UI displayed an approval error. Independent fresh navigation confirmed the request remains pending; Test User exists with 0 licenses. No second submission was made. Earlier skipped evidence is retained. Dashboard totals: 857 passed, 37 failed, 22 skipped.

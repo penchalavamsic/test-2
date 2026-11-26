@@ -1,0 +1,191 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: system-user-dashboard - 46 batches
+
+# SUD-001: 20 cases; LIMAS-SUD-001 through LIMAS-SUD-020
+# Covers: dashboard loading after login, page title and logo, heading and footer, page refresh, language menu opening and closing, available languages, theme control and initial appearance
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-001 -DetailedEvidence -TestReport
+
+# SUD-002: 20 cases; LIMAS-SUD-021 through LIMAS-SUD-040
+# Covers: theme switching, account menu opening and closing, sidebar controls, current page indication, navigation to license hub and reports and configuration tabs, navigation to features and profiles and groups and system users and server licensing
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-002 -DetailedEvidence -TestReport
+
+# SUD-003: 20 cases; LIMAS-SUD-041 through LIMAS-SUD-060
+# Covers: server license import navigation, sidebar collapse and accessibility, dashboard summary cards and counts, exclusive card selection, content heading changes, pending request search field, history switch visibility
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-003 -DetailedEvidence -TestReport
+
+# SUD-004: 20 cases; LIMAS-SUD-061 through LIMAS-SUD-080
+# Covers: history switch default state, pending request loaded and total counts, request list columns and row data, date formatting, Approve button visibility and enabled state, Delete button visibility and enabled state
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-004 -DetailedEvidence -TestReport
+
+# SUD-005: 20 cases; LIMAS-SUD-081 through LIMAS-SUD-100
+# Covers: pending request search and clearing, search counts and no-match results, Approve button opens assignment form, Close hides form, user group selection, required profile field and initial placeholder
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-005 -DetailedEvidence -TestReport
+
+# SUD-006: 20 cases; LIMAS-SUD-101 through LIMAS-SUD-120
+# Covers: profile and role selection, expiration and maintenance fields, Cancel closes approval form, required fields control Approve Request state, form reset on reopening, search by email and hardware and feature and request ID
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-006 -DetailedEvidence -TestReport
+
+# SUD-007: 20 cases; LIMAS-SUD-121 through LIMAS-SUD-140
+# Covers: search keyboard and whitespace handling, special-character search, client-side filtering, scrolling loads more requests, row readability by theme, one approval form at a time, group and profile dependency reset, expiration date entry
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-007 -DetailedEvidence -TestReport
+
+# SUD-008: 20 cases; LIMAS-SUD-141 through LIMAS-SUD-160
+# Covers: approval date selection and validation, form keyboard order and Escape, required-field checks, request approval and count update, request deletion and count update, pending card count comparison, navigation and accessibility checks
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-008 -DetailedEvidence -TestReport
+
+# SUD-009: 20 cases; LIMAS-SUD-161 through LIMAS-SUD-180
+# Covers: history switch visibility and keyboard access, history activation, processed heading and search, loaded and total counts, processed record fields, initial history data request
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-009 -DetailedEvidence -TestReport
+
+# SUD-010: 20 cases; LIMAS-SUD-181 through LIMAS-SUD-200
+# Covers: history request pagination, session after history loading, keyboard history toggle, processed request search by user and email and feature and hardware and ID, case and whitespace handling, counts and search clearing
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-010 -DetailedEvidence -TestReport
+
+# SUD-011: 20 cases; LIMAS-SUD-201 through LIMAS-SUD-220
+# Covers: history search clearing and no-match behavior, client-side filtering, history state during search, processed user and email and feature details, version and hardware fields, created date display
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-011 -DetailedEvidence -TestReport
+
+# SUD-012: 20 cases; LIMAS-SUD-221 through LIMAS-SUD-240
+# Covers: processed history is read-only, absent approval and deletion controls, absent assignment and processing details, automatic loading note, record structure, keyboard and screen-reader limitations
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-012 -DetailedEvidence -TestReport
+
+# SUD-013: 20 cases; LIMAS-SUD-241 through LIMAS-SUD-260
+# Covers: history scrolling loads the next page, processed request response checks, records appended without duplicates, loaded and total count consistency, session during scrolling, history deactivation restores pending view
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-013 -DetailedEvidence -TestReport
+
+# SUD-014: 20 cases; LIMAS-SUD-261 through LIMAS-SUD-280
+# Covers: pending view and actions restored after history closes, correct requests after mode change, no-match pending searches, pending list scrolling, Expiring Licenses card selection and section heading
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-014 -DetailedEvidence -TestReport
+
+# SUD-015: 20 cases; LIMAS-SUD-281 through LIMAS-SUD-300
+# Covers: expiring license heading and counts, all loaded licenses counted, expiration and maintenance radio controls, default expiration selection, keyboard focus and filter labels, Expires before label
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-015 -DetailedEvidence -TestReport
+
+# SUD-016: 20 cases; LIMAS-SUD-301 through LIMAS-SUD-320
+# Covers: expiring license date and search controls, User Licenses and Extend buttons, loading completion, maintenance filter selection, maintenance data request, loaded count matches records
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-016 -DetailedEvidence -TestReport
+
+# SUD-017: 20 cases; LIMAS-SUD-321 through LIMAS-SUD-340
+# Covers: expiration and maintenance filter switching, count restoration, keyboard radio selection, date field focus, future and past and current dates, month-boundary date, date request and result consistency
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-017 -DetailedEvidence -TestReport
+
+# SUD-018: 20 cases; LIMAS-SUD-341 through LIMAS-SUD-360
+# Covers: date keyboard entry and clearing, original counts restored, partial and invalid date input, date retained across filter changes, maintenance date request, filter accessibility announcements
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-018 -DetailedEvidence -TestReport
+
+# SUD-019: 20 cases; LIMAS-SUD-361 through LIMAS-SUD-380
+# Covers: filter and count announcement checks, default state restoration, expiring license search accessibility, live filtering, Enter and Escape behavior, search by user and email and profile and hardware and company
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-019 -DetailedEvidence -TestReport
+
+# SUD-020: 20 cases; LIMAS-SUD-381 through LIMAS-SUD-400
+# Covers: partial expiring license searches, case-insensitive search, whitespace trimming, empty search, special characters treated safely, no-match search hides records
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-020 -DetailedEvidence -TestReport
+
+# SUD-021: 20 cases; LIMAS-SUD-401 through LIMAS-SUD-420
+# Covers: no-match counts and stale-record removal, match count consistency, search clearing restores records, no duplicates, search under expiration and maintenance filters, search retained when switching filters
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-021 -DetailedEvidence -TestReport
+
+# SUD-022: 20 cases; LIMAS-SUD-421 through LIMAS-SUD-440
+# Covers: filter totals and client-side search requests, search accessibility limitations, no pagination controls, all licenses displayed, duplicate prevention, company data in response, focus after filter reload
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-022 -DetailedEvidence -TestReport
+
+# SUD-023: 20 cases; LIMAS-SUD-441 through LIMAS-SUD-460
+# Covers: expiring license card counts and accessibility, user and profile and hardware details, expiration and maintenance date formatting, absent company and remaining-day display, dark-theme readability, Extend button state
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-023 -DetailedEvidence -TestReport
+
+# SUD-024: 20 cases; LIMAS-SUD-461 through LIMAS-SUD-480
+# Covers: Extend button keyboard access, license card accessibility, User Licenses button and icon, mouse and keyboard navigation to User and License Hub, same-tab navigation, session remains active
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-024 -DetailedEvidence -TestReport
+
+# SUD-025: 20 cases; LIMAS-SUD-481 through LIMAS-SUD-500
+# Covers: return from User and License Hub, expiring state restoration, Extend button opens dialog, selected license heading, backdrop and initial focus, empty expiration and days fields, synchronization checkbox
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-025 -DetailedEvidence -TestReport
+
+# SUD-026: 20 cases; LIMAS-SUD-501 through LIMAS-SUD-520
+# Covers: extension synchronization default state, maintenance fields, Cancel and Escape close dialog, Apply Extension state before entry, date calendar controls, expiration date label and minimum and keyboard focus
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-026 -DetailedEvidence -TestReport
+
+# SUD-027: 20 cases; LIMAS-SUD-521 through LIMAS-SUD-540
+# Covers: extension expiration date input, future and current and past dates, invalid date text, clearing date, date clears entered days, extension days numeric limits and boundary values
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-027 -DetailedEvidence -TestReport
+
+# SUD-028: 20 cases; LIMAS-SUD-541 through LIMAS-SUD-560
+# Covers: extension days input and arrow keys, date and days mutual exclusion, Apply Extension states with empty and invalid values, missing validation announcements, maintenance date field and calendar controls
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-028 -DetailedEvidence -TestReport
+
+# SUD-029: 20 cases; LIMAS-SUD-561 through LIMAS-SUD-580
+# Covers: maintenance date input and clearing, invalid date text, maintenance extension days field, numeric boundary values and arrow keys, maintenance date clears entered days
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-029 -DetailedEvidence -TestReport
+
+# SUD-030: 20 cases; LIMAS-SUD-581 through LIMAS-SUD-600
+# Covers: maintenance date and days mutual exclusion, synchronization checkbox mouse and keyboard actions, expiration copied to maintenance, maintenance fields disabled during synchronization, synchronized value changes, fields restored after unchecking
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-030 -DetailedEvidence -TestReport
+
+# SUD-031: 20 cases; LIMAS-SUD-601 through LIMAS-SUD-620
+# Covers: expiration and maintenance date relationships, mixed date and days inputs, Apply Extension state across field changes, synchronization state, validation and announcement limitations, maintenance fields re-enabled
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-031 -DetailedEvidence -TestReport
+
+# SUD-032: 20 cases; LIMAS-SUD-621 through LIMAS-SUD-640
+# Covers: Apply Extension submission, expiration date and days updates, synchronized updates, submitting button state, successful dialog close and toast, list refresh, failure toast and dialog retention, required-field and date relationship validation
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-032 -DetailedEvidence -TestReport
+
+# SUD-033: 20 cases; LIMAS-SUD-641 through LIMAS-SUD-660
+# Covers: expiring floating configuration card selection, section heading and subtitle, expiration and maintenance filters, Expires until date input, Floating License Configurations button feedback, toast dismissal, search field
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-033 -DetailedEvidence -TestReport
+
+# SUD-034: 20 cases; LIMAS-SUD-661 through LIMAS-SUD-683
+# Covers: floating configuration zero counts and empty state, section announcements, loading spinner appearance, loading keyboard and screen-reader limitations, heading and subtitle retained while loading
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-034 -DetailedEvidence -TestReport
+
+# SUD-035: 20 cases; LIMAS-SUD-686 through LIMAS-SUD-708
+# Covers: floating configuration loading and empty response, counts derived from API, one GET per card selection, request path and pagination, no data-changing requests, response status and JSON fields
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-035 -DetailedEvidence -TestReport
+
+# SUD-036: 20 cases; LIMAS-SUD-709 through LIMAS-SUD-728
+# Covers: floating configuration empty response completion, spinner removal, expiration radio semantics and label, keyboard focus, selecting expiration from maintenance, no duplicate request for selected radio
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-036 -DetailedEvidence -TestReport
+
+# SUD-037: 20 cases; LIMAS-SUD-729 through LIMAS-SUD-748
+# Covers: maintenance radio label and enabled state, mouse and keyboard selection, request triggered by selection, no duplicate request on reselection, radio group naming, only one filter selected
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-037 -DetailedEvidence -TestReport
+
+# SUD-038: 20 cases; LIMAS-SUD-749 through LIMAS-SUD-768
+# Covers: floating configuration filter keyboard navigation, arrow-key selection, focus behavior, maintenance API path and pagination, response fields, one request per trigger, counts during transition
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-038 -DetailedEvidence -TestReport
+
+# SUD-039: 20 cases; LIMAS-SUD-769 through LIMAS-SUD-788
+# Covers: floating configuration state during filter switching, route and headings preserved, search and date default states, count updates, Expires until field labels and initial state
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-039 -DetailedEvidence -TestReport
+
+# SUD-040: 20 cases; LIMAS-SUD-789 through LIMAS-SUD-808
+# Covers: Expires until field constraints and keyboard access, native date picker opening and Escape, past and future dates trigger requests, date format in request, duplicate request prevention, date clearing
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-040 -DetailedEvidence -TestReport
+
+# SUD-041: 20 cases; LIMAS-SUD-809 through LIMAS-SUD-828
+# Covers: expiration and maintenance date request paths, date persistence, invalid date handling, empty results after date changes, default state restoration, floating configuration search field semantics and labeling
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-041 -DetailedEvidence -TestReport
+
+# SUD-042: 20 cases; LIMAS-SUD-829 through LIMAS-SUD-848
+# Covers: floating configuration search initial state and focus, client-side search without requests, search-specific empty messages, search clearing, search retained across filters, combined search and date requests
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-042 -DetailedEvidence -TestReport
+
+# SUD-043: 20 cases; LIMAS-SUD-849 through LIMAS-SUD-868
+# Covers: combined floating configuration search and date preservation, clearing each filter independently, endpoint changes by filter mode, keyboard order, Floating Licenses card selection, floating license heading and date control
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-043 -DetailedEvidence -TestReport
+
+# SUD-044: 20 cases; LIMAS-SUD-869 through LIMAS-SUD-888
+# Covers: floating license date and search controls, card selection data request, one GET per selection, empty response and zero counts, empty-state actions, future date entry
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-044 -DetailedEvidence -TestReport
+
+# SUD-045: 20 cases; LIMAS-SUD-889 through LIMAS-SUD-908
+# Covers: floating license date changes and requests, date clearing and persistence, client-side search, no-match messages, Enter and Escape behavior, search clearing, search retained across date changes
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-045 -DetailedEvidence -TestReport
+
+# SUD-046: 17 cases; LIMAS-SUD-909 through LIMAS-SUD-925
+# Covers: floating license combined date and search state, clearing filters in either order, duplicate request prevention, empty-state transitions, stable counts, no data-changing requests, field announcements and focus
+.\scripts\run-tests-with-report.ps1 -Suite system-user-dashboard -Batch SUD-046 -DetailedEvidence -TestReport

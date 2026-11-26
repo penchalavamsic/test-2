@@ -1,0 +1,73 @@
+---
+test_id: "LIMAS-SUD-1996"
+title: "No confirmation dialog before card-menu Delete"
+module: "Floating License Configurations"
+page: "Floating License Configurations"
+section: "Card-Menu Delete"
+control: "Delete No Confirmation"
+action: "Verify"
+access_profile: "SUPER_USER_ADMIN_USER"
+priority: "P1"
+classification: "Floating License Configurations FLC-H"
+test_type: "Positive"
+automation_candidate: true
+plan_status: "Reviewed"
+script_status: "Generated"
+environment_variables: ["LIMAS_BASE_URL", "LIMAS_SUPER_USER_ADMIN_USER_USERNAME", "LIMAS_SUPER_USER_ADMIN_USER_PASSWORD"]
+test_data: {}
+related_script: "tests/floating-license-configurations/floating-license-configurations-delete.spec.ts"
+---
+
+# Purpose
+
+Verify no dialog/alertdialog exists before Delete.
+
+# Preconditions
+
+- `${LIMAS_BASE_URL}` is reachable.
+- Credentials for `SUPER_USER_ADMIN_USER` are configured.
+- User is authenticated and on the Floating License Configurations page.
+- A runtime group with at least one configuration is selected.
+- No deletion will occur during inspection.
+
+# Test Data
+
+Use environment variables and the authenticated fixture. No hardcoded group names, card names, or values.
+
+# Steps and Expected Results
+
+1. Open card menu.
+
+2. Verify no role="dialog" or "alertdialog" exists.
+
+3. Close — do NOT click Delete.
+
+Expected: No confirmation element.
+
+# Network Verification
+
+No API verification needed for this plan.
+
+# Expected Final Result
+
+No confirmation element.
+
+# Classification
+
+- Read-only
+- Positive
+- UI Interaction
+
+# Restrictions
+
+- Do not include credentials, tokens, cookies, or sensitive payloads.
+- Do not use static environment-specific data.
+- Do not hardcode group names, card names, or values.
+- NEVER delete an existing configuration unless TEST_FLC_ALLOW_DELETE is set and config was created by this run.
+- Click Delete exactly once; treat "already absent" as successful idempotent cleanup.
+
+# Generation Status
+
+- Test script generation: Generated
+- CI/CD execution: Pending
+- Healing: Pending
