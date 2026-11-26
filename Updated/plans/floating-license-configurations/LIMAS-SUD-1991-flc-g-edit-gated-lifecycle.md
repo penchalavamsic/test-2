@@ -1,0 +1,3 @@
+# LIMAS-SUD-1991: Owned floating configuration lifecycle
+
+Discover a runtime Product Profile and role. Skip only if that prerequisite is unavailable. Create a uniquely named disposable User Group, add one configuration through the deployed UI, verify persisted Profile/role, capacity, checkout duration and dates after reload. Edit capacity, checkout duration and dates and verify persistence. Delete the exact captured configuration ID through its card menu and verify absence after reload. Delete only the owned parent group. Any failed mutation or cleanup remains a failure; never operate on the first business configuration.

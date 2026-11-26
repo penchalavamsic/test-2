@@ -1,0 +1,620 @@
+{
+  "updatedAt": "2026-11-26T16:30:56.243Z",
+  "scope": "Reports and User & License Hub download/export scenarios",
+  "decision": "User requested download/Excel export checks be skipped by automation and verified manually.",
+  "reason": "Manual verification required: download/Excel export; user requested these checks be performed manually.",
+  "cases": [
+    {
+      "id": "LIMAS-SUD-1493",
+      "title": "LIMAS-SUD-1493: Export Excel button is visible and enabled without activation",
+      "batch": "RPT-001",
+      "file": "reports/reports-standard-licenses-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1610",
+      "title": "LIMAS-SUD-1610: Export button structure — visible, role=button, accessible name, enabled, toolbar, icon SVG, tabindex=0",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1611",
+      "title": "LIMAS-SUD-1611: Export button keyboard — Tab focus, focus-visible, Enter triggers download listener, Space triggers download listener",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1612",
+      "title": "LIMAS-SUD-1612: Export state zero results — no-match filter, button state, header-only if exported",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1613",
+      "title": "LIMAS-SUD-1613: Export pending state — observe button during active export",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1614",
+      "title": "LIMAS-SUD-1614: Export workflow — successful JSON fetch and valid complete workbook",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1615",
+      "title": "LIMAS-SUD-1615: Unfiltered export scope — dataRowCount consistent with runtime base total, no active filters",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1616",
+      "title": "LIMAS-SUD-1616: Export preserves UI — page still /reports, Standard Licenses selected, Active pressed, filters unchanged, no data-changing request",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1617",
+      "title": "LIMAS-SUD-1617: Filename — nonempty, .xlsx extension, no path separators, no credential-like strings",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1618",
+      "title": "LIMAS-SUD-1618: Workbook validation — opens without corruption, sheetCount≥1, hasHeaders, headerCount>0, columnCount>0, not HTML error",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1619",
+      "title": "LIMAS-SUD-1619: MIME and size — fileSizeBytes>0, mime consistent with spreadsheet",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1620",
+      "title": "LIMAS-SUD-1620: Core-filtered export — profile filter, export, row count ≤ filtered total",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1621",
+      "title": "LIMAS-SUD-1621: Date-filtered export — currentDate filter, export, verify contract",
+      "batch": "RPT-007",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1622",
+      "title": "LIMAS-SUD-1622: Combined-filter export — profile + role + currentDate, all fields in request, scope matches",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1623",
+      "title": "LIMAS-SUD-1623: Zero-result export — valid empty workbook or disabled download",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1624",
+      "title": "LIMAS-SUD-1624: Post-export restoration — filtered export, restore, unfiltered counts match baseTotal, all filters cleared, Active selected",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1625",
+      "title": "LIMAS-SUD-1625: Deleted export availability — switch to Deleted, clear filters, observe Export button",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1626",
+      "title": "LIMAS-SUD-1626: Deleted export scope — if button present, export, validate runtime rows against Deleted API data, no Active data leakage",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1627",
+      "title": "LIMAS-SUD-1627: One click one download — waitForStandardLicenseExport, downloadEventCount === 1",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1628",
+      "title": "LIMAS-SUD-1628: Repeated export — two exports, both produce files, filenames safe, no overwrite, no duplicate requests",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1629",
+      "title": "LIMAS-SUD-1629: File cleanup — export, validate, cleanupExportArtifacts, file gone, dir removed",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1630",
+      "title": "LIMAS-SUD-1630: Export a11y — accessible name, SVG aria-hidden, button role",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1631",
+      "title": "LIMAS-SUD-1631: Keyboard activation — Tab to focus, Enter download, Space download",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1632",
+      "title": "LIMAS-SUD-1632: State communication — visible text \"Export Excel\", not color-only state change",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1633",
+      "title": "LIMAS-SUD-1633: Unauthorized/forbidden export",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1634",
+      "title": "LIMAS-SUD-1634: Export server error, empty response, and corrupt payload",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1635",
+      "title": "LIMAS-SUD-1635: Export network interruption and truncated response",
+      "batch": "RPT-008",
+      "file": "reports/reports-standard-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1651",
+      "title": "LIMAS-SUD-1651: Export Excel button â€” structure, disabled state when zero records, SVG, accessible name",
+      "batch": "RPT-009",
+      "file": "reports/reports-floating-licenses-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1655",
+      "title": "LIMAS-SUD-1655: Request count â€” exactly one GET, no PUT/PATCH/DELETE/export",
+      "batch": "RPT-009",
+      "file": "reports/reports-floating-licenses-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1661",
+      "title": "LIMAS-SUD-1661: Filters and Export accessibility â€” labels, types, disabled announcement, aria-expanded gap",
+      "batch": "RPT-009",
+      "file": "reports/reports-floating-licenses-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1679",
+      "title": "LIMAS-SUD-1679: Filtered empty state â€” message stable, Export disabled, no table",
+      "batch": "RPT-010",
+      "file": "reports/reports-floating-licenses-filters.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1688",
+      "title": "LIMAS-SUD-1688: Deleted data availability â€” totalElements > 0, rows rendered, Export enabled, filters available, counts match",
+      "batch": "RPT-011",
+      "file": "reports/reports-floating-licenses-active-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1691",
+      "title": "LIMAS-SUD-1691: Export Excel enabled (when records present), no accidental activation",
+      "batch": "RPT-011",
+      "file": "reports/reports-floating-licenses-active-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1705",
+      "title": "LIMAS-SUD-1705: Safe restoration â€” FL selected, Active pressed, filters empty and collapsed, Profile Role disabled, Active counts 0/0, Export disabled, route /reports, browser open",
+      "batch": "RPT-012",
+      "file": "reports/reports-floating-licenses-active-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1722",
+      "title": "LIMAS-SUD-1722: Safe restoration â€” Active, clear filters, collapse, 0/0, empty-state, Export disabled, route /reports",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-deleted-infinite-scroll.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1723",
+      "title": "LIMAS-SUD-1723: Export disabled in Active mode â€” 0 records, button visible but disabled, no download fires",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1724",
+      "title": "LIMAS-SUD-1724: Export enabled in Deleted mode â€” button visible, enabled, accessible name, tabindex=0",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1725",
+      "title": "LIMAS-SUD-1725: Keyboard â€” Tab focus on Export, Enter triggers download, Space triggers download, focus-visible",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1726",
+      "title": "LIMAS-SUD-1726: Client-side export â€” no server request, download event fires, filename limas-reports.xlsx, one click = one download",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1727",
+      "title": "LIMAS-SUD-1727: Unfiltered scope â€” 1 sheet \"Exported Deleted Floating Licenses\", 8 columns, dataRowCount matches runtime totalElements, file size > 1MB",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1728",
+      "title": "LIMAS-SUD-1728: Workbook validation â€” opens without corruption, not HTML error, .xlsx extension, nonempty",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1729",
+      "title": "LIMAS-SUD-1729: UI preservation â€” Deleted stays selected, FL card stays selected, filters collapsed, counts unchanged after export",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1730",
+      "title": "LIMAS-SUD-1730: Filename â€” limas-reports.xlsx, no path separators, no credential-like strings",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1731",
+      "title": "LIMAS-SUD-1731: MIME and size â€” application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, size > 0",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1732",
+      "title": "LIMAS-SUD-1732: Product Profile filter â€” apply, export, rows â‰¤ unfiltered total, headers unchanged, clear after",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1733",
+      "title": "LIMAS-SUD-1733: Date filter â€” apply Expiration Date, export, rows â‰¤ total, headers unchanged, clear after",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1734",
+      "title": "LIMAS-SUD-1734: Zero-result filter behavior â€” no-match filter, export behavior, no crash",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1735",
+      "title": "LIMAS-SUD-1735: Duplicate protection â€” click twice, one download per click, both valid",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1736",
+      "title": "LIMAS-SUD-1736: Cleanup â€” export, temp dir removed after cleanupExportArtifacts, no stray files",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1737",
+      "title": "LIMAS-SUD-1737: Accessibility â€” accessible name \"Export Excel\", disabled state in Active, keyboard reachable, focus-visible",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1738",
+      "title": "LIMAS-SUD-1738: Restore Active â€” FL selected, Active pressed, 0/0 counts, Export disabled, route /reports",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1739",
+      "title": "LIMAS-SUD-1739: Unauthorized 401",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1740",
+      "title": "LIMAS-SUD-1740: Server error 500",
+      "batch": "RPT-013",
+      "file": "reports/reports-floating-licenses-export.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1750",
+      "title": "LIMAS-SUD-1750: Toolbar order ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â record count, mode group, Filters button, Export Excel button",
+      "batch": "RPT-014",
+      "file": "reports/reports-floating-configurations-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1756",
+      "title": "LIMAS-SUD-1756: Export Excel ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â button role, accessible name \"Export Excel\", tabindex, enabled state (even during error)",
+      "batch": "RPT-014",
+      "file": "reports/reports-floating-configurations-shell.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1770",
+      "title": "LIMAS-SUD-1770: Export state ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabled when data loaded",
+      "batch": "RPT-015",
+      "file": "reports/reports-floating-configurations-error-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1796",
+      "title": "LIMAS-SUD-1796: Export button state ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabled, accessible name, tabindex",
+      "batch": "RPT-016",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1797",
+      "title": "LIMAS-SUD-1797: Client-side contract ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no server request, download fires, filename received",
+      "batch": "RPT-016",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1798",
+      "title": "LIMAS-SUD-1798: Workbook validation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â valid .xlsx, nonempty, not corrupt, sheet present",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts",
+      "batch": "RPT-016"
+    },
+    {
+      "id": "LIMAS-SUD-1799",
+      "title": "LIMAS-SUD-1799: Headers/schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â correct columns present in exported workbook",
+      "batch": "RPT-016",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1800",
+      "title": "LIMAS-SUD-1800: Row count ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â data rows match totalElements from UI, header row present",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts",
+      "batch": "RPT-016"
+    },
+    {
+      "id": "LIMAS-SUD-1801",
+      "title": "LIMAS-SUD-1801: Filtered scope ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â filtered export has fewer rows, unfiltered restores full",
+      "batch": "RPT-016",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1802",
+      "title": "LIMAS-SUD-1802: UI preservation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â mode, card, counts, table preserved during export",
+      "batch": "RPT-017",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1803",
+      "title": "LIMAS-SUD-1803: Duplicate protection ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â two clicks, two downloads, both valid",
+      "batch": "RPT-017",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1804",
+      "title": "LIMAS-SUD-1804: Cleanup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â file removed, temp cleaned, finally block executes",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts",
+      "batch": "RPT-017"
+    },
+    {
+      "id": "LIMAS-SUD-1806",
+      "title": "LIMAS-SUD-1806: Export a11y ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â button accessible name, keyboard, state, download notification",
+      "batch": "RPT-017",
+      "file": "reports/reports-floating-configurations-deleted.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1163",
+      "title": "LIMAS-SUD-1163: Download button visible with accessible name",
+      "batch": "ULH-012",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1193",
+      "title": "LIMAS-SUD-1193: Download button accessible name and icon semantics",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1192",
+      "title": "LIMAS-SUD-1192: Download button keyboard focus and Enter activation",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1194",
+      "title": "LIMAS-SUD-1194: Download toolbar grouping and scope communication",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1164",
+      "title": "LIMAS-SUD-1164: Download button disabled when All Profiles active",
+      "batch": "ULH-012",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1165",
+      "title": "LIMAS-SUD-1165: Download disabled when no user explicitly selected",
+      "batch": "ULH-012",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1166",
+      "title": "LIMAS-SUD-1166: Download enabled after Profile AND user selection",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1167",
+      "title": "LIMAS-SUD-1167: Specific Profile application enables Download",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1168",
+      "title": "LIMAS-SUD-1168: Explicit user selection required for Download",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1191",
+      "title": "LIMAS-SUD-1191: All Profiles cleared restores Download to disabled",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1173",
+      "title": "LIMAS-SUD-1173: Download sends GET to /api/license/enc/i/{userEmail}",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1174",
+      "title": "LIMAS-SUD-1174: Download file is JSON with .xml extension",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1175",
+      "title": "LIMAS-SUD-1175: Download file contains base64-encoded license data",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1176",
+      "title": "LIMAS-SUD-1176: Download filename follows pattern license_{userEmail}.xml",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1177",
+      "title": "LIMAS-SUD-1177: Download file size is greater than zero",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1178",
+      "title": "LIMAS-SUD-1178: Download file is valid JSON parseable",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1179",
+      "title": "LIMAS-SUD-1179: Download file is not an HTML login or error page",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1183",
+      "title": "LIMAS-SUD-1183: Download does not navigate away from users-licenses",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1184",
+      "title": "LIMAS-SUD-1184: Download preserves applied Profile after completion",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1185",
+      "title": "LIMAS-SUD-1185: Download preserves selected user after completion",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1186",
+      "title": "LIMAS-SUD-1186: No POST PUT PATCH DELETE during download",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1187",
+      "title": "LIMAS-SUD-1187: Downloaded file cleanup after validation",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1188",
+      "title": "LIMAS-SUD-1188: Safe restoration after download scenario",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1180",
+      "title": "LIMAS-SUD-1180: One click produces exactly one download event",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1181",
+      "title": "LIMAS-SUD-1181: Rapid double-click produces single download",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1182",
+      "title": "LIMAS-SUD-1182: Second click after first does not duplicate",
+      "batch": "ULH-013",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1189",
+      "title": "LIMAS-SUD-1189: HWID search with Profile active and Download enabled",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1190",
+      "title": "LIMAS-SUD-1190: No-match HWID with Profile active and Download state",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1195",
+      "title": "LIMAS-SUD-1195: Download failure — unauthorized",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1196",
+      "title": "LIMAS-SUD-1196: Download failure — server error",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1197",
+      "title": "LIMAS-SUD-1197: Download failure — network interruption",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1198",
+      "title": "LIMAS-SUD-1198: Download failure — empty file",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1199",
+      "title": "LIMAS-SUD-1199: Download failure — invalid MIME type",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1200",
+      "title": "LIMAS-SUD-1200: Download failure — missing filename",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1201",
+      "title": "LIMAS-SUD-1201: Download failure — corrupted file",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    },
+    {
+      "id": "LIMAS-SUD-1202",
+      "title": "LIMAS-SUD-1202: Download failure — browser cancellation",
+      "batch": "ULH-014",
+      "file": "user-license-hub/user-license-hub-download-license.spec.ts"
+    }
+  ]
+}

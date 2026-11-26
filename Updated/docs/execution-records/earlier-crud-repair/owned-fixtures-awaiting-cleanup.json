@@ -1,0 +1,88 @@
+{
+  "updatedAt": "2026-11-26T15:23:37.287Z",
+  "records": [
+    {
+      "name": "LIMAS-AUTO-2316-c7335b2b",
+      "id": 161,
+      "uuid": "08ed10f2-5dbc-42a5-b48a-509c6d005697",
+      "caseId": "LIMAS-SUD-2316",
+      "reason": "Initial schema-parser failure; subsequent owned UI cleanup attempt returned HTTP 500."
+    },
+    {
+      "name": "LIMAS-AUTO-2288-351b509c",
+      "uuid": "4a46f02b-9a77-4d4b-a806-febf5e84289b",
+      "caseId": "LIMAS-SUD-2288",
+      "reason": "UI DELETE returned HTTP 500; do not automatically retry."
+    },
+    {
+      "name": "LIMAS-AUTO-2316-c0d27e9d",
+      "uuid": "1d0fe47e-6681-451f-ae3c-b59676b7125b",
+      "caseId": "LIMAS-SUD-2316",
+      "reason": "UI DELETE returned HTTP 500; do not automatically retry."
+    },
+    {
+      "name": "LIMAS-AUTO-2345-80a7b80d",
+      "uuid": "ee774907-c45a-4806-b65f-5181acfc0ee2",
+      "caseId": "LIMAS-SUD-2345",
+      "reason": "UI DELETE returned HTTP 500; do not automatically retry."
+    },
+    {
+      "name": "LIMAS-AUTO-2371-cff756a5-edited",
+      "uuid": "30bd66ec-f94f-4317-90b6-6231b2db1f38",
+      "caseId": "LIMAS-SUD-2371",
+      "reason": "UI DELETE returned HTTP 500; do not automatically retry."
+    },
+    {
+      "name": "LIMAS-AUTO-2390-4e57a0b5",
+      "uuid": "68e88bc1-afe4-4ae4-97a4-e22de3962336",
+      "caseId": "LIMAS-SUD-2390",
+      "reason": "UI DELETE returned HTTP 500; do not automatically retry."
+    },
+    {
+      "name": "LIMAS-AUTO-2090-eb95893e",
+      "id": 185,
+      "uuid": "c057f779-c327-4487-970d-e3c053f40518",
+      "stringId": "limas.auto.eb95893e",
+      "caseId": "LIMAS-SUD-2090",
+      "reason": "UI DELETE returned HTTP 200 but the Feature remains in fresh GET and UI. Do not automatically repeat the failed mutation."
+    },
+    {
+      "name": "LIMAS-AUTO-2115-7ea13742",
+      "stringId": "limas.auto.7ea13742",
+      "caseId": "LIMAS-SUD-2115",
+      "uuid": "6427e787-ff30-4b96-baf9-a1520de361b8",
+      "reason": "UI DELETE returned HTTP 200 but owned child/parent remained after reload. Do not repeat automatically.",
+      "latestRun": "test-runs/earlier-crud-20261126/features/FTR-005_2026-11-26T15-08-32-074Z_1dbad622"
+    },
+    {
+      "name": "LIMAS-AUTO-2115-child-c7ae3a71",
+      "stringId": "limas.auto.c7ae3a71",
+      "caseId": "LIMAS-SUD-2115",
+      "uuid": "a5aa86d7-7db8-44bd-9396-857f35fff06f",
+      "reason": "UI DELETE returned HTTP 200 but owned child/parent remained after reload. Do not repeat automatically.",
+      "latestRun": "test-runs/earlier-crud-20261126/features/FTR-005_2026-11-26T15-08-32-074Z_1dbad622"
+    },
+    {
+      "name": "LIMAS-AUTO-2142-23c3dbf0",
+      "stringId": "limas.auto.23c3dbf0",
+      "caseId": "LIMAS-SUD-2142",
+      "reason": "Creation returned HTTP 201; the run later hit an unanswered request. Inspect current state before any further mutation.",
+      "latestRun": "test-runs/earlier-crud-20261126/features/FTR-006_2026-11-26T15-09-17-016Z_0921b9bb"
+    },
+    {
+      "name": "LIMAS-AUTO-2163-57f0748d",
+      "stringId": "limas.auto.57f0748d",
+      "caseId": "LIMAS-SUD-2163",
+      "reason": "Creation returned HTTP 201; the run later hit an unanswered request. Inspect current state before any further mutation.",
+      "latestRun": "test-runs/earlier-crud-20261126/features/FTR-007_2026-11-26T15-10-55-003Z_34b0f792"
+    },
+    {
+      "name": "LIMAS-AUTO-1991-4d29efee",
+      "id": 385,
+      "configId": 427,
+      "caseId": "LIMAS-SUD-1991",
+      "reason": "Confirmed by read-only GET: group 385 and configuration 427 remain. Edit HTTP 200 did not persist changed fields; cleanup DELETE returned HTTP 500. Do not repeat failed deletion automatically."
+    }
+  ],
+  "policy": "These exact synthetic records are owned by this repair phase. Resolve the Profile delete defect before attempting removal again. No business records are listed."
+}

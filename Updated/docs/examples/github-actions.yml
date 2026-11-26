@@ -1,0 +1,65 @@
+name: LIMAS selected batch
+on:
+  workflow_dispatch:
+    inputs:
+      suite:
+        type: choice
+        required: true
+        default: user-license-hub
+        options: [user-license-hub, system-user-dashboard, profiles, features, floating-license-configurations, reports, standard-license-configurations, system-users, user-groups, authentication]
+      batch:
+        description: Matching batch ID, for example ULH-001 or SUD-001
+        type: string
+        required: true
+        default: ULH-001
+permissions:
+  contents: read
+concurrency:
+  group: limas-test-environment
+  cancel-in-progress: false
+jobs:
+  selected-batch:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Updated
+    env:
+      LIMAS_BASE_URL: ${{ secrets.LIMAS_BASE_URL }}
+      LIMAS_ACCESS_PROFILE: SUPER_USER_ADMIN_USER
+      LIMAS_SUPER_USER_ADMIN_USER_USERNAME: ${{ secrets.LIMAS_SUPER_USER_ADMIN_USER_USERNAME }}
+      LIMAS_SUPER_USER_ADMIN_USER_PASSWORD: ${{ secrets.LIMAS_SUPER_USER_ADMIN_USER_PASSWORD }}
+      PLAYWRIGHT_BROWSER_CHANNEL: chromium
+      PLAYWRIGHT_WORKERS: '1'
+      PLAYWRIGHT_RETRIES: '0'
+      PLAYWRIGHT_SCREENSHOT_MODE: important
+      TARGET_SUITE: ${{ inputs.suite }}
+      TARGET_BATCH: ${{ inputs.batch }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Updated/package-lock.json
+      - run: npm ci --include=dev
+      - run: npx playwright install --with-deps chromium
+      - name: Execute selected batch
+        run: npm run test:ci -- --suite "$TARGET_SUITE" --batch "$TARGET_BATCH" --profile SUPER_USER_ADMIN_USER --workers 1 --portable --only-ids-file config/handoff-scope-ids.json --run-group "ci-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+      - name: Sanitize and verify evidence
+        id: portable
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: |
+          target="test-runs/ci-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          if [ -d "$target" ]; then
+            node scripts/sanitize-run-paths.cjs "$target" --all
+            node scripts/verify-run-paths.cjs "$target"
+            echo "verified=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/upload-artifact@v5
+        if: ${{ !cancelled() && steps.portable.outputs.verified == 'true' }}
+        with:
+          name: limas-${{ inputs.batch }}-${{ github.run_id }}
+          path: Updated/test-runs/ci-${{ github.run_id }}-${{ github.run_attempt }}/
+          include-hidden-files: true
+          retention-days: 7

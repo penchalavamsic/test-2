@@ -1,0 +1,376 @@
+{
+  "status": "completed",
+  "basis": "User confirmed GitHub and office copies of Profiles, Features and Floating License Configurations; remove old raw test-results only",
+  "targets": [
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-001_2026-11-25T15-28-56-951Z_428b5f91/test-results",
+      "files": 65,
+      "bytes": 277693279.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-002_2026-11-25T15-32-30-887Z_ae21c4c0/test-results",
+      "files": 67,
+      "bytes": 251268506.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-002_2026-11-25T16-09-03-063Z_319e4d9e/test-results",
+      "files": 8,
+      "bytes": 11799398.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-002_2026-11-25T18-01-02-002Z_95c3a835/test-results",
+      "files": 8,
+      "bytes": 11284083.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-003_2026-11-25T15-34-49-607Z_99e6ec63/test-results",
+      "files": 73,
+      "bytes": 344320084.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-003_2026-11-25T16-09-31-362Z_6d514e50/test-results",
+      "files": 19,
+      "bytes": 48758460.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-003_2026-11-25T18-01-23-767Z_dea7e410/test-results",
+      "files": 19,
+      "bytes": 48681189.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-004_2026-11-25T15-38-54-888Z_1cfd83df/test-results",
+      "files": 71,
+      "bytes": 541664575.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-004_2026-11-25T16-10-30-954Z_b9b8b7e5/test-results",
+      "files": 18,
+      "bytes": 44038514.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-004_2026-11-25T18-02-29-030Z_06306e69/test-results",
+      "files": 18,
+      "bytes": 51239921.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-005_2026-11-25T15-44-34-494Z_7829dcd3/test-results",
+      "files": 67,
+      "bytes": 553407850.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-005_2026-11-25T16-11-44-220Z_bf6d0c60/test-results",
+      "files": 10,
+      "bytes": 19236334.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-005_2026-11-25T18-03-55-449Z_d8e4c81d/test-results",
+      "files": 10,
+      "bytes": 22634791.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-006_2026-11-25T15-49-59-874Z_d8c961ce/test-results",
+      "files": 71,
+      "bytes": 206226800.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-006_2026-11-25T16-12-45-821Z_279f8235/test-results",
+      "files": 125,
+      "bytes": 18082034.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-006_2026-11-25T18-05-00-575Z_6ebb54f5/test-results",
+      "files": 18,
+      "bytes": 38473001.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-007_2026-11-25T15-53-07-216Z_771a6328/test-results",
+      "files": 73,
+      "bytes": 258176196.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-007_2026-11-25T18-06-13-094Z_02091cc6/test-results",
+      "files": 59,
+      "bytes": 249770599.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-007_2026-11-25T18-15-26-039Z_a2f38a7a/test-results",
+      "files": 21,
+      "bytes": 70039919.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-008_2026-11-25T15-56-05-062Z_47cfb18e/test-results",
+      "files": 78,
+      "bytes": 222206218.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-008_2026-11-25T18-09-03-940Z_d33c8bc7/test-results",
+      "files": 70,
+      "bytes": 256659939.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-008_2026-11-25T18-16-21-472Z_8e420caa/test-results",
+      "files": 25,
+      "bytes": 58317138.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-008_2026-11-25T18-17-41-293Z_58a6ccf6/test-results",
+      "files": 8,
+      "bytes": 20437968.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-009_2026-11-25T15-59-34-873Z_340e999c/test-results",
+      "files": 67,
+      "bytes": 170310027.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-009_2026-11-25T18-13-07-980Z_18c6daa3/test-results",
+      "files": 37,
+      "bytes": 8029165.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-009_2026-11-25T18-17-17-027Z_96ccd353/test-results",
+      "files": 8,
+      "bytes": 14745698.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/profiles/PRF-010_2026-11-25T16-02-07-665Z_58ba4339/test-results",
+      "files": 62,
+      "bytes": 144333518.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-001_2026-11-25T14-47-37-506Z_94c1b3b7/test-results",
+      "files": 69,
+      "bytes": 78066372.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-001_2026-11-25T15-05-43-590Z_874a86b5/test-results",
+      "files": 9,
+      "bytes": 8678976.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-001_2026-11-25T15-25-08-499Z_1e130571/test-results",
+      "files": 8,
+      "bytes": 10234128.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-002_2026-11-25T14-49-47-731Z_d79d323f/test-results",
+      "files": 75,
+      "bytes": 119582487.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-002_2026-11-25T15-07-06-498Z_3c26ca5b/test-results",
+      "files": 18,
+      "bytes": 30072091.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-002_2026-11-25T15-25-37-951Z_0930cd6f/test-results",
+      "files": 8,
+      "bytes": 10184091.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-003_2026-11-25T14-53-03-869Z_cf59b40c/test-results",
+      "files": 67,
+      "bytes": 181839409.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-003_2026-11-25T15-08-33-292Z_171f8d70/test-results",
+      "files": 8,
+      "bytes": 9717040.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-004_2026-11-25T14-55-02-481Z_9d6121f3/test-results",
+      "files": 65,
+      "bytes": 136811874.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-005_2026-11-25T14-56-25-873Z_5bb4aab3/test-results",
+      "files": 71,
+      "bytes": 153173450.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-005_2026-11-25T15-08-52-848Z_8ece3760/test-results",
+      "files": 16,
+      "bytes": 24767483.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-005_2026-11-25T15-26-03-482Z_5d52aba6/test-results",
+      "files": 8,
+      "bytes": 10250318.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-006_2026-11-25T14-58-16-373Z_20493e75/test-results",
+      "files": 67,
+      "bytes": 199246979.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-006_2026-11-25T15-09-49-524Z_40cd3717/test-results",
+      "files": 8,
+      "bytes": 9238951.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-007_2026-11-25T15-00-07-099Z_4a78891b/test-results",
+      "files": 73,
+      "bytes": 425345453.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-007_2026-11-25T15-10-13-833Z_64da8412/test-results",
+      "files": 17,
+      "bytes": 29714680.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-008_2026-11-25T15-03-07-320Z_972290aa/test-results",
+      "files": 71,
+      "bytes": 133307782.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-008_2026-11-25T15-11-10-725Z_88182e9e/test-results",
+      "files": 20,
+      "bytes": 19436169.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-008_2026-11-25T15-26-32-267Z_6be21853/test-results",
+      "files": 18,
+      "bytes": 23397459.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/features/FTR-009_2026-11-25T15-04-29-565Z_4bc4b594/test-results",
+      "files": 14,
+      "bytes": 18342459.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-001_2026-11-25T15-04-54-281Z_f3f2160d/test-results",
+      "files": 69,
+      "bytes": 37751279.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-001_2026-11-25T15-29-07-505Z_a550b3df/test-results",
+      "files": 67,
+      "bytes": 296491777.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-001_2026-11-25T16-03-15-843Z_992f92d3/test-results",
+      "files": 10,
+      "bytes": 19873921.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-002_2026-11-25T15-06-25-092Z_f9c79998/test-results",
+      "files": 77,
+      "bytes": 81277618.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-002_2026-11-25T15-34-01-619Z_f9d4e4d3/test-results",
+      "files": 71,
+      "bytes": 340415209.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-002_2026-11-25T16-04-23-210Z_63e266d7/test-results",
+      "files": 13,
+      "bytes": 28381974.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-003_2026-11-25T15-08-38-902Z_62c78bea/test-results",
+      "files": 93,
+      "bytes": 157924979.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-003_2026-11-25T15-38-52-184Z_a2cdd1ae/test-results",
+      "files": 73,
+      "bytes": 381098474.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-003_2026-11-25T16-05-16-615Z_57066d7f/test-results",
+      "files": 16,
+      "bytes": 11503782.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-004_2026-11-25T15-12-05-648Z_f19ad106/test-results",
+      "files": 65,
+      "bytes": 27498114.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-004_2026-11-25T15-44-27-243Z_e89fe628/test-results",
+      "files": 65,
+      "bytes": 309436909.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-005_2026-11-25T15-12-49-300Z_ad406434/test-results",
+      "files": 65,
+      "bytes": 30722962.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-005_2026-11-25T15-49-15-871Z_fd0b50f0/test-results",
+      "files": 65,
+      "bytes": 174255562.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-006_2026-11-25T15-13-32-139Z_45df2800/test-results",
+      "files": 85,
+      "bytes": 106457187.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-006_2026-11-25T15-53-03-813Z_0c2ab847/test-results",
+      "files": 65,
+      "bytes": 133681448.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-006_2026-11-25T16-05-56-896Z_2e0ab8b5/test-results",
+      "files": 17,
+      "bytes": 46314807.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-007_2026-11-25T15-16-08-866Z_59daa2b5/test-results",
+      "files": 103,
+      "bytes": 200173037.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-007_2026-11-25T15-56-10-704Z_0dd4f8f6/test-results",
+      "files": 79,
+      "bytes": 191985442.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-007_2026-11-25T16-07-02-444Z_81d5f8ed/test-results",
+      "files": 33,
+      "bytes": 86491542.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-008_2026-11-25T15-19-49-678Z_b43737eb/test-results",
+      "files": 65,
+      "bytes": 188844512.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-008_2026-11-25T16-00-15-725Z_747062dc/test-results",
+      "files": 45,
+      "bytes": 6423494.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-009_2026-11-25T15-22-49-322Z_44e388c4/test-results",
+      "files": 65,
+      "bytes": 218764441.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-009_2026-11-25T16-00-52-288Z_6095fe3e/test-results",
+      "files": 45,
+      "bytes": 5763531.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-010_2026-11-25T15-26-14-089Z_b5fd2099/test-results",
+      "files": 65,
+      "bytes": 145514599.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-010_2026-11-25T16-01-24-419Z_9f797b97/test-results",
+      "files": 53,
+      "bytes": 15658213.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-011_2026-11-25T15-28-28-176Z_960ca411/test-results",
+      "files": 8,
+      "bytes": 6598455.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/floating-license-configurations/FLC-011_2026-11-25T16-02-05-245Z_eb05759c/test-results",
+      "files": 8,
+      "bytes": 6608599.0
+    }
+  ]
+}

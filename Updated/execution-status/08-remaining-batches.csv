@@ -1,0 +1,5 @@
+name,suite,planned,passed,failed,skipped,remaining
+"SUD-023","system-user-dashboard","20","19","0","0","1"
+"SUD-034","system-user-dashboard","20","8","0","0","12"
+"SUD-035","system-user-dashboard","20","15","0","0","5"
+"SUD-036","system-user-dashboard","20","19","0","0","1"

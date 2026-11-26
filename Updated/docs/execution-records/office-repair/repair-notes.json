@@ -1,0 +1,102 @@
+{
+  "scope": "Office failures rerun; deployed-workflow alignment continues. Export/download scenarios are user-designated manual verification.",
+  "implemented": [
+    {
+      "area": "Standard License Configurations",
+      "changes": [
+        "Scope cards and badges to actual UI elements",
+        "Use native sidebar href",
+        "Respect responsive date layout without dropping date assertions"
+      ],
+      "verification": "20 latest cases passed across full run and targeted rerun"
+    },
+    {
+      "area": "User Groups",
+      "changes": [
+        "Four previously gated lifecycle cases now create, edit, persist, and delete uniquely owned groups",
+        "Preserve failed cleanup instead of skipping",
+        "Prevent a duplicate cleanup delete submission in future runs"
+      ],
+      "verification": "4 lifecycle failures: DELETE 200 did not remove records after GET/reload; 5 test-created groups remain. Retry guard typechecked after these runs."
+    },
+    {
+      "area": "System Users",
+      "changes": [
+        "Correct visible-chip and overflow selectors",
+        "Validate multiselect toggling and no duplicates",
+        "Locate assignments dialog by visible heading after nested picker closes",
+        "Search all user records for the designated disposable user, including virtualized rows",
+        "Implement real temporary assignment save/reload/restore with owned empty-group cleanup"
+      ],
+      "verification": "52 latest passes, 1 user-approved data skip while designated Test User is absent; global-search correction passed. Assignment save path remains implemented/typechecked but not live-verified."
+    },
+    {
+      "area": "Reports",
+      "changes": [
+        "Use effective native tabIndex for keyboard reachability",
+        "Observe initial prefetch and row counts together before pagination assertions",
+        "Verify pre-existing row fingerprints survive append",
+        "Replace email, group, profile, and role placeholders with runtime data",
+        "Use native input roles and actual checkbox buttons",
+        "Allow role-input name to change after profile selection",
+        "Recognize genuine empty results and distinguish Clear from Clear all",
+        "Check reviewed Enter/debounce contract without adding a prohibition on typing debounce",
+        "Use labeled native date controls and scope filter chips away from table rows",
+        "Wait for actual debounced requests and completed page loading",
+        "Replace permanent Standard export skips with controlled browser-only response failures",
+        "Exercise next-page error retention with browser-only interception",
+        "Correct native button accessibility and navigate actual keyboard order",
+        "Wait for real download completion and restore cached UI without demanding an unrelated fresh request",
+        "Validate Deleted exports against the runtime API row multiset, preserving duplicate multiplicity and observed missing-value formatting",
+        "Verify rendered Active rows remain intact after a controlled late Deleted response",
+        "Hold browser responses to verify pending-load indicators and await route completion during cleanup",
+        "Cache initial API responses before asynchronous selection completes",
+        "Distinguish fetched dataset totals from rendered row counts",
+        "Use the actual document scroll owner when the table wrapper expands to content height",
+        "Use complete runtime Deleted data to choose an expiration-date filter",
+        "Correct native button roles, effective tabIndex, card tab order and Enter/Space downloads",
+        "Supply labelled browser-only empty-state fixtures and controlled 500/retry/stale-error fixtures",
+        "Validate the workbook plan-permitted 31-character sheet name, eight headers and exact runtime row count"
+      ],
+      "verification": "Current disposition: 246 passed, 14 retained failures, 66 user-designated manual export/download skips. Actual historical executions are preserved in status.json; original office passes not rerun remain included."
+    }
+  ],
+  "evidencePolicy": "Important screenshots, videos, traces, portable reports. Text path/token verification results are recorded per suite. No GitHub push in this phase.",
+  "localMediaCleanup": {
+    "removedFiles": 1126,
+    "freedGiB": 21.4,
+    "manifest": "docs/execution-records/office-repair/dashboard-report-package-cleanup.json",
+    "preserved": "Raw Dashboard evidence, current repair evidence, scripts, Updated snapshots"
+  },
+  "manualVerification": {
+    "cases": 66,
+    "scope": "Reports export/download",
+    "reason": "Manual verification required: download/Excel export; user requested these checks be performed manually.",
+    "historyPreserved": true
+  },
+  "workflowAlignment": {
+    "source": "workflow-baseline.json",
+    "remainingFailuresNeedReview": true
+  },
+  "latestDisposition": {
+    "cases": 531,
+    "passed": 446,
+    "failed": 18,
+    "skipped": 67
+  },
+  "latestExecutionTotals": {
+    "cases": 531,
+    "passed": 506,
+    "failed": 23,
+    "skipped": 2
+  },
+  "skipCategories": {
+    "manualVerification": 66,
+    "unavailableData": 1
+  },
+  "localMediaCleanupAdditional": {
+    "manifest": "dashboard-technical-package-cleanup.json",
+    "files": 56,
+    "freedGiB": 18.43
+  }
+}

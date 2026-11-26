@@ -1,0 +1,22 @@
+.env
+*.local.env
+.playwright-mcp-profile/
+storage-state*.json
+auth-state*.json
+.auth/
+test-results/
+playwright-report/
+*.trace
+*.zip
+*_TMP.xlsx
+*.bak.xlsx
+test-runs/
+temp/framework-audit/
+
+node_modules/
+.venv/
+.playwright-mcp/
+temp/
+smoke-html/
+smoke-test-results/
+Shared Reports/

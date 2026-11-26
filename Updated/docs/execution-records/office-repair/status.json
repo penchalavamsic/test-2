@@ -1,0 +1,850 @@
+{
+  "updatedAt": "2026-11-26T14:36:48.668Z",
+  "completed": false,
+  "baseline": {
+    "cases": 531,
+    "passed": 368,
+    "failed": 146,
+    "skipped": 17
+  },
+  "latestCombined": {
+    "cases": 531,
+    "passed": 446,
+    "failed": 18,
+    "skipped": 67
+  },
+  "latestExecutionTotals": {
+    "cases": 531,
+    "passed": 506,
+    "failed": 23,
+    "skipped": 2
+  },
+  "skipCategories": {
+    "manualVerification": 66,
+    "unavailableData": 1
+  },
+  "suites": [
+    {
+      "suite": "standard-license-configurations",
+      "cases": 20,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0,
+      "repairCases": 20
+    },
+    {
+      "suite": "system-users",
+      "cases": 53,
+      "passed": 52,
+      "failed": 0,
+      "skipped": 1,
+      "repairCases": 53
+    },
+    {
+      "suite": "user-groups",
+      "cases": 132,
+      "passed": 128,
+      "failed": 4,
+      "skipped": 0,
+      "repairCases": 4
+    },
+    {
+      "suite": "reports",
+      "cases": 326,
+      "passed": 246,
+      "failed": 14,
+      "skipped": 66,
+      "repairCases": 152
+    }
+  ],
+  "attempts": [
+    {
+      "batch": "SLC-001",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 18,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "SLC-001",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-26-41-858Z_fde38aa4",
+      "completedAt": "2026-11-26T08:27:21.944Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "UGR-004",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-004_2026-11-26T08-33-49-313Z_49b6441f",
+      "completedAt": "2026-11-26T08:35:30.291Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "UGR-005",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4",
+      "completedAt": "2026-11-26T08:38:10.670Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "UGR-006",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a",
+      "completedAt": "2026-11-26T08:40:22.522Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-001",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 19,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "UGR-007",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7",
+      "completedAt": "2026-11-26T08:43:07.488Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-002",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 20,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-003",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 10,
+      "failed": 2,
+      "skipped": 1
+    },
+    {
+      "batch": "RPT-002",
+      "run": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "completedAt": "2026-11-26T08:49:28.442Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-003",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c",
+      "completedAt": "2026-11-26T08:52:28.437Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 5,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-58-29-750Z_c92dede3",
+      "completedAt": "2026-11-26T08:58:57.400Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-59-49-448Z_caef7196",
+      "completedAt": "2026-11-26T09:00:13.787Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 8,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666",
+      "completedAt": "2026-11-26T09:17:35.943Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 3,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-17-49-844Z_d18d0a84",
+      "completedAt": "2026-11-26T09:18:20.419Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-20-50-934Z_54da0bbf",
+      "completedAt": "2026-11-26T09:21:08.257Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-005",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-31-16-843Z_a0466f8e",
+      "completedAt": "2026-11-26T09:33:44.082Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 7,
+      "failed": 13,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-005",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 11,
+      "failed": 9,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-005",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-39-43-051Z_6101cff5",
+      "completedAt": "2026-11-26T09:40:01.900Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec",
+      "completedAt": "2026-11-26T09:40:27.588Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-41-45-905Z_21a0f49b",
+      "completedAt": "2026-11-26T09:42:33.326Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-42-38-392Z_55fd9e88",
+      "completedAt": "2026-11-26T09:42:53.884Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "completedAt": "2026-11-26T09:43:20.858Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-45-36-600Z_dd95af66",
+      "completedAt": "2026-11-26T09:46:24.961Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d",
+      "completedAt": "2026-11-26T09:48:28.361Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 10,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "completedAt": "2026-11-26T09:50:12.450Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 7,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 5,
+      "failed": 4,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e",
+      "completedAt": "2026-11-26T09:55:33.968Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 6,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "completedAt": "2026-11-26T09:56:44.904Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e",
+      "completedAt": "2026-11-26T09:57:36.025Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-00-52-588Z_4eb3d177",
+      "completedAt": "2026-11-26T10:01:15.094Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T10-01-19-145Z_999be238",
+      "completedAt": "2026-11-26T10:01:39.400Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T10-03-37-305Z_de903ec2",
+      "completedAt": "2026-11-26T10:03:56.620Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T10-05-19-728Z_9c0901d3",
+      "completedAt": "2026-11-26T10:05:40.367Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T10-09-28-479Z_be9439be",
+      "completedAt": "2026-11-26T10:09:50.112Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada",
+      "completedAt": "2026-11-26T10:10:49.112Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-11-56-979Z_336f4538",
+      "completedAt": "2026-11-26T10:12:45.876Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-009",
+      "run": "test-runs/office-repair-20261126/reports/RPT-009_2026-11-26T12-11-59-553Z_f6f06236",
+      "completedAt": "2026-11-26T12:12:31.905Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-009",
+      "run": "test-runs/office-repair-20261126/reports/RPT-009_2026-11-26T12-15-50-573Z_3bbe4742",
+      "completedAt": "2026-11-26T12:16:08.070Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-010",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "completedAt": "2026-11-26T12:16:57.809Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-011",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "completedAt": "2026-11-26T12:21:25.909Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 5,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-012",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48",
+      "completedAt": "2026-11-26T12:24:28.332Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 6,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-013",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 6,
+      "failed": 7,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-014",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 6,
+      "failed": 4,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-015",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-29-07-117Z_a9f070da",
+      "completedAt": "2026-11-26T12:29:32.443Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-016",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "completedAt": "2026-11-26T12:30:14.996Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 3,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-017",
+      "run": "test-runs/office-repair-20261126/reports/RPT-017_2026-11-26T12-30-25-272Z_c4b45f88",
+      "completedAt": "2026-11-26T12:30:43.715Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-011",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-33-38-597Z_2c743a1d",
+      "completedAt": "2026-11-26T12:34:06.599Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-012",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "completedAt": "2026-11-26T12:36:17.052Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 3,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-013",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "completedAt": "2026-11-26T12:37:35.384Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-014",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4",
+      "completedAt": "2026-11-26T12:38:33.868Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-015",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60",
+      "completedAt": "2026-11-26T12:39:28.248Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-016",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-39-33-252Z_43ac19df",
+      "completedAt": "2026-11-26T12:39:56.834Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T12-48-26-670Z_9fbbae26",
+      "completedAt": "2026-11-26T12:48:44.428Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-005",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T12-49-30-594Z_1fb28f39",
+      "completedAt": "2026-11-26T12:49:53.665Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-016",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "completedAt": "2026-11-26T12:50:23.967Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29",
+      "completedAt": "2026-11-26T12:59:17.242Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T12-59-36-305Z_831d6c24",
+      "completedAt": "2026-11-26T12:59:51.716Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "completedAt": "2026-11-26T13:03:42.993Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 7,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c",
+      "completedAt": "2026-11-26T13:08:10.863Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-004",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T13-08-22-162Z_58a81c52",
+      "completedAt": "2026-11-26T13:09:08.578Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-005",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T13-09-12-531Z_bbfce71f",
+      "completedAt": "2026-11-26T13:09:28.806Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-006",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 3,
+      "failed": 3,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-008",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T13-11-48-363Z_38e918dd",
+      "completedAt": "2026-11-26T13:12:01.623Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1
+    },
+    {
+      "batch": "RPT-010",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T13-12-02-965Z_58ee8e34",
+      "completedAt": "2026-11-26T13:12:18.921Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-001",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-17-54-361Z_8f7d9f2b",
+      "completedAt": "2026-11-26T13:18:19.543Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-011",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e",
+      "completedAt": "2026-11-26T13:20:09.769Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-012",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-20-15-603Z_fe13493e",
+      "completedAt": "2026-11-26T13:20:43.895Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "SYU-001",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-20-47-837Z_a22232e1",
+      "completedAt": "2026-11-26T13:21:14.043Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-003",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+      "completedAt": "2026-11-26T13:23:19.270Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 1,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-007",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T13-23-33-381Z_6d9d8f92",
+      "completedAt": "2026-11-26T13:23:56.539Z",
+      "exitCode": 0,
+      "packagingExitCode": 0,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "batch": "RPT-012",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+      "completedAt": "2026-11-26T13:25:32.060Z",
+      "exitCode": 1,
+      "packagingExitCode": 0,
+      "passed": 0,
+      "failed": 2,
+      "skipped": 0
+    }
+  ],
+  "officeFailureReviewComplete": true,
+  "pendingReviewCases": 0,
+  "pendingReviewBatches": [],
+  "remainingFixtureNames": [
+    "LIMAS-AUTO-2462-a175501b",
+    "LIMAS-AUTO-2483-14481693-child",
+    "LIMAS-AUTO-2483-14481693",
+    "LIMAS-AUTO-2504-babae98b-edited",
+    "LIMAS-AUTO-2522-67cd5ed3"
+  ],
+  "limitations": [
+    "Current disposition includes user-designated manual skips; latestExecutionTotals and lastExecutionStatus preserve actual execution history.",
+    "Office baseline and repair reruns are combined; untouched office passes were not rerun here.",
+    "Office failure review is complete when pendingReviewCases is zero; retained application/requirement failures and earlier-suite CRUD remain outstanding.",
+    "LIMAS-SUD-2575 is skipped by user agreement while the designated disposable user is absent. The save/restore path is implemented and typechecked but not live-verified.",
+    "Latest deletion retry guard is typechecked; the observed failed runs predate that guard.",
+    "No source or evidence from this repair phase has been pushed to GitHub."
+  ]
+}

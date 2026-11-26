@@ -1,0 +1,47 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: profiles - 10 batches
+
+# PRF-001: 20 cases; LIMAS-SUD-2192 through LIMAS-SUD-2211
+# Covers: Profiles page opening, profile search and clearing, no-match results, name sorting, profile card headings, Edit and Delete button visibility
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-001 -DetailedEvidence -TestReport
+
+# PRF-002: 20 cases; LIMAS-SUD-2212 through LIMAS-SUD-2231
+# Covers: profile license and role counts, role badges and overflow, Manage button accessibility, Manage dialog opening, Overview selected by default, Overview license counts
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-002 -DetailedEvidence -TestReport
+
+# PRF-003: 20 cases; LIMAS-SUD-2232 through LIMAS-SUD-2251
+# Covers: profile details, Overview and Roles and Features tab switching, role rows and counts, Add Role button, feature assignment controls, Manage dialog closing, correct profile on reopening
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-003 -DetailedEvidence -TestReport
+
+# PRF-004: 20 cases; LIMAS-SUD-2252 through LIMAS-SUD-2271
+# Covers: role row names and values, Edit and Delete button checks, keyboard order, Add Role dialog opening, required field labels, empty and partially filled Save states, empty role name rejection
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-004 -DetailedEvidence -TestReport
+
+# PRF-005: 20 cases; LIMAS-SUD-2272 through LIMAS-SUD-2291
+# Covers: role name whitespace and duplicate validation, role value checks, Add Role cancellation and reset, prefilled role editing, keyboard accessibility, gated role creation and editing and removal, Create Profile dialog opening
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-005 -DetailedEvidence -TestReport
+
+# PRF-006: 20 cases; LIMAS-SUD-2292 through LIMAS-SUD-2311
+# Covers: Create Profile required name, optional description, field placeholders, focus and keyboard containment, name input variations, description character counter and length limit, Save button states
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-006 -DetailedEvidence -TestReport
+
+# PRF-007: 20 cases; LIMAS-SUD-2312 through LIMAS-SUD-2331
+# Covers: Create Profile cancellation and reset, gated profile creation, Features tab controls, assigned feature names, version and access level selectors, Remove button, Add Feature selection opening and closing
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-007 -DetailedEvidence -TestReport
+
+# PRF-008: 20 cases; LIMAS-SUD-2332 through LIMAS-SUD-2351
+# Covers: feature removal button state, version and access level options, tab switching and saved assignments, gated feature assignment and removal, Edit Profile dialog opening, required fields and initial focus
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-008 -DetailedEvidence -TestReport
+
+# PRF-009: 20 cases; LIMAS-SUD-2352 through LIMAS-SUD-2371
+# Covers: Edit Profile existing values, correct profile isolation, name and description changes, Save button states, description length counter, cancelled changes discarded, field accessibility, gated profile update
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-009 -DetailedEvidence -TestReport
+
+# PRF-010: 19 cases; LIMAS-SUD-2372 through LIMAS-SUD-2390
+# Covers: profile Delete button and keyboard access, deletion confirmation and warning, Cancel and Escape without deletion, Delete state after search and sorting, conditional deletion error scenarios, gated profile deletion
+.\scripts\run-tests-with-report.ps1 -Suite profiles -Batch PRF-010 -DetailedEvidence -TestReport

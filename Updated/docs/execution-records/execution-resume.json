@@ -1,0 +1,83 @@
+{
+  "resumedAt": "2026-11-26T05:24:45.817Z",
+  "scope": "User & License Hub remaining batches only",
+  "batches": [
+    "ULH-019",
+    "ULH-020",
+    "ULH-021",
+    "ULH-022",
+    "ULH-023",
+    "ULH-024",
+    "ULH-025",
+    "ULH-026",
+    "ULH-027",
+    "ULH-028"
+  ],
+  "plannedCases": 196,
+  "profile": "SUPER_USER_ADMIN_USER",
+  "workers": 2,
+  "screenshotMode": "important",
+  "serverLicensingExcluded": true,
+  "existingMutationGatesRetained": true,
+  "status": "complete",
+  "baselineCompletedAt": "2026-11-26T06:03:26.903Z",
+  "baselineCounts": {
+    "planned": 196,
+    "passed": 136,
+    "failed": 11,
+    "skipped": 49
+  },
+  "reviewIds": [
+    "LIMAS-SUD-1308",
+    "LIMAS-SUD-1314",
+    "LIMAS-SUD-1347",
+    "LIMAS-SUD-1359",
+    "LIMAS-SUD-1390",
+    "LIMAS-SUD-1392",
+    "LIMAS-SUD-1393",
+    "LIMAS-SUD-1395",
+    "LIMAS-SUD-1414",
+    "LIMAS-SUD-1415",
+    "LIMAS-SUD-1429"
+  ],
+  "reviewWorkers": 1,
+  "sourceVerification": [
+    {
+      "file": "tests/user-license-hub/user-license-hub-edit-license.spec.ts",
+      "sha256": "bf495379dd42b73ad9ea7611aca2bc89119c32bc36ea9b98f88e65a869b10ef2"
+    },
+    {
+      "file": "tests/user-license-hub/user-license-hub-delete-license.spec.ts",
+      "sha256": "2366bd30ada314722ffcb9b54af45059df3086cce99de1ba445fd8d66e6f98d7"
+    }
+  ],
+  "finalReviewIds": [
+    "LIMAS-SUD-1392",
+    "LIMAS-SUD-1393",
+    "LIMAS-SUD-1395",
+    "LIMAS-SUD-1414",
+    "LIMAS-SUD-1415",
+    "LIMAS-SUD-1429"
+  ],
+  "testExecutionCompletedAt": "2026-11-26T06:21:00.795Z",
+  "finalCounts": {
+    "planned": 196,
+    "passed": 144,
+    "failed": 3,
+    "skipped": 49,
+    "pending": 0
+  },
+  "finalFailures": [
+    "LIMAS-SUD-1395",
+    "LIMAS-SUD-1414",
+    "LIMAS-SUD-1429"
+  ],
+  "completedAt": "2026-11-26T06:22:11.145Z",
+  "completionMeaning": "All requested batches processed, script corrections verified and reports checked; failed and skipped cases remain explicitly recorded.",
+  "evidenceVerification": {
+    "reportAttempts": 19,
+    "issues": 0,
+    "record": "hub-completion-verification.json",
+    "relocationSample": "ui-observations/hub-report-relocation-check.json"
+  }
+}

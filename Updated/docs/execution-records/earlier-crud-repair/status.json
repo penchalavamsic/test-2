@@ -1,0 +1,79 @@
+{
+  "updatedAt": "2026-11-26T18:02:21.700Z",
+  "phase": "Earlier-tab CRUD and assumption repairs in progress",
+  "scope": [
+    "system-user-dashboard",
+    "profiles",
+    "user-license-hub",
+    "features",
+    "floating-license-configurations"
+  ],
+  "latestExecuted": {
+    "cases": 450,
+    "passed": 361,
+    "failed": 51,
+    "skipped": 38
+  },
+  "historicalPlusLatest": {
+    "cases": 2035,
+    "passed": 1946,
+    "failed": 51,
+    "skipped": 38
+  },
+  "completedAttempts": 166,
+  "sourceReviewedHistoricalPasses": 109,
+  "pendingReviewCandidates": 0,
+  "bySuite": [
+    {
+      "suite": "system-user-dashboard",
+      "latestExecuted": {
+        "cases": 59,
+        "passed": 46,
+        "failed": 12,
+        "skipped": 1
+      },
+      "pendingReviewCandidates": 0
+    },
+    {
+      "suite": "profiles",
+      "latestExecuted": {
+        "cases": 26,
+        "passed": 15,
+        "failed": 11,
+        "skipped": 0
+      },
+      "pendingReviewCandidates": 0
+    },
+    {
+      "suite": "user-license-hub",
+      "latestExecuted": {
+        "cases": 224,
+        "passed": 180,
+        "failed": 8,
+        "skipped": 36
+      },
+      "pendingReviewCandidates": 0
+    },
+    {
+      "suite": "features",
+      "latestExecuted": {
+        "cases": 10,
+        "passed": 4,
+        "failed": 5,
+        "skipped": 1
+      },
+      "pendingReviewCandidates": 0
+    },
+    {
+      "suite": "floating-license-configurations",
+      "latestExecuted": {
+        "cases": 131,
+        "passed": 116,
+        "failed": 15,
+        "skipped": 0
+      },
+      "pendingReviewCandidates": 0
+    }
+  ],
+  "warning": "Historical plus latest totals include old unreviewed results; they are not a new full regression run."
+}

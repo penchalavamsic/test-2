@@ -1,0 +1,297 @@
+{
+  "status": "completed",
+  "backupBranch": "user-license-hub-reports",
+  "backupCommit": "9afa770aeb7110534fbb73b1e716af6df09ffe03",
+  "targets": [
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-001_2026-11-25T18-19-11-424Z_50c2d8eb/test-results",
+      "files": 79,
+      "bytes": 125863639.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-001_2026-11-25T18-24-39-771Z_0bc8940c/test-results",
+      "files": 28,
+      "bytes": 75916202.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-001_2026-11-25T18-31-05-849Z_90f95d1b/test-results",
+      "files": 10,
+      "bytes": 38292054.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-002_2026-11-25T18-21-23-572Z_c765418d/test-results",
+      "files": 73,
+      "bytes": 175044316.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-002_2026-11-25T18-26-31-619Z_e3444267/test-results",
+      "files": 21,
+      "bytes": 150998517.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-002_2026-11-25T18-32-11-590Z_9846af20/test-results",
+      "files": 8,
+      "bytes": 18745698.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-003_2026-11-25T18-23-44-920Z_c9a78793/test-results",
+      "files": 81,
+      "bytes": 168488458.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-003_2026-11-25T18-28-37-800Z_fd842074/test-results",
+      "files": 16,
+      "bytes": 44740108.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-003_2026-11-25T18-32-43-786Z_bd5a7c73/test-results",
+      "files": 23,
+      "bytes": 51627927.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-004_2026-11-25T18-26-20-188Z_11915adf/test-results",
+      "files": 81,
+      "bytes": 204354378.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-004_2026-11-25T18-41-49-021Z_e04d806f/test-results",
+      "files": 11,
+      "bytes": 30957415.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-004_2026-11-25T18-47-19-910Z_05a8cdbc/test-results",
+      "files": 15,
+      "bytes": 221331440.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-004_2026-11-25T19-06-10-631Z_990d54b8/test-results",
+      "files": 10,
+      "bytes": 24759176.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-005_2026-11-25T18-28-55-969Z_e89d4f55/test-results",
+      "files": 81,
+      "bytes": 191238538.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-005_2026-11-25T18-42-25-840Z_51e3ede3/test-results",
+      "files": 17,
+      "bytes": 63423278.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-006_2026-11-25T18-31-08-396Z_a04b010a/test-results",
+      "files": 77,
+      "bytes": 309525901.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-006_2026-11-25T18-43-21-391Z_dac48d20/test-results",
+      "files": 26,
+      "bytes": 197465848.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-007_2026-11-25T18-33-44-696Z_cfd73317/test-results",
+      "files": 91,
+      "bytes": 470509626.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-007_2026-11-25T18-46-31-598Z_fd1ac6c2/test-results",
+      "files": 20,
+      "bytes": 236459806.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-008_2026-11-25T18-38-50-236Z_adc493fc/test-results",
+      "files": 65,
+      "bytes": 276284351.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-009_2026-11-25T18-40-56-037Z_b8419e01/test-results",
+      "files": 65,
+      "bytes": 288962846.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-010_2026-11-25T18-43-16-147Z_f526061a/test-results",
+      "files": 75,
+      "bytes": 374745081.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-010_2026-11-25T18-50-08-947Z_dd502c48/test-results",
+      "files": 20,
+      "bytes": 97984921.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-011_2026-11-25T18-47-33-910Z_24e1b228/test-results",
+      "files": 85,
+      "bytes": 519096230.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-011_2026-11-25T18-53-14-255Z_a5768f4c/test-results",
+      "files": 43,
+      "bytes": 179707309.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-011_2026-11-25T18-57-57-382Z_2bbc66ee/test-results",
+      "files": 16,
+      "bytes": 58522095.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-011_2026-11-25T19-02-17-381Z_4aa423b0/test-results",
+      "files": 8,
+      "bytes": 29669433.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-012_2026-11-25T18-52-56-285Z_4bd1f202/test-results",
+      "files": 73,
+      "bytes": 736870284.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-012_2026-11-25T18-58-46-425Z_ae54c1e5/test-results",
+      "files": 20,
+      "bytes": 277982213.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-012_2026-11-25T19-02-51-850Z_2f6e1ff9/test-results",
+      "files": 8,
+      "bytes": 33429873.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-013_2026-11-25T18-57-19-581Z_ef2c96fa/test-results",
+      "files": 83,
+      "bytes": 470299628.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-013_2026-11-25T19-03-26-142Z_f6ffef80/test-results",
+      "files": 9,
+      "bytes": 40093066.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-014_2026-11-25T19-00-33-873Z_cf54e4fc/test-results",
+      "files": 80,
+      "bytes": 328741837.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-014_2026-11-25T19-04-23-540Z_e4edf070/test-results",
+      "files": 23,
+      "bytes": 176490052.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-015_2026-11-25T19-03-39-440Z_1205b8ac/test-results",
+      "files": 69,
+      "bytes": 776292726.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-015_2026-11-25T19-10-24-284Z_00188522/test-results",
+      "files": 11,
+      "bytes": 88779270.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-016_2026-11-25T19-10-01-181Z_b5ab2d14/test-results",
+      "files": 79,
+      "bytes": 420885155.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-016_2026-11-25T19-17-58-216Z_450bc5b8/test-results",
+      "files": 23,
+      "bytes": 53028307.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-017_2026-11-25T19-13-50-529Z_2b0fec92/test-results",
+      "files": 71,
+      "bytes": 596431757.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-018_2026-11-25T19-18-11-019Z_b6078787/test-results",
+      "files": 69,
+      "bytes": 787618407.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-019_2026-11-26T05-24-53-409Z_0027623b/test-results",
+      "files": 65,
+      "bytes": 644230983.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-020_2026-11-26T05-28-52-976Z_ac1dbfbb/test-results",
+      "files": 69,
+      "bytes": 709538915.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-020_2026-11-26T06-03-55-678Z_7e6c3e08/test-results",
+      "files": 11,
+      "bytes": 82809635.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-021_2026-11-26T05-34-07-009Z_c50ea3e2/test-results",
+      "files": 65,
+      "bytes": 668555958.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-022_2026-11-26T05-38-22-409Z_c1f697b4/test-results",
+      "files": 69,
+      "bytes": 736386679.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-022_2026-11-26T06-05-10-789Z_c75f42d4/test-results",
+      "files": 11,
+      "bytes": 80826125.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-023_2026-11-26T05-43-21-194Z_eb411c83/test-results",
+      "files": 65,
+      "bytes": 802845524.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-024_2026-11-26T05-48-49-227Z_51c361cf/test-results",
+      "files": 73,
+      "bytes": 574110162.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-024_2026-11-26T06-06-16-147Z_d4de0b2c/test-results",
+      "files": 21,
+      "bytes": 239939797.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-024_2026-11-26T06-14-32-603Z_13e2144b/test-results",
+      "files": 16,
+      "bytes": 167456992.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-025_2026-11-26T05-53-06-373Z_4c143155/test-results",
+      "files": 69,
+      "bytes": 639610745.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-025_2026-11-26T06-09-45-600Z_4abcf561/test-results",
+      "files": 15,
+      "bytes": 59061277.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-025_2026-11-26T06-17-19-208Z_b7ba3f0d/test-results",
+      "files": 13,
+      "bytes": 77619238.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-026_2026-11-26T05-57-30-760Z_23e6fb6e/test-results",
+      "files": 67,
+      "bytes": 383280220.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-026_2026-11-26T06-10-25-600Z_43ae65a8/test-results",
+      "files": 8,
+      "bytes": 35198903.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-026_2026-11-26T06-18-45-201Z_b298ce20/test-results",
+      "files": 10,
+      "bytes": 56417331.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-027_2026-11-26T06-00-19-414Z_cafce0da/test-results",
+      "files": 65,
+      "bytes": 156691779.0
+    },
+    {
+      "path": "test-runs/super-admin-live-20261125/user-license-hub/ULH-028_2026-11-26T06-01-36-071Z_b7d7b0a1/test-results",
+      "files": 53,
+      "bytes": 123150444.0
+    }
+  ]
+}

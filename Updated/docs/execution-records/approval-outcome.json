@@ -1,0 +1,31 @@
+{
+  "testId": "LIMAS-SUD-151",
+  "status": "failed",
+  "user": "Test User",
+  "request": "LR-15803",
+  "submissionCount": 1,
+  "group": "Default",
+  "profile": "ECU Validator",
+  "role": "1.0.0",
+  "expirationDate": "2026-12-03",
+  "maintenanceDate": "2026-12-03",
+  "network": [
+    {
+      "method": "POST",
+      "endpoint": "/limas/api/users",
+      "status": 201
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/limas/api/users",
+      "status": 500
+    }
+  ],
+  "visibleError": "Failed to approve the request. Please try again.",
+  "independentCheck": {
+    "requestStillPending": true,
+    "userCreated": true,
+    "licenses": 0
+  },
+  "automaticRetry": false
+}

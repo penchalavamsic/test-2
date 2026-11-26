@@ -1,0 +1,36 @@
+{
+  "stoppedAt": "2026-11-26T18:02:20.125Z",
+  "userRequestedStop": true,
+  "hubRepairExecutionFinished": true,
+  "applicationProcessesActive": 0,
+  "unverifiedSourceChanges": [
+    "LIMAS-SUD-667",
+    "LIMAS-SUD-668",
+    "LIMAS-SUD-669",
+    "LIMAS-SUD-673",
+    "LIMAS-SUD-674",
+    "LIMAS-SUD-675",
+    "LIMAS-SUD-676",
+    "LIMAS-SUD-677",
+    "LIMAS-SUD-678",
+    "LIMAS-SUD-679",
+    "LIMAS-SUD-680",
+    "LIMAS-SUD-683",
+    "LIMAS-SUD-689",
+    "LIMAS-SUD-701",
+    "LIMAS-SUD-702",
+    "LIMAS-SUD-703",
+    "LIMAS-SUD-704",
+    "LIMAS-SUD-715",
+    "LIMAS-SUD-457"
+  ],
+  "evidenceLimitations": [
+    {
+      "ids": [
+        "LIMAS-SUD-628",
+        "LIMAS-SUD-638"
+      ],
+      "reason": "Playwright reported trace finalization corruption. Available screenshots and other intact evidence are preserved; unavailable traces are explicitly documented."
+    }
+  ]
+}

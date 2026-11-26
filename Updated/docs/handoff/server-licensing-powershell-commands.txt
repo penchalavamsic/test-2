@@ -1,0 +1,55 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: server-licensing - 12 batches
+
+# SVL-001: 20 cases; LIMAS-SUD-2576 through LIMAS-SUD-2595
+# Covers: Server License Management opening, server license selector, Filters panel opening and closing, Add Customer button, customer card count and uniqueness, customer name and description
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-001 -DetailedEvidence -TestReport
+
+# SVL-002: 20 cases; LIMAS-SUD-2596 through LIMAS-SUD-2615
+# Covers: customer license status and actions, customer card expansion and collapse, Expand All and Collapse All, scrolling, initial read-only requests, keyboard accessibility, Create Server License button
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-002 -DetailedEvidence -TestReport
+
+# SVL-003: 20 cases; LIMAS-SUD-2616 through LIMAS-SUD-2635
+# Covers: Create Server License dialog opening, filename editing and validation, Apply button state, license file download and filename suffix, Cancel and Close without download, dialog closing after download
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-003 -DetailedEvidence -TestReport
+
+# SVL-004: 20 cases; LIMAS-SUD-2636 through LIMAS-SUD-2655
+# Covers: server license download dialog focus and reset, download loading feedback, Edit Customer dialog opening, existing customer and hardware values, server type selection, Apply button state, group controls and Add Group form
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-004 -DetailedEvidence -TestReport
+
+# SVL-005: 20 cases; LIMAS-SUD-2656 through LIMAS-SUD-2676
+# Covers: customer group addition and cancellation, duplicate group warning, group editing and cancellation, temporary group removal restored on Cancel, system user assignment controls, customer field validation, Delete restrictions for assigned licenses
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-005 -DetailedEvidence -TestReport
+
+# SVL-006: 20 cases; LIMAS-SUD-2677 through LIMAS-SUD-2696
+# Covers: customer deletion availability, confirmation warning, Cancel and Escape without deletion, blocked customer deletion lifecycle, Standard and Floating license tabs, license counts, empty license states
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-006 -DetailedEvidence -TestReport
+
+# SVL-007: 20 cases; LIMAS-SUD-2697 through LIMAS-SUD-2717
+# Covers: standard license card counts and fields, Edit Standard License dialog opening, existing values, Apply label, Cancel and Close actions, focus and form reset, direct Delete action behavior
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-007 -DetailedEvidence -TestReport
+
+# SVL-008: 20 cases; LIMAS-SUD-2718 through LIMAS-SUD-2737
+# Covers: blocked standard license deletion lifecycle, license accessibility checks, Floating tab selection and counts, Create Floating License button, empty floating license state, floating license card details and actions
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-008 -DetailedEvidence -TestReport
+
+# SVL-009: 20 cases; LIMAS-SUD-2738 through LIMAS-SUD-2757
+# Covers: floating license card dates and counts, Edit Floating License dialog opening, existing dates and capacity, checkout and synchronization controls, Apply button state after changes, Cancel and Close actions
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-009 -DetailedEvidence -TestReport
+
+# SVL-010: 20 cases; LIMAS-SUD-2758 through LIMAS-SUD-2777
+# Covers: floating license edit focus and reset, Delete click without confirmation, blocked floating license deletion lifecycle, Create Floating License form opening, group and profile selection, role dependency, capacity and checkout controls
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-010 -DetailedEvidence -TestReport
+
+# SVL-011: 20 cases; LIMAS-SUD-2778 through LIMAS-SUD-2797
+# Covers: Create Floating License dates and Apply state, cancellation and reset, blocked floating license creation lifecycle, Create Standard License form opening, profile and role dependency, license quantity and dates, absent floating-only fields
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-011 -DetailedEvidence -TestReport
+
+# SVL-012: 9 cases; LIMAS-SUD-2798 through LIMAS-SUD-2806
+# Covers: standard license create and edit field comparison, missing synchronization checkbox, Apply button state, Cancel and Escape, form reset and focus return, blocked standard license creation lifecycle
+.\scripts\run-tests-with-report.ps1 -Suite server-licensing -Batch SVL-012 -DetailedEvidence -TestReport

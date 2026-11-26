@@ -1,0 +1,35 @@
+{
+  "name": "limas-test-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LIMAS 3.0 Playwright test-automation workspace",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "node scripts/run-ci.cjs",
+    "report:open": "node scripts/open-latest-report.cjs",
+    "typecheck": "tsc --noEmit",
+    "validate:structure": "tsc --noEmit --project tsconfig.json",
+    "validate:sensitive-data": "node scripts/scan-sensitive-data.cjs",
+    "test:with-report": "powershell -ExecutionPolicy Bypass -File scripts/run-tests-with-report.ps1",
+    "batches:list": "node scripts/run-batches.cjs --list",
+    "test:batch": "node scripts/run-batches.cjs",
+    "evidence:check": "node scripts/instrument-evidence.cjs --check",
+    "test:offline": "playwright test --config=playwright.offline.config.ts",
+    "validate:batches": "node scripts/audit-batches.cjs",
+    "ci:check": "node scripts/run-ci.cjs --dry-run",
+    "ci:install-browser": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^26.6.6",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "typescript": "^5.6.0",
+    "xlsx": "^0.18.5",
+    "archiver": "5.3.2",
+    "unzipper": "0.10.14"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

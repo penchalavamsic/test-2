@@ -1,0 +1,15 @@
+{
+  "sequence": "sequence-2026-11-26T14-43-14-235Z-9c14858a",
+  "stoppedAt": "2026-11-26T15:00:34.779Z",
+  "reason": "Confirmed response-body lifecycle race in shared Hub user setup caused protocol errors and 240-second timeouts. Stopped owned runner before continuing remaining cases; user upload left running.",
+  "completedBatches": [
+    "ULH-016",
+    "ULH-017",
+    "ULH-026"
+  ],
+  "interruptedBatch": "ULH-027",
+  "notStarted": [
+    "ULH-028"
+  ],
+  "nextAction": "Immediately consume prerequisite response body; rerun affected and interrupted cases with original assertions."
+}

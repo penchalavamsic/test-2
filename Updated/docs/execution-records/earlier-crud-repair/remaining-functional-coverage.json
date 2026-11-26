@@ -1,0 +1,8 @@
+{
+  "updatedAt": "2026-11-26T16:34:46.722Z",
+  "note": "Former structural delete cases were replaced by actual owned-configuration deletion. Their HTTP 500 results remain failures. Bulk dates/capacity persistence now has explicit owned-fixture scenarios, awaiting this targeted run.",
+  "cases": [
+    "LIMAS-SUD-1905",
+    "LIMAS-SUD-1911"
+  ]
+}

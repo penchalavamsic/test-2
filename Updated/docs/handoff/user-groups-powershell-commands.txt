@@ -1,0 +1,35 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: user-groups - 7 batches
+
+# UGR-001: 20 cases; LIMAS-SUD-2391 through LIMAS-SUD-2410
+# Covers: User Groups opening, group list and columns, parent and child hierarchy, individual expansion and collapse, Expand All and Collapse All, repeated toggle behavior, initial read-only loading
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-001 -DetailedEvidence -TestReport
+
+# UGR-002: 20 cases; LIMAS-SUD-2411 through LIMAS-SUD-2430
+# Covers: group search and clearing, case and whitespace handling, search with expanded hierarchy, Add Subgroup and Edit and Delete buttons, row-specific actions, keyboard access, read-only request checks
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-002 -DetailedEvidence -TestReport
+
+# UGR-003: 20 cases; LIMAS-SUD-2431 through LIMAS-SUD-2450
+# Covers: group list accessibility and empty results, Add Group dialog opening, name and comment fields, required name indicator, initial focus and focus containment, Save button states, group name input variations
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-003 -DetailedEvidence -TestReport
+
+# UGR-004: 20 cases; LIMAS-SUD-2451 through LIMAS-SUD-2470
+# Covers: group comment entry and clearing, dialog cancellation and reset, field accessibility, gated group creation and deletion, Add Subgroup dialog opening, selected parent context, subgroup fields and focus
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-004 -DetailedEvidence -TestReport
+
+# UGR-005: 20 cases; LIMAS-SUD-2471 through LIMAS-SUD-2490
+# Covers: subgroup Save button states, subgroup name input variations, cancellation and reset, field accessibility, gated subgroup creation and deletion, Edit Group dialog opening, existing name and comment
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-005 -DetailedEvidence -TestReport
+
+# UGR-006: 20 cases; LIMAS-SUD-2491 through LIMAS-SUD-2510
+# Covers: editing the correct group, Save states after changes, cancelled edits discarded, root and child group editing, field accessibility, gated group update, Delete confirmation opening and warning
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-006 -DetailedEvidence -TestReport
+
+# UGR-007: 12 cases; LIMAS-SUD-2511 through LIMAS-SUD-2522
+# Covers: Delete confirmation controls and focus, warnings for parent and leaf groups, subgroup promotion warning, Cancel and Escape preserve group, search and hierarchy after cancellation, gated group deletion
+.\scripts\run-tests-with-report.ps1 -Suite user-groups -Batch UGR-007 -DetailedEvidence -TestReport

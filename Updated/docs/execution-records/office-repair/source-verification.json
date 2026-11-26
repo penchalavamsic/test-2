@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-26T13:33:05.753Z",
+  "typecheck": "passed",
+  "manualPolicy": {
+    "cases": 66,
+    "uncoveredDirectDownloadActions": []
+  },
+  "credentials": {
+    "scannedFiles": 1110,
+    "findingCount": 0,
+    "findings": []
+  },
+  "scope": "Source/configuration checks; media path and trace verification are tracked separately."
+}

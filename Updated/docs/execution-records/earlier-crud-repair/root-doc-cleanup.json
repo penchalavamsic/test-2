@@ -1,0 +1,20 @@
+{
+  "replacementDocuments": [
+    "EXECUTION-STATUS.html",
+    "EXECUTION-CASES.csv",
+    "FAILED-AND-SKIPPED.html",
+    "FRAMEWORK-GUIDE.html"
+  ],
+  "reason": "Superseded root summaries; internal execution records retained",
+  "removedRootDocuments": [
+    "CURRENT-FAILURES-REVIEW.txt",
+    "EARLIER-CRUD-REPAIR-STATUS.txt",
+    "EXECUTION-STATUS.txt",
+    "HOW-TO-COPY-REPORTS.txt",
+    "MANUAL-EXPORT-VERIFICATION.txt",
+    "OFFICE-REPAIR-STATUS.txt",
+    "PROJECT-HANDOFF.txt",
+    "USER-LICENSE-HUB-STATUS.txt",
+    "WHY-TESTS-STILL-FAIL.txt"
+  ]
+}

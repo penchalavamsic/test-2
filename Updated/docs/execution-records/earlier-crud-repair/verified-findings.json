@@ -1,0 +1,254 @@
+{
+  "updatedAt": "2026-11-26T18:02:20.125Z",
+  "findings": [
+    {
+      "ids": [
+        "LIMAS-SUD-2316",
+        "LIMAS-SUD-2371"
+      ],
+      "classification": "application-persistence",
+      "reason": "A nonempty Profile description is submitted but is absent after reload and the Edit description field is blank.",
+      "nextAction": "Investigate Profile create/update DTO and storage/read mapping; retain the persisted-description assertion."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2288",
+        "LIMAS-SUD-2316",
+        "LIMAS-SUD-2345",
+        "LIMAS-SUD-2371",
+        "LIMAS-SUD-2390"
+      ],
+      "classification": "application-delete",
+      "reason": "The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.",
+      "nextAction": "Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2237"
+      ],
+      "classification": "script-correction",
+      "reason": "The deployed Features panel exposes a table and selected tab; the old test demanded a nonexistent Manage Features heading.",
+      "nextAction": "Verify the selected Features panel and table."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2264",
+        "LIMAS-SUD-2267",
+        "LIMAS-SUD-2278",
+        "LIMAS-SUD-2297",
+        "LIMAS-SUD-2299",
+        "LIMAS-SUD-2302",
+        "LIMAS-SUD-2308",
+        "LIMAS-SUD-2310"
+      ],
+      "classification": "script-correction",
+      "reason": "The deployed forms validate required fields on Save. Old disabled-button and boolean-type assertions did not verify the functional outcome.",
+      "nextAction": "Require visible validation or prevented Save, an unchanged form, and no invalid server write."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2386",
+        "LIMAS-SUD-2387",
+        "LIMAS-SUD-2388"
+      ],
+      "classification": "application-delete-feedback",
+      "reason": "Controlled 403, 404, and 500 delete rejections preserve the record but display no visible error notification. These checks did not send real DELETE requests to the server.",
+      "nextAction": "Add visible failure feedback or confirm the required error UX; these client-handling checks do not prove server authorization enforcement."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1440",
+        "LIMAS-SUD-1355"
+      ],
+      "classification": "application-persistence",
+      "reason": "Clearing the optional maintenance date leaves the prior date in the saved license after reload.",
+      "nextAction": "Fix the deployed save mapping so an explicit clear persists a null maintenance date; retain the clearing assertion."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2090"
+      ],
+      "classification": "application-persistence",
+      "reason": "Feature create submits a nonempty description and Standard access level, but both are absent in fresh GET data and the reopened Edit form. Version 1.0.0 persists.",
+      "nextAction": "Investigate Feature create/update/read mapping for description and access levels; retain the persisted-value checks."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2090"
+      ],
+      "classification": "application-delete",
+      "reason": "The owned Feature DELETE by the UUID used by the deployed UI returned HTTP 200, but the same record remains in fresh GET data and the UI.",
+      "nextAction": "Fix the deletion contract or persistence; the owned leftover is documented and should not be repeatedly deleted automatically."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1842",
+        "LIMAS-SUD-1865",
+        "LIMAS-SUD-1869",
+        "LIMAS-SUD-1946",
+        "LIMAS-SUD-1973"
+      ],
+      "classification": "script-correction",
+      "reason": "Old configuration tests selected the first leaf group, which was empty. Live data contained 142 configurations across 47 groups. Card locators also included surrounding containers.",
+      "nextAction": "Select a populated runtime group and scope each card to its actual container; the five representative rechecks passed without skips."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1443",
+        "LIMAS-SUD-1445",
+        "LIMAS-SUD-1471",
+        "LIMAS-SUD-1472",
+        "LIMAS-SUD-1475",
+        "LIMAS-SUD-1476"
+      ],
+      "classification": "script-correction",
+      "reason": "Prerequisite response readers could consume an in-flight response from the previous page and lose its body during navigation.",
+      "nextAction": "Match requests started by the current navigation and consume their bodies immediately; targeted rerun in progress."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1991"
+      ],
+      "classification": "application-persistence",
+      "reason": "The owned configuration edit submitted capacity 2, checkout 2 and new dates, and returned HTTP 200. Fresh GET data still contains capacity 1, checkout 1 and the original dates.",
+      "nextAction": "Fix the group/configuration update persistence. Retain the saved-value assertions."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1991"
+      ],
+      "classification": "application-delete",
+      "reason": "The deployed owned-configuration DELETE returned HTTP 500. The test previously waited for an admin-only endpoint and obscured this response with a timeout; the matcher now accepts the deployed actor-scoped endpoint.",
+      "nextAction": "Fix the deployed configuration delete handler. Configuration 427 in owned group 385 remains; do not automatically resubmit this failed deletion."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1850",
+        "LIMAS-SUD-1851",
+        "LIMAS-SUD-1853",
+        "LIMAS-SUD-1881"
+      ],
+      "classification": "application-search",
+      "reason": "Typing a configuration name or a no-match query leaves unrelated Floating License cards visible. The strengthened checks verify every displayed result, rather than accepting one matching card.",
+      "nextAction": "Connect the deployed search state to configuration filtering and rerun the unchanged functional assertions."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1914",
+        "LIMAS-SUD-1915",
+        "LIMAS-SUD-1996",
+        "LIMAS-SUD-2000",
+        "LIMAS-SUD-2001",
+        "LIMAS-SUD-2002",
+        "LIMAS-SUD-2008"
+      ],
+      "classification": "application-delete",
+      "reason": "The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.",
+      "nextAction": "Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2190"
+      ],
+      "classification": "application-response-unresolved",
+      "reason": "Feature creation returned HTTP 201, but the subsequent version/access-level PUT did not complete within 30 seconds; the fresh cleanup GET also timed out. The update-file upload was not reached.",
+      "nextAction": "Investigate the unfinished Feature PUT and availability. Do not claim upload/delete coverage or retry the previous mutation blindly."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-2006"
+      ],
+      "classification": "application-access",
+      "reason": "The required fresh Profile listing returned HTTP 403 before the owned configuration was created. No deletion was attempted in this case.",
+      "nextAction": "Verify session and endpoint access, then rerun the case with a fresh authenticated session."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-625",
+        "LIMAS-SUD-626",
+        "LIMAS-SUD-627",
+        "LIMAS-SUD-628",
+        "LIMAS-SUD-631",
+        "LIMAS-SUD-632",
+        "LIMAS-SUD-633",
+        "LIMAS-SUD-634"
+      ],
+      "classification": "application-discovery",
+      "reason": "Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.",
+      "nextAction": "Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-024"
+      ],
+      "classification": "application-requirement",
+      "reason": "The header displays an account identifier rather than the email address explicitly required by the user.",
+      "nextAction": "Display the signed-in account email in the application header, then rerun this case."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1250",
+        "LIMAS-SUD-1410"
+      ],
+      "classification": "application-accessibility",
+      "reason": "The Edit License icon button has an empty accessible name.",
+      "nextAction": "Add an accessible Edit License name to the application button."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1395",
+        "LIMAS-SUD-1429"
+      ],
+      "classification": "application-accessibility",
+      "reason": "Cancelling the Edit License dialog does not restore keyboard focus to the invoking Edit action.",
+      "nextAction": "Restore focus to the original Edit trigger after closing the dialog."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-151"
+      ],
+      "classification": "application-approval",
+      "reason": "With a disposable user, persisted Hardware ID, assigned Profile/Role and both valid dates, the Dashboard approval sends PUT /api/users and receives HTTP 500. The request is not approved. Cleanup dismisses only the owned request and removes the owned user.",
+      "nextAction": "Inspect the approval request DTO and backend exception. The observed payload includes a new license id of 0 and a response-only @id field; verify the backend contract rather than altering the test request to hide the application failure."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-759"
+      ],
+      "classification": "application-accessibility",
+      "reason": "The Floating Configurations radio selection changes with ArrowLeft, but keyboard focus is lost after the UI updates. The selected Expiration radio remains inactive.",
+      "nextAction": "Keep the radio group mounted during data refresh or restore keyboard focus to the selected radio after the update; retain the focus assertion."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1343"
+      ],
+      "classification": "application-validation",
+      "reason": "Clearing the required expiration field and saving an owned license sends PUT /api/users and receives HTTP 201 rather than displaying a required-field validation error. The current client falls back to the previous date.",
+      "nextAction": "Validate the required expiration before Save and show a field error; do not silently restore the prior value and report success. Keep the owned-license boundary check."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-1408"
+      ],
+      "classification": "application-error-feedback",
+      "reason": "An owned license update succeeds and persists. When the subsequent list refresh is deliberately rejected, the UI does not show a visible refresh error. The controlled failure is limited to reads; the owned update and cleanup use the real server.",
+      "nextAction": "Surface the failed list refresh and provide a retry path without resubmitting the successful update."
+    },
+    {
+      "ids": [
+        "LIMAS-SUD-638"
+      ],
+      "classification": "infrastructure-evidence",
+      "reason": "The functional pending-state assertions completed, but Playwright failed while finalizing evidence: unexpected file stream length and a truncated trace ZIP. The recorded result remains failed; a pass is not claimed.",
+      "nextAction": "Inspect the trace-recording/archiving failure and rerun only after execution is authorized again."
+    }
+  ],
+  "notes": [
+    "Role lifecycle 2288 reached and verified create, edit, and role deletion after reload; its parent Profile cleanup returned HTTP 500.",
+    "Current office-repair upload uses its previously verified immutable source snapshot. New earlier-tab repairs belong to the next snapshot.",
+    "Export/download manual-verification exception remains user-authorized. Other skips require genuinely unavailable data.",
+    "Profile feature association, removal, and prerequisite role deletion all succeeded and persisted; the parent Profile delete returned HTTP 500.",
+    "The 10 repaired Hub user create/update/delete cases passed with zero skips."
+  ]
+}

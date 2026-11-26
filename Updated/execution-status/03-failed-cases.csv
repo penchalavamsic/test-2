@@ -1,0 +1,341 @@
+id,tab,suite,batch,title,status,lastExecutionStatus,source,reviewStatus,skipCategory,reason,nextAction,run,completedAt
+"LIMAS-SUD-2090","Features","features","FTR-004","LIMAS-SUD-2090: Create a disposable root feature and verify deletion after reload","failed","failed","earlier-repair-run","executed","","Feature create submits a nonempty description and Standard access level, but both are absent in fresh GET data and the reopened Edit form. Version 1.0.0 persists. The owned Feature DELETE by the UUID used by the deployed UI returned HTTP 200, but the same record remains in fresh GET data and the UI.","Investigate Feature create/update/read mapping for description and access levels; retain the persisted-value checks. Fix the deletion contract or persistence; the owned leftover is documented and should not be repeatedly deleted automatically.","test-runs/earlier-crud-20261126/features/FTR-004_2026-11-26T14-56-53-949Z_3e94de9a","2026-11-26T14:57:23.789Z"
+"LIMAS-SUD-2115","Features","features","FTR-005","LIMAS-SUD-2115: Create and delete a child under an owned parent feature","failed","failed","earlier-repair-run","executed","","Error: Feature description must persist
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: ""Disposable automation feature""
+Received: """"
+
+   at helpers\feature-crud.ts:47
+
+  45 |     this.id = saved.id;
+  46 |     expect(saved.name).toBe(this.name);
+> 47 |     expect.soft(saved.description ?? '', 'Feature description must persist').toBe(this.description);
+     |                                                                              ^
+  48 |     expect(saved.featureVersion.map(v => v.featureVersion)).toContain('1.0.0');
+  49 |     if (this.parent) { expect(saved.parent?.id).toBe(this.parent.id); await this.features.expandAll(); }
+  50 |     else expect.soft(saved.accessLevel.map(a => a.accessLevelName), 'Feature access levels must persist').toContain('Standard');
+    at OwnedFeature.verifySaved (tests\helpers\feature-crud.ts:47:78)
+    at OwnedFeature.create (tests\helpers\feature-crud.ts:79:5)
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:9)
+    at tests\features\features-add-child.spec.ts:548:161
+Error: Feature access levels must persist
+
+expect(received).toContain(expected) // indexOf
+
+Expected value: ""Standard""
+Received array: []
+
+   at helpers\feature-crud.ts:50
+
+  48 |     expect(saved.featureVersion.map(v => v.featureVersion)).toContain('1.0.0');
+  49 |     if (this.parent) { expect(saved.parent?.id).toBe(this.parent.id); await this.features.expandAll(); }
+> 50 |     else expect.soft(saved.accessLevel.map(a => a.accessLevelName), 'Feature access levels must persist').toContain('Standard');
+     |                                                                                                           ^
+  51 |     await expect(this.row()).toHaveCount(1);
+  52 |     await expect(this.features.featureIdCell(this.row())).toHaveText(this.stringId);
+  53 |     await captureEvidence('owned-feature-persisted-after-reload');
+    at OwnedFeature.verifySaved (tests\helpers\feature-crud.ts:50:107)
+    at OwnedFeature.create (tests\helpers\feature-crud.ts:79:5)
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:9)
+    at tests\features\features-add-child.spec.ts:548:161
+Error: Feature description must persist
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: ""Disposable automation feature""
+Received: """"
+
+   at helpers\feature-crud.ts:47
+
+  45 |     this.id = saved.id;
+  46 |     expect(saved.name).toBe(this.name);
+> 47 |     expect.soft(saved.description ?? '', 'Feature description must persist').toBe(this.description);
+     |                                                                              ^
+  48 |     expect(saved.featureVersion.map(v => v.featureVersion)).toContain('1.0.0');
+  49 |     if (this.parent) { expect(saved.parent?.id).toBe(this.parent.id); await this.features.expandAll(); }
+  50 |     else expect.soft(saved.accessLevel.map(a => a.accessLevelName), 'Feature access levels must persist').toContain('Standard');
+    at OwnedFeature.verifySaved (tests\helpers\feature-crud.ts:47:78)
+    at OwnedFeature.create (tests\helpers\feature-crud.ts:79:5)
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:9)
+    at tests\features\features-add-child.spec.ts:548:227
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:31)
+    at tests\features\features-add-child.spec.ts:548:161
+Error: Error: Deleted feature must be absent after reload
+
+expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+Received array:  [{""@id"": ""91e7f710-be8e-4b2e-9217-cc3df6950b1d"", ""accessLevel"": [], ""children"": [], ""featureVersion"": [{""@id"": ""51101cc7-7b29-451b-8943-10f1793a055b"", ""availableVersionDate"": null, ""dataUpdate"": false, ""featureId"": 187, ""featureVersion"": ""1.0.0"", ""id"": 381, ""size"": 0, ""systemUser"": null, ""updateComment"": null, ""updateFileReference"": null, ""uploadUpdates"": false, ""version"": 0}], ""id"": 187, ""isCustomerConfig"": false, ""name"": ""LIMAS-AUTO-2115-child-c7ae3a71"", ""parent"": {""@id"": ""7f285c20-0398-4654-8ac4-7df7054b0d49"", ""accessLevel"": [], ""children"": [{""@id"": ""91e7f710-be8e-4b2e-9217-cc3df6950b1d"", ""accessLevel"": [], ""children"": [], ""featureVersion"": [{""@id"": ""51101cc7-7b29-451b-8943-10f1793a055b"", ""availableVersionDate"": null, ""dataUpdate"": false, ""featureId"": 187, ""featureVersion"": ""1.0.0"", ""id"": 381, ""size"": 0, ""systemUser"": null, ""updateComment"": null, ""updateFileReference"": null, ""uploadUpdates"": false, ""version"": 0}], ""id"": 187, ""isCustomerConfig"": false, ""name"": ""LIMAS-AUTO-2115-child-c7ae3a71"", ""parent"": ""7f285c20-0398-4654-8ac4-7df7054b0d49"", ""stringId"": ""limas.auto.c7ae3a71"", ""uuid"": ""a5aa86d7-7db8-44bd-9396-857f35fff06f"", ""versionTime"": ""2026-11-26T15:08:51.870+00:00""}], ""featureVersion"": [{""@id"": ""4097f818-9637-4ec7-b590-972c8c56a2dd"", ""availableVersionDate"": null, ""dataUpdate"": false, ""featureId"": 186, ""featureVersion"": ""1.0.0"", ""id"": 380, ""size"": 0, ""systemUser"": null, ""updateComment"": null, ""updateFileReference"": null, ""uploadUpdates"": false, ""version"": 0}], ""id"": 186, ""isCustomerConfig"": false, ""name"": ""LIMAS-AUTO-2115-7ea13742"", ""parent"": null, ""stringId"": ""limas.auto.7ea13742"", ""uuid"": ""6427e787-ff30-4b96-baf9-a1520de361b8"", ""versionTime"": ""2026-11-26T15:08:46.774+00:00""}, ""stringId"": ""limas.auto.c7ae3a71"", ""uuid"": ""a5aa86d7-7db8-44bd-9396-857f35fff06f"", ""versionTime"": ""2026-11-26T15:08:51.870+00:00""}]
+Cleanup also failed: Error: Deleted feature must be absent after reload
+
+expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 1
+Received array:  [{""@id"": ""d6d7376c-e4a9-4a64-ab72-c076db25b819"", ""accessLevel"": [], ""children"": [{""@id"": ""e75a98dd-74e3-4624-9fb2-d6f3641a3b25"", ""accessLevel"": [], ""children"": [], ""featureVersion"": [{""@id"": ""3c110814-c46e-4cd0-9f51-a50f0e6c1ade"", ""availableVersionDate"": null, ""dataUpdate"": false, ""featureId"": 187, ""featureVersion"": ""1.0.0"", ""id"": 381, ""size"": 0, ""systemUser"": null, ""updateComment"": null, ""updateFileReference"": null, ""uploadUpdates"": false, ""version"": 0}], ""id"": 187, ""isCustomerConfig"": false, ""name"": ""LIMAS-AUTO-2115-child-c7ae3a71"", ""parent"": ""d6d7376c-e4a9-4a64-ab72-c076db25b819"", ""stringId"": ""limas.auto.c7ae3a71"", ""uuid"": ""a5aa86d7-7db8-44bd-9396-857f35fff06f"", ""versionTime"": ""2026-11-26T15:08:51.870+00:00""}], ""featureVersion"": [{""@id"": ""f4ca1e22-109f-4b81-a9d8-b2621e5b7157"", ""availableVersionDate"": null, ""dataUpdate"": false, ""featureId"": 186, ""featureVersion"": ""1.0.0"", ""id"": 380, ""size"": 0, ""systemUser"": null, ""updateComment"": null, ""updateFileReference"": null, ""uploadUpdates"": false, ""version"": 0}], ""id"": 186, ""isCustomerConfig"": false, ""name"": ""LIMAS-AUTO-2115-7ea13742"", ""parent"": null, ""stringId"": ""limas.auto.7ea13742"", ""uuid"": ""6427e787-ff30-4b96-baf9-a1520de361b8"", ""versionTime"": ""2026-11-26T15:08:46.774+00:00""}]
+
+   at helpers\feature-crud.ts:132
+
+  130 |   catch (error) { failure = error; await captureEvidence('owned-feature-operation-failed'); }
+  131 |   try { await owned.cleanup(); }
+> 132 |   catch (error) { await captureEvidence('owned-feature-cleanup-failed'); if (failure) throw new Error(`${String(failure)}\nCleanup also failed: ${String(error)}`); throw error; }
+      |                                                                                             ^
+  133 |   if (failure) throw failure;
+  134 | }
+  135 |
+    at withOwnedFeature (tests\helpers\feature-crud.ts:132:93)
+    at tests\features\features-add-child.spec.ts:548:161","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/features/FTR-005_2026-11-26T15-08-32-074Z_1dbad622","2026-11-26T15:09:11.438Z"
+"LIMAS-SUD-2142","Features","features","FTR-006","LIMAS-SUD-2142: Edit a disposable feature and verify persisted fields","failed","failed","earlier-repair-run","executed","","Error: Feature description must persist
+
+expect(received).toBe(expected) // Object.is equality
+
+Expected: ""Disposable automation feature""
+Received: """"
+
+   at helpers\feature-crud.ts:47
+
+  45 |     this.id = saved.id;
+  46 |     expect(saved.name).toBe(this.name);
+> 47 |     expect.soft(saved.description ?? '', 'Feature description must persist').toBe(this.description);
+     |                                                                              ^
+  48 |     expect(saved.featureVersion.map(v => v.featureVersion)).toContain('1.0.0');
+  49 |     if (this.parent) { expect(saved.parent?.id).toBe(this.parent.id); await this.features.expandAll(); }
+  50 |     else expect.soft(saved.accessLevel.map(a => a.accessLevelName), 'Feature access levels must persist').toContain('Standard');
+    at OwnedFeature.verifySaved (tests\helpers\feature-crud.ts:47:78)
+    at OwnedFeature.create (tests\helpers\feature-crud.ts:79:5)
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:9)
+    at tests\features\features-edit.spec.ts:613:159
+Error: Feature access levels must persist
+
+expect(received).toContain(expected) // indexOf
+
+Expected value: ""Standard""
+Received array: []
+
+   at helpers\feature-crud.ts:50
+
+  48 |     expect(saved.featureVersion.map(v => v.featureVersion)).toContain('1.0.0');
+  49 |     if (this.parent) { expect(saved.parent?.id).toBe(this.parent.id); await this.features.expandAll(); }
+> 50 |     else expect.soft(saved.accessLevel.map(a => a.accessLevelName), 'Feature access levels must persist').toContain('Standard');
+     |                                                                                                           ^
+  51 |     await expect(this.row()).toHaveCount(1);
+  52 |     await expect(this.features.featureIdCell(this.row())).toHaveText(this.stringId);
+  53 |     await captureEvidence('owned-feature-persisted-after-reload');
+    at OwnedFeature.verifySaved (tests\helpers\feature-crud.ts:50:107)
+    at OwnedFeature.create (tests\helpers\feature-crud.ts:79:5)
+    at withOwnedFeature (tests\helpers\feature-crud.ts:129:9)
+    at tests\features\features-edit.spec.ts:613:159
+Error: TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event ""response""
+Cleanup also failed: TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event ""response""
+
+   at helpers\feature-crud.ts:132
+
+  130 |   catch (error) { failure = error; await captureEvidence('owned-feature-operation-failed'); }
+  131 |   try { await owned.cleanup(); }
+> 132 |   catch (error) { await captureEvidence('owned-feature-cleanup-failed'); if (failure) throw new Error(`${String(failure)}\nCleanup also failed: ${String(error)}`); throw error; }
+      |                                                                                             ^
+  133 |   if (failure) throw failure;
+  134 | }
+  135 |
+    at withOwnedFeature (tests\helpers\feature-crud.ts:132:93)
+    at tests\features\features-edit.spec.ts:613:159","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/features/FTR-006_2026-11-26T15-09-17-016Z_0921b9bb","2026-11-26T15:10:50.477Z"
+"LIMAS-SUD-2163","Features","features","FTR-007","LIMAS-SUD-2163: Delete the exact owned feature and verify persisted absence","failed","failed","earlier-repair-run","executed","","Error: Error: Version/access-level follow-up must complete
+
+expect(received).not.toBeNull()
+
+Received: null
+Cleanup also failed: TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event ""response""
+
+   at helpers\feature-crud.ts:132
+
+  130 |   catch (error) { failure = error; await captureEvidence('owned-feature-operation-failed'); }
+  131 |   try { await owned.cleanup(); }
+> 132 |   catch (error) { await captureEvidence('owned-feature-cleanup-failed'); if (failure) throw new Error(`${String(failure)}\nCleanup also failed: ${String(error)}`); throw error; }
+      |                                                                                             ^
+  133 |   if (failure) throw failure;
+  134 | }
+  135 |
+    at withOwnedFeature (tests\helpers\feature-crud.ts:132:93)
+    at tests\features\features-delete.spec.ts:382:165","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/features/FTR-007_2026-11-26T15-10-55-003Z_34b0f792","2026-11-26T15:12:14.108Z"
+"LIMAS-SUD-2190","Features","features","FTR-009","LIMAS-SUD-2190: Upload, verify and delete an update file on an owned Feature","failed","failed","earlier-repair-run","executed","","Feature creation returned HTTP 201, but the subsequent version/access-level PUT did not complete within 30 seconds; the fresh cleanup GET also timed out. The update-file upload was not reached.","Investigate the unfinished Feature PUT and availability. Do not claim upload/delete coverage or retry the previous mutation blindly.","test-runs/earlier-crud-20261126/features/FTR-009_2026-11-26T16-17-31-135Z_f862c8d2","2026-11-26T16:18:59.480Z"
+"LIMAS-SUD-1850","Floating License Configurations","floating-license-configurations","FLC-003","LIMAS-SUD-1850: Search filters cards by runtime configuration name","failed","failed","earlier-repair-run","executed","","Typing a configuration name or a no-match query leaves unrelated Floating License cards visible. The strengthened checks verify every displayed result, rather than accepting one matching card.","Connect the deployed search state to configuration filtering and rerun the unchanged functional assertions.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-003_2026-11-26T15-53-58-810Z_fab59fd5","2026-11-26T15:56:08.964Z"
+"LIMAS-SUD-1851","Floating License Configurations","floating-license-configurations","FLC-003","LIMAS-SUD-1851: No-match search shows zero visible cards","failed","failed","earlier-repair-run","executed","","Typing a configuration name or a no-match query leaves unrelated Floating License cards visible. The strengthened checks verify every displayed result, rather than accepting one matching card.","Connect the deployed search state to configuration filtering and rerun the unchanged functional assertions.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-003_2026-11-26T15-53-58-810Z_fab59fd5","2026-11-26T15:56:08.964Z"
+"LIMAS-SUD-1853","Floating License Configurations","floating-license-configurations","FLC-003","LIMAS-SUD-1853: Search is case-insensitive (mixed-case)","failed","failed","earlier-repair-run","executed","","Typing a configuration name or a no-match query leaves unrelated Floating License cards visible. The strengthened checks verify every displayed result, rather than accepting one matching card.","Connect the deployed search state to configuration filtering and rerun the unchanged functional assertions.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-003_2026-11-26T15-53-58-810Z_fab59fd5","2026-11-26T15:56:08.964Z"
+"LIMAS-SUD-1881","Floating License Configurations","floating-license-configurations","FLC-004","LIMAS-SUD-1881: No-match search hides cards and clearing search preserves the selected record","failed","failed","earlier-repair-run","executed","","Typing a configuration name or a no-match query leaves unrelated Floating License cards visible. The strengthened checks verify every displayed result, rather than accepting one matching card.","Connect the deployed search state to configuration filtering and rerun the unchanged functional assertions.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-004_2026-11-26T15-56-08-964Z_ad01e918","2026-11-26T15:57:18.791Z"
+"LIMAS-SUD-1905","Floating License Configurations","floating-license-configurations","FLC-005","LIMAS-SUD-1905: Bulk dates update persists on an owned configuration","failed","failed","earlier-repair-run","executed","","Error: TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event ""response""
+Configuration cleanup also failed: Error: floating-config-delete-response: HTTP 500
+
+expect(received).toBeTruthy()
+
+Received: false
+expect(locator).toHaveCount(expected) failed
+
+Locator:  locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1905-70dc883f', { exact: true }) })
+Expected: 0
+Received: 1
+Timeout:  30000ms
+
+Call log:
+  - Expect ""toHaveCount"" locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1905-70dc883f', { exact: true }) }) with timeout 30000ms
+  - waiting for locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1905-70dc883f', { exact: true }) })
+    61 × locator resolved to 1 element
+       - unexpected value ""1""
+
+
+   at helpers\user-group-crud.ts:111
+
+  109 |   }
+  110 |   if (errors.length === 1) throw errors[0];
+> 111 |   if (errors.length > 1) throw new Error(errors.map(e => e instanceof Error ? e.message : String(e)).join('\n'));
+      |                                ^
+  112 | }
+  113 |
+    at exerciseUserGroupCrud ([portable source location]
+    at withOwnedFloatingConfiguration ([portable source location]
+    at [portable source location]","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-005_2026-11-26T16-41-47-511Z_3add49a3","2026-11-26T16:45:24.134Z"
+"LIMAS-SUD-1911","Floating License Configurations","floating-license-configurations","FLC-006","LIMAS-SUD-1911: Bulk capacity update persists on an owned configuration","failed","failed","earlier-repair-run","executed","","Error: TimeoutError: page.waitForResponse: Timeout 30000ms exceeded while waiting for event ""response""
+Configuration cleanup also failed: Error: floating-config-delete-response: HTTP 500
+
+expect(received).toBeTruthy()
+
+Received: false
+expect(locator).toHaveCount(expected) failed
+
+Locator:  locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1911-288a8c3a', { exact: true }) })
+Expected: 0
+Received: 1
+Timeout:  30000ms
+
+Call log:
+  - Expect ""toHaveCount"" locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1911-288a8c3a', { exact: true }) }) with timeout 30000ms
+  - waiting for locator('table').locator('tbody').locator('tr').filter({ has: getByText('LIMAS-AUTO-1911-288a8c3a', { exact: true }) })
+    61 × locator resolved to 1 element
+       - unexpected value ""1""
+
+
+   at helpers\user-group-crud.ts:111
+
+  109 |   }
+  110 |   if (errors.length === 1) throw errors[0];
+> 111 |   if (errors.length > 1) throw new Error(errors.map(e => e instanceof Error ? e.message : String(e)).join('\n'));
+      |                                ^
+  112 | }
+  113 |
+    at exerciseUserGroupCrud ([portable source location]
+    at withOwnedFloatingConfiguration ([portable source location]
+    at [portable source location]","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-006_2026-11-26T16-45-34-340Z_c58d3b11","2026-11-26T16:49:53.071Z"
+"LIMAS-SUD-1914","Floating License Configurations","floating-license-configurations","FLC-006","LIMAS-SUD-1914: Bulk Delete performs a real owned-configuration deletion","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-006_2026-11-26T16-01-38-879Z_c1ba1583","2026-11-26T16:06:19.008Z"
+"LIMAS-SUD-1915","Floating License Configurations","floating-license-configurations","FLC-006","LIMAS-SUD-1915: Bulk Delete proceeds without a confirmation and persists removal","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-006_2026-11-26T16-01-38-879Z_c1ba1583","2026-11-26T16:06:19.008Z"
+"LIMAS-SUD-1991","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-1991: Create, edit and delete a configuration in a newly owned group","failed","failed","earlier-repair-run","executed","","The owned configuration edit submitted capacity 2, checkout 2 and new dates, and returned HTTP 200. Fresh GET data still contains capacity 1, checkout 1 and the original dates. The deployed owned-configuration DELETE returned HTTP 500. The test previously waited for an admin-only endpoint and obscured this response with a timeout; the matcher now accepts the deployed actor-scoped endpoint.","Fix the group/configuration update persistence. Retain the saved-value assertions. Fix the deployed configuration delete handler. Configuration 427 in owned group 385 remains; do not automatically resubmit this failed deletion.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T15-33-04-117Z_b73bd018","2026-11-26T15:37:29.969Z"
+"LIMAS-SUD-1996","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-1996: Card Delete proceeds without confirmation and persists removal","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T16-07-08-624Z_1e8d6f16","2026-11-26T16:18:39.153Z"
+"LIMAS-SUD-2000","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-2000: Bulk Delete removes only the selected owned configuration","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T16-07-08-624Z_1e8d6f16","2026-11-26T16:18:39.153Z"
+"LIMAS-SUD-2001","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-2001: Card Delete removes an owned configuration after reload","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T16-07-08-624Z_1e8d6f16","2026-11-26T16:18:39.153Z"
+"LIMAS-SUD-2002","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-2002: Deleting the owned configuration restores its group count to zero","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T16-07-08-624Z_1e8d6f16","2026-11-26T16:18:39.153Z"
+"LIMAS-SUD-2006","Floating License Configurations","floating-license-configurations","FLC-010","LIMAS-SUD-2006: A successfully deleted owned configuration remains absent after a second reload","failed","failed","earlier-repair-run","executed","","The required fresh Profile listing returned HTTP 403 before the owned configuration was created. No deletion was attempted in this case.","Verify session and endpoint access, then rerun the case with a fresh authenticated session.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-010_2026-11-26T16-50-56-288Z_58fcbf82","2026-11-26T16:53:58.907Z"
+"LIMAS-SUD-2008","Floating License Configurations","floating-license-configurations","FLC-011","LIMAS-SUD-2008: Owned configuration lifecycle restores an empty group after cleanup","failed","failed","earlier-repair-run","executed","","The actual card or bulk configuration DELETE returned HTTP 500. Cleanup of the disposable parent group returned success but the group remained visible after reload.","Fix the Floating License deletion handler and parent-group persistence. Keep the real deletion assertions; inspect the recorded owned leftovers before any further cleanup attempt.","test-runs/earlier-crud-20261126/floating-license-configurations/FLC-011_2026-11-26T16-19-13-481Z_7bfd6642","2026-11-26T16:21:46.411Z"
+"LIMAS-SUD-2275","Profiles","profiles","PRF-005","LIMAS-SUD-2275: Duplicate role names persist as distinct owned roles","failed","failed","earlier-repair-run","executed","","Error: Error: SyntaxError: Unexpected end of JSON input
+Cleanup also failed: Error: profile-delete-response: HTTP 500
+
+expect(received).toBeTruthy()
+
+Received: false
+
+   at helpers\profile-crud.ts:147
+
+  145 |   catch (error) {
+  146 |     await captureEvidence('owned-profile-cleanup-failed');
+> 147 |     if (failure) throw new Error(`${String(failure)}\nCleanup also failed: ${String(error)}`);
+      |                        ^
+  148 |     throw error;
+  149 |   }
+  150 |   if (failure) throw failure;
+    at withOwnedProfile ([portable source location]
+    at [portable source location]","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/profiles/PRF-005_2026-11-26T16-35-23-770Z_bcef38d3","2026-11-26T16:39:33.436Z"
+"LIMAS-SUD-2276","Profiles","profiles","PRF-005","LIMAS-SUD-2276: Duplicate role priority values persist independently","failed","failed","earlier-repair-run","executed","","Error: Error: SyntaxError: Unexpected end of JSON input
+Cleanup also failed: Error: profile-delete-response: HTTP 500
+
+expect(received).toBeTruthy()
+
+Received: false
+
+   at helpers\profile-crud.ts:147
+
+  145 |   catch (error) {
+  146 |     await captureEvidence('owned-profile-cleanup-failed');
+> 147 |     if (failure) throw new Error(`${String(failure)}\nCleanup also failed: ${String(error)}`);
+      |                        ^
+  148 |     throw error;
+  149 |   }
+  150 |   if (failure) throw failure;
+    at withOwnedProfile ([portable source location]
+    at [portable source location]","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/profiles/PRF-005_2026-11-26T16-35-23-770Z_bcef38d3","2026-11-26T16:39:33.436Z"
+"LIMAS-SUD-2277","Profiles","profiles","PRF-005","LIMAS-SUD-2277: Zero role priority persists after reload","failed","failed","earlier-repair-run","executed","","Error: profile-delete-response: HTTP 500
+
+expect(received).toBeTruthy()
+
+Received: false
+
+   at helpers\profile-crud.ts:30
+
+  28 |       status: response.status(), ownedProfile: this.name,
+  29 |     }, null, 2) });
+> 30 |     expect(response.ok(), `${label}: HTTP ${response.status()}`).toBeTruthy();
+     |                                                                  ^
+  31 |   }
+  32 |   async reloadRecords(): Promise<ProfileRecord[]> {
+  33 |     const page = this.profiles.page;
+    at OwnedProfile.responseSummary ([portable source location]
+    at OwnedProfile.remove ([portable source location]
+    at OwnedProfile.cleanup ([portable source location]
+    at withOwnedProfile ([portable source location]
+    at [portable source location]","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/profiles/PRF-005_2026-11-26T16-35-23-770Z_bcef38d3","2026-11-26T16:39:33.436Z"
+"LIMAS-SUD-2288","Profiles","profiles","PRF-005","LIMAS-SUD-2288: Create, edit, and delete a role on a disposable Profile with reload checks","failed","failed","earlier-repair-run","executed","","The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.","Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes.","test-runs/earlier-crud-20261126/profiles/PRF-005_2026-11-26T14-09-37-170Z_4352e3e5","2026-11-26T14:10:50.025Z"
+"LIMAS-SUD-2316","Profiles","profiles","PRF-007","LIMAS-SUD-2316: Create and read a disposable profile, then verify cleanup","failed","failed","earlier-repair-run","executed","","A nonempty Profile description is submitted but is absent after reload and the Edit description field is blank. The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.","Investigate Profile create/update DTO and storage/read mapping; retain the persisted-description assertion. Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes.","test-runs/earlier-crud-20261126/profiles/PRF-007_2026-11-26T14-12-17-086Z_4fb39cf6","2026-11-26T14:12:58.376Z"
+"LIMAS-SUD-2345","Profiles","profiles","PRF-008","LIMAS-SUD-2345: Assign and remove a feature on a disposable Profile with a prerequisite role","failed","failed","earlier-repair-run","executed","","The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.","Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes.","test-runs/earlier-crud-20261126/profiles/PRF-008_2026-11-26T14-18-02-351Z_9eb071dd","2026-11-26T14:19:19.639Z"
+"LIMAS-SUD-2371","Profiles","profiles","PRF-009","LIMAS-SUD-2371: Edit a disposable profile and verify persisted name and description","failed","failed","earlier-repair-run","executed","","A nonempty Profile description is submitted but is absent after reload and the Edit description field is blank. The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.","Investigate Profile create/update DTO and storage/read mapping; retain the persisted-description assertion. Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes.","test-runs/earlier-crud-20261126/profiles/PRF-009_2026-11-26T14-13-03-771Z_8cc34c40","2026-11-26T14:13:52.707Z"
+"LIMAS-SUD-2386","Profiles","profiles","PRF-010","LIMAS-SUD-2386: Controlled HTTP 403 deletion shows an error and preserves the record","failed","failed","earlier-repair-run","executed","","Controlled 403, 404, and 500 delete rejections preserve the record but display no visible error notification. These checks did not send real DELETE requests to the server.","Add visible failure feedback or confirm the required error UX; these client-handling checks do not prove server authorization enforcement.","test-runs/earlier-crud-20261126/profiles/PRF-010_2026-11-26T14-19-28-441Z_42fd4b68","2026-11-26T14:20:38.809Z"
+"LIMAS-SUD-2387","Profiles","profiles","PRF-010","LIMAS-SUD-2387: Controlled HTTP 404 deletion shows an error and preserves the record","failed","failed","earlier-repair-run","executed","","Controlled 403, 404, and 500 delete rejections preserve the record but display no visible error notification. These checks did not send real DELETE requests to the server.","Add visible failure feedback or confirm the required error UX; these client-handling checks do not prove server authorization enforcement.","test-runs/earlier-crud-20261126/profiles/PRF-010_2026-11-26T14-19-28-441Z_42fd4b68","2026-11-26T14:20:38.809Z"
+"LIMAS-SUD-2388","Profiles","profiles","PRF-010","LIMAS-SUD-2388: Controlled HTTP 500 deletion shows an error and preserves the record","failed","failed","earlier-repair-run","executed","","Controlled 403, 404, and 500 delete rejections preserve the record but display no visible error notification. These checks did not send real DELETE requests to the server.","Add visible failure feedback or confirm the required error UX; these client-handling checks do not prove server authorization enforcement.","test-runs/earlier-crud-20261126/profiles/PRF-010_2026-11-26T14-19-28-441Z_42fd4b68","2026-11-26T14:20:38.809Z"
+"LIMAS-SUD-2390","Profiles","profiles","PRF-010","LIMAS-SUD-2390: Delete a disposable profile and verify absence after reload","failed","failed","earlier-repair-run","executed","","The deployed Profile delete action sends the owned UUID and returned HTTP 500. This is not a successful cleanup.","Fix the application delete contract/handler. Track owned leftover records; do not automatically repeat failed deletes.","test-runs/earlier-crud-20261126/profiles/PRF-010_2026-11-26T14-13-58-836Z_a945d207","2026-11-26T14:14:29.477Z"
+"LIMAS-SUD-1525","Reports","reports","RPT-003","LIMAS-SUD-1525: Scroll accessibility — region semantics, keyboard, announcements","failed","failed","repair-run","office-disposition","","Reports has no main-content live/status region for row-update announcements.","Add report-specific accessibility announcements.","test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-45-36-600Z_dd95af66","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1539","Reports","reports","RPT-003","LIMAS-SUD-1539: Hardware ID checkbox selection, payload, matching results, and restoration","failed","failed","repair-run","office-disposition","","Selected hardware IDs are sent as objects, but the API/displayed total remains unfiltered or the selected-object payload loses an ID.","Inspect the linked assertion and correct hardware selection/count handling; do not mask the failure with longer waits.","test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1540","Reports","reports","RPT-003","LIMAS-SUD-1540: Hardware ID checkbox selection, payload, matching results, and restoration","failed","failed","repair-run","office-disposition","","Selected hardware IDs are sent as objects, but the API/displayed total remains unfiltered or the selected-object payload loses an ID.","Inspect the linked assertion and correct hardware selection/count handling; do not mask the failure with longer waits.","test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1542","Reports","reports","RPT-004","LIMAS-SUD-1542: Unknown hardware lookup cannot select an invalid ID or alter report data","failed","failed","repair-run","office-disposition","","Unavailable hardware lookup returns 404 and the dropdown shows no explicit no-match message.","Verify empty-lookup handling manually and show a clear no-results message.","test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T13-08-22-162Z_58a81c52","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1590","Reports","reports","RPT-006","LIMAS-SUD-1590: Deleted infinite scroll appends cached records without losing existing rows","failed","failed","repair-run","office-disposition","","Deleted reports preload all records but scrolling does not append beyond the initial 100 displayed rows.","Fix the Deleted scroll continuation callback; current callback increments on mount but does not observe scrolling.","test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1595","Reports","reports","RPT-006","LIMAS-SUD-1595: Deleted Expiration Date filter returns the exact matching dataset and clears","failed","failed","repair-run","office-disposition","","Selecting a runtime date yields zero records despite matching records in the fetched dataset. The deployed code converts local midnight to UTC before comparing date text.","Verify timezone/date handling manually and preserve calendar-day matching in the application.","test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1596","Reports","reports","RPT-006","LIMAS-SUD-1596: Deleted Deletion Date filter returns the exact matching dataset and clears","failed","failed","repair-run","office-disposition","","Selecting a runtime date yields zero records despite matching records in the fetched dataset. The deployed code converts local midnight to UTC before comparing date text.","Verify timezone/date handling manually and preserve calendar-day matching in the application.","test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1597","Reports","reports","RPT-006","LIMAS-SUD-1597: Combined expiration and deletion dates match their intersection and clear","failed","failed","repair-run","office-disposition","","Selecting a runtime date yields zero records despite matching records in the fetched dataset. The deployed code converts local midnight to UTC before comparing date text.","Verify timezone/date handling manually and preserve calendar-day matching in the application.","test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1710","Reports","reports","RPT-012","LIMAS-SUD-1710: Deleted scrolling renders the next cached batch with accurate counts","failed","failed","repair-run","office-disposition","","Deleted Floating data is prefetched, but the corrected test requires scrolling to reveal additional cached records and preserve row order.","Inspect the latest continuation assertion; fix the application scroll callback if loaded rows remain unchanged.","test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1712","Reports","reports","RPT-012","LIMAS-SUD-1712: Deleted scrolling appends records while preserving existing row order","failed","failed","repair-run","office-disposition","","Deleted Floating data is prefetched, but the corrected test requires scrolling to reveal additional cached records and preserve row order.","Inspect the latest continuation assertion; fix the application scroll callback if loaded rows remain unchanged.","test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1720","Reports","reports","RPT-012","LIMAS-SUD-1720: Count a11y â€” loaded/total update announcement, appended content announcement, accessible name","failed","failed","repair-run","office-disposition","","No report-specific live/status region announces Floating Licenses row-count changes.","Add the reviewed accessible count-update announcements.","test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1745","Reports","reports","RPT-014","LIMAS-SUD-1745: Active control ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â button role, not disabled, tabindex, pressed state, non-color indicator","failed","failed","repair-run","office-disposition","","Selected and unselected configuration modes differ by color; inspected font, border, outline, shadow and icons provide no non-color selection cue.","Add a visible non-color selection indicator; aria-pressed already communicates selection programmatically.","test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1761","Reports","reports","RPT-014","LIMAS-SUD-1761: Error state a11y ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â error accessible, Retry accessible, mode keyboard-accessible, focus near error, no silent failure","failed","failed","repair-run","office-disposition","","The configuration error is displayed as a paragraph without the named error heading required by the plan.","Provide the required error heading/status semantics and verify assistive-technology announcements.","test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1778","Reports","reports","RPT-015","LIMAS-SUD-1778: Error state a11y ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â error message, status code, Retry accessible, no silent failure","failed","failed","repair-run","office-disposition","","The configuration error is displayed as a paragraph without the named error heading required by the plan.","Provide the required error heading/status semantics and verify assistive-technology announcements.","test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-024","System User Dashboard","system-user-dashboard","SUD-002","LIMAS-SUD-024: Header displays the signed-in account email as required","failed","failed","earlier-repair-run","executed","","The header displays an account identifier rather than the email address explicitly required by the user.","Display the signed-in account email in the application header, then rerun this case.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-002_2026-11-26T17-21-01-037Z_f371ab4f","2026-11-26T17:21:53.856Z"
+"LIMAS-SUD-151","System User Dashboard","system-user-dashboard","SUD-008","LIMAS-SUD-151: Approve an owned pending request and verify persisted results","failed","failed","earlier-repair-run","executed","","With a disposable user, persisted Hardware ID, assigned Profile/Role and both valid dates, the Dashboard approval sends PUT /api/users and receives HTTP 500. The request is not approved. Cleanup dismisses only the owned request and removes the owned user.","Inspect the approval request DTO and backend exception. The observed payload includes a new license id of 0 and a response-only @id field; verify the backend contract rather than altering the test request to hide the application failure.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-008_2026-11-26T17-26-32-028Z_b412c8f5","2026-11-26T17:31:08.654Z"
+"LIMAS-SUD-625","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-625: Apply an expiration date to an owned license and verify persistence","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-15-18-410Z_00359c5b","2026-11-26T17:17:35.362Z"
+"LIMAS-SUD-626","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-626: Expiration days persist on an owned license","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-627","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-627: Synchronized expiration date persists on an owned license","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-628","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-628: Synchronized extension days persist on an owned license","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-631","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-631: Successful owned extension closes the dialog","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-632","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-632: Successful owned extension displays success feedback","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-633","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-633: Successful owned extension refreshes visible dates","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-634","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-634: Owned extended license remains discoverable within the cutoff","failed","failed","earlier-repair-run","executed","","Two independent owned-license checks (expiry in seven days, and already expired) persisted enabled licenses in group 1. The Dashboard cutoff query included that group but returned only eight users with last=true and omitted the new user/license. The extension action could not be reached. Owned licenses and users were cleaned up.","Investigate the Dashboard users filter/date query and backend pagination. Retain the owned-record discovery assertion; do not substitute an unrelated business license.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-638","System User Dashboard","system-user-dashboard","SUD-032","LIMAS-SUD-638: Applying state is exposed in the button accessible name","failed","failed","earlier-repair-run","executed","","Error: browserContext._wrapApiCall: file data stream has unexpected number of bytes
+Error: End of central directory record signature not found. Either not a zip file, or file is truncated.","Inspect the current evidence and verified findings. Fix script errors; retain genuine application failures.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-032_2026-11-26T17-51-53-535Z_a69ec9ba","2026-11-26T17:58:06.566Z"
+"LIMAS-SUD-759","System User Dashboard","system-user-dashboard","SUD-038","LIMAS-SUD-759: Arrow selection retains focus on the selected radio","failed","failed","earlier-repair-run","executed","","The Floating Configurations radio selection changes with ArrowLeft, but keyboard focus is lost after the UI updates. The selected Expiration radio remains inactive.","Keep the radio group mounted during data refresh or restore keyboard focus to the selected radio after the update; retain the focus assertion.","test-runs/earlier-crud-20261126/system-user-dashboard/SUD-038_2026-11-26T17-39-05-255Z_4f1b2a58","2026-11-26T17:40:19.127Z"
+"LIMAS-SUD-2462","User Groups","user-groups","UGR-004","LIMAS-SUD-2462: creates, verifies persistence, and deletes an owned group","failed","failed","repair-run","office-disposition","","DELETE returned 200 but the owned group remained after fresh GET and reload.","Investigate application deletion/persistence; preserve the removal assertion.","test-runs/office-repair-20261126/user-groups/UGR-004_2026-11-26T08-33-49-313Z_49b6441f","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-2483","User Groups","user-groups","UGR-005","LIMAS-SUD-2483: creates and deletes a subgroup under an owned parent","failed","failed","repair-run","office-disposition","","DELETE returned 200 but the owned group remained after fresh GET and reload.","Investigate application deletion/persistence; preserve the removal assertion.","test-runs/office-repair-20261126/user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-2504","User Groups","user-groups","UGR-006","LIMAS-SUD-2504: creates, edits, verifies persistence, and cleans up an owned group","failed","failed","repair-run","office-disposition","","DELETE returned 200 but the owned group remained after fresh GET and reload.","Investigate application deletion/persistence; preserve the removal assertion.","test-runs/office-repair-20261126/user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-2522","User Groups","user-groups","UGR-007","LIMAS-SUD-2522: creates a group, deletes it, and verifies removal after reload","failed","failed","repair-run","office-disposition","","DELETE returned 200 but the owned group remained after fresh GET and reload.","Investigate application deletion/persistence; preserve the removal assertion.","test-runs/office-repair-20261126/user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7","2026-11-26T14:36:48.668Z"
+"LIMAS-SUD-1250","User & License Hub","user-license-hub","ULH-017","LIMAS-SUD-1250: Edit license action has an accessible name","failed","failed","earlier-repair-run","executed","","The Edit License icon button has an empty accessible name.","Add an accessible Edit License name to the application button.","test-runs/earlier-crud-20261126/user-license-hub/ULH-017_2026-11-26T16-40-25-462Z_5d3d7928","2026-11-26T16:42:27.960Z"
+"LIMAS-SUD-1343","User & License Hub","user-license-hub","ULH-021","LIMAS-SUD-1343: Saving a blank required expiration is rejected without losing the owned license","failed","failed","earlier-repair-run","executed","","Clearing the required expiration field and saving an owned license sends PUT /api/users and receives HTTP 201 rather than displaying a required-field validation error. The current client falls back to the previous date.","Validate the required expiration before Save and show a field error; do not silently restore the prior value and report success. Keep the owned-license boundary check.","test-runs/earlier-crud-20261126/user-license-hub/ULH-021_2026-11-26T17-46-17-446Z_9f0cf40a","2026-11-26T17:48:21.619Z"
+"LIMAS-SUD-1355","User & License Hub","user-license-hub","ULH-022","LIMAS-SUD-1355: Clearing owned-license maintenance date persists after Save and reload","failed","failed","earlier-repair-run","executed","","Clearing the optional maintenance date leaves the prior date in the saved license after reload.","Fix the deployed save mapping so an explicit clear persists a null maintenance date; retain the clearing assertion.","test-runs/earlier-crud-20261126/user-license-hub/ULH-022_2026-11-26T17-31-55-675Z_e20bda01","2026-11-26T17:33:52.625Z"
+"LIMAS-SUD-1395","User & License Hub","user-license-hub","ULH-024","LIMAS-SUD-1395: Focus return Edit after Cancel","failed","failed","earlier-repair-run","executed","","Cancelling the Edit License dialog does not restore keyboard focus to the invoking Edit action.","Restore focus to the original Edit trigger after closing the dialog.","test-runs/earlier-crud-20261126/user-license-hub/ULH-024_2026-11-26T16-43-52-038Z_6b367041","2026-11-26T16:45:07.629Z"
+"LIMAS-SUD-1408","User & License Hub","user-license-hub","ULH-025","LIMAS-SUD-1408: Saved owned update survives a controlled list-refresh failure","failed","failed","earlier-repair-run","executed","","An owned license update succeeds and persists. When the subsequent list refresh is deliberately rejected, the UI does not show a visible refresh error. The controlled failure is limited to reads; the owned update and cleanup use the real server.","Surface the failed list refresh and provide a retry path without resubmitting the successful update.","test-runs/earlier-crud-20261126/user-license-hub/ULH-025_2026-11-26T17-49-57-682Z_aa066548","2026-11-26T17:51:50.309Z"
+"LIMAS-SUD-1410","User & License Hub","user-license-hub","ULH-025","LIMAS-SUD-1410: Edit License action has an accessible name","failed","failed","earlier-repair-run","executed","","The Edit License icon button has an empty accessible name.","Add an accessible Edit License name to the application button.","test-runs/earlier-crud-20261126/user-license-hub/ULH-025_2026-11-26T17-54-56-889Z_586e288c","2026-11-26T17:57:10.249Z"
+"LIMAS-SUD-1429","User & License Hub","user-license-hub","ULH-026","LIMAS-SUD-1429: A11y focus return","failed","failed","earlier-repair-run","executed","","Cancelling the Edit License dialog does not restore keyboard focus to the invoking Edit action.","Restore focus to the original Edit trigger after closing the dialog.","test-runs/earlier-crud-20261126/user-license-hub/ULH-026_2026-11-26T16-46-09-158Z_461a554b","2026-11-26T16:47:29.861Z"
+"LIMAS-SUD-1440","User & License Hub","user-license-hub","ULH-026","LIMAS-SUD-1440: Clear optional maintenance date and verify it stays cleared","failed","failed","earlier-repair-run","executed","","Clearing the optional maintenance date leaves the prior date in the saved license after reload.","Fix the deployed save mapping so an explicit clear persists a null maintenance date; retain the clearing assertion.","test-runs/earlier-crud-20261126/user-license-hub/ULH-026_2026-11-26T14-47-27-541Z_6a00d29f","2026-11-26T14:52:32.498Z"

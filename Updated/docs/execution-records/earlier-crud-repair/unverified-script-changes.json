@@ -1,0 +1,63 @@
+{
+  "changedAt": "2026-11-26T18:02:20.125Z",
+  "reason": "Source corrections were completed, but the user stopped application execution before their verification run. Historical passes from the older assertions are not current verification.",
+  "cases": [
+    {
+      "id": "LIMAS-SUD-667"
+    },
+    {
+      "id": "LIMAS-SUD-668"
+    },
+    {
+      "id": "LIMAS-SUD-669"
+    },
+    {
+      "id": "LIMAS-SUD-673"
+    },
+    {
+      "id": "LIMAS-SUD-674"
+    },
+    {
+      "id": "LIMAS-SUD-675"
+    },
+    {
+      "id": "LIMAS-SUD-676"
+    },
+    {
+      "id": "LIMAS-SUD-677"
+    },
+    {
+      "id": "LIMAS-SUD-678"
+    },
+    {
+      "id": "LIMAS-SUD-679"
+    },
+    {
+      "id": "LIMAS-SUD-680"
+    },
+    {
+      "id": "LIMAS-SUD-683"
+    },
+    {
+      "id": "LIMAS-SUD-689"
+    },
+    {
+      "id": "LIMAS-SUD-701"
+    },
+    {
+      "id": "LIMAS-SUD-702"
+    },
+    {
+      "id": "LIMAS-SUD-703"
+    },
+    {
+      "id": "LIMAS-SUD-704"
+    },
+    {
+      "id": "LIMAS-SUD-715"
+    },
+    {
+      "id": "LIMAS-SUD-457"
+    }
+  ]
+}

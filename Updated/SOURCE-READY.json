@@ -1,0 +1,12 @@
+{
+  "createdAt": "2026-11-26T19:01:07.150Z",
+  "files": 4450,
+  "zipSha256": "86d17e1f38d9d68a17abd39565aa05debc774bc5cbffe1090c9e9134439422d1",
+  "repair": {
+    "planned": 2599,
+    "passed": 2406,
+    "failed": 69,
+    "skipped": 105,
+    "remaining": 19
+  }
+}

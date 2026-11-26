@@ -1,0 +1,22 @@
+[
+  {
+    "id": "LIMAS-SUD-2275",
+    "reason": "Duplicate role-name case must verify submission outcome rather than only form state."
+  },
+  {
+    "id": "LIMAS-SUD-2276",
+    "reason": "Duplicate role-value behavior needs a concrete functional assertion."
+  },
+  {
+    "id": "LIMAS-SUD-2277",
+    "reason": "Zero role value must verify the actual validation or persisted outcome."
+  },
+  {
+    "id": "LIMAS-SUD-2334",
+    "reason": "Runtime version-option assertion needs review for vacuous success."
+  },
+  {
+    "id": "LIMAS-SUD-2336",
+    "reason": "Runtime access-level option assertion needs review for vacuous success."
+  }
+]

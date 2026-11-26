@@ -1,0 +1,75 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: reports - 17 batches
+
+# RPT-001: 20 cases; LIMAS-SUD-1482 through LIMAS-SUD-1501
+# Covers: Reports opening, report type selection, record counts, Active and Deleted tabs, filter panel controls, profile and role dependency, date inputs, Export Excel button, standard license columns and loaded counts
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-001 -DetailedEvidence -TestReport
+
+# RPT-002: 20 cases; LIMAS-SUD-1502 through LIMAS-SUD-1521
+# Covers: standard report row counts, initial read-only API response, keyboard and selected-state accessibility, scrolling for more records, next-page requests, rows appended without duplicates, loading and scroll position
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-002 -DetailedEvidence -TestReport
+
+# RPT-003: 20 cases; LIMAS-SUD-1522 through LIMAS-SUD-1541
+# Covers: standard report pagination completion, failure and retry plans, scroll accessibility, email filtering and clearing, partial and no-match email results, hardware ID filtering, multiple hardware IDs, filter request checks
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-003 -DetailedEvidence -TestReport
+
+# RPT-004: 20 cases; LIMAS-SUD-1542 through LIMAS-SUD-1561
+# Covers: no-match hardware filtering, group and product profile filtering, profile and role dependency, combined filters and clearing, pagination reset after filtering, date picker, expiration date filtering
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-004 -DetailedEvidence -TestReport
+
+# RPT-005: 20 cases; LIMAS-SUD-1562 through LIMAS-SUD-1581
+# Covers: expiration date boundaries and invalid input, date replacement and clearing, maintenance and created and modified date filters, date request formats, combined filters, pagination reset, no-result date handling
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-005 -DetailedEvidence -TestReport
+
+# RPT-006: 20 cases; LIMAS-SUD-1582 through LIMAS-SUD-1601
+# Covers: filter state and accessibility, Active and Deleted mode switching, deleted standard license fields and counts, deleted record scrolling, deleted-mode filters and clearing, fresh data on switching, stale response handling
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-006 -DetailedEvidence -TestReport
+
+# RPT-007: 20 cases; LIMAS-SUD-1602 through LIMAS-SUD-1621
+# Covers: mode switching and loading indicators, keyboard mode selection, filters reset on switching, rapid mode changes, Export Excel button and keyboard activation, download request and filename, workbook validation, filtered exports
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-007 -DetailedEvidence -TestReport
+
+# RPT-008: 20 cases; LIMAS-SUD-1622 through LIMAS-SUD-1641
+# Covers: combined-filter and zero-result exports, deleted standard license export, one download per click, repeated exports, exported file cleanup, export accessibility and failure scenarios, Floating Licenses report selection and mode controls
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-008 -DetailedEvidence -TestReport
+
+# RPT-009: 20 cases; LIMAS-SUD-1642 through LIMAS-SUD-1661
+# Covers: floating report counts and toolbar, filter panel controls, profile and role dependency, empty results and disabled export, initial read-only API response, loading and pagination structure, accessibility
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-009 -DetailedEvidence -TestReport
+
+# RPT-010: 20 cases; LIMAS-SUD-1662 through LIMAS-SUD-1681
+# Covers: floating report email and hardware filters, profile and role selection, expiration and created date filters, filter chips and clearing, combined filters, client-side filtering, empty-result counts, filter panel persistence
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-010 -DetailedEvidence -TestReport
+
+# RPT-011: 20 cases; LIMAS-SUD-1682 through LIMAS-SUD-1701
+# Covers: floating filter accessibility and reset, Active and Deleted mode switching, deleted floating license API and table, counts and export availability, filter persistence and clearing, scroll reset, stale response protection, loading and keyboard controls
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-011 -DetailedEvidence -TestReport
+
+# RPT-012: 20 cases; LIMAS-SUD-1702 through LIMAS-SUD-1721
+# Covers: floating mode and filter accessibility, deleted record scrolling, next-page requests, sequential page loading, rows appended without duplicates, count synchronization, loading and scroll stability, end-of-data handling
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-012 -DetailedEvidence -TestReport
+
+# RPT-013: 20 cases; LIMAS-SUD-1722 through LIMAS-SUD-1741
+# Covers: floating export availability by mode, keyboard download, client-side workbook export, filenames and file contents, filtered and no-result export scope, repeated downloads, cleanup and failure scenarios, Floating Configurations report card
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-013 -DetailedEvidence -TestReport
+
+# RPT-014: 20 cases; LIMAS-SUD-1742 through LIMAS-SUD-1761
+# Covers: Floating Configurations report selection, mode buttons and counts, filter panel controls, profile and role dependency, Export Excel state, active report error message, Retry request, error accessibility
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-014 -DetailedEvidence -TestReport
+
+# RPT-015: 20 cases; LIMAS-SUD-1762 through LIMAS-SUD-1781
+# Covers: configuration report error and Retry behavior, Deleted mode loading, deleted configuration fields and counts, export availability, repeated mode switching, stale response protection, filter state, fresh data and complete loading
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-015 -DetailedEvidence -TestReport
+
+# RPT-016: 20 cases; LIMAS-SUD-1782 through LIMAS-SUD-1801
+# Covers: deleted configuration counts, Deleted By and Created By and Group Name filters, combined and no-match filters, Clear restoration, client-side filtering, scroll and stale-data checks, Excel export contents and filtered scope
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-016 -DetailedEvidence -TestReport
+
+# RPT-017: 6 cases; LIMAS-SUD-1802 through LIMAS-SUD-1807
+# Covers: configuration export preserves report state, repeated downloads, file cleanup, filter and export accessibility, restore Active report state
+.\scripts\run-tests-with-report.ps1 -Suite reports -Batch RPT-017 -DetailedEvidence -TestReport

@@ -1,0 +1,19 @@
+# PowerShell batch commands - maximum 20 cases per generated batch.
+# Run from the project root with the approved application environment configured.
+# Copy and run one command at a time; keep the default BatchSize of 20.
+# Covers summarizes planned test checks, not execution results; existing skip and mutation gates apply.
+# SUD-PL-01-A is an alternative to SUD-001 for the same first 20 dashboard cases.
+
+# Suite: system-users - 3 batches
+
+# SYU-001: 20 cases; LIMAS-SUD-2523 through LIMAS-SUD-2542
+# Covers: System Users opening, search by name and email, search clearing and counts, user list fields, profile filtering and multiple selection, user group filtering, combined filters, Clear All
+.\scripts\run-tests-with-report.ps1 -Suite system-users -Batch SYU-001 -DetailedEvidence -TestReport
+
+# SYU-002: 20 cases; LIMAS-SUD-2543 through LIMAS-SUD-2562
+# Covers: user group and profile overflow expansion, row-specific assignments, Edit Assignments dialog opening, correct selected user and existing assignments, dialog focus, profile selection and removal, duplicate prevention
+.\scripts\run-tests-with-report.ps1 -Suite system-users -Batch SYU-002 -DetailedEvidence -TestReport
+
+# SYU-003: 13 cases; LIMAS-SUD-2563 through LIMAS-SUD-2575
+# Covers: assignment selection popover closing, user group addition and removal, duplicate prevention, Update button states, cancelled assignments discarded, no update before submission, gated assignment update
+.\scripts\run-tests-with-report.ps1 -Suite system-users -Batch SYU-003 -DetailedEvidence -TestReport

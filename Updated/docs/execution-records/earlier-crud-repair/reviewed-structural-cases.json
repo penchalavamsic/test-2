@@ -1,0 +1,1096 @@
+{
+  "reviewedAt": "2026-11-26T17:58:05.178Z",
+  "note": "Separates genuine CRUD coverage from read-only cases caught by broad title keywords. No new application passes are claimed.",
+  "cases": [
+    {
+      "id": "LIMAS-SUD-2046",
+      "suite": "features",
+      "title": "LIMAS-SUD-2046: Each row has Actions column with Add Child Feature, Edit, Delete",
+      "source": [
+        "tests/features/features-profiles-navigation.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2064",
+      "suite": "features",
+      "title": "LIMAS-SUD-2064: Dialog has Cancel, Save, and Close controls",
+      "source": [
+        "tests/features/features-add-root.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2078",
+      "suite": "features",
+      "title": "LIMAS-SUD-2078: Empty and whitespace-only Add does not create a valid chip",
+      "source": [
+        "tests/features/features-add-root.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2083",
+      "suite": "features",
+      "title": "LIMAS-SUD-2083: Save is initially enabled when dialog opens",
+      "source": [
+        "tests/features/features-add-root.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2084",
+      "suite": "features",
+      "title": "LIMAS-SUD-2084: Save remains enabled after filling required fields",
+      "source": [
+        "tests/features/features-add-root.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2085",
+      "suite": "features",
+      "title": "LIMAS-SUD-2085: Save state with optional fields filled",
+      "source": [
+        "tests/features/features-add-root.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2094",
+      "suite": "features",
+      "title": "LIMAS-SUD-2094: Dialog has Cancel, Save, and Close controls",
+      "source": [
+        "tests/features/features-add-child.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2108",
+      "suite": "features",
+      "title": "LIMAS-SUD-2108: Multiple versions create multiple chips in child dialog",
+      "source": [
+        "tests/features/features-add-child.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2109",
+      "suite": "features",
+      "title": "LIMAS-SUD-2109: Empty/whitespace version does not create chip",
+      "source": [
+        "tests/features/features-add-child.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2110",
+      "suite": "features",
+      "title": "LIMAS-SUD-2110: Save is initially enabled when dialog opens",
+      "source": [
+        "tests/features/features-add-child.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2117",
+      "suite": "features",
+      "title": "LIMAS-SUD-2117: Edit button opens dialog with role dialog and name \"Edit\"",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2118",
+      "suite": "features",
+      "title": "LIMAS-SUD-2118: Dialog has heading \"Edit\" h2 and description \"Edit feature details\"",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2119",
+      "suite": "features",
+      "title": "LIMAS-SUD-2119: Dialog has Cancel, Save, and Close controls â€” no Reset",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2125",
+      "suite": "features",
+      "title": "LIMAS-SUD-2125: Root feature Access Levels input and Add button are enabled in Edit",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2126",
+      "suite": "features",
+      "title": "LIMAS-SUD-2126: Child feature Edit displays inherited access levels",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2127",
+      "suite": "features",
+      "title": "LIMAS-SUD-2127: No inheritance info banner in Edit dialog (unlike Add Child)",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2129",
+      "suite": "features",
+      "title": "LIMAS-SUD-2129: Description counter updates while typing in Edit",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2130",
+      "suite": "features",
+      "title": "LIMAS-SUD-2130: Description max length is 1000 chars in Edit",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2131",
+      "suite": "features",
+      "title": "LIMAS-SUD-2131: Add version in Edit creates a chip",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2132",
+      "suite": "features",
+      "title": "LIMAS-SUD-2132: Add access level for root in Edit creates a chip",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2133",
+      "suite": "features",
+      "title": "LIMAS-SUD-2133: Save is initially enabled when Edit dialog opens",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2137",
+      "suite": "features",
+      "title": "LIMAS-SUD-2137: Reopening Edit after Cancel shows original persisted values",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2143",
+      "suite": "features",
+      "title": "LIMAS-SUD-2143: Features page clean after edit dialog exploration",
+      "source": [
+        "tests/features/features-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2144",
+      "suite": "features",
+      "title": "LIMAS-SUD-2144: Delete button is visible on every row",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2145",
+      "suite": "features",
+      "title": "LIMAS-SUD-2145: Delete button has role button and accessible name \"Delete\"",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2146",
+      "suite": "features",
+      "title": "LIMAS-SUD-2146: Delete button has destructive text styling",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2147",
+      "suite": "features",
+      "title": "LIMAS-SUD-2147: Delete disabled when feature has associated profiles",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2148",
+      "suite": "features",
+      "title": "LIMAS-SUD-2148: Delete enabled when feature has 0 profiles",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2149",
+      "suite": "features",
+      "title": "LIMAS-SUD-2149: Disabled Delete tooltip explains profile association",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2150",
+      "suite": "features",
+      "title": "LIMAS-SUD-2150: Enabled Delete has no tooltip",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2151",
+      "suite": "features",
+      "title": "LIMAS-SUD-2151: Root feature Delete disabled when associated with profiles",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2153",
+      "suite": "features",
+      "title": "LIMAS-SUD-2153: Profile count drives Delete disabled state",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2154",
+      "suite": "features",
+      "title": "LIMAS-SUD-2154: Delete button count matches row count",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2155",
+      "suite": "features",
+      "title": "LIMAS-SUD-2155: One Delete button per row",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2156",
+      "suite": "features",
+      "title": "LIMAS-SUD-2156: Clicking enabled Delete opens \"Are you sure?\" alertdialog",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2158",
+      "suite": "features",
+      "title": "LIMAS-SUD-2158: Confirmation warning mentions feature name and \"permanently delete\"",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2159",
+      "suite": "features",
+      "title": "LIMAS-SUD-2159: Confirmation dialog has Cancel and Delete controls",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2164",
+      "suite": "features",
+      "title": "LIMAS-SUD-2164: Features page clean after delete dialog exploration",
+      "source": [
+        "tests/features/features-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2165",
+      "suite": "features",
+      "title": "LIMAS-SUD-2165: Clicking a Version opens \"Feature Update Management\" dialog",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2166",
+      "suite": "features",
+      "title": "LIMAS-SUD-2166: Dialog has role dialog and accessible name \"Feature Update Management\"",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2167",
+      "suite": "features",
+      "title": "LIMAS-SUD-2167: Dialog heading is h2 \"Feature Update Management\"",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2169",
+      "suite": "features",
+      "title": "LIMAS-SUD-2169: Dialog has Cancel, Save, and Close controls",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2170",
+      "suite": "features",
+      "title": "LIMAS-SUD-2170: Upload file control labeled \"Upload Update File *\" is present",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2175",
+      "suite": "features",
+      "title": "LIMAS-SUD-2175: Save is enabled before file selection",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2176",
+      "suite": "features",
+      "title": "LIMAS-SUD-2176: Save remains enabled after file selection",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2177",
+      "suite": "features",
+      "title": "LIMAS-SUD-2177: Update Comments textarea is present",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2178",
+      "suite": "features",
+      "title": "LIMAS-SUD-2178: Comments textarea has placeholder \"Enter update comments or release notes...\"",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2188",
+      "suite": "features",
+      "title": "LIMAS-SUD-2188: File input has visible label \"Upload Update File *\"",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2189",
+      "suite": "features",
+      "title": "LIMAS-SUD-2189: Tab order includes Cancel and Save buttons",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2191",
+      "suite": "features",
+      "title": "LIMAS-SUD-2191: Features page clean after update dialog exploration",
+      "source": [
+        "tests/features/features-update-management.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2194",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2194: Create Profile button is visible",
+      "source": [
+        "tests/profiles/profiles-search-sorting-cards.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2211",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2211: Each card has Edit and Delete icon buttons",
+      "source": [
+        "tests/profiles/profiles-search-sorting-cards.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2220",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2220: Create Profile button has accessible name",
+      "source": [
+        "tests/profiles/profiles-search-sorting-cards.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2243",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2243: Features tab has Create Feature button",
+      "source": [
+        "tests/profiles/profiles-manage.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2244",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2244: Features tab has Save button",
+      "source": [
+        "tests/profiles/profiles-manage.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2256",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2256: Each role row has Edit action button",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2257",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2257: Each role row has Delete action button",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2258",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2258: Edit and Delete buttons lack accessible names",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2260",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2260: Edit button is enabled for existing roles",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2270",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2270: Both fields valid ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Save enabled",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2284",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2284: Edit opens a form with prepopulated values",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2285",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2285: Delete button is enabled for existing roles",
+      "source": [
+        "tests/profiles/profiles-manage-roles.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2290",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2290: Create Profile dialog opens with accessible name",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2291",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2291: Create Profile heading and description are visible",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2294",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2294: Cancel, Save, and Close controls are present",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2298",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2298: Valid Profile Name ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Save enabled",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2306",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2306: Description is optional ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Save enabled without it",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2309",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2309: Profile Name only ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Save enabled",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2311",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2311: Both valid ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Save enabled",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2317",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2317: Profiles page restores to clean state after Create exploration",
+      "source": [
+        "tests/profiles/profiles-create.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2321",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2321: Create Feature button is visible and enabled",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2322",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2322: Save button is visible",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2326",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2326: Each assigned feature has a Remove button",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2332",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2332: Remove button is enabled for assigned features",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2337",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2337: Save is enabled when Features tab loads",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2338",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2338: Create Feature button has accessible name and is enabled",
+      "source": [
+        "tests/profiles/profiles-manage-features.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2346",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2346: Edit dialog opens with accessible name",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2347",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2347: Edit dialog shows h2 heading and supporting text",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2350",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2350: Cancel, Save, and Close controls are present",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2356",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2356: Save is enabled initially",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2357",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2357: Save remains enabled after changing Profile Name",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2358",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2358: Save remains enabled after changing Description",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2359",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2359: Save remains enabled after clearing Profile Name",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2360",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2360: Save remains enabled after reverting all changes",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2372",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2372: Profiles page restores after Edit exploration",
+      "source": [
+        "tests/profiles/profiles-edit.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2373",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2373: Delete button is visible on each Profile card",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2374",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2374: Delete button is enabled for runtime profiles",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2375",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2375: Delete button has destructive styling",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2376",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2376: Delete button is keyboard reachable",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2377",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2377: Delete opens alertdialog confirmation",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2380",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2380: Confirmation has Cancel and Delete buttons",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2384",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2384: Delete state persists after Search and Clear",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-2385",
+      "suite": "profiles",
+      "title": "LIMAS-SUD-2385: Delete state remains consistent after sorting",
+      "source": [
+        "tests/profiles/profiles-delete.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a control, dialog, draft, or cancellation check rather than a committed CRUD operation. Retain its historical pass; this is not a new execution or proof of server mutation."
+    },
+    {
+      "id": "LIMAS-SUD-054",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-054: should update content section heading after clicking another summary card",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-054-card-click-updates-content.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-076",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-076: should display an Approve button in each visible row",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-076-approve-button-visible.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-077",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-077: should ensure Approve button is enabled in each visible row",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-077-approve-button-enabled.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-078",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-078: should display a Delete button with accessible name in each visible row",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-078-delete-button-visible.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-079",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-079: should ensure Delete button is enabled in each visible row",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-079-delete-button-enabled.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-083",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-083: should update the count display after performing a search",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-083-search-count-updates.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-087",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-087: should open inline form and change Approve button to Close",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-087-approve-opens-inline-form.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-096",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-096: should update displayed value after selecting a User Group option",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-096-user-group-dynamic-selection.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-102",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-102: should update displayed value after selecting a Profile option",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-102-profile-dynamic-selection.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-111",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-111: should close form and revert Approve button when Cancel is clicked",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-111-cancel-closes-without-saving.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-198",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-198: should update the count display after performing a search in history",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-198-history-search-count-updates.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-221",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-221: should have zero Approve buttons in the processed history view",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-221-processed-record-no-approve-button.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-222",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-222: should have zero Delete buttons in the processed history view",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-222-processed-record-no-delete-button.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-262",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-262: should remove processed section content after disabling history",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-262-processed-content-removal.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-411",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-411: Keyboard Select-All And Delete Clears Search",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-411-keyboard-select-all-and-delete-clears-search.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    },
+    {
+      "id": "LIMAS-SUD-797",
+      "suite": "system-user-dashboard",
+      "title": "LIMAS-SUD-797: showPicker does not create DOM dialog",
+      "source": [
+        "tests/system-user-dashboard/LIMAS-SUD-797-efc-d-native-chrome.spec.ts"
+      ],
+      "disposition": "baseline-pass-source-reviewed",
+      "reason": "Source review confirms a read-only navigation, control, search or cancellation check. Its historical pass is retained; this is not newly executed CRUD coverage."
+    }
+  ]
+}
