@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/penchalavamsic/test-2.git",
+  "branch": "hub-dashboard-handoff-20261126",
+  "preparedAt": "2026-11-26T19:27:30.970Z",
+  "folders": [
+    "Updated",
+    "Latest-Evidence"
+  ],
+  "localRepairCases": 450,
+  "reportPackages": 144,
+  "splitPackages": 73,
+  "currentDisposition": {
+    "planned": 2599,
+    "passed": 2406,
+    "failed": 69,
+    "skipped": 105,
+    "remaining": 19
+  },
+  "sourceZip": "Updated/Updated-source.zip",
+  "restore": "Latest-Evidence/Restore-Report-Packages.ps1"
+}
