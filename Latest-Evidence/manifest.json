@@ -1,0 +1,1615 @@
+{
+  "createdAt": "2026-11-26T14:37:16.812Z",
+  "scope": "Latest completed local repair run for each locally rerun office case. Full batch packages can contain superseded case attempts; Updated status files are authoritative.",
+  "cases": [
+    {
+      "id": "LIMAS-SUD-2009",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2010",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2011",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2012",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2013",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2014",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-26-41-858Z_fde38aa4",
+      "completedAt": "2026-11-26T08:27:21.944Z"
+    },
+    {
+      "id": "LIMAS-SUD-2015",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2016",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2017",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2018",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2019",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2020",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2021",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2022",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-26-41-858Z_fde38aa4",
+      "completedAt": "2026-11-26T08:27:21.944Z"
+    },
+    {
+      "id": "LIMAS-SUD-2023",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2024",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2025",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2026",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2027",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2028",
+      "run": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "completedAt": "2026-11-26T08:24:57.985Z"
+    },
+    {
+      "id": "LIMAS-SUD-2462",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-004_2026-11-26T08-33-49-313Z_49b6441f",
+      "completedAt": "2026-11-26T08:35:30.291Z"
+    },
+    {
+      "id": "LIMAS-SUD-2483",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4",
+      "completedAt": "2026-11-26T08:38:10.670Z"
+    },
+    {
+      "id": "LIMAS-SUD-2504",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a",
+      "completedAt": "2026-11-26T08:40:22.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2523",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2524",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2525",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2526",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2527",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2528",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2529",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2530",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-20-47-837Z_a22232e1",
+      "completedAt": "2026-11-26T13:21:14.043Z"
+    },
+    {
+      "id": "LIMAS-SUD-2531",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2532",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2533",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2534",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2535",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2536",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2537",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2538",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2539",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2540",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2541",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2542",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "completedAt": "2026-11-26T08:41:53.148Z"
+    },
+    {
+      "id": "LIMAS-SUD-2522",
+      "run": "test-runs/office-repair-20261126/user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7",
+      "completedAt": "2026-11-26T08:43:07.488Z"
+    },
+    {
+      "id": "LIMAS-SUD-2552",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2553",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2554",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2555",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2556",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2557",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2558",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2559",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2560",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2561",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2562",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2543",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2544",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2545",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2546",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2547",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2548",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2549",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2550",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2551",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "completedAt": "2026-11-26T08:45:34.203Z"
+    },
+    {
+      "id": "LIMAS-SUD-2563",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2564",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2565",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c",
+      "completedAt": "2026-11-26T08:52:28.437Z"
+    },
+    {
+      "id": "LIMAS-SUD-2566",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c",
+      "completedAt": "2026-11-26T08:52:28.437Z"
+    },
+    {
+      "id": "LIMAS-SUD-2567",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2568",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2569",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2570",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2571",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2572",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2573",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2574",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-2575",
+      "run": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "completedAt": "2026-11-26T08:49:03.522Z"
+    },
+    {
+      "id": "LIMAS-SUD-1513",
+      "run": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "completedAt": "2026-11-26T08:49:28.442Z"
+    },
+    {
+      "id": "LIMAS-SUD-1514",
+      "run": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "completedAt": "2026-11-26T08:49:28.442Z"
+    },
+    {
+      "id": "LIMAS-SUD-1516",
+      "run": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "completedAt": "2026-11-26T08:49:28.442Z"
+    },
+    {
+      "id": "LIMAS-SUD-1511",
+      "run": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "completedAt": "2026-11-26T08:49:28.442Z"
+    },
+    {
+      "id": "LIMAS-SUD-1531",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z"
+    },
+    {
+      "id": "LIMAS-SUD-1532",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-58-29-750Z_c92dede3",
+      "completedAt": "2026-11-26T08:58:57.400Z"
+    },
+    {
+      "id": "LIMAS-SUD-1533",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z"
+    },
+    {
+      "id": "LIMAS-SUD-1534",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z"
+    },
+    {
+      "id": "LIMAS-SUD-1535",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z"
+    },
+    {
+      "id": "LIMAS-SUD-1536",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "completedAt": "2026-11-26T08:56:03.153Z"
+    },
+    {
+      "id": "LIMAS-SUD-1537",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-59-49-448Z_caef7196",
+      "completedAt": "2026-11-26T09:00:13.787Z"
+    },
+    {
+      "id": "LIMAS-SUD-1543",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1544",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1545",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1546",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1547",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1548",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T12-48-26-670Z_9fbbae26",
+      "completedAt": "2026-11-26T12:48:44.428Z"
+    },
+    {
+      "id": "LIMAS-SUD-1549",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1550",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1551",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "completedAt": "2026-11-26T09:07:32.004Z"
+    },
+    {
+      "id": "LIMAS-SUD-1538",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666",
+      "completedAt": "2026-11-26T09:17:35.943Z"
+    },
+    {
+      "id": "LIMAS-SUD-1539",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c",
+      "completedAt": "2026-11-26T13:08:10.863Z"
+    },
+    {
+      "id": "LIMAS-SUD-1540",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+      "completedAt": "2026-11-26T13:23:19.270Z"
+    },
+    {
+      "id": "LIMAS-SUD-1541",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29",
+      "completedAt": "2026-11-26T12:59:17.242Z"
+    },
+    {
+      "id": "LIMAS-SUD-1542",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T13-08-22-162Z_58a81c52",
+      "completedAt": "2026-11-26T13:09:08.578Z"
+    },
+    {
+      "id": "LIMAS-SUD-1552",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z"
+    },
+    {
+      "id": "LIMAS-SUD-1553",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z"
+    },
+    {
+      "id": "LIMAS-SUD-1554",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z"
+    },
+    {
+      "id": "LIMAS-SUD-1555",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z"
+    },
+    {
+      "id": "LIMAS-SUD-1556",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "completedAt": "2026-11-26T09:21:44.132Z"
+    },
+    {
+      "id": "LIMAS-SUD-1562",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1563",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1564",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1565",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1566",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1567",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1568",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1569",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1570",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1571",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1572",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1573",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1574",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1575",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1576",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "completedAt": "2026-11-26T12:49:18.237Z"
+    },
+    {
+      "id": "LIMAS-SUD-1577",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1578",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-39-43-051Z_6101cff5",
+      "completedAt": "2026-11-26T09:40:01.900Z"
+    },
+    {
+      "id": "LIMAS-SUD-1579",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1580",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "completedAt": "2026-11-26T09:37:34.864Z"
+    },
+    {
+      "id": "LIMAS-SUD-1581",
+      "run": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T13-09-12-531Z_bbfce71f",
+      "completedAt": "2026-11-26T13:09:28.806Z"
+    },
+    {
+      "id": "LIMAS-SUD-1557",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z"
+    },
+    {
+      "id": "LIMAS-SUD-1558",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z"
+    },
+    {
+      "id": "LIMAS-SUD-1559",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z"
+    },
+    {
+      "id": "LIMAS-SUD-1560",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z"
+    },
+    {
+      "id": "LIMAS-SUD-1561",
+      "run": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "completedAt": "2026-11-26T09:39:35.322Z"
+    },
+    {
+      "id": "LIMAS-SUD-1582",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec",
+      "completedAt": "2026-11-26T09:40:27.588Z"
+    },
+    {
+      "id": "LIMAS-SUD-1583",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec",
+      "completedAt": "2026-11-26T09:40:27.588Z"
+    },
+    {
+      "id": "LIMAS-SUD-1584",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d",
+      "completedAt": "2026-11-26T09:48:28.361Z"
+    },
+    {
+      "id": "LIMAS-SUD-1585",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-42-38-392Z_55fd9e88",
+      "completedAt": "2026-11-26T09:42:53.884Z"
+    },
+    {
+      "id": "LIMAS-SUD-1586",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec",
+      "completedAt": "2026-11-26T09:40:27.588Z"
+    },
+    {
+      "id": "LIMAS-SUD-1524",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+      "completedAt": "2026-11-26T13:23:19.270Z"
+    },
+    {
+      "id": "LIMAS-SUD-1525",
+      "run": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-45-36-600Z_dd95af66",
+      "completedAt": "2026-11-26T09:46:24.961Z"
+    },
+    {
+      "id": "LIMAS-SUD-1633",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "completedAt": "2026-11-26T09:43:20.858Z"
+    },
+    {
+      "id": "LIMAS-SUD-1634",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "completedAt": "2026-11-26T09:43:20.858Z"
+    },
+    {
+      "id": "LIMAS-SUD-1635",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "completedAt": "2026-11-26T09:43:20.858Z"
+    },
+    {
+      "id": "LIMAS-SUD-1588",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e",
+      "completedAt": "2026-11-26T09:55:33.968Z"
+    },
+    {
+      "id": "LIMAS-SUD-1590",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "completedAt": "2026-11-26T13:03:42.993Z"
+    },
+    {
+      "id": "LIMAS-SUD-1591",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1592",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "completedAt": "2026-11-26T13:03:42.993Z"
+    },
+    {
+      "id": "LIMAS-SUD-1593",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1594",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "completedAt": "2026-11-26T13:03:42.993Z"
+    },
+    {
+      "id": "LIMAS-SUD-1595",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1596",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1597",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1598",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "completedAt": "2026-11-26T13:11:17.235Z"
+    },
+    {
+      "id": "LIMAS-SUD-1600",
+      "run": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d",
+      "completedAt": "2026-11-26T09:48:28.361Z"
+    },
+    {
+      "id": "LIMAS-SUD-1610",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "completedAt": "2026-11-26T09:50:12.450Z"
+    },
+    {
+      "id": "LIMAS-SUD-1611",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "completedAt": "2026-11-26T09:50:12.450Z"
+    },
+    {
+      "id": "LIMAS-SUD-1612",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "completedAt": "2026-11-26T09:56:44.904Z"
+    },
+    {
+      "id": "LIMAS-SUD-1614",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T12-49-30-594Z_1fb28f39",
+      "completedAt": "2026-11-26T12:49:53.665Z"
+    },
+    {
+      "id": "LIMAS-SUD-1620",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "completedAt": "2026-11-26T09:56:44.904Z"
+    },
+    {
+      "id": "LIMAS-SUD-1621",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "completedAt": "2026-11-26T09:56:44.904Z"
+    },
+    {
+      "id": "LIMAS-SUD-1602",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada",
+      "completedAt": "2026-11-26T10:10:49.112Z"
+    },
+    {
+      "id": "LIMAS-SUD-1604",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T13-23-33-381Z_6d9d8f92",
+      "completedAt": "2026-11-26T13:23:56.539Z"
+    },
+    {
+      "id": "LIMAS-SUD-1607",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-00-52-588Z_4eb3d177",
+      "completedAt": "2026-11-26T10:01:15.094Z"
+    },
+    {
+      "id": "LIMAS-SUD-1608",
+      "run": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "completedAt": "2026-11-26T09:50:12.450Z"
+    },
+    {
+      "id": "LIMAS-SUD-1622",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e",
+      "completedAt": "2026-11-26T09:57:36.025Z"
+    },
+    {
+      "id": "LIMAS-SUD-1623",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T13-11-48-363Z_38e918dd",
+      "completedAt": "2026-11-26T13:12:01.623Z"
+    },
+    {
+      "id": "LIMAS-SUD-1624",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e",
+      "completedAt": "2026-11-26T09:57:36.025Z"
+    },
+    {
+      "id": "LIMAS-SUD-1626",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T10-05-19-728Z_9c0901d3",
+      "completedAt": "2026-11-26T10:05:40.367Z"
+    },
+    {
+      "id": "LIMAS-SUD-1627",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z"
+    },
+    {
+      "id": "LIMAS-SUD-1628",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z"
+    },
+    {
+      "id": "LIMAS-SUD-1630",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z"
+    },
+    {
+      "id": "LIMAS-SUD-1631",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z"
+    },
+    {
+      "id": "LIMAS-SUD-1632",
+      "run": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "completedAt": "2026-11-26T09:51:59.507Z"
+    },
+    {
+      "id": "LIMAS-SUD-1644",
+      "run": "test-runs/office-repair-20261126/reports/RPT-009_2026-11-26T12-15-50-573Z_3bbe4742",
+      "completedAt": "2026-11-26T12:16:08.070Z"
+    },
+    {
+      "id": "LIMAS-SUD-1654",
+      "run": "test-runs/office-repair-20261126/reports/RPT-009_2026-11-26T12-15-50-573Z_3bbe4742",
+      "completedAt": "2026-11-26T12:16:08.070Z"
+    },
+    {
+      "id": "LIMAS-SUD-1664",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T13-12-02-965Z_58ee8e34",
+      "completedAt": "2026-11-26T13:12:18.921Z"
+    },
+    {
+      "id": "LIMAS-SUD-1674",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "completedAt": "2026-11-26T12:16:57.809Z"
+    },
+    {
+      "id": "LIMAS-SUD-1675",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "completedAt": "2026-11-26T12:16:57.809Z"
+    },
+    {
+      "id": "LIMAS-SUD-1662",
+      "run": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "completedAt": "2026-11-26T12:16:57.809Z"
+    },
+    {
+      "id": "LIMAS-SUD-1687",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "completedAt": "2026-11-26T12:21:25.909Z"
+    },
+    {
+      "id": "LIMAS-SUD-1688",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "completedAt": "2026-11-26T12:21:25.909Z"
+    },
+    {
+      "id": "LIMAS-SUD-1690",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "completedAt": "2026-11-26T12:21:25.909Z"
+    },
+    {
+      "id": "LIMAS-SUD-1694",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e",
+      "completedAt": "2026-11-26T13:20:09.769Z"
+    },
+    {
+      "id": "LIMAS-SUD-1695",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-33-38-597Z_2c743a1d",
+      "completedAt": "2026-11-26T12:34:06.599Z"
+    },
+    {
+      "id": "LIMAS-SUD-1696",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e",
+      "completedAt": "2026-11-26T13:20:09.769Z"
+    },
+    {
+      "id": "LIMAS-SUD-1701",
+      "run": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-33-38-597Z_2c743a1d",
+      "completedAt": "2026-11-26T12:34:06.599Z"
+    },
+    {
+      "id": "LIMAS-SUD-1703",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48",
+      "completedAt": "2026-11-26T12:24:28.332Z"
+    },
+    {
+      "id": "LIMAS-SUD-1704",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-20-15-603Z_fe13493e",
+      "completedAt": "2026-11-26T13:20:43.895Z"
+    },
+    {
+      "id": "LIMAS-SUD-1705",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "completedAt": "2026-11-26T12:36:17.052Z"
+    },
+    {
+      "id": "LIMAS-SUD-1709",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "completedAt": "2026-11-26T12:36:17.052Z"
+    },
+    {
+      "id": "LIMAS-SUD-1710",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+      "completedAt": "2026-11-26T13:25:32.060Z"
+    },
+    {
+      "id": "LIMAS-SUD-1712",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+      "completedAt": "2026-11-26T13:25:32.060Z"
+    },
+    {
+      "id": "LIMAS-SUD-1716",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "completedAt": "2026-11-26T12:36:17.052Z"
+    },
+    {
+      "id": "LIMAS-SUD-1720",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "completedAt": "2026-11-26T12:36:17.052Z"
+    },
+    {
+      "id": "LIMAS-SUD-1721",
+      "run": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48",
+      "completedAt": "2026-11-26T12:24:28.332Z"
+    },
+    {
+      "id": "LIMAS-SUD-1741",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1722",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "completedAt": "2026-11-26T12:37:35.384Z"
+    },
+    {
+      "id": "LIMAS-SUD-1723",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1724",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1725",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1727",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "completedAt": "2026-11-26T12:37:35.384Z"
+    },
+    {
+      "id": "LIMAS-SUD-1732",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1733",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "completedAt": "2026-11-26T12:37:35.384Z"
+    },
+    {
+      "id": "LIMAS-SUD-1734",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1737",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1738",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1739",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1740",
+      "run": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "completedAt": "2026-11-26T12:27:52.855Z"
+    },
+    {
+      "id": "LIMAS-SUD-1742",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4",
+      "completedAt": "2026-11-26T12:38:33.868Z"
+    },
+    {
+      "id": "LIMAS-SUD-1745",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1746",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1750",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1751",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1752",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1753",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1756",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "completedAt": "2026-11-26T12:28:58.184Z"
+    },
+    {
+      "id": "LIMAS-SUD-1760",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4",
+      "completedAt": "2026-11-26T12:38:33.868Z"
+    },
+    {
+      "id": "LIMAS-SUD-1761",
+      "run": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4",
+      "completedAt": "2026-11-26T12:38:33.868Z"
+    },
+    {
+      "id": "LIMAS-SUD-1764",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60",
+      "completedAt": "2026-11-26T12:39:28.248Z"
+    },
+    {
+      "id": "LIMAS-SUD-1769",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60",
+      "completedAt": "2026-11-26T12:39:28.248Z"
+    },
+    {
+      "id": "LIMAS-SUD-1774",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-29-07-117Z_a9f070da",
+      "completedAt": "2026-11-26T12:29:32.443Z"
+    },
+    {
+      "id": "LIMAS-SUD-1777",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-29-07-117Z_a9f070da",
+      "completedAt": "2026-11-26T12:29:32.443Z"
+    },
+    {
+      "id": "LIMAS-SUD-1778",
+      "run": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60",
+      "completedAt": "2026-11-26T12:39:28.248Z"
+    },
+    {
+      "id": "LIMAS-SUD-1782",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "completedAt": "2026-11-26T12:30:14.996Z"
+    },
+    {
+      "id": "LIMAS-SUD-1787",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "completedAt": "2026-11-26T12:50:23.967Z"
+    },
+    {
+      "id": "LIMAS-SUD-1791",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "completedAt": "2026-11-26T12:50:23.967Z"
+    },
+    {
+      "id": "LIMAS-SUD-1795",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "completedAt": "2026-11-26T12:50:23.967Z"
+    },
+    {
+      "id": "LIMAS-SUD-1796",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "completedAt": "2026-11-26T12:30:14.996Z"
+    },
+    {
+      "id": "LIMAS-SUD-1798",
+      "run": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "completedAt": "2026-11-26T12:30:14.996Z"
+    },
+    {
+      "id": "LIMAS-SUD-1806",
+      "run": "test-runs/office-repair-20261126/reports/RPT-017_2026-11-26T12-30-25-272Z_c4b45f88",
+      "completedAt": "2026-11-26T12:30:43.715Z"
+    }
+  ],
+  "packages": [
+    {
+      "file": "reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d/Complete-Suite-Test-Report.zip",
+      "bytes": 59071324,
+      "sha256": "ea49348c42e279c62c89ad74c1ee7a2536b0cb9f9b8fc998fba452daca71148b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649/Complete-Suite-Test-Report.zip",
+      "bytes": 130667214,
+      "sha256": "205c55254938bfbd69e6ee3092cb18d221be394da2ec817188bdb9e930450ab0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T08-58-29-750Z_c92dede3/Complete-Suite-Test-Report.zip",
+      "bytes": 39968355,
+      "sha256": "4a76f3cdf94053d0ecaa22a5a5120bd6f08658f40c3cc5a787b06ec54916b32a",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-58-29-750Z_c92dede3",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T08-59-49-448Z_caef7196/Complete-Suite-Test-Report.zip",
+      "bytes": 28411604,
+      "sha256": "49b367318326a2a2319e543b3aabe2c3cb42570790ff7ec719fab6250eeb00e0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-59-49-448Z_caef7196",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666/Complete-Suite-Test-Report.zip",
+      "bytes": 138481215,
+      "sha256": "0ee8b862d87f9a1cd5c32107eafc58f1b104c633f16848c79ecf5211f3906cff",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T09-45-36-600Z_dd95af66/Complete-Suite-Test-Report.zip",
+      "bytes": 39448932,
+      "sha256": "b1c5fe56acfefbe6e49cd2ebddff350db9793f542d38958a9a594f2bee3986e0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-45-36-600Z_dd95af66",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29/Complete-Suite-Test-Report.zip",
+      "bytes": 202990266,
+      "sha256": "5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c/Complete-Suite-Test-Report.zip",
+      "bytes": 116584745,
+      "sha256": "cb3eae186a1b981485884d99f789ebb06d10eb64fe5a70136f90efc8c094e5b0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T13-22-21-594Z_78122709/Complete-Suite-Test-Report.zip",
+      "bytes": 124942983,
+      "sha256": "716efd9872a3b487f448efc46f86001f14b428c616848aac68a64314c8537d80",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b/Complete-Suite-Test-Report.zip",
+      "bytes": 180089771,
+      "sha256": "630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c/Complete-Suite-Test-Report.zip",
+      "bytes": 122892621,
+      "sha256": "99f0b1c296d0b687c87b0b76a2173e4722195800064ec54c3dbdfdc851c3d980",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428/Complete-Suite-Test-Report.zip",
+      "bytes": 67798672,
+      "sha256": "ce24d94b5fb2d7c3ca86d378fd0ae660f6ba92605e0dd54f55de5a56a62783d5",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T12-48-26-670Z_9fbbae26/Complete-Suite-Test-Report.zip",
+      "bytes": 23133257,
+      "sha256": "119e46f563209ee8eba91c7ad60045c75b643542172c3e2359c2440ae06fa730",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T12-48-26-670Z_9fbbae26",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T13-08-22-162Z_58a81c52/Complete-Suite-Test-Report.zip",
+      "bytes": 33721584,
+      "sha256": "9e28b784c9c58d53edcf23b4c4904cda5a3976b69e261338091cb79dde66f412",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T13-08-22-162Z_58a81c52",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08/Complete-Suite-Test-Report.zip",
+      "bytes": 367466319,
+      "sha256": "ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T09-39-43-051Z_6101cff5/Complete-Suite-Test-Report.zip",
+      "bytes": 29559826,
+      "sha256": "cfb0276d418f6a9f9f5cc3db803080643011ecdd90e522e57edb0e8ebb409013",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-39-43-051Z_6101cff5",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T12-48-47-305Z_35564435/Complete-Suite-Test-Report.zip",
+      "bytes": 112059709,
+      "sha256": "f0e58346533db0ffabf14b5a086ea1ffdfe7c638cb9e1dc9b8e3e335a8802efa",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T13-09-12-531Z_bbfce71f/Complete-Suite-Test-Report.zip",
+      "bytes": 18841384,
+      "sha256": "a036db581ae0e230d8e91f76592328f9fcbfcd3d0b9d04ccab7c46bac412b507",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T13-09-12-531Z_bbfce71f",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec/Complete-Suite-Test-Report.zip",
+      "bytes": 39972307,
+      "sha256": "cef59b264382d966b9d5034743d5927ef2a9c5382ffc7eebf5468840d16c41b8",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-40-05-300Z_921b14ec",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-42-38-392Z_55fd9e88/Complete-Suite-Test-Report.zip",
+      "bytes": 18255915,
+      "sha256": "22e51386b4aff4c5fa4076e61d8e5da787f894e9aa78e1d3498626f0f5c88f17",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-42-38-392Z_55fd9e88",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d/Complete-Suite-Test-Report.zip",
+      "bytes": 181338010,
+      "sha256": "ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e/Complete-Suite-Test-Report.zip",
+      "bytes": 171438099,
+      "sha256": "80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac/Complete-Suite-Test-Report.zip",
+      "bytes": 310448662,
+      "sha256": "bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3/Complete-Suite-Test-Report.zip",
+      "bytes": 341065762,
+      "sha256": "11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd/Complete-Suite-Test-Report.zip",
+      "bytes": 183749768,
+      "sha256": "6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33/Complete-Suite-Test-Report.zip",
+      "bytes": 104242956,
+      "sha256": "23897f346ccd8a0bf725771c58d7914d292b77ae2e6dea9b2cb7cbc8962719b6",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T10-00-52-588Z_4eb3d177/Complete-Suite-Test-Report.zip",
+      "bytes": 32236438,
+      "sha256": "f77a321315a8d74d5b1e49c866e778e30a252c1137dae9cd678901bd8d3d4f58",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-00-52-588Z_4eb3d177",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada/Complete-Suite-Test-Report.zip",
+      "bytes": 60274121,
+      "sha256": "679e4d1e393fbfdefd6103a2d0c245aa06371856da320e20631c3945d9b7aa6b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T12-49-30-594Z_1fb28f39/Complete-Suite-Test-Report.zip",
+      "bytes": 25721587,
+      "sha256": "b893a43b16a64039409d3ee203d9f42bda0aaee66af888e767d0bf301e25dcc8",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T12-49-30-594Z_1fb28f39",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T13-23-33-381Z_6d9d8f92/Complete-Suite-Test-Report.zip",
+      "bytes": 28829926,
+      "sha256": "41238e2fcc19a645412f23418a95bb03da8d772bdfb40c1814e8d47aa3fe251d",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T13-23-33-381Z_6d9d8f92",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4/Complete-Suite-Test-Report.zip",
+      "bytes": 75958500,
+      "sha256": "2d4c04f575ca7b52add60cb1db573386157af7004b9ffa0828367a5b4367f70d",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81/Complete-Suite-Test-Report.zip",
+      "bytes": 189237563,
+      "sha256": "111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e/Complete-Suite-Test-Report.zip",
+      "bytes": 101438518,
+      "sha256": "ae8b8e20bd4c5e50074d4ae8e5a5e36c235825176be59e141a69d2ef21770ade",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T10-05-19-728Z_9c0901d3/Complete-Suite-Test-Report.zip",
+      "bytes": 32088649,
+      "sha256": "3bb5d6d19346451332ace916cbe1cf9a9332553c56b0d7fb80942212bd3fd79a",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T10-05-19-728Z_9c0901d3",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T13-11-48-363Z_38e918dd/Complete-Suite-Test-Report.zip",
+      "bytes": 6293441,
+      "sha256": "1b558582b17ba85f48429e856165e617eec29b1b0a28ef2012a67242017901c7",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T13-11-48-363Z_38e918dd",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-009_2026-11-26T12-15-50-573Z_3bbe4742/Complete-Suite-Test-Report.zip",
+      "bytes": 15528978,
+      "sha256": "c94ee2a1cef37fe3eb2df0157c7211a454d9ddf288cd8287aa818fe63ab4c3c4",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-009_2026-11-26T12-15-50-573Z_3bbe4742",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7/Complete-Suite-Test-Report.zip",
+      "bytes": 52640770,
+      "sha256": "13bf2ffd65c2cc182f7a7a7e5f9d424014f1a12b72e174757e3e3fd7ec4f79ee",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-010_2026-11-26T13-12-02-965Z_58ee8e34/Complete-Suite-Test-Report.zip",
+      "bytes": 17204875,
+      "sha256": "f44e28e89a897844f81a16cb81a435b670fdd534a0f2da615521e354b9d8c0fe",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T13-12-02-965Z_58ee8e34",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657/Complete-Suite-Test-Report.zip",
+      "bytes": 148313506,
+      "sha256": "e01c456bf7ffd846cdcbd5ec2d8860a7ed84f3a16e93f8981e9a6fd636c275d9",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-011_2026-11-26T12-33-38-597Z_2c743a1d/Complete-Suite-Test-Report.zip",
+      "bytes": 24938816,
+      "sha256": "fc1ab070ede3a94d2024d51a277b74b0af36463202944003ab2ceceeeefbd3b3",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-33-38-597Z_2c743a1d",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e/Complete-Suite-Test-Report.zip",
+      "bytes": 47634908,
+      "sha256": "6a3de325d17de24d5d58b4d9d8ab01cf7ca542776530dcb6f8f2c0e32b29afe2",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T13-19-34-895Z_3b43ec5e",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48/Complete-Suite-Test-Report.zip",
+      "bytes": 322340980,
+      "sha256": "d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7/Complete-Suite-Test-Report.zip",
+      "bytes": 324095495,
+      "sha256": "989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T13-20-15-603Z_fe13493e/Complete-Suite-Test-Report.zip",
+      "bytes": 20355396,
+      "sha256": "3e9a4263809945ba42258efa9419f41d9c2c1ed05b96aa288837781fe28ae59d",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-20-15-603Z_fe13493e",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272/Complete-Suite-Test-Report.zip",
+      "bytes": 319847551,
+      "sha256": "898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48/Complete-Suite-Test-Report.zip",
+      "bytes": 266969431,
+      "sha256": "69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946/Complete-Suite-Test-Report.zip",
+      "bytes": 83589926,
+      "sha256": "1da7e1c9d613af18aa0b70cc87e9a6cf029f7ac3300a2d1bd4469cc0b9cacce1",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e/Complete-Suite-Test-Report.zip",
+      "bytes": 66745857,
+      "sha256": "f552fe99ff77e822ed03864555ba07261ec9b760320d3912eea2e20ee82c067b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4/Complete-Suite-Test-Report.zip",
+      "bytes": 25259294,
+      "sha256": "95d1fdbb1b9c42c5e411f9763a58ef3e16e9635b4bd7bad3f66cbf008bcca807",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-37-45-479Z_c86cacd4",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-015_2026-11-26T12-29-07-117Z_a9f070da/Complete-Suite-Test-Report.zip",
+      "bytes": 41191949,
+      "sha256": "451d47ab9fbf62c382b7d8f9343a4ccdbb8e398b76a05a8ff850b42ff637fd36",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-29-07-117Z_a9f070da",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60/Complete-Suite-Test-Report.zip",
+      "bytes": 37080730,
+      "sha256": "a75320a7b16a2ac932f604b80c9098a56b3cb8c1acc7258f198f1b36da016e85",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-015_2026-11-26T12-38-37-552Z_47cfdd60",
+      "split": false
+    },
+    {
+      "file": "reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780/Complete-Suite-Test-Report.zip",
+      "bytes": 92438528,
+      "sha256": "2cdd780d81efb6a511a52a1a2868e2995d144aa8c5f5f388391156211e8c29a1",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f/Complete-Suite-Test-Report.zip",
+      "bytes": 61916470,
+      "sha256": "1286a0e4fc670cd9947b22ee7e561984a790e58ffdc7ce7a3ec6026d07c89006",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "split": true
+    },
+    {
+      "file": "reports/RPT-017_2026-11-26T12-30-25-272Z_c4b45f88/Complete-Suite-Test-Report.zip",
+      "bytes": 20667422,
+      "sha256": "4ed44bba80e3d652c354b4c98f54dcb2868940e5f74ed8420e3be227535f2b52",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-017_2026-11-26T12-30-25-272Z_c4b45f88",
+      "split": false
+    },
+    {
+      "file": "standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7/Complete-Suite-Test-Report.zip",
+      "bytes": 131917630,
+      "sha256": "d15fd54fbf800344e84d042bdeb758741ce456d2d6fd42e368158b3bd0aada3f",
+      "sourceRun": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "split": true
+    },
+    {
+      "file": "standard-license-configurations/SLC-001_2026-11-26T08-26-41-858Z_fde38aa4/Complete-Suite-Test-Report.zip",
+      "bytes": 20368262,
+      "sha256": "de7c4e44bde1d920931f932f7fabe84a4a5ce8180e4e6ac20bab21ee85b515ba",
+      "sourceRun": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-26-41-858Z_fde38aa4",
+      "split": false
+    },
+    {
+      "file": "system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92/Complete-Suite-Test-Report.zip",
+      "bytes": 368971299,
+      "sha256": "c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "split": true
+    },
+    {
+      "file": "system-users/SYU-001_2026-11-26T13-20-47-837Z_a22232e1/Complete-Suite-Test-Report.zip",
+      "bytes": 31576255,
+      "sha256": "c95d65ab660a1b4f84f66006db4e40ac13068313cdfbf34a01605cd1402d5362",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T13-20-47-837Z_a22232e1",
+      "split": false
+    },
+    {
+      "file": "system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64/Complete-Suite-Test-Report.zip",
+      "bytes": 317467295,
+      "sha256": "1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "split": true
+    },
+    {
+      "file": "system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d/Complete-Suite-Test-Report.zip",
+      "bytes": 280051464,
+      "sha256": "cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "split": true
+    },
+    {
+      "file": "system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c/Complete-Suite-Test-Report.zip",
+      "bytes": 64970543,
+      "sha256": "c2a87f9fb06363896c0343f150fe6a1cec097b7435566512494d7f49b7609e3d",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c",
+      "split": true
+    },
+    {
+      "file": "user-groups/UGR-004_2026-11-26T08-33-49-313Z_49b6441f/Complete-Suite-Test-Report.zip",
+      "bytes": 48522132,
+      "sha256": "bb93a6515dbee900a91252518cf41e253c5ebb5b12cd2547b1e5f97a27f16882",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-004_2026-11-26T08-33-49-313Z_49b6441f",
+      "split": false
+    },
+    {
+      "file": "user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4/Complete-Suite-Test-Report.zip",
+      "bytes": 76441495,
+      "sha256": "9270df27e4adb0545f5d083f89537d47b4272395a4a767941d14e99602359fca",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4",
+      "split": true
+    },
+    {
+      "file": "user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a/Complete-Suite-Test-Report.zip",
+      "bytes": 66010474,
+      "sha256": "70ee91f2613b75ab36b521ade591109eacd8a03d1fd454835481ceaa81fa2e0c",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a",
+      "split": true
+    },
+    {
+      "file": "user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7/Complete-Suite-Test-Report.zip",
+      "bytes": 66018109,
+      "sha256": "e3c155ba871569641f438ab07ba15562a0c8679ee1be9573b92f5c79e4192ea0",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7",
+      "split": true
+    }
+  ],
+  "officeOnlyEvidence": "Results for office-only cases are documented; original office-laptop media is not recreated by this upload.",
+  "currentDisposition": {
+    "cases": 531,
+    "passed": 446,
+    "failed": 18,
+    "skipped": 67
+  }
+}

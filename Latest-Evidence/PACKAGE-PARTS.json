@@ -1,0 +1,1072 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "file": "reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d/Complete-Suite-Test-Report.zip",
+      "bytes": 59071324,
+      "sha256": "ea49348c42e279c62c89ad74c1ee7a2536b0cb9f9b8fc998fba452daca71148b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-002_2026-11-26T08-48-42-376Z_1da9353d",
+      "parts": [
+        {
+          "file": ".parts/ea49348c42e279c62c89ad74c1ee7a2536b0cb9f9b8fc998fba452daca71148b/001.part",
+          "bytes": 50331648,
+          "sha256": "db87446a3111c41e37bac134e15acfe234ab454572aafa6ce83ebb8eacb97f7a"
+        },
+        {
+          "file": ".parts/ea49348c42e279c62c89ad74c1ee7a2536b0cb9f9b8fc998fba452daca71148b/002.part",
+          "bytes": 8739676,
+          "sha256": "fffe5c6bea9969d065fdaa751d5ba98757a7960a44032793436354979db95e14"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649/Complete-Suite-Test-Report.zip",
+      "bytes": 130667214,
+      "sha256": "205c55254938bfbd69e6ee3092cb18d221be394da2ec817188bdb9e930450ab0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T08-54-29-396Z_9a9e9649",
+      "parts": [
+        {
+          "file": ".parts/205c55254938bfbd69e6ee3092cb18d221be394da2ec817188bdb9e930450ab0/001.part",
+          "bytes": 50331648,
+          "sha256": "bf5aef19120b84bdd004fe440b99d1f898520295103d84ccb1aca6370545fcad"
+        },
+        {
+          "file": ".parts/205c55254938bfbd69e6ee3092cb18d221be394da2ec817188bdb9e930450ab0/002.part",
+          "bytes": 50331648,
+          "sha256": "8f245fc4d2e9975b550f401711517a80bfd04b42a8a20886626c639cd7596ea4"
+        },
+        {
+          "file": ".parts/205c55254938bfbd69e6ee3092cb18d221be394da2ec817188bdb9e930450ab0/003.part",
+          "bytes": 30003918,
+          "sha256": "3abc77ce9ca374b7016c13d0901a411e543d7e92404a018c41482be3ee6a3447"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666/Complete-Suite-Test-Report.zip",
+      "bytes": 138481215,
+      "sha256": "0ee8b862d87f9a1cd5c32107eafc58f1b104c633f16848c79ecf5211f3906cff",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T09-16-19-119Z_2d150666",
+      "parts": [
+        {
+          "file": ".parts/0ee8b862d87f9a1cd5c32107eafc58f1b104c633f16848c79ecf5211f3906cff/001.part",
+          "bytes": 50331648,
+          "sha256": "437f4c9573067f06002e97bd3c24489dc0991e86aa29a08b03f07603b7e54049"
+        },
+        {
+          "file": ".parts/0ee8b862d87f9a1cd5c32107eafc58f1b104c633f16848c79ecf5211f3906cff/002.part",
+          "bytes": 50331648,
+          "sha256": "8568195cb768e33a2cfb8bac7e6c666f817c7ae405925e706e9620a88510e8c2"
+        },
+        {
+          "file": ".parts/0ee8b862d87f9a1cd5c32107eafc58f1b104c633f16848c79ecf5211f3906cff/003.part",
+          "bytes": 37817919,
+          "sha256": "8d312a2223bd3fe33ba81df01aa4895e4c57c38342f98fd340083446c2a443e2"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29/Complete-Suite-Test-Report.zip",
+      "bytes": 202990266,
+      "sha256": "5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T12-58-17-026Z_55e4ab29",
+      "parts": [
+        {
+          "file": ".parts/5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db/001.part",
+          "bytes": 50331648,
+          "sha256": "fb8594ad2a76f0515bb6b9253796b3a94da5019a686c7b89f885d0dbbdde7018"
+        },
+        {
+          "file": ".parts/5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db/002.part",
+          "bytes": 50331648,
+          "sha256": "7dfe76734fb00dbc4d5e816015394868edfd9b81ccc47a50c3d0a7c1dab47108"
+        },
+        {
+          "file": ".parts/5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db/003.part",
+          "bytes": 50331648,
+          "sha256": "7c6de6de0030030b604af6fc8b74695c60870ee28749366fd0d956668e32bc36"
+        },
+        {
+          "file": ".parts/5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db/004.part",
+          "bytes": 50331648,
+          "sha256": "51b1a3d0fc88148e31956edd6ff68862ac262ce6f3fdd7e54219d649ecb0a834"
+        },
+        {
+          "file": ".parts/5fa945d1d7164b2a0f12fb5b50fca0c51968e181fb4d79396770a95eaaaec0db/005.part",
+          "bytes": 1663674,
+          "sha256": "3889743115de33e16d56b0b21f03a910469581c73669cb332287ad7487111779"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c/Complete-Suite-Test-Report.zip",
+      "bytes": 116584745,
+      "sha256": "cb3eae186a1b981485884d99f789ebb06d10eb64fe5a70136f90efc8c094e5b0",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-07-18-367Z_12190f1c",
+      "parts": [
+        {
+          "file": ".parts/cb3eae186a1b981485884d99f789ebb06d10eb64fe5a70136f90efc8c094e5b0/001.part",
+          "bytes": 50331648,
+          "sha256": "68f08216786518846a3da452803d09777542f54029e4f12bc8970e7b82f36cf1"
+        },
+        {
+          "file": ".parts/cb3eae186a1b981485884d99f789ebb06d10eb64fe5a70136f90efc8c094e5b0/002.part",
+          "bytes": 50331648,
+          "sha256": "5b296b0d2554383708ffab98c01b372feb2f71cf42f8c8a789b3c3e832feb8ea"
+        },
+        {
+          "file": ".parts/cb3eae186a1b981485884d99f789ebb06d10eb64fe5a70136f90efc8c094e5b0/003.part",
+          "bytes": 15921449,
+          "sha256": "162b25a972194e542d701edefd3979d5344568401f6a804ae8ea1eafc5666eb1"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-003_2026-11-26T13-22-21-594Z_78122709/Complete-Suite-Test-Report.zip",
+      "bytes": 124942983,
+      "sha256": "716efd9872a3b487f448efc46f86001f14b428c616848aac68a64314c8537d80",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-003_2026-11-26T13-22-21-594Z_78122709",
+      "parts": [
+        {
+          "file": ".parts/716efd9872a3b487f448efc46f86001f14b428c616848aac68a64314c8537d80/001.part",
+          "bytes": 50331648,
+          "sha256": "0c3e5ec759e3abad14afc775b8903610bb9676a1bc6dc997713e1c93d81d299a"
+        },
+        {
+          "file": ".parts/716efd9872a3b487f448efc46f86001f14b428c616848aac68a64314c8537d80/002.part",
+          "bytes": 50331648,
+          "sha256": "fd3800118ac1b336c82824a6174a5d5a3153ffad15f63f71f84816d249fc3f75"
+        },
+        {
+          "file": ".parts/716efd9872a3b487f448efc46f86001f14b428c616848aac68a64314c8537d80/003.part",
+          "bytes": 24279687,
+          "sha256": "76cb6b92d915fc41a66d0d16188edd95053ee2602da5b65af91e7baa53279464"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b/Complete-Suite-Test-Report.zip",
+      "bytes": 180089771,
+      "sha256": "630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-06-25-582Z_1517299b",
+      "parts": [
+        {
+          "file": ".parts/630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b/001.part",
+          "bytes": 50331648,
+          "sha256": "06787545a0dfc8624cc79d7ec691eecb024fe6fe8adbfbe7fe43d18d93a2de18"
+        },
+        {
+          "file": ".parts/630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b/002.part",
+          "bytes": 50331648,
+          "sha256": "6610f169686d9253d95f1635dd6b7b16ede375634dbe5488b9aa05360516381a"
+        },
+        {
+          "file": ".parts/630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b/003.part",
+          "bytes": 50331648,
+          "sha256": "f217af364e388ebf938d6f244d19979f5fb12a91ad51edb0c1286de2d41438fd"
+        },
+        {
+          "file": ".parts/630c014961627fda26a72372695f5bb0c8658ecbca0fee44d45dd7a5e194681b/004.part",
+          "bytes": 29094827,
+          "sha256": "7b09ce5b0c899f9b30c04f8f151ccfb6e6a6bc531fbef68878949be0cd97c4e3"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c/Complete-Suite-Test-Report.zip",
+      "bytes": 122892621,
+      "sha256": "99f0b1c296d0b687c87b0b76a2173e4722195800064ec54c3dbdfdc851c3d980",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-21-10-928Z_80b1547c",
+      "parts": [
+        {
+          "file": ".parts/99f0b1c296d0b687c87b0b76a2173e4722195800064ec54c3dbdfdc851c3d980/001.part",
+          "bytes": 50331648,
+          "sha256": "33208d1c65acaef6b5233cf64400c90d48c03340abe304179efe297d85f59acf"
+        },
+        {
+          "file": ".parts/99f0b1c296d0b687c87b0b76a2173e4722195800064ec54c3dbdfdc851c3d980/002.part",
+          "bytes": 50331648,
+          "sha256": "15994a25306d437461ede854be2205d6b8249ba48e4e7c6adbc129fb9e8d0a33"
+        },
+        {
+          "file": ".parts/99f0b1c296d0b687c87b0b76a2173e4722195800064ec54c3dbdfdc851c3d980/003.part",
+          "bytes": 22229325,
+          "sha256": "9a5c0d7302390de211cfa81645e62d6adcb821a2527c78e8ca69cd75fc97e351"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428/Complete-Suite-Test-Report.zip",
+      "bytes": 67798672,
+      "sha256": "ce24d94b5fb2d7c3ca86d378fd0ae660f6ba92605e0dd54f55de5a56a62783d5",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-004_2026-11-26T09-39-10-257Z_1f724428",
+      "parts": [
+        {
+          "file": ".parts/ce24d94b5fb2d7c3ca86d378fd0ae660f6ba92605e0dd54f55de5a56a62783d5/001.part",
+          "bytes": 50331648,
+          "sha256": "0d13d352f764b44bd4f737d0d548124d0e9e1e0a6123d5776c6bb71c15ccfa41"
+        },
+        {
+          "file": ".parts/ce24d94b5fb2d7c3ca86d378fd0ae660f6ba92605e0dd54f55de5a56a62783d5/002.part",
+          "bytes": 17467024,
+          "sha256": "1dedb5c10b498f6a3b9488f29d2417a7930f5a691c061cc1ebd51eb1e87619db"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08/Complete-Suite-Test-Report.zip",
+      "bytes": 367466319,
+      "sha256": "ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T09-34-55-903Z_4279de08",
+      "parts": [
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/001.part",
+          "bytes": 50331648,
+          "sha256": "cc2bb1a1766dbac8b35a1dd72d4ac7fc7537713ba1f94a2ab087cd2659d9c23e"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/002.part",
+          "bytes": 50331648,
+          "sha256": "79a6def01c7df10bd5db7ebc87034a411c9a83f5d4567370184185e4f3f660a6"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/003.part",
+          "bytes": 50331648,
+          "sha256": "25f2dc070563083f96a67da28bdcbf624277b3ebd0173015bfe4b9debf9ac686"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/004.part",
+          "bytes": 50331648,
+          "sha256": "6fe7dd60b67c3fc640379f8da4a0d062dc46ee1c64e53bcc704903603641a7ac"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/005.part",
+          "bytes": 50331648,
+          "sha256": "f100a8a020b34ebbf9e98ca037d491857b0ec3622680fc73ee4942a7b33a8ea8"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/006.part",
+          "bytes": 50331648,
+          "sha256": "7c7120c47a0f161151b466e03a5eb682c2b9d47ecd73abb1f0941a43029deccb"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/007.part",
+          "bytes": 50331648,
+          "sha256": "9e304546a6b2c241c3a73ce600d4df36a3994202117d0df9eff2306c9d526d09"
+        },
+        {
+          "file": ".parts/ee69ac09dc5718b603e77c78010ae1028652548f9a3fb3b9f3b0f91823694de3/008.part",
+          "bytes": 15144783,
+          "sha256": "b8ec6f161127776865183d06186e8abb8c0eec7213dd189656f332cad3a47464"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-005_2026-11-26T12-48-47-305Z_35564435/Complete-Suite-Test-Report.zip",
+      "bytes": 112059709,
+      "sha256": "f0e58346533db0ffabf14b5a086ea1ffdfe7c638cb9e1dc9b8e3e335a8802efa",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-005_2026-11-26T12-48-47-305Z_35564435",
+      "parts": [
+        {
+          "file": ".parts/f0e58346533db0ffabf14b5a086ea1ffdfe7c638cb9e1dc9b8e3e335a8802efa/001.part",
+          "bytes": 50331648,
+          "sha256": "d2e0b394dd8cf1e7378cb69d17b360093554fbecf16980496e5144771fdfe449"
+        },
+        {
+          "file": ".parts/f0e58346533db0ffabf14b5a086ea1ffdfe7c638cb9e1dc9b8e3e335a8802efa/002.part",
+          "bytes": 50331648,
+          "sha256": "61e3e4da3946307c4e4f7811f2d1c05a84adaa82afd1a0ae5314bba72feea096"
+        },
+        {
+          "file": ".parts/f0e58346533db0ffabf14b5a086ea1ffdfe7c638cb9e1dc9b8e3e335a8802efa/003.part",
+          "bytes": 11396413,
+          "sha256": "012cf71a67e3b455599f99df387d0d2dfe4abb31e4b29825b71797da2dfa0b10"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d/Complete-Suite-Test-Report.zip",
+      "bytes": 181338010,
+      "sha256": "ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-46-30-154Z_f48c4d6d",
+      "parts": [
+        {
+          "file": ".parts/ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93/001.part",
+          "bytes": 50331648,
+          "sha256": "76bbafce7352f1c09142f1cb9f984239a007bc54593a535eae96d90bd4d83ca4"
+        },
+        {
+          "file": ".parts/ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93/002.part",
+          "bytes": 50331648,
+          "sha256": "9451f417d439fc8bbb56f205e180a7c80bc45ba957ec7ca360b4c9fe4398f2d4"
+        },
+        {
+          "file": ".parts/ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93/003.part",
+          "bytes": 50331648,
+          "sha256": "f8ddf2b9a2d4e67941bfab5f7ae55e4d9df89029f9abb57d513eeb38e0899195"
+        },
+        {
+          "file": ".parts/ef70e88fcf03c0aa3fc59750d76e7f76c52cfdfbd4f581cf4f5c9625eac63f93/004.part",
+          "bytes": 30343066,
+          "sha256": "fe7a312dd342f5c8ea176547b43e03fc9ba05d52620e6644d77d9674d98cf5b2"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e/Complete-Suite-Test-Report.zip",
+      "bytes": 171438099,
+      "sha256": "80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T09-53-54-717Z_05d31e5e",
+      "parts": [
+        {
+          "file": ".parts/80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b/001.part",
+          "bytes": 50331648,
+          "sha256": "6edc9577f20452cb52acfc3f3f9109c62547f5aa2ca7e271dcc921bc52d63c4f"
+        },
+        {
+          "file": ".parts/80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b/002.part",
+          "bytes": 50331648,
+          "sha256": "e44b9a151da53ca9f1bb43ce0a0d5e664b6ede0a2696edf1453aeacfa3148d3d"
+        },
+        {
+          "file": ".parts/80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b/003.part",
+          "bytes": 50331648,
+          "sha256": "14c4f93f55c95d7f8ed690dfa826cc7fb760474d13a904ba9a14b8e3584d498a"
+        },
+        {
+          "file": ".parts/80732c3a7f6f6d9cbbe8943d98866912533a3416c320e0c039ae94970cea164b/004.part",
+          "bytes": 20443155,
+          "sha256": "ee663c71aa1ebe1674e2122681b5631084b88adf93168333388dde37df6c5c4c"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac/Complete-Suite-Test-Report.zip",
+      "bytes": 310448662,
+      "sha256": "bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-00-52-674Z_0606c9ac",
+      "parts": [
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/001.part",
+          "bytes": 50331648,
+          "sha256": "0ab074b0755114c536a6a4dd051f8b4ce2068580191e5a755d6983904e392705"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/002.part",
+          "bytes": 50331648,
+          "sha256": "98a5bd6f65af564e881b20f3a15f9c30ab3b384b915808ffcbf63be67c3af61d"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/003.part",
+          "bytes": 50331648,
+          "sha256": "4ff1156f248850b6bcee456a5e9dcb4412aaa80ad6d70d3d7c54768f52ec8e80"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/004.part",
+          "bytes": 50331648,
+          "sha256": "c796363f6fd71299377396e31dda2853b7bbc13712d8dbf571d9f48a0b284d9c"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/005.part",
+          "bytes": 50331648,
+          "sha256": "8e0cb9e1dce6a0dca00862a1bdf355c7ff49e4206964c27317da56dd20e4c647"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/006.part",
+          "bytes": 50331648,
+          "sha256": "8b91a5e8e185587adeb8bb33e79b51d0d2511363c6224b80aa85ad162b651624"
+        },
+        {
+          "file": ".parts/bb0ced654e32ed75144080c1ebf30b33f0edca2e008eca80bfd26944af137ece/007.part",
+          "bytes": 8458774,
+          "sha256": "05e45473384bc9ca1c0025f8ef9757756c16188589b892d8d87a8b2f28978e2c"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3/Complete-Suite-Test-Report.zip",
+      "bytes": 341065762,
+      "sha256": "11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-006_2026-11-26T13-09-31-331Z_d94243d3",
+      "parts": [
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/001.part",
+          "bytes": 50331648,
+          "sha256": "a622caba549ed87f759ddc5de0515eb5701b4d64df61aa27062b058a8f6a3cac"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/002.part",
+          "bytes": 50331648,
+          "sha256": "9335ba61e765d60519149fd570774913a3bc96e643d6a751db93860ccbd67f7d"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/003.part",
+          "bytes": 50331648,
+          "sha256": "afcf49627fc1feac64a367ce1e72f612fa50b5701cea4ac24b6b63fdbb363e31"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/004.part",
+          "bytes": 50331648,
+          "sha256": "f2aa7d70555568cbf617c522c86c024cf8c0b1e3f326749aafd5b7742feb7755"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/005.part",
+          "bytes": 50331648,
+          "sha256": "b8b174dcd94bfa6f9d8d276f62337c715cd1138b0611a53bd9fe5986028c5b3d"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/006.part",
+          "bytes": 50331648,
+          "sha256": "8d7b6a463790e1dd45b717016725f3895071f4053a3860a901c6cb9f4193b188"
+        },
+        {
+          "file": ".parts/11ca3d827b673dab1637433c6665b37bbd543a82537ae322cbb408bf205cbaf2/007.part",
+          "bytes": 39075874,
+          "sha256": "9ac34baaa1844afcbaeb5980814c224102ef6b0e30c3ac39ba7999f760737e1d"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd/Complete-Suite-Test-Report.zip",
+      "bytes": 183749768,
+      "sha256": "6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-48-49-635Z_2ff0c8cd",
+      "parts": [
+        {
+          "file": ".parts/6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606/001.part",
+          "bytes": 50331648,
+          "sha256": "16ba86dd6afc60d70106953dcefecdb7c0d58385c914103f9bc2ef5f500228a6"
+        },
+        {
+          "file": ".parts/6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606/002.part",
+          "bytes": 50331648,
+          "sha256": "88cf220ffe430dd3fffafc4313acffcda200c527de3e950fd576d816acf3e91a"
+        },
+        {
+          "file": ".parts/6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606/003.part",
+          "bytes": 50331648,
+          "sha256": "b1f142f833322c77c9d759e0bd966e8ca4c24b3a2d714993d81cb001282afe6c"
+        },
+        {
+          "file": ".parts/6bc220cb0e8b839b6444b097589908505943f6faa4198d84445008dad7dfc606/004.part",
+          "bytes": 32754824,
+          "sha256": "29a78d7774584ed71488152146111ee106207bdbe5b0370ef0f88c3be96b0ea9"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33/Complete-Suite-Test-Report.zip",
+      "bytes": 104242956,
+      "sha256": "23897f346ccd8a0bf725771c58d7914d292b77ae2e6dea9b2cb7cbc8962719b6",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T09-55-53-805Z_4b6eaf33",
+      "parts": [
+        {
+          "file": ".parts/23897f346ccd8a0bf725771c58d7914d292b77ae2e6dea9b2cb7cbc8962719b6/001.part",
+          "bytes": 50331648,
+          "sha256": "a47f26a14227f4cb3e6f51bc505acf586d57a5d9530ea2af4637c163dfbf7193"
+        },
+        {
+          "file": ".parts/23897f346ccd8a0bf725771c58d7914d292b77ae2e6dea9b2cb7cbc8962719b6/002.part",
+          "bytes": 50331648,
+          "sha256": "e6e24ac3bc16ae3d515ce12cc4c64d2b5694c4f260d0f6036ad6af41fca3db50"
+        },
+        {
+          "file": ".parts/23897f346ccd8a0bf725771c58d7914d292b77ae2e6dea9b2cb7cbc8962719b6/003.part",
+          "bytes": 3579660,
+          "sha256": "1324aa09905a9046d0583e63e66d12bdd53bff268441f191955afbc51ca30cdf"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada/Complete-Suite-Test-Report.zip",
+      "bytes": 60274121,
+      "sha256": "679e4d1e393fbfdefd6103a2d0c245aa06371856da320e20631c3945d9b7aa6b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-007_2026-11-26T10-09-53-681Z_91cfcada",
+      "parts": [
+        {
+          "file": ".parts/679e4d1e393fbfdefd6103a2d0c245aa06371856da320e20631c3945d9b7aa6b/001.part",
+          "bytes": 50331648,
+          "sha256": "a6908ba7fc2f2e78427fad999b6229b094ec45b5bad40af834a9b33c2f484e17"
+        },
+        {
+          "file": ".parts/679e4d1e393fbfdefd6103a2d0c245aa06371856da320e20631c3945d9b7aa6b/002.part",
+          "bytes": 9942473,
+          "sha256": "f00ce9d0d04ed5a1eaf46262096b55cdee93714c973f43dbfe52154c51fb50bb"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4/Complete-Suite-Test-Report.zip",
+      "bytes": 75958500,
+      "sha256": "2d4c04f575ca7b52add60cb1db573386157af7004b9ffa0828367a5b4367f70d",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-42-56-336Z_cdb6f5e4",
+      "parts": [
+        {
+          "file": ".parts/2d4c04f575ca7b52add60cb1db573386157af7004b9ffa0828367a5b4367f70d/001.part",
+          "bytes": 50331648,
+          "sha256": "47d9557e57a7b97b9da71782811cc62eb9b7da912d87920bfd6504bc2448e8a9"
+        },
+        {
+          "file": ".parts/2d4c04f575ca7b52add60cb1db573386157af7004b9ffa0828367a5b4367f70d/002.part",
+          "bytes": 25626852,
+          "sha256": "7cf8c4cbda95ca523d1198464d2ab87e4bf2ae93b0351b595864ce3c4c004c52"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81/Complete-Suite-Test-Report.zip",
+      "bytes": 189237563,
+      "sha256": "111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-50-33-525Z_f1d9bc81",
+      "parts": [
+        {
+          "file": ".parts/111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189/001.part",
+          "bytes": 50331648,
+          "sha256": "341b4a703c14f4d0af24d9ca759727a555757e93f072ecb54bf914ed24afaa58"
+        },
+        {
+          "file": ".parts/111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189/002.part",
+          "bytes": 50331648,
+          "sha256": "384c64717321946f001fd08fb92f47467b7d138e00d882e2467411e3f37826b2"
+        },
+        {
+          "file": ".parts/111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189/003.part",
+          "bytes": 50331648,
+          "sha256": "6210b22ad173610e40bd2734164197da6fe6318b6bb1a26ef12920b7ed6c518f"
+        },
+        {
+          "file": ".parts/111033db62666a7001e9572031aab16973c9951fbbc212803239bfbb6ae13189/004.part",
+          "bytes": 38242619,
+          "sha256": "22a7bcec4282b37ea3d9bc10c839b1ef011c7b5508ba86b03e8d9cb190a53e2d"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e/Complete-Suite-Test-Report.zip",
+      "bytes": 101438518,
+      "sha256": "ae8b8e20bd4c5e50074d4ae8e5a5e36c235825176be59e141a69d2ef21770ade",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-008_2026-11-26T09-56-56-665Z_300b3a6e",
+      "parts": [
+        {
+          "file": ".parts/ae8b8e20bd4c5e50074d4ae8e5a5e36c235825176be59e141a69d2ef21770ade/001.part",
+          "bytes": 50331648,
+          "sha256": "8cdad577a848a254bf7ddbc51f597acf2492cbd7164cb4dc8fd31953fa9ad726"
+        },
+        {
+          "file": ".parts/ae8b8e20bd4c5e50074d4ae8e5a5e36c235825176be59e141a69d2ef21770ade/002.part",
+          "bytes": 50331648,
+          "sha256": "056e2f50abdaeb0f657072558603fae9f1246a7128b42a4a3ba4f9d025c81dd9"
+        },
+        {
+          "file": ".parts/ae8b8e20bd4c5e50074d4ae8e5a5e36c235825176be59e141a69d2ef21770ade/003.part",
+          "bytes": 775222,
+          "sha256": "5095a1dd50c1a177d16cdfed7e2de9f989a9736f9dcc146df0eda127126e3390"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7/Complete-Suite-Test-Report.zip",
+      "bytes": 52640770,
+      "sha256": "13bf2ffd65c2cc182f7a7a7e5f9d424014f1a12b72e174757e3e3fd7ec4f79ee",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-010_2026-11-26T12-16-10-464Z_801a51c7",
+      "parts": [
+        {
+          "file": ".parts/13bf2ffd65c2cc182f7a7a7e5f9d424014f1a12b72e174757e3e3fd7ec4f79ee/001.part",
+          "bytes": 50331648,
+          "sha256": "8b7b3d0ea16f2d010e00b822cb5b012fd6c2b54a464b38d09b4a3655a8863fde"
+        },
+        {
+          "file": ".parts/13bf2ffd65c2cc182f7a7a7e5f9d424014f1a12b72e174757e3e3fd7ec4f79ee/002.part",
+          "bytes": 2309122,
+          "sha256": "b61f0f042286038c6e5c73547e7532522a6a2cd06819d99826dd7cf159a4ae68"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657/Complete-Suite-Test-Report.zip",
+      "bytes": 148313506,
+      "sha256": "e01c456bf7ffd846cdcbd5ec2d8860a7ed84f3a16e93f8981e9a6fd636c275d9",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-011_2026-11-26T12-18-50-527Z_3614b657",
+      "parts": [
+        {
+          "file": ".parts/e01c456bf7ffd846cdcbd5ec2d8860a7ed84f3a16e93f8981e9a6fd636c275d9/001.part",
+          "bytes": 50331648,
+          "sha256": "5afcb502e209afc56ea43c263bc42c477c297040ee783b489eba417442c00c36"
+        },
+        {
+          "file": ".parts/e01c456bf7ffd846cdcbd5ec2d8860a7ed84f3a16e93f8981e9a6fd636c275d9/002.part",
+          "bytes": 50331648,
+          "sha256": "ef17e8766068c17adf57a94fa7fa52d9cf8de81a1e7d913ac63fb8f9bad562bf"
+        },
+        {
+          "file": ".parts/e01c456bf7ffd846cdcbd5ec2d8860a7ed84f3a16e93f8981e9a6fd636c275d9/003.part",
+          "bytes": 47650210,
+          "sha256": "5a12fe2a7e24a3f2638b8f06720b72395a748ddabecc7fb3833785e3b14165ca"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48/Complete-Suite-Test-Report.zip",
+      "bytes": 322340980,
+      "sha256": "d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-21-41-993Z_1ff7cf48",
+      "parts": [
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/001.part",
+          "bytes": 50331648,
+          "sha256": "b51177d60276eff038274f1d1e78ffc2bfff78dbe6435f6bd91d631d29773749"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/002.part",
+          "bytes": 50331648,
+          "sha256": "037b0a2e54cfb25df50d2696ab4524c87b780eb80afcd5f2be0ce06abba16623"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/003.part",
+          "bytes": 50331648,
+          "sha256": "d28b2b4a0ed068f256febf7616b11cddf3de5fb6c58a1a6715f33a80135853de"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/004.part",
+          "bytes": 50331648,
+          "sha256": "d72997e76f78ec2586e8da0ef872ebb0780cbe99ebd560bda8ea211031896d50"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/005.part",
+          "bytes": 50331648,
+          "sha256": "4e93c3beafd0d9a85abf4baebe8ee471ed20b0850e394ddc25ff3425fcda47ca"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/006.part",
+          "bytes": 50331648,
+          "sha256": "9676c12e016b19618d5d1122c12ba87e92f16fe1b4355b72a59c45d0e3c651cb"
+        },
+        {
+          "file": ".parts/d5e3ee5ef4d5754b9c6e99ff6f3ba19be20171339817fb71441105d43544ff64/007.part",
+          "bytes": 20351092,
+          "sha256": "65bddb3a060cd9bc6e87a1722aa81b579154a5d1c1c814eb332a2d9a3f8fb00b"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7/Complete-Suite-Test-Report.zip",
+      "bytes": 324095495,
+      "sha256": "989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T12-34-10-301Z_6adc34d7",
+      "parts": [
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/001.part",
+          "bytes": 50331648,
+          "sha256": "a17f178257c072ae6d274163cc1e36ee2ec5bfb2fdc55b0ebf898ba415c18678"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/002.part",
+          "bytes": 50331648,
+          "sha256": "5a7ec540eaeaed169f7d2f96168e2ef565a2ea7dd8c3fb1eddfeb4097b56fabc"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/003.part",
+          "bytes": 50331648,
+          "sha256": "55a5befb65ac2eac7645ff57d22d9458115614146fe66775ab7ef0c9e8eee198"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/004.part",
+          "bytes": 50331648,
+          "sha256": "e3ad3d9257bd652a100076ebe8a25687c57d9784d97ad28faac4cbacba0a7b3f"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/005.part",
+          "bytes": 50331648,
+          "sha256": "12bf4ce9bf3ff24e7ee4d796359f40bc4a4486bb4bc88fa82d16ee33651b8ef9"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/006.part",
+          "bytes": 50331648,
+          "sha256": "6fd120b7db8fcd7052bdd28291a402cae2fdfa3e9285c3dc2092151122a959cc"
+        },
+        {
+          "file": ".parts/989d282edc6e5f521266a2bd638994d3255a4b9b235916e52ecbab6ba82c9299/007.part",
+          "bytes": 22105607,
+          "sha256": "ac388deeafbed7b5f486ff94a3c42b806678d9aae276f5627a4aaad682e483d7"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272/Complete-Suite-Test-Report.zip",
+      "bytes": 319847551,
+      "sha256": "898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-012_2026-11-26T13-24-00-592Z_6ca20272",
+      "parts": [
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/001.part",
+          "bytes": 50331648,
+          "sha256": "dd2ade20c7e7017e17a404fc0d3d94185395b84cf011c8d34f4347420dcc3a0c"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/002.part",
+          "bytes": 50331648,
+          "sha256": "8824939e01e52724c9f73285b00acb80d975f315055e60e1190d27058e5c9ec6"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/003.part",
+          "bytes": 50331648,
+          "sha256": "b8d2425df1375914fa8b90d149bacf496e990f8432786f40fa7668a3a2aa6f6e"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/004.part",
+          "bytes": 50331648,
+          "sha256": "62f14a78f717d512dd02fad80777b00beb3d5ad410f1e8784f1b46452539dc4b"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/005.part",
+          "bytes": 50331648,
+          "sha256": "c83d2350c7f80b0071019b84bbe4373d6024bbed552ee57bd1e7b3ceafd9c2be"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/006.part",
+          "bytes": 50331648,
+          "sha256": "4aa8158cda3f2c095b661e240c659815b2db2efb37ef114938d284c434239814"
+        },
+        {
+          "file": ".parts/898ffc7b558c98f83ba52c26ca242a260db540e7ce5916decc564258541fbbbf/007.part",
+          "bytes": 17857663,
+          "sha256": "e68d0ecfc368d33e96baa77dd7c050a0a8f6883072f83c9cf508dbb7fa8d9e81"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48/Complete-Suite-Test-Report.zip",
+      "bytes": 266969431,
+      "sha256": "69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-25-00-854Z_6e94eb48",
+      "parts": [
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/001.part",
+          "bytes": 50331648,
+          "sha256": "f85a4998aa60f8a2fb1d318c74e9e2982e222c6d1a2b586ae1f323962227357c"
+        },
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/002.part",
+          "bytes": 50331648,
+          "sha256": "a0d33c12ec1338fd193d65bada7e3454c435b24e78b3a9eec35909f4f5b084e7"
+        },
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/003.part",
+          "bytes": 50331648,
+          "sha256": "ea58ec432e88238086f2ef9a9724badcfed46413bbf3cb1777ae84f20aa8ff34"
+        },
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/004.part",
+          "bytes": 50331648,
+          "sha256": "9ae0662e9e1f7cea28f001585efc90a5a139884db60b6b4b795587a6f71680d5"
+        },
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/005.part",
+          "bytes": 50331648,
+          "sha256": "2f7b538887f11fc27dfc3eb640439458af79630c9b96ec8b150a58f8b9fcaa28"
+        },
+        {
+          "file": ".parts/69af3997365326baf0c88b6ef07e8c8ba21c061f564a381ada3663c0e7364818/006.part",
+          "bytes": 15311191,
+          "sha256": "c500ec7f1cd1084dd01b757ae9ae2ebdd97051418860fb8152f7692b4d50fb6b"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946/Complete-Suite-Test-Report.zip",
+      "bytes": 83589926,
+      "sha256": "1da7e1c9d613af18aa0b70cc87e9a6cf029f7ac3300a2d1bd4469cc0b9cacce1",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-013_2026-11-26T12-36-49-034Z_bc460946",
+      "parts": [
+        {
+          "file": ".parts/1da7e1c9d613af18aa0b70cc87e9a6cf029f7ac3300a2d1bd4469cc0b9cacce1/001.part",
+          "bytes": 50331648,
+          "sha256": "9dbfeedf2238fd61f7a7e19ac09746b444cce25e715aaeb90aeb20a031a24795"
+        },
+        {
+          "file": ".parts/1da7e1c9d613af18aa0b70cc87e9a6cf029f7ac3300a2d1bd4469cc0b9cacce1/002.part",
+          "bytes": 33258278,
+          "sha256": "ef483ac694efe47992b39aabed745fd12cac579fc8c7465ecff27ae393e084b0"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e/Complete-Suite-Test-Report.zip",
+      "bytes": 66745857,
+      "sha256": "f552fe99ff77e822ed03864555ba07261ec9b760320d3912eea2e20ee82c067b",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-014_2026-11-26T12-28-21-354Z_1df9404e",
+      "parts": [
+        {
+          "file": ".parts/f552fe99ff77e822ed03864555ba07261ec9b760320d3912eea2e20ee82c067b/001.part",
+          "bytes": 50331648,
+          "sha256": "17ea80e967e60a8f43f306b4b3abdc55dd87cc235991de3617d4eadfe600d991"
+        },
+        {
+          "file": ".parts/f552fe99ff77e822ed03864555ba07261ec9b760320d3912eea2e20ee82c067b/002.part",
+          "bytes": 16414209,
+          "sha256": "f9d50ae73a920693f030ca45f6d6afe18c5d307d25b428d72cd531c169fdbcab"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780/Complete-Suite-Test-Report.zip",
+      "bytes": 92438528,
+      "sha256": "2cdd780d81efb6a511a52a1a2868e2995d144aa8c5f5f388391156211e8c29a1",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-29-38-157Z_d3c15780",
+      "parts": [
+        {
+          "file": ".parts/2cdd780d81efb6a511a52a1a2868e2995d144aa8c5f5f388391156211e8c29a1/001.part",
+          "bytes": 50331648,
+          "sha256": "edeb67cc3f9bf6bcb80984dd3019b7e17de74d6ad5da8b63c96090556e706a8d"
+        },
+        {
+          "file": ".parts/2cdd780d81efb6a511a52a1a2868e2995d144aa8c5f5f388391156211e8c29a1/002.part",
+          "bytes": 42106880,
+          "sha256": "f61751309d605f786cd0defad0e756494f8739b6bec459df3dfc6ea64590c606"
+        }
+      ]
+    },
+    {
+      "file": "reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f/Complete-Suite-Test-Report.zip",
+      "bytes": 61916470,
+      "sha256": "1286a0e4fc670cd9947b22ee7e561984a790e58ffdc7ce7a3ec6026d07c89006",
+      "sourceRun": "test-runs/office-repair-20261126/reports/RPT-016_2026-11-26T12-49-56-865Z_1e15287f",
+      "parts": [
+        {
+          "file": ".parts/1286a0e4fc670cd9947b22ee7e561984a790e58ffdc7ce7a3ec6026d07c89006/001.part",
+          "bytes": 50331648,
+          "sha256": "ede05a1bdcf3089684617754bcdd69ee2c4ef84f85b93ee0e158055394efccaf"
+        },
+        {
+          "file": ".parts/1286a0e4fc670cd9947b22ee7e561984a790e58ffdc7ce7a3ec6026d07c89006/002.part",
+          "bytes": 11584822,
+          "sha256": "9bbc559020304ea5a9726c32bfe2358abde13d36b2db50d1a993f537e9f0a229"
+        }
+      ]
+    },
+    {
+      "file": "standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7/Complete-Suite-Test-Report.zip",
+      "bytes": 131917630,
+      "sha256": "d15fd54fbf800344e84d042bdeb758741ce456d2d6fd42e368158b3bd0aada3f",
+      "sourceRun": "test-runs/office-repair-20261126/standard-license-configurations/SLC-001_2026-11-26T08-23-06-234Z_559974b7",
+      "parts": [
+        {
+          "file": ".parts/d15fd54fbf800344e84d042bdeb758741ce456d2d6fd42e368158b3bd0aada3f/001.part",
+          "bytes": 50331648,
+          "sha256": "c234bda18b12a2f04270df9e3cd7edec79df0e06da8cbdd041da370b52826209"
+        },
+        {
+          "file": ".parts/d15fd54fbf800344e84d042bdeb758741ce456d2d6fd42e368158b3bd0aada3f/002.part",
+          "bytes": 50331648,
+          "sha256": "df1518c7a823f6a00d7149dff2a9d37a76bd5ccd4cf5448be39b2e035b1922ff"
+        },
+        {
+          "file": ".parts/d15fd54fbf800344e84d042bdeb758741ce456d2d6fd42e368158b3bd0aada3f/003.part",
+          "bytes": 31254334,
+          "sha256": "d451406a0ffcf3ba76db0a231cf915c545eb7c6f7c379b7575cf30865377963c"
+        }
+      ]
+    },
+    {
+      "file": "system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92/Complete-Suite-Test-Report.zip",
+      "bytes": 368971299,
+      "sha256": "c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-001_2026-11-26T08-38-53-884Z_7ce83c92",
+      "parts": [
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/001.part",
+          "bytes": 50331648,
+          "sha256": "bb481d07c1599c4129be5819a02fa6a19f525c4121ffb2366e528f291c5d27cc"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/002.part",
+          "bytes": 50331648,
+          "sha256": "544ff3976f5214cd0ac0d1c8ed614414f4c006f518068a08af5951e291aee69f"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/003.part",
+          "bytes": 50331648,
+          "sha256": "2430c3635ef11d94bf1260f9f4cf2fdc04ac91cd28abaf22480bf46e170f8d16"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/004.part",
+          "bytes": 50331648,
+          "sha256": "66ec31eefb112d9d2e09329d5a567bf179e76f5249b7f25e2c8c0dd8ee449a49"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/005.part",
+          "bytes": 50331648,
+          "sha256": "49a830c609aaaf72590ffcccb3f3ce48461f5ca412b243c35b1bb473a51b075e"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/006.part",
+          "bytes": 50331648,
+          "sha256": "f97522c4a6b4b6d742307ea836fc94e874e0ab2ca1f5fcdc85a285b6ba222a32"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/007.part",
+          "bytes": 50331648,
+          "sha256": "88c1edd47ac0e3d95f23b706805235428e37b088c33ab0017a3f2a851a009661"
+        },
+        {
+          "file": ".parts/c60ec413c03a7e9a7a007a3f881a28f4cb17e74d0f30cd23bd578f7b4a70ebfa/008.part",
+          "bytes": 16649763,
+          "sha256": "e02c2eb39289cb74aaebb4c0b31a056b5bc69f0e3d770ae4b226c4f304cc4781"
+        }
+      ]
+    },
+    {
+      "file": "system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64/Complete-Suite-Test-Report.zip",
+      "bytes": 317467295,
+      "sha256": "1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-002_2026-11-26T08-42-31-108Z_026f4b64",
+      "parts": [
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/001.part",
+          "bytes": 50331648,
+          "sha256": "62fc83f0e072fdfb270e990e50ddcacec70b7c27640ae3a0f77a69b0044e8834"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/002.part",
+          "bytes": 50331648,
+          "sha256": "00cf6e6fa061826114ab1b44794921a577fe86cd3c6c06e60f68044fd9b18031"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/003.part",
+          "bytes": 50331648,
+          "sha256": "68249910ed3d39880792cbb34fb717e613cf3ff2d3082d942891621ba1bc1ed4"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/004.part",
+          "bytes": 50331648,
+          "sha256": "7cbe8c4a40b85a635dc67bc9b96ee9184d9763fd4c7c8702769937404ca1397e"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/005.part",
+          "bytes": 50331648,
+          "sha256": "8d108afbad5cefd8a2c53a5df2d0d0f463272e434ed0068157634dab4db09467"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/006.part",
+          "bytes": 50331648,
+          "sha256": "7982eb003cc5934c0b682363645fc971ae33045b1bb9c496701ab7d24517c8ce"
+        },
+        {
+          "file": ".parts/1d34f3ba8967b95a627ebbe1e91312f8edef2666aa2eb9eb14f286e5f4437170/007.part",
+          "bytes": 15477407,
+          "sha256": "eb3115d8ad796485c2fc052e6b69dd6baefb6d830016322924117f607044f91b"
+        }
+      ]
+    },
+    {
+      "file": "system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d/Complete-Suite-Test-Report.zip",
+      "bytes": 280051464,
+      "sha256": "cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-46-11-048Z_c698612d",
+      "parts": [
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/001.part",
+          "bytes": 50331648,
+          "sha256": "69d876e17fbe38aa594ac49e2af2078dfbaed8184fefdbf5a27b41aa98b6d984"
+        },
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/002.part",
+          "bytes": 50331648,
+          "sha256": "4fa8d8cc9c4fe768ec215570e240d871b51b9b8edf76c01b09916202066ab066"
+        },
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/003.part",
+          "bytes": 50331648,
+          "sha256": "e7e91e717dd1ee2cf36f3762056e0858c35fad76af903865937c6f6cee9d555e"
+        },
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/004.part",
+          "bytes": 50331648,
+          "sha256": "bd2d834aa0817b572bc19f9565e28c83717d50219a6ac472b7424395fbda1d4a"
+        },
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/005.part",
+          "bytes": 50331648,
+          "sha256": "5ac7f877a7ab719bdddc08b394cb579274762726498e936da20aa13f0883bd1c"
+        },
+        {
+          "file": ".parts/cc0eb5423f041ab8f15a1968edb259870e627509147758cf3f94d30e065c8fcc/006.part",
+          "bytes": 28393224,
+          "sha256": "ba902aea0094b3e7dab4f0113ed78d90292c60818757de311b90db8b4c76cc3d"
+        }
+      ]
+    },
+    {
+      "file": "system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c/Complete-Suite-Test-Report.zip",
+      "bytes": 64970543,
+      "sha256": "c2a87f9fb06363896c0343f150fe6a1cec097b7435566512494d7f49b7609e3d",
+      "sourceRun": "test-runs/office-repair-20261126/system-users/SYU-003_2026-11-26T08-51-34-008Z_2441ab8c",
+      "parts": [
+        {
+          "file": ".parts/c2a87f9fb06363896c0343f150fe6a1cec097b7435566512494d7f49b7609e3d/001.part",
+          "bytes": 50331648,
+          "sha256": "ff9ca256955eacf52302e3815792a46cfa05b45a73585656d7acf2bc6370d245"
+        },
+        {
+          "file": ".parts/c2a87f9fb06363896c0343f150fe6a1cec097b7435566512494d7f49b7609e3d/002.part",
+          "bytes": 14638895,
+          "sha256": "d53fcb87bbbc956433cacff3312578731adf542cffcacd9d3b3b3af0a7695923"
+        }
+      ]
+    },
+    {
+      "file": "user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4/Complete-Suite-Test-Report.zip",
+      "bytes": 76441495,
+      "sha256": "9270df27e4adb0545f5d083f89537d47b4272395a4a767941d14e99602359fca",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-005_2026-11-26T08-35-35-606Z_e20ac9c4",
+      "parts": [
+        {
+          "file": ".parts/9270df27e4adb0545f5d083f89537d47b4272395a4a767941d14e99602359fca/001.part",
+          "bytes": 50331648,
+          "sha256": "d441b9d0505f744fbf3dc8e726af239a10d4c1288ee5d6aa99d3665e83969b09"
+        },
+        {
+          "file": ".parts/9270df27e4adb0545f5d083f89537d47b4272395a4a767941d14e99602359fca/002.part",
+          "bytes": 26109847,
+          "sha256": "8db304329805ac9c462c5609f31c481de43e13dab05c461cfc57d8f072c0181e"
+        }
+      ]
+    },
+    {
+      "file": "user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a/Complete-Suite-Test-Report.zip",
+      "bytes": 66010474,
+      "sha256": "70ee91f2613b75ab36b521ade591109eacd8a03d1fd454835481ceaa81fa2e0c",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-006_2026-11-26T08-38-18-521Z_ba01a74a",
+      "parts": [
+        {
+          "file": ".parts/70ee91f2613b75ab36b521ade591109eacd8a03d1fd454835481ceaa81fa2e0c/001.part",
+          "bytes": 50331648,
+          "sha256": "9de565b27b21f22798c616b7122db83a89b9bcfd661e52b691b6aa5c4ea58747"
+        },
+        {
+          "file": ".parts/70ee91f2613b75ab36b521ade591109eacd8a03d1fd454835481ceaa81fa2e0c/002.part",
+          "bytes": 15678826,
+          "sha256": "63105d92767a6dc22bd1c51e66a2270349846ff913a77b0c99846c6550d08717"
+        }
+      ]
+    },
+    {
+      "file": "user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7/Complete-Suite-Test-Report.zip",
+      "bytes": 66018109,
+      "sha256": "e3c155ba871569641f438ab07ba15562a0c8679ee1be9573b92f5c79e4192ea0",
+      "sourceRun": "test-runs/office-repair-20261126/user-groups/UGR-007_2026-11-26T08-40-30-491Z_aae0a7d7",
+      "parts": [
+        {
+          "file": ".parts/e3c155ba871569641f438ab07ba15562a0c8679ee1be9573b92f5c79e4192ea0/001.part",
+          "bytes": 50331648,
+          "sha256": "8156b33de4b4b5bef8edc62767157bc76ff08f0459b367bf7480d079b50a5a86"
+        },
+        {
+          "file": ".parts/e3c155ba871569641f438ab07ba15562a0c8679ee1be9573b92f5c79e4192ea0/002.part",
+          "bytes": 15686461,
+          "sha256": "5fe849fba664811fb04075678dacdff050c92368ca6810532faae8273c022ea9"
+        }
+      ]
+    }
+  ]
+}
