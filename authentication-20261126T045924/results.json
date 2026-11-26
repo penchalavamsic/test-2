@@ -1,0 +1,4224 @@
+{
+  "createdAt": "2026-11-26T04:59:27.147Z",
+  "suite": "authentication",
+  "profile": "SUPER_USER_ADMIN_USER",
+  "partial": false,
+  "counts": {
+    "passed": 33
+  },
+  "cases": [
+    {
+      "id": "LIMAS-AUTH-009",
+      "title": "should display KPIT and LIMAS logos on login page",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-0",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-0"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-009"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-009"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-009-branding-visibility.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-navigate-to-limas-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-kpit-and-limas-branding-logos.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-010",
+      "title": "should show Sign In button enabled on login page",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-1",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-1"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-010"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-010"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-010-signin-enabled.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-limas-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-sign-in-button-visible-and-enabled.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-011",
+      "title": "should navigate to Keycloak login page after clicking Sign In",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-2",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-2"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-011"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-011"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-011-signin-navigate-keycloak.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-limas-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-click-limas-sign-in.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "03-verify-keycloak-heading-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-012",
+      "title": "should display Keycloak Sign In heading",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-3",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-3"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-012"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-012"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-012-keycloak-heading.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-limas-and-click-sign-in.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-keycloak-heading.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-013",
+      "title": "should display Username or email field on Keycloak",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-4",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-4"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-013"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-013"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-013-keycloak-username-visible.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-username-field-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-014",
+      "title": "should have Username or email field enabled",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-5",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-5"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-014"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-014"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-014-keycloak-username-enabled.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-username-field-visible-and-enabled.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-015",
+      "title": "should display Password field on Keycloak",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-6",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-6"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-015"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-015"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-015-keycloak-password-visible.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-password-field-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-016",
+      "title": "should mask Password field and show Show password toggle",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-7",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-7"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-016"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-016"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-016-keycloak-password-masked.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-password-type-is-password-and-toggle-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-017",
+      "title": "should display Sign In button on Keycloak login page",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-8",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-8"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-017"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-017"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-017-keycloak-signin-visible.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-keycloak-sign-in-button-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-018",
+      "title": "should have Keycloak Sign In button enabled",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-9",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-9"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-018"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-018"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-018-keycloak-signin-enabled.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-keycloak-sign-in-button-visible-and-enabled.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-019",
+      "title": "should complete OAuth callback and redirect to dashboard",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-10",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-10"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-019"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-019"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-019-oauth-callback.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-via-keycloak-login.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-dashboard-route-and-heading.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-020",
+      "title": "should display System User Dashboard heading after login",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-11",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-11"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-020"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-020"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-020-dashboard-heading.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-via-keycloak-login.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-system-user-dashboard-heading.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-021",
+      "title": "should remain at /system-user-dashboard without redirect loops",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-12",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-12"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-021"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-021"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-021-route-stability.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-and-verify-landing-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-route-stability-over-time.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-022",
+      "title": "should retain dashboard after page refresh",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-13",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-13"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-022"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-022"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-022-refresh-persistence.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-and-verify-dashboard.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-refresh-page-and-verify-session-persists.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-023",
+      "title": "should not bounce back to login after authentication",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-14",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-14"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-023"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-023"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-023-redirect-loop-absence.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-and-verify-landing.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-no-redirect-to-login-after-wait.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-024",
+      "title": "should display KPIT copyright notice on login page",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-15",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-15"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-024"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-024"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-024-footer-visibility.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-limas-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-copyright-notice.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-025",
+      "title": "should display Show password button on Keycloak login",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-16",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-16"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-025"
+        },
+        {
+          "type": "module",
+          "description": "Keycloak"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-025"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-025-show-password-toggle.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-open-keycloak-login-page.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-show-password-button-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-026",
+      "title": "should display user identity button in header after login",
+      "status": "passed",
+      "evidence": "r/001/index.html#test-17",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-17"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-026"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-026"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-026-user-button-visible.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "01-authenticate-via-keycloak-login.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "02-verify-user-identity-button-in-header.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-027",
+      "title": "should authenticate with valid credentials and land on dashboard",
+      "status": "passed",
+      "evidence": "r/002/index.html#test-0",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-18"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:20.088Z",
+          "evidence": "r/002/index.html#test-0"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-027"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-027"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-027-valid-username-valid-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-dashboard-heading-visible.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-028",
+      "title": "should reject login with valid username and invalid password",
+      "status": "passed",
+      "evidence": "r/003/index.html#test-0",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:50:47.559Z",
+          "evidence": "r/001/index.html#test-19"
+        },
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:56:20.088Z",
+          "evidence": "r/002/index.html#test-1"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:59:34.727Z",
+          "evidence": "r/003/index.html#test-0"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-028"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-028"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-028-valid-username-invalid-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-keystroke-password-char-036.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keystroke-password-char-037.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-keystroke-password-char-038.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-keystroke-password-char-039.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-keystroke-password-char-040.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-keystroke-password-char-041.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-keystroke-password-char-042.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-keystroke-password-char-043.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-044-keystroke-password-char-044.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-045-keystroke-password-char-045.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-046-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-047-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-048-error-feedback-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-049-keycloak-login-form-still-active.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-029",
+      "title": "should reject login with invalid username and valid password",
+      "status": "passed",
+      "evidence": "r/006/index.html#test-0",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-0"
+        },
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-0"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:59:54.360Z",
+          "evidence": "r/006/index.html#test-0"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-029"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-029"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-029-invalid-username-valid-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-keystroke-username-char-026.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-keystroke-username-char-027.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-username-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-username-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-username-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-username-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-username-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-keystroke-password-char-036.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keystroke-password-char-037.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-keystroke-password-char-038.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-keystroke-password-char-039.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-keystroke-password-char-040.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-keystroke-password-char-041.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-keystroke-password-char-042.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-044-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-045-error-feedback-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-046-keycloak-login-form-still-active.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-030",
+      "title": "should reject login with both credentials invalid",
+      "status": "passed",
+      "evidence": "r/006/index.html#test-1",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-1"
+        },
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-1"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:59:54.360Z",
+          "evidence": "r/006/index.html#test-1"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-030"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-030"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-030-invalid-username-invalid-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-keystroke-username-char-026.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-keystroke-username-char-027.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-username-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-username-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-username-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-username-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-username-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-keystroke-password-char-036.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keystroke-password-char-037.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-keystroke-password-char-038.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-keystroke-password-char-039.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-keystroke-password-char-040.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-keystroke-password-char-041.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-keystroke-password-char-042.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-keystroke-password-char-043.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-044-keystroke-password-char-044.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-045-keystroke-password-char-045.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-046-keystroke-password-char-046.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-047-keystroke-password-char-047.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-048-keystroke-password-char-048.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-049-keystroke-password-char-049.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-050-keystroke-password-char-050.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-051-keystroke-password-char-051.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-052-keystroke-password-char-052.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-053-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-054-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-055-error-feedback-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-056-keycloak-login-form-still-active.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-031",
+      "title": "should reject login with empty username and valid password",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-2",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-2"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-2"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-031"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-031"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-031-empty-username-valid-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "provider-adaptation",
+          "description": "Cognito requires a valid email before exposing the password. Verify rejection at the email gate."
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-032",
+      "title": "should reject login with valid username and empty password",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-3",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-3"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-3"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-032"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-032"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-032-valid-username-empty-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-left-empty.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-rejection-verified.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-033",
+      "title": "should reject login with both fields empty",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-4",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-4"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-4"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-033"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-033"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-033-empty-username-empty-password.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "provider-adaptation",
+          "description": "Cognito requires a valid email before exposing the password. Verify rejection at the email gate."
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-034",
+      "title": "should reject login when only username is provided",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-5",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-5"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-5"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-034"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-034"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-034-username-only-signin.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-rejection-verified.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-035",
+      "title": "should reject login when only password is provided",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-6",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-6"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-6"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-035"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-035"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-035-password-only-signin.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "provider-adaptation",
+          "description": "Cognito requires a valid email before exposing the password. Verify rejection at the email gate."
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-036",
+      "title": "should reject login with whitespace-only credentials",
+      "status": "passed",
+      "evidence": "r/005/index.html#test-7",
+      "attempts": [
+        {
+          "status": "failed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-7"
+        },
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:56:44.873Z",
+          "evidence": "r/005/index.html#test-7"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-036"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-036"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-036-whitespace-only-credentials.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "provider-adaptation",
+          "description": "Cognito requires a valid email before exposing the password. Verify rejection at the email gate."
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-037",
+      "title": "should login, sign out, and return to login page",
+      "status": "passed",
+      "evidence": "r/004/index.html#test-8",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-8"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-037"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-037"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-037-login-then-sign-out.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-dashboard-heading-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-login-page-restored-after-sign-out.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-038",
+      "title": "should login, sign out, and re-authenticate successfully",
+      "status": "passed",
+      "evidence": "r/004/index.html#test-9",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-9"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-038"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-038"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-038-re-login-after-sign-out.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-dashboard-heading-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-login-page-restored-after-sign-out.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-re-login-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-re-login-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-044-keystroke-username-char-044.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-045-keystroke-username-char-045.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-046-keystroke-username-char-046.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-047-keystroke-username-char-047.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-048-keystroke-username-char-048.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-049-keystroke-username-char-049.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-050-keystroke-username-char-050.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-051-keystroke-username-char-051.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-052-keystroke-username-char-052.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-053-keystroke-username-char-053.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-054-keystroke-username-char-054.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-055-keystroke-username-char-055.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-056-keystroke-username-char-056.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-057-keystroke-username-char-057.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-058-keystroke-username-char-058.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-059-keystroke-username-char-059.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-060-keystroke-username-char-060.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-061-keystroke-username-char-061.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-062-keystroke-username-char-062.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-063-keystroke-username-char-063.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-064-keystroke-username-char-064.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-065-re-login-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-066-re-login-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-067-keystroke-password-char-067.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-068-keystroke-password-char-068.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-069-keystroke-password-char-069.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-070-keystroke-password-char-070.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-071-keystroke-password-char-071.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-072-keystroke-password-char-072.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-073-keystroke-password-char-073.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-074-keystroke-password-char-074.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-075-re-login-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-076-re-login-credentials-submitted.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-077-dashboard-restored-after-re-login.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-039",
+      "title": "should complete five consecutive login → sign-out cycles",
+      "status": "passed",
+      "evidence": "r/004/index.html#test-10",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-10"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-039"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-039"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-039-five-cycle-login-signout.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-cycle-1-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-cycle-1-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-cycle-1-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-cycle-1-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-cycle-1-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-cycle-1-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-cycle-1-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-cycle-1-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-cycle-1-dashboard-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-cycle-1-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-cycle-1-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-cycle-1-sign-out-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-cycle-2-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-cycle-2-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-044-cycle-2-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-045-cycle-2-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-046-keystroke-username-char-046.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-047-keystroke-username-char-047.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-048-keystroke-username-char-048.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-049-keystroke-username-char-049.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-050-keystroke-username-char-050.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-051-keystroke-username-char-051.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-052-keystroke-username-char-052.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-053-keystroke-username-char-053.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-054-keystroke-username-char-054.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-055-keystroke-username-char-055.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-056-keystroke-username-char-056.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-057-keystroke-username-char-057.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-058-keystroke-username-char-058.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-059-keystroke-username-char-059.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-060-keystroke-username-char-060.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-061-keystroke-username-char-061.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-062-keystroke-username-char-062.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-063-keystroke-username-char-063.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-064-keystroke-username-char-064.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-065-keystroke-username-char-065.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-066-keystroke-username-char-066.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-067-cycle-2-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-068-cycle-2-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-069-keystroke-password-char-069.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-070-keystroke-password-char-070.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-071-keystroke-password-char-071.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-072-keystroke-password-char-072.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-073-keystroke-password-char-073.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-074-keystroke-password-char-074.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-075-keystroke-password-char-075.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-076-keystroke-password-char-076.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-077-cycle-2-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-078-cycle-2-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-079-cycle-2-dashboard-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-080-cycle-2-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-081-cycle-2-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-082-cycle-2-sign-out-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-083-cycle-3-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-084-cycle-3-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-085-cycle-3-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-086-cycle-3-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-087-keystroke-username-char-087.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-088-keystroke-username-char-088.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-089-keystroke-username-char-089.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-090-keystroke-username-char-090.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-091-keystroke-username-char-091.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-092-keystroke-username-char-092.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-093-keystroke-username-char-093.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-094-keystroke-username-char-094.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-095-keystroke-username-char-095.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-096-keystroke-username-char-096.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-097-keystroke-username-char-097.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-098-keystroke-username-char-098.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-099-keystroke-username-char-099.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-100-keystroke-username-char-100.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-101-keystroke-username-char-101.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-102-keystroke-username-char-102.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-103-keystroke-username-char-103.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-104-keystroke-username-char-104.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-105-keystroke-username-char-105.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-106-keystroke-username-char-106.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-107-keystroke-username-char-107.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-108-cycle-3-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-109-cycle-3-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-110-keystroke-password-char-110.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-111-keystroke-password-char-111.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-112-keystroke-password-char-112.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-113-keystroke-password-char-113.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-114-keystroke-password-char-114.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-115-keystroke-password-char-115.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-116-keystroke-password-char-116.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-117-keystroke-password-char-117.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-118-cycle-3-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-119-cycle-3-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-120-cycle-3-dashboard-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-121-cycle-3-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-122-cycle-3-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-123-cycle-3-sign-out-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-124-cycle-4-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-125-cycle-4-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-126-cycle-4-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-127-cycle-4-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-128-keystroke-username-char-128.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-129-keystroke-username-char-129.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-130-keystroke-username-char-130.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-131-keystroke-username-char-131.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-132-keystroke-username-char-132.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-133-keystroke-username-char-133.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-134-keystroke-username-char-134.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-135-keystroke-username-char-135.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-136-keystroke-username-char-136.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-137-keystroke-username-char-137.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-138-keystroke-username-char-138.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-139-keystroke-username-char-139.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-140-keystroke-username-char-140.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-141-keystroke-username-char-141.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-142-keystroke-username-char-142.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-143-keystroke-username-char-143.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-144-keystroke-username-char-144.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-145-keystroke-username-char-145.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-146-keystroke-username-char-146.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-147-keystroke-username-char-147.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-148-keystroke-username-char-148.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-149-cycle-4-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-150-cycle-4-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-151-keystroke-password-char-151.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-152-keystroke-password-char-152.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-153-keystroke-password-char-153.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-154-keystroke-password-char-154.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-155-keystroke-password-char-155.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-156-keystroke-password-char-156.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-157-keystroke-password-char-157.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-158-keystroke-password-char-158.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-159-cycle-4-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-160-cycle-4-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-161-cycle-4-dashboard-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-162-cycle-4-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-163-cycle-4-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-164-cycle-4-sign-out-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-165-cycle-5-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-166-cycle-5-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-167-cycle-5-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-168-cycle-5-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-169-keystroke-username-char-169.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-170-keystroke-username-char-170.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-171-keystroke-username-char-171.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-172-keystroke-username-char-172.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-173-keystroke-username-char-173.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-174-keystroke-username-char-174.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-175-keystroke-username-char-175.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-176-keystroke-username-char-176.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-177-keystroke-username-char-177.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-178-keystroke-username-char-178.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-179-keystroke-username-char-179.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-180-keystroke-username-char-180.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-181-keystroke-username-char-181.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-182-keystroke-username-char-182.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-183-keystroke-username-char-183.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-184-keystroke-username-char-184.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-185-keystroke-username-char-185.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-186-keystroke-username-char-186.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-187-keystroke-username-char-187.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-188-keystroke-username-char-188.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-189-keystroke-username-char-189.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-190-cycle-5-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-191-cycle-5-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-192-keystroke-password-char-192.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-193-keystroke-password-char-193.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-194-keystroke-password-char-194.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-195-keystroke-password-char-195.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-196-keystroke-password-char-196.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-197-keystroke-password-char-197.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-198-keystroke-password-char-198.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-199-keystroke-password-char-199.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-200-cycle-5-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-201-cycle-5-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-202-cycle-5-dashboard-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-203-cycle-5-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-204-cycle-5-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-205-cycle-5-sign-out-verified.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-040",
+      "title": "should block dashboard access after sign-out without re-authentication",
+      "status": "passed",
+      "evidence": "r/004/index.html#test-11",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-11"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-040"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-040"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-040-protected-content-inaccessible-after-signout.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-dashboard-access-verified.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-protected-route-navigation-attempted.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-protected-content-absence-verified.png"
+        }
+      ],
+      "skipReasons": []
+    },
+    {
+      "id": "LIMAS-AUTH-041",
+      "title": "should clear session state after sign-out and require re-authentication",
+      "status": "passed",
+      "evidence": "r/004/index.html#test-12",
+      "attempts": [
+        {
+          "status": "passed",
+          "startedAt": "2026-11-25T14:52:19.519Z",
+          "evidence": "r/004/index.html#test-12"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-041"
+        },
+        {
+          "type": "module",
+          "description": "Authentication"
+        },
+        {
+          "type": "accessProfile",
+          "description": "SUPER_USER_ADMIN_USER"
+        },
+        {
+          "type": "testId",
+          "description": "LIMAS-AUTH-041"
+        },
+        {
+          "type": "evidenceMode",
+          "description": "detailed"
+        },
+        {
+          "type": "planPath",
+          "description": "plans/authentication/LIMAS-AUTH-041-session-state-cleared-after-signout.md"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-001-login-page-loaded.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-002-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-003-keycloak-login-form-visible.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-004-username-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-005-keystroke-username-char-005.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-006-keystroke-username-char-006.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-007-keystroke-username-char-007.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-008-keystroke-username-char-008.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-009-keystroke-username-char-009.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-010-keystroke-username-char-010.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-011-keystroke-username-char-011.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-012-keystroke-username-char-012.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-013-keystroke-username-char-013.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-014-keystroke-username-char-014.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-015-keystroke-username-char-015.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-016-keystroke-username-char-016.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-017-keystroke-username-char-017.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-018-keystroke-username-char-018.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-019-keystroke-username-char-019.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-020-keystroke-username-char-020.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-021-keystroke-username-char-021.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-022-keystroke-username-char-022.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-023-keystroke-username-char-023.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-024-keystroke-username-char-024.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-025-keystroke-username-char-025.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-026-username-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-027-password-field-focused.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-028-keystroke-password-char-028.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-029-keystroke-password-char-029.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-030-keystroke-password-char-030.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-031-keystroke-password-char-031.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-032-keystroke-password-char-032.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-033-keystroke-password-char-033.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-034-keystroke-password-char-034.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-035-keystroke-password-char-035.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-036-password-entry-completed.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-037-keycloak-sign-in-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-038-authenticated-state-established.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-039-user-menu-opened.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-040-sign-out-clicked.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-041-browser-storage-cleared.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-042-dashboard-access-attempted-after-clearance.png"
+        },
+        {
+          "type": "screenshot",
+          "description": "step-043-authenticated-state-confirmed-unavailable.png"
+        }
+      ],
+      "skipReasons": []
+    }
+  ]
+}

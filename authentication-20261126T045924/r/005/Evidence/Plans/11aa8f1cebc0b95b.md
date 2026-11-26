@@ -1,0 +1,18 @@
+# Purpose
+
+Login: Valid username + empty password → Rejection
+
+# Preconditions
+
+Application URL is reachable.
+
+# Test Steps
+
+1. Open the application URL.
+2. Click "Sign In".
+3. Enter valid username, leave password empty.
+4. Submit.
+
+# Expected Final Result
+
+Login is rejected with error feedback.
