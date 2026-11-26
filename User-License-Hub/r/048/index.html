@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIMAS 3.0 Detailed Test Evidence Report — user-license-hub — ULH-024 — SUPER_USER_ADMIN_USER</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; max-width: 100%; margin: 0; overflow-x: hidden; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+
+.report-header { width: 100%; max-width: 100%; min-width: 0; background: #1a1a2e; color: #fff; padding: 24px; }
+.report-header h1 { margin: 0; max-width: 100%; white-space: normal; overflow-wrap: anywhere; word-break: normal; font-size: 1.4em; }
+
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; width: 100%; margin-top: 16px; }
+.summary-card { min-width: 0; max-width: 100%; overflow: hidden; background: rgba(255,255,255,0.1); border-radius: 8px; padding: 12px; text-align: center; }
+.summary-card .summary-value { max-width: 100%; white-space: normal; overflow-wrap: anywhere; word-break: break-word; text-align: center; line-height: 1.2; font-size: 1.6em; font-weight: bold; }
+.summary-card.profile .summary-value { font-size: clamp(15px, 1.8vw, 26px); }
+.summary-card .summary-label { font-size: 0.75em; opacity: 0.8; margin-top: 4px; }
+.summary-card.passed .summary-value { color: #4caf50; }
+.summary-card.failed .summary-value { color: #f44336; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+
+.test-card { background: #fff; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; }
+.test-card.failed { border-left: 4px solid #f44336; }
+.test-card.passed { border-left: 4px solid #4caf50; }
+
+.test-card-heading { display: grid; grid-template-columns: minmax(150px, auto) minmax(0, 1fr); align-items: start; gap: 16px; }
+.test-id-col { font-family: monospace; font-weight: 700; white-space: nowrap; }
+.test-title-col { min-width: 0; white-space: normal; overflow-wrap: anywhere; }
+
+.test-header { display: flex; align-items: center; padding: 12px 16px; cursor: pointer; gap: 12px; user-select: none; }
+.test-header:hover { background: #f0f0f0; }
+.test-status { padding: 2px 10px; border-radius: 12px; font-size: 0.75em; font-weight: bold; white-space: nowrap; }
+.test-status.passed { background: #e8f5e9; color: #2e7d32; }
+.test-status.failed { background: #ffebee; color: #c62828; }
+.test-duration { color: #666; font-size: 0.85em; min-width: 60px; text-align: right; white-space: nowrap; }
+.expand-icon { transition: transform 0.2s; }
+.test-card.expanded .expand-icon { transform: rotate(180deg); }
+.test-body { display: none; padding: 0 16px 16px; }
+.test-card.expanded .test-body { display: block; }
+
+.test-meta { display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 12px; font-size: 0.9em; color: #555; }
+.steps { margin: 12px 0; }
+.steps ol { padding-left: 24px; }
+.screenshots { margin: 16px 0; }
+.ss-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.ss-item { text-align: center; min-width: 0; }
+.ss-item img { width: 100%; border-radius: 4px; border: 1px solid #ddd; cursor: pointer; transition: transform 0.15s; }
+.ss-item img:hover { transform: scale(1.02); }
+.ss-item span { display: block; font-size: 0.8em; color: #666; margin-top: 4px; overflow-wrap: anywhere; }
+.video-container { margin: 16px 0; }
+.trace-section, .api-summary, .test-plan, .actual-result, .test-summary { margin: 16px 0; overflow-wrap: anywhere; }
+.final-ss { margin: 16px 0; }
+.final-ss img { border-radius: 4px; border: 1px solid #ddd; max-width: 100%; }
+.errors { background: #fff3e0; border: 1px solid #ff9800; border-radius: 4px; padding: 12px; margin: 16px 0; }
+.errors pre { font-size: 0.85em; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+.error-fields { list-style: none; padding: 0; margin: 0 0 10px; font-size: 0.9em; }
+.error-fields li { margin: 3px 0; overflow-wrap: anywhere; }
+.ind-link { margin: 16px 0; padding: 12px; background: #e3f2fd; border-radius: 4px; font-size: 0.9em; }
+h3 { font-size: 1.1em; margin: 12px 0 6px; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+h4 { font-size: 1em; margin: 10px 0 4px; color: #555; }
+code { background: #f4f4f4; padding: 1px 4px; border-radius: 3px; font-size: 0.9em; white-space: pre-wrap; word-break: break-word; }
+pre { background: #f4f4f4; padding: 8px; border-radius: 4px; font-size: 0.85em; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+p { margin: 4px 0; }
+a { color: #1976d2; }
+.no-evidence { background: #f9f9f9; border: 1px dashed #ccc; border-radius: 4px; padding: 12px; margin: 12px 0; color: #888; font-style: italic; }
+.report-container { width: 100%; max-width: 100%; min-width: 0; }
+
+@media (max-width: 700px) {
+  .test-card-heading { grid-template-columns: 1fr; gap: 6px; }
+  .test-header { flex-wrap: wrap; }
+  .summary-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.skipped { border-left: 4px solid #ff9800; }
+.test-status.skipped { background: #fff3e0; color: #e65100; }
+.auth-blocked { border-left: 4px solid #e91e63; }
+.test-status.auth-blocked { background: #fce4ec; color: #c2185b; }
+.teardown-timeout { border-left: 4px solid #9c27b0; }
+.test-status.teardown-timeout { background: #f3e5f5; color: #6a1b9a; }
+.section-desc { color: #666; font-size: 0.9em; margin-bottom: 16px; }
+.infra-badge { background: #e3f2fd; color: #1565c0; border-radius: 4px; padding: 2px 8px; font-size: 0.75em; margin-left: 8px; }
+</style>
+</head>
+<body>
+<div class="report-header">
+  <h1>LIMAS 3.0 Detailed Test Evidence Report — user-license-hub — ULH-024 — SUPER_USER_ADMIN_USER</h1>
+  <div class="summary-grid">
+    <div class="summary-card"><div class="summary-value">20</div><div class="summary-label">Functional Total</div></div>
+    <div class="summary-card passed"><div class="summary-value">7</div><div class="summary-label">Passed</div></div>
+    <div class="summary-card failed"><div class="summary-value">4</div><div class="summary-label">Failed</div></div>
+    
+    
+    <div class="summary-card"><div class="summary-value">9</div><div class="summary-label">Skipped</div></div>
+    <div class="summary-card"><div class="summary-value">Not captured</div><div class="summary-label">Duration</div></div>
+    <div class="summary-card"><div class="summary-value">2026-11-26</div><div class="summary-label">Date</div></div>
+    <div class="summary-card"><div class="summary-value">Edge</div><div class="summary-label">Browser</div></div>
+    <div class="summary-card profile"><div class="summary-value">SUPER_USER_ADMIN_USER</div><div class="summary-label">Profile</div></div>
+  </div>
+  <div class="summary-grid" style="margin-top:8px; border-top:1px solid rgba(255,255,255,0.2); padding-top:12px;">
+    <div class="summary-card"><div class="summary-value">2</div><div class="summary-label">Prerequisites</div></div>
+    <div class="summary-card passed"><div class="summary-value">2</div><div class="summary-label">Infra Passed</div></div>
+    <div class="summary-card failed"><div class="summary-value">0</div><div class="summary-label">Infra Failed</div></div>
+    <div class="summary-card"><div class="summary-value">FAILED</div><div class="summary-label">Run Status</div></div>
+  </div>
+</div>
+
+  <div class="container">
+    <h2>Execution Prerequisites</h2>
+    <p class="section-desc">Infrastructure checks required before the functional batch can execute.</p>
+    
+  <div class="test-card passed" id="test-0">
+    <div class="test-header" onclick="toggleExpand('test-0')">
+      <div class="test-card-heading">
+        <span class="test-id-col"></span>
+        <span class="test-title-col">authenticate for System User Dashboard</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">5.91s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        
+        <span><strong>Spec:</strong> auth.setup.ts</span>
+      </div>
+      
+      
+      
+      
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-goto-auth.setup-39</li><li>action-click-auth-75</li><li>action-fill-auth-98</li><li>action-cognito-email-blur</li><li>action-cognito-next</li><li>action-fill-auth-99</li><li>action-click-auth-104</li><li>assert-toBeVisible-auth-113</li><li>assert-toHaveURL-auth.setup-45</li><li>assert-toBeVisible-auth.setup-46</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <p>No plan found for . Searched: system-user-dashboard, authentication, plans</p>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/b349ed138ed16222.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/b349ed138ed16222.png" alt="0001 Checkpoint Action Goto Auth Setup 39" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto Auth Setup 39</span>
+        <p><a href="Evidence/Screenshots/b349ed138ed16222.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/7eb7f3d044ee7fea.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/7eb7f3d044ee7fea.png" alt="0002 Checkpoint Action Fill Auth 98" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Fill Auth 98</span>
+        <p><a href="Evidence/Screenshots/7eb7f3d044ee7fea.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/13ad2e0135572aa4.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/13ad2e0135572aa4.png" alt="0003 Checkpoint Action Fill Auth 99" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Fill Auth 99</span>
+        <p><a href="Evidence/Screenshots/13ad2e0135572aa4.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/6fca2057a81dd359.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/6fca2057a81dd359.png" alt="0004 Checkpoint Assert ToBeVisible Auth 113" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Assert ToBeVisible Auth 113</span>
+        <p><a href="Evidence/Screenshots/6fca2057a81dd359.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/0c2710eac036cdf1.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/0c2710eac036cdf1.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/0c2710eac036cdf1.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/0b3070db41295c58.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/0b3070db41295c58.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/62a8d65c1760277c.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/kpitdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/ap-south-1_7lcPGCGAz/.well-known/openid-configuration",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/oauth2/authorize",<br>    "status": 302<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/login",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/6rk8nsrmm0juc0v8k4u8tjq8jo/theme-1793368356000-69362562-8087-4de9-9a4f-9f549b692bc2.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-Y2PEAJ36-PZcDvLN-.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/root-cxZh2pwU.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-DveA1qCj.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-hFJakM1p.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-2KL3JLUI-YM68sC_j.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-ZNDB273M-BQKrTQ40.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CI-4zwKj.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-46RRH5HC-k6fHJMMi.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/models_0-C9Gc5LKs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/page-data.types-DTgJ2gWo.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/utils-D74goo2d.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/request-BXgdso-p.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-NSYVNWS4-D_RpsXwd.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/internal-ei8OKdeE.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-5NI7IJOT-D5ljDdRN.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-TDCO6VRT-BYZDJ9Nq.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/root-_XdcMARd.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-N3LMW2A7-Dspk60uN.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-N6HA5N3Q-Dw90OVWN.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-GEU76AGL-CgpHVLvx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/entry.client-CzLRNMce.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-KKVD53EL-C5tjO4Y6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/manifest-335249d1.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-ZNDB273M-D_sbMb99.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-NSYVNWS4-CKpY7DBB.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-D1Z5Sskw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-PFXFZHAN-CWAzkkxG.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/info-link-label-context-DS04OtGK.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/login_.passkey_.fallbackLogin-DKv8US_s.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-5CFFB5AK-DyIni9fL.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/form-field-context-pWYTQUpT.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-XXK3TI5C-CxgFoWl9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-C6CPwcsF.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CacmNeqG.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-B-LHdRm2.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/login-Cwq_s4LK.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/internal-BuPf1r5w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-VRC3BCSH-BF1L0NQY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-DcCYdXGl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/components-UsGAV-ki.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-2KL3JLUI-TbA1DngW.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/remix-form-CXGVQnS_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-7EFEAYQG-CQiI9kxj.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-DK8HSD9y.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-Y2PEAJ36-D50aUuB_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/default-assets/image/cognito-image-background-page-light.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/default-assets/icon/cognito-icon-favicon-svg-light.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/default-assets/icon/cognito-icon-favicon-ico-light.ico",<br>    "status": 200<br>  },<br>  {<br>    "method": "POST",<br>    "path": "/login",<br>    "status": 204<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/verifyPassword-CcR5hbxX.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-JNEAFHSS-Qf5_kPTb.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-ZCPG2LJU-DprQ53f4.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/step-up-options-fallback-17JZnGKp.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/secondary-action-form-auZKP-Bm.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-36YO3RLR-D2DbxlcG.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-6AAMMXWB-CM9cI_eP.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-DFJWHFWF-De2rZtVD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chunk-GKMKJMNR-DLvxyFzm.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/verifyPassword",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/verifyPassword",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/default-assets/icon/cognito-icon-favicon-svg-light.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/default-assets/icon/cognito-icon-favicon-ico-light.ico",<br>    "status": 200<br>  },<br>  {<br>    "method": "POST",<br>    "path": "/verifyPassword",<br>    "status": 204<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/auth/callback",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/kpitdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/ap-south-1_7lcPGCGAz/.well-known/openid-configuration",<br>    "status": 200<br>  },<br>  {<br>    "method": "POST",<br>    "path": "/oauth2/token",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/SystemUserDashboard-CuT8-wt5.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useInfiniteQuery-DeH81Od6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useSystemUsers-DIgHhDSv.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useApprovalScope-o5d8zzow.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/calendar-days-Bhhuuq3v.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/switch-Bltg5Y-S.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/floatingLicenseConfigs-DSD8S5P-.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/layers-CP-pZKj0.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/alert-dialog-BrWnRHFr.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/sysusers",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": []<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-1">
+    <div class="test-header" onclick="toggleExpand('test-1')">
+      <div class="test-card-heading">
+        <span class="test-id-col"></span>
+        <span class="test-title-col">auth preflight: validate saved state and confirm dashboard access</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">1.95s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        
+        <span><strong>Spec:</strong> auth-smoke.spec.ts</span>
+      </div>
+      
+      
+      
+      
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-auth-smoke-navigation</li><li>assert-auth-smoke-heading</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <p>No plan found for . Searched: system-user-dashboard, authentication, plans</p>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/2595ca02b9dd906c.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/2595ca02b9dd906c.png" alt="0001 Checkpoint Action Auth Smoke Navigation" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Auth Smoke Navigation</span>
+        <p><a href="Evidence/Screenshots/2595ca02b9dd906c.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/50771f37f7d2806a.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/50771f37f7d2806a.png" alt="0002 Checkpoint Assert Auth Smoke Heading" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Assert Auth Smoke Heading</span>
+        <p><a href="Evidence/Screenshots/50771f37f7d2806a.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/2530236486b78fef.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/2530236486b78fef.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/2530236486b78fef.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/b089a3e573e83b5f.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/b089a3e573e83b5f.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/33ea682b56371be5.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/system-user-dashboard",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useInfiniteQuery-DeH81Od6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useApprovalScope-o5d8zzow.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useSystemUsers-DIgHhDSv.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/floatingLicenseConfigs-DSD8S5P-.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/calendar-days-Bhhuuq3v.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/layers-CP-pZKj0.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/alert-dialog-BrWnRHFr.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/switch-Bltg5Y-S.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/SystemUserDashboard-CuT8-wt5.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/sysusers",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": []<br>}</p></div>
+      
+    </div>
+  </div>
+  </div>
+<div class="ind-link">
+      <strong>Test evidence:</strong>
+      <a href="#test-2" onclick="document.getElementById('test-2').classList.add('expanded')">LIMAS-SUD-1386</a> | <a href="#test-3" onclick="document.getElementById('test-3').classList.add('expanded')">LIMAS-SUD-1387</a> | <a href="#test-4" onclick="document.getElementById('test-4').classList.add('expanded')">LIMAS-SUD-1388</a> | <a href="#test-5" onclick="document.getElementById('test-5').classList.add('expanded')">LIMAS-SUD-1389</a> | <a href="#test-6" onclick="document.getElementById('test-6').classList.add('expanded')">LIMAS-SUD-1390</a> | <a href="#test-7" onclick="document.getElementById('test-7').classList.add('expanded')">LIMAS-SUD-1393</a> | <a href="#test-8" onclick="document.getElementById('test-8').classList.add('expanded')">LIMAS-SUD-1397</a> | <a href="#test-9" onclick="document.getElementById('test-9').classList.add('expanded')">LIMAS-SUD-1398</a> | <a href="#test-10" onclick="document.getElementById('test-10').classList.add('expanded')">LIMAS-SUD-1399</a> | <a href="#test-11" onclick="document.getElementById('test-11').classList.add('expanded')">LIMAS-SUD-1400</a> | <a href="#test-12" onclick="document.getElementById('test-12').classList.add('expanded')">LIMAS-SUD-1401</a> | <a href="#test-13" onclick="document.getElementById('test-13').classList.add('expanded')">LIMAS-SUD-1402</a> | <a href="#test-14" onclick="document.getElementById('test-14').classList.add('expanded')">LIMAS-SUD-1403</a> | <a href="#test-15" onclick="document.getElementById('test-15').classList.add('expanded')">LIMAS-SUD-1404</a> | <a href="#test-16" onclick="document.getElementById('test-16').classList.add('expanded')">LIMAS-SUD-1405</a> | <a href="#test-17" onclick="document.getElementById('test-17').classList.add('expanded')">LIMAS-SUD-1391</a> | <a href="#test-18" onclick="document.getElementById('test-18').classList.add('expanded')">LIMAS-SUD-1392</a> | <a href="#test-19" onclick="document.getElementById('test-19').classList.add('expanded')">LIMAS-SUD-1394</a> | <a href="#test-20" onclick="document.getElementById('test-20').classList.add('expanded')">LIMAS-SUD-1395</a> | <a href="#test-21" onclick="document.getElementById('test-21').classList.add('expanded')">LIMAS-SUD-1396</a>
+    </div>
+
+  <div class="container">
+    <h2>Functional Test Results — ULH-024</h2>
+    
+    
+  <div class="test-card passed" id="test-2">
+    <div class="test-header" onclick="toggleExpand('test-2')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1386</span>
+        <span class="test-title-col">Cancel closes dialog</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">23.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1386-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Cancel closes dialog</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-click-user-license-hub-edit-license.spec-654</li><li>assert-toBeVisible-user-license-hub-edit-license.spec-655</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Cancel closes dialog</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/5164b66e5cef18d3.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/5164b66e5cef18d3.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/5164b66e5cef18d3.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/5f7ce66750a30719.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/5f7ce66750a30719.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/5f7ce66750a30719.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/d5a42fcb55fac1ec.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/d5a42fcb55fac1ec.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/d5a42fcb55fac1ec.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/3eb468bb9e42ae90.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/3eb468bb9e42ae90.png" alt="0004 Checkpoint Action Click User License Hub Edit License Spec 654" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Click User License Hub Edit License Spec 654</span>
+        <p><a href="Evidence/Screenshots/3eb468bb9e42ae90.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/a0c078a47104a902.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a0c078a47104a902.png" alt="0005 Checkpoint Assert ToBeVisible User License Hub Edit License Spec 655" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Assert ToBeVisible User License Hub Edit License Spec 655</span>
+        <p><a href="Evidence/Screenshots/a0c078a47104a902.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/400be4b2fabe5a45.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/400be4b2fabe5a45.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/400be4b2fabe5a45.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/670ed81e6b77aabb.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/670ed81e6b77aabb.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/24d457c2f5058938.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1386",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1386"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-3">
+    <div class="test-header" onclick="toggleExpand('test-3')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1387</span>
+        <span class="test-title-col">Close button dismisses dialog</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">22.27s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1387-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Close dismisses dialog</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-click-user-license-hub-edit-license.spec-661</li><li>assert-toBeVisible-user-license-hub-edit-license.spec-662</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Close dismisses dialog</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/2e59e62c2f5d8f23.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/2e59e62c2f5d8f23.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/2e59e62c2f5d8f23.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e7128ec793d7e7a8.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e7128ec793d7e7a8.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/e7128ec793d7e7a8.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/ddfc5d589cd68cfc.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/ddfc5d589cd68cfc.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/ddfc5d589cd68cfc.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/57256f9442191769.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/57256f9442191769.png" alt="0004 Checkpoint Action Click User License Hub Edit License Spec 661" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Click User License Hub Edit License Spec 661</span>
+        <p><a href="Evidence/Screenshots/57256f9442191769.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/923f47321a86a708.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/923f47321a86a708.png" alt="0005 Checkpoint Assert ToBeVisible User License Hub Edit License Spec 662" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Assert ToBeVisible User License Hub Edit License Spec 662</span>
+        <p><a href="Evidence/Screenshots/923f47321a86a708.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/013649c44eb879d2.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/013649c44eb879d2.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/013649c44eb879d2.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/2f45757a06139590.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/2f45757a06139590.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/a6a2a5ba3fd3a9ef.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/1152",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1387",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1387"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-4">
+    <div class="test-header" onclick="toggleExpand('test-4')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1388</span>
+        <span class="test-title-col">Escape dismisses dialog</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">9.04s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1388-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Escape dismisses dialog</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-press-user-license-hub-edit-license.spec-667</li><li>assert-toBeVisible-user-license-hub-edit-license.spec-668</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Escape dismisses dialog</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/07d0b61ef012ea93.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/07d0b61ef012ea93.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/07d0b61ef012ea93.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/c5497c8bb4035f45.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/c5497c8bb4035f45.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/c5497c8bb4035f45.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/4d8c5769e890346f.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/4d8c5769e890346f.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/4d8c5769e890346f.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/50527b3fcf64a7c6.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/50527b3fcf64a7c6.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/50527b3fcf64a7c6.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/c94c10876be02383.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/c94c10876be02383.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/39937332bf96f45e.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1388",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1388"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-5">
+    <div class="test-header" onclick="toggleExpand('test-5')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1389</span>
+        <span class="test-title-col">Outside click dismisses dialog</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">9.29s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1389-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Outside click dismisses</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-click-user-license-hub-edit-license.spec-673</li><li>assert-toBeVisible-user-license-hub-edit-license.spec-674</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Outside click dismisses</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/3d0ed697d61749e2.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/3d0ed697d61749e2.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/3d0ed697d61749e2.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/9994b77f2ff81d88.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/9994b77f2ff81d88.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/9994b77f2ff81d88.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/f3d0b51fcfd162a0.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/f3d0b51fcfd162a0.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/f3d0b51fcfd162a0.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/f49dae5140e10ece.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/f49dae5140e10ece.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/f49dae5140e10ece.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/c9209e767333debf.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/c9209e767333debf.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/337695f2979286e5.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1389",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1389"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card failed" id="test-6">
+    <div class="test-header" onclick="toggleExpand('test-6')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1390</span>
+        <span class="test-title-col">No update on Cancel after changes</span>
+      </div>
+      <span class="test-status failed">FAILED</span>
+      <span class="test-duration">53.34s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1390-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>No update Cancel after changes</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-fill-user-license-hub-edit-license.spec-682</li><li>action-click-user-license-hub-edit-license.spec-689</li><li>assert-toBe-user-license-hub-edit-license.spec-690</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>No update Cancel after changes</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/3cb7569c564dcce2.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/3cb7569c564dcce2.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/3cb7569c564dcce2.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/7479c34c89cc82c7.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/7479c34c89cc82c7.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/7479c34c89cc82c7.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e1c7a3d1637bbbe7.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e1c7a3d1637bbbe7.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/e1c7a3d1637bbbe7.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/a6322117858a1cb2.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a6322117858a1cb2.png" alt="0004 Checkpoint Action Fill User License Hub Edit License Spec 682" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Fill User License Hub Edit License Spec 682</span>
+        <p><a href="Evidence/Screenshots/a6322117858a1cb2.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e733f168474683a7.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e733f168474683a7.png" alt="0005 Failure CloseEditLicenseDialog Close" loading="lazy">
+        </a>
+        <span>0005 Failure CloseEditLicenseDialog Close</span>
+        <p><a href="Evidence/Screenshots/e733f168474683a7.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/fe01fce706dd32b8.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/fe01fce706dd32b8.png" alt="screenshot" loading="lazy">
+        </a>
+        <span>screenshot</span>
+        <p><a href="Evidence/Screenshots/fe01fce706dd32b8.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/ada8458606533338.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/ada8458606533338.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/ada8458606533338.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/bf65fdb9c26a697b.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/bf65fdb9c26a697b.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/2d094fddd40241cf.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1390",<br>  "status": "failed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1390"<br>    }<br>  ]<br>}</p></div>
+      <div class="errors"><h4>Error Details</h4><pre><code>TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole(&#39;dialog&#39;).getByRole(&#39;button&#39;, { name: &#39;Close&#39;, exact: true })
+    - locator resolved to &lt;button type=&quot;button&quot; class=&quot;absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity data-[state=open]:bg-accent data-[state=open]:text-muted-foreground hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none&quot;&gt;…&lt;/button&gt;
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not stable
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
+
+   at pages\user-license-hub.page.ts:1257
+
+  1255 |     }
+  1256 |     if (await dialog.isVisible().catch(() =&gt; false)) {
+&gt; 1257 |       await recordEvidence(&#39;closeEditLicenseDialog-close&#39;, async () =&gt; dialog.getByRole(&#39;button&#39;, { name: &#39;Close&#39;, exact: true }).click());
+       |                                                                                                                                   ^
+  1258 |       await expect(dialog).toBeHidden();
+  1259 |     }
+  1260 |   }
+    at operation (tests\pages\user-license-hub.page.ts:1257:131)
+    at tests\helpers\step-evidence.ts:69:28</code></pre></div>
+    </div>
+  </div>
+
+  <div class="test-card failed" id="test-7">
+    <div class="test-header" onclick="toggleExpand('test-7')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1393</span>
+        <span class="test-title-col">Unsaved changes discarded on Cancel</span>
+      </div>
+      <span class="test-status failed">FAILED</span>
+      <span class="test-duration">54.61s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1393-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Unsaved discarded Cancel</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>closeEditLicenseDialog-close</li><li>action-click-user-license-hub.page-1255</li><li>action-fill-user-license-hub-edit-license.spec-704</li><li>action-click-user-license-hub-edit-license.spec-707</li><li>action-reload-user-license-hub-edit-license.spec-708</li><li>action-clear-user-license-hub.page-1061</li><li>action-click-user-license-hub.page-1102</li><li>select-runtime-license-profile</li><li>apply-runtime-license-profile</li><li>action-click-user-license-hub.page-1133</li><li>action-click-user-license-hub.page-1255</li><li>assert-toBe-user-license-hub-edit-license.spec-715</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Unsaved discarded Cancel</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/89e9864a5a33f00f.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/89e9864a5a33f00f.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/89e9864a5a33f00f.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/919c84c6cea43e9f.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/919c84c6cea43e9f.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/919c84c6cea43e9f.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/92112b25ec07b589.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/92112b25ec07b589.png" alt="0003 Checkpoint Action Click User License Hub Page 1133" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1133</span>
+        <p><a href="Evidence/Screenshots/92112b25ec07b589.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/a681adec82de7234.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a681adec82de7234.png" alt="0004 Checkpoint CloseEditLicenseDialog Close" loading="lazy">
+        </a>
+        <span>0004 Checkpoint CloseEditLicenseDialog Close</span>
+        <p><a href="Evidence/Screenshots/a681adec82de7234.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/ce321830752ba249.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/ce321830752ba249.png" alt="0005 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/ce321830752ba249.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/0c8c1794b0a44b4d.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/0c8c1794b0a44b4d.png" alt="0006 Failure Assert ToBe User License Hub Edit License Spec 715" loading="lazy">
+        </a>
+        <span>0006 Failure Assert ToBe User License Hub Edit License Spec 715</span>
+        <p><a href="Evidence/Screenshots/0c8c1794b0a44b4d.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/fea8b3ac3b099a4d.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/fea8b3ac3b099a4d.png" alt="screenshot" loading="lazy">
+        </a>
+        <span>screenshot</span>
+        <p><a href="Evidence/Screenshots/fea8b3ac3b099a4d.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e90602a83f03cb70.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e90602a83f03cb70.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/e90602a83f03cb70.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/2eaeaa45bdabf0f4.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/2eaeaa45bdabf0f4.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/710a7d37ab816f0f.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1393",<br>  "status": "failed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1393"<br>    }<br>  ]<br>}</p></div>
+      <div class="errors"><h4>Error Details</h4><ul class="error-fields"><li><strong>Failure:</strong> expect(received).toBe(expected) // Object.is equality</li><li><strong>Expected:</strong> &quot;&quot;</li></ul><pre><code>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;&quot;
+Received: &quot;2021-12-30&quot;
+
+  725 |     await hub.openEditLicenseDialog();
+  726 |     const afterReopen = await hub.getEditLicenseExpirationInput().inputValue();
+&gt; 727 |     await recordEvidence(&#39;assert-toBe-user-license-hub-edit-license.spec-715&#39;, async () =&gt; expect(afterReopen).toBe(origExp));
+      |                                                                                                                ^
+  728 |     await hub.closeEditLicenseDialog();
+  729 |   });
+  730 | });
+    at operation (tests\user-license-hub\user-license-hub-edit-license.spec.ts:727:112)
+    at tests\helpers\step-evidence.ts:69:28<br><code>license.spec.ts:727:112</code></code></pre></div>
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-8">
+    <div class="test-header" onclick="toggleExpand('test-8')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1397</span>
+        <span class="test-title-col">Failure — invalid Role</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1397-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure invalid Role</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure invalid Role</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-9">
+    <div class="test-header" onclick="toggleExpand('test-9')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1398</span>
+        <span class="test-title-col">Failure — invalid date relationship</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1398-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure invalid date</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure invalid date</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-10">
+    <div class="test-header" onclick="toggleExpand('test-10')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1399</span>
+        <span class="test-title-col">Failure — expired date rejection</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1399-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure expired date</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure expired date</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-11">
+    <div class="test-header" onclick="toggleExpand('test-11')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1400</span>
+        <span class="test-title-col">Failure — unauthorized</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1400-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure unauthorized</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure unauthorized</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-12">
+    <div class="test-header" onclick="toggleExpand('test-12')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1401</span>
+        <span class="test-title-col">Failure — forbidden</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1401-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure forbidden</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure forbidden</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-13">
+    <div class="test-header" onclick="toggleExpand('test-13')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1402</span>
+        <span class="test-title-col">Failure — license not found</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1402-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure license not found</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure license not found</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-14">
+    <div class="test-header" onclick="toggleExpand('test-14')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1403</span>
+        <span class="test-title-col">Failure — conflict</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1403-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure conflict</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure conflict</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-15">
+    <div class="test-header" onclick="toggleExpand('test-15')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1404</span>
+        <span class="test-title-col">Failure — stale license record</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1404-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure stale record</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure stale record</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card skipped" id="test-16">
+    <div class="test-header" onclick="toggleExpand('test-16')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1405</span>
+        <span class="test-title-col">Failure — server error</span>
+      </div>
+      <span class="test-status skipped">SKIPPED</span>
+      <span class="test-duration">0.00s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1405-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Failure server error</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Failure server error</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      
+      
+      
+      
+      <div class="actual-result"><h4>Actual Result</h4><p>Test was not executed.</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-17">
+    <div class="test-header" onclick="toggleExpand('test-17')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1391</span>
+        <span class="test-title-col">No update Close after changes</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">29.47s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1391-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>No update Close after changes</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-fill-user-license-hub-edit-license.spec-1488</li><li>action-click-user-license-hub-edit-license.spec-1491</li><li>assert-toBe-user-license-hub-edit-license.spec-1492</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>No update Close after changes</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/51e74bdc7286c7de.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/51e74bdc7286c7de.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/51e74bdc7286c7de.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/dab4149a5e60a5b4.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/dab4149a5e60a5b4.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/dab4149a5e60a5b4.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/913d2020f2e41210.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/913d2020f2e41210.png" alt="0003 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/913d2020f2e41210.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/590052da0c2d415a.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/590052da0c2d415a.png" alt="0004 Checkpoint Action Fill User License Hub Edit License Spec 1488" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Fill User License Hub Edit License Spec 1488</span>
+        <p><a href="Evidence/Screenshots/590052da0c2d415a.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/f0bb5716af5e34ef.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/f0bb5716af5e34ef.png" alt="0005 Checkpoint Assert ToBe User License Hub Edit License Spec 1492" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Assert ToBe User License Hub Edit License Spec 1492</span>
+        <p><a href="Evidence/Screenshots/f0bb5716af5e34ef.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/a9e49b0aa5cb1063.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a9e49b0aa5cb1063.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/a9e49b0aa5cb1063.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/859fe5d6c2de44bd.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/859fe5d6c2de44bd.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/7e218df9a263fa69.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/1152",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1391",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1391"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card failed" id="test-18">
+    <div class="test-header" onclick="toggleExpand('test-18')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1392</span>
+        <span class="test-title-col">Reopen shows persisted values</span>
+      </div>
+      <span class="test-status failed">FAILED</span>
+      <span class="test-duration">39.43s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1392-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Reopen shows persisted values</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>closeEditLicenseDialog-close</li><li>action-reload-user-license-hub-edit-license.spec-1498</li><li>action-clear-user-license-hub.page-1061</li><li>action-click-user-license-hub.page-1133</li><li>action-click-user-license-hub.page-1102</li><li>select-runtime-license-profile</li><li>apply-runtime-license-profile</li><li>action-click-user-license-hub.page-1255</li><li>assert-toBe-user-license-hub-edit-license.spec-1503</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Reopen shows persisted values</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/5df5bc8ba0806028.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/5df5bc8ba0806028.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/5df5bc8ba0806028.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/c29b42365449887a.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/c29b42365449887a.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/c29b42365449887a.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/9b862079ad273f77.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/9b862079ad273f77.png" alt="0003 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/9b862079ad273f77.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/c88ba577a1f2a193.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/c88ba577a1f2a193.png" alt="0004 Checkpoint CloseEditLicenseDialog Close" loading="lazy">
+        </a>
+        <span>0004 Checkpoint CloseEditLicenseDialog Close</span>
+        <p><a href="Evidence/Screenshots/c88ba577a1f2a193.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e88624657c10808d.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e88624657c10808d.png" alt="0005 Checkpoint Action Reload User License Hub Edit License Spec 1498" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Action Reload User License Hub Edit License Spec 1498</span>
+        <p><a href="Evidence/Screenshots/e88624657c10808d.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/4daf8bd79cf4405f.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/4daf8bd79cf4405f.png" alt="0006 Failure Assert ToBe User License Hub Edit License Spec 1503" loading="lazy">
+        </a>
+        <span>0006 Failure Assert ToBe User License Hub Edit License Spec 1503</span>
+        <p><a href="Evidence/Screenshots/4daf8bd79cf4405f.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/94f1e3eed8e12fbe.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/94f1e3eed8e12fbe.png" alt="screenshot" loading="lazy">
+        </a>
+        <span>screenshot</span>
+        <p><a href="Evidence/Screenshots/94f1e3eed8e12fbe.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/4282a3da2c594456.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/4282a3da2c594456.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/4282a3da2c594456.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/70fde90ebdfd2e05.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/70fde90ebdfd2e05.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/0b3b0765747c5a91.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/1152",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1392",<br>  "status": "failed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1392"<br>    }<br>  ]<br>}</p></div>
+      <div class="errors"><h4>Error Details</h4><ul class="error-fields"><li><strong>Failure:</strong> expect(received).toBe(expected) // Object.is equality</li><li><strong>Expected:</strong> &quot;1483645134&quot;</li></ul><pre><code>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;1483645134&quot;
+Received: &quot;660585724&quot;
+
+  1524 |     await hub.openEditLicenseDialog();
+  1525 |     const hw2 = await hub.getEditLicenseHardwareIdInput().inputValue();
+&gt; 1526 |     await recordEvidence(&#39;assert-toBe-user-license-hub-edit-license.spec-1503&#39;, async () =&gt; expect(hw2).toBe(hw));
+       |                                                                                                         ^
+  1527 |     await hub.closeEditLicenseDialog();
+  1528 |   });
+  1529 |   test(&#39;LIMAS-SUD-1394: Unsaved discarded Close&#39;, async () =&gt; {
+    at operation (tests\user-license-hub\user-license-hub-edit-license.spec.ts:1526:105)
+    at tests\helpers\step-evidence.ts:69:28<br><code>license.spec.ts:1526:105</code></code></pre></div>
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-19">
+    <div class="test-header" onclick="toggleExpand('test-19')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1394</span>
+        <span class="test-title-col">Unsaved discarded Close</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">11.96s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1394-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Existing assertion does not prove the full scenario. Execution outcome is retained separately; this is a coverage gap.</p><p>Unsaved discarded Close</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-fill-user-license-hub-edit-license.spec-1509</li><li>action-click-user-license-hub-edit-license.spec-1510</li><li>action-click-user-license-hub.page-1255</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Unsaved discarded Close</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/21ae81aa2bc2cb1a.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/21ae81aa2bc2cb1a.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/21ae81aa2bc2cb1a.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/4629215f1222983c.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/4629215f1222983c.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/4629215f1222983c.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/a6c02b3310b61215.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a6c02b3310b61215.png" alt="0003 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/a6c02b3310b61215.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/20aa09c0541cb22c.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/20aa09c0541cb22c.png" alt="0004 Checkpoint Action Fill User License Hub Edit License Spec 1509" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Fill User License Hub Edit License Spec 1509</span>
+        <p><a href="Evidence/Screenshots/20aa09c0541cb22c.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/2a8e6d1b33100917.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/2a8e6d1b33100917.png" alt="0005 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/2a8e6d1b33100917.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/c8863a5379e036c8.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/c8863a5379e036c8.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/c8863a5379e036c8.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/2e872e092478d451.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/2e872e092478d451.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/b4e2c8802c94e2d1.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/1677",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1394",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1394"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+
+  <div class="test-card failed" id="test-20">
+    <div class="test-header" onclick="toggleExpand('test-20')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1395</span>
+        <span class="test-title-col">Focus return Edit after Cancel</span>
+      </div>
+      <span class="test-status failed">FAILED</span>
+      <span class="test-duration">33.96s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1395-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Focus return Edit after Cancel</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-click-user-license-hub-edit-license.spec-1517</li><li>assert-toBe-user-license-hub-edit-license.spec-1519</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Focus return Edit after Cancel</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/385e224fe12dcd38.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/385e224fe12dcd38.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/385e224fe12dcd38.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/310becef2eb50827.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/310becef2eb50827.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/310becef2eb50827.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/3c94cfe8f6e812fc.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/3c94cfe8f6e812fc.png" alt="0003 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/3c94cfe8f6e812fc.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e660bc5d4a3df69a.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e660bc5d4a3df69a.png" alt="0004 Checkpoint Action Click User License Hub Edit License Spec 1517" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Click User License Hub Edit License Spec 1517</span>
+        <p><a href="Evidence/Screenshots/e660bc5d4a3df69a.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/b57ff86990ee67cf.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/b57ff86990ee67cf.png" alt="0005 Failure Assert ToBe User License Hub Edit License Spec 1519" loading="lazy">
+        </a>
+        <span>0005 Failure Assert ToBe User License Hub Edit License Spec 1519</span>
+        <p><a href="Evidence/Screenshots/b57ff86990ee67cf.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/ebe2d64a2a4c1275.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/ebe2d64a2a4c1275.png" alt="screenshot" loading="lazy">
+        </a>
+        <span>screenshot</span>
+        <p><a href="Evidence/Screenshots/ebe2d64a2a4c1275.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/39d224e890ab5a87.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/39d224e890ab5a87.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/39d224e890ab5a87.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/4327a665290db0d2.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/4327a665290db0d2.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/8c157892f4e4e657.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/844",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1395",<br>  "status": "failed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1395"<br>    }<br>  ]<br>}</p></div>
+      <div class="errors"><h4>Error Details</h4><ul class="error-fields"><li><strong>Failure:</strong> expect(received).toBe(expected) // Object.is equality</li><li><strong>Expected:</strong> true</li></ul><pre><code>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: false
+
+  1540 |     await recordEvidence(&#39;action-click-user-license-hub-edit-license.spec-1517&#39;, async () =&gt; hub.getEditLicenseDialog().getByRole(&#39;button&#39;, { name: &#39;Cancel&#39; }).click());
+  1541 |     const focused = page.locator(&#39;:focus&#39;);
+&gt; 1542 |     await recordEvidence(&#39;assert-toBe-user-license-hub-edit-license.spec-1519&#39;, async () =&gt; expect(await focused.isVisible()).toBe(true));
+       |                                                                                                                               ^
+  1543 |   });
+  1544 |   test(&#39;LIMAS-SUD-1396: Reopen clean initial state&#39;, async ({ page }) =&gt; {
+  1545 |     await hub.openEditLicenseDialog();
+    at tests\user-license-hub\user-license-hub-edit-license.spec.ts:1542:127
+    at tests\helpers\step-evidence.ts:69:22
+    at tests\user-license-hub\user-license-hub-edit-license.spec.ts:1542:5<br><code>license.spec.ts:1542:127</code></code></pre></div>
+    </div>
+  </div>
+
+  <div class="test-card passed" id="test-21">
+    <div class="test-header" onclick="toggleExpand('test-21')">
+      <div class="test-card-heading">
+        <span class="test-id-col">LIMAS-SUD-1396</span>
+        <span class="test-title-col">Reopen clean initial state</span>
+      </div>
+      <span class="test-status passed">PASSED</span>
+      <span class="test-duration">36.79s</span>
+      <span class="expand-icon">▼</span>
+    </div>
+    <div class="test-body">
+      <div class="test-meta">
+        <span><strong>Profile:</strong> SUPER_USER_ADMIN_USER</span>
+        <span><strong>Module:</strong> user-license-hub — ULH-024</span>
+        <span><strong>Plan:</strong> Plans/LIMAS-SUD-1396-case.md</span>
+        <span><strong>Spec:</strong> user-license-hub/user-license-hub-edit-license.spec.ts</span>
+      </div>
+      <div class="test-summary"><h4>Preconditions</h4><p>User &amp; License Hub</p></div>
+      <div class="test-plan"><h4>Purpose</h4><p>Reopen clean initial state</p></div>
+      
+      <div class="test-plan"><h4>Expected Result</h4><p>Reviewed</p></div>
+      <div class="steps"><h4>Test Steps</h4><ol><li>action-click-user-license-hub.page-1255</li><li>action-reload-user-license-hub-edit-license.spec-1524</li><li>action-clear-user-license-hub.page-1061</li><li>action-click-user-license-hub.page-1133</li><li>action-click-user-license-hub.page-1102</li><li>select-runtime-license-profile</li><li>apply-runtime-license-profile</li><li>action-click-user-license-hub.page-1255</li><li>assert-toBeGreaterThan-user-license-hub-edit-license.spec-1529</li><li>closeEditLicenseDialog-close</li></ol></div>
+      <div class="test-plan">
+        <h4>Test Plan</h4>
+        <h2>Purpose</h2></p><p>Reopen clean initial state</p><p><h2>Preconditions</h2></p><p>User &amp; License Hub</p><p><h2>Test Steps</h2></p><p>ULH-K</p><p><h2>Expected Final Result</h2></p><p>Reviewed<br>
+      </div>
+      <div class="screenshots"><h3>Screenshots</h3><div class="ss-grid"><div class="ss-item">
+        <a href="Evidence/Screenshots/a3e2c9a3593421cf.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/a3e2c9a3593421cf.png" alt="0001 Checkpoint Action Goto User License Hub Page 116" loading="lazy">
+        </a>
+        <span>0001 Checkpoint Action Goto User License Hub Page 116</span>
+        <p><a href="Evidence/Screenshots/a3e2c9a3593421cf.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/7433cfb89f479926.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/7433cfb89f479926.png" alt="0002 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0002 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/7433cfb89f479926.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/4c04aabfd88352c6.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/4c04aabfd88352c6.png" alt="0003 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0003 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/4c04aabfd88352c6.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/3f19759f970b76dd.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/3f19759f970b76dd.png" alt="0004 Checkpoint Action Click User License Hub Page 1102" loading="lazy">
+        </a>
+        <span>0004 Checkpoint Action Click User License Hub Page 1102</span>
+        <p><a href="Evidence/Screenshots/3f19759f970b76dd.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/e2dc9c9a68b1d88d.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/e2dc9c9a68b1d88d.png" alt="0005 Checkpoint Action Click User License Hub Page 1255" loading="lazy">
+        </a>
+        <span>0005 Checkpoint Action Click User License Hub Page 1255</span>
+        <p><a href="Evidence/Screenshots/e2dc9c9a68b1d88d.png" download>Download</a></p>
+      </div><div class="ss-item">
+        <a href="Evidence/Screenshots/cc1e31e5a2c3dcd5.png" target="_blank" rel="noopener">
+          <img src="Evidence/Screenshots/cc1e31e5a2c3dcd5.png" alt="Final State" loading="lazy">
+        </a>
+        <span>Final State</span>
+        <p><a href="Evidence/Screenshots/cc1e31e5a2c3dcd5.png" download>Download</a></p>
+      </div></div></div>
+      <div class="video-container">
+      <h3>Screen Recording</h3>
+      <video controls preload="metadata" style="width:100%;max-width:640px">
+        <source src="Evidence/Recording/a36cdadb0b50e2bf.webm" type="video/webm">
+        Video playback is not supported by this browser.
+      </video>
+      <p><a href="Evidence/Recording/a36cdadb0b50e2bf.webm" download>Download video</a></p>
+    </div>
+      <div class="trace-section">
+      <h3>Trace</h3>
+      <p>Raw trace available for download: <a href="Evidence/Trace/0daaad23367ce9d0.zip" download>trace.zip</a></p>
+    </div>
+      <div class="api-summary"><h4>API / Navigation Summary</h4><p>[<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/request/pending",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/approval-scope/current",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/1152",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/users-licenses",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/css2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-3YMXUZHx.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-CsLsjjh_.css",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDp.woff2",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/config.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/LIMASdark.svg",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/UsersAndLicenses-DgV3FpPl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/select-D0x-ZCv6.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/index-BmUvSRl3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevron-up-ZcvQhqm3.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/popover-CO5soqI_.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/command-CqA0UkEY.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/search-BM_ed0nC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/chevrons-up-down-DAnKxu7q.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/badge-CfKLI3xh.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useQuery-DD17Vq6w.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useMutation-BXCK29gw.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useLicenses-CQ0aHNNs.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/licenses-CgYb5_cl.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeUserGroups-BM-Kt9ei.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/useAccountScopeProfiles-BfW0006P.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/plus-C2XI3s6D.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/square-pen-B-1xBIuA.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/trash-2-C4EA7kwC.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/download-CjFkO3p9.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/assets/mail-WKgOQekD.js",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/usergroups",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/account-scope/profiles",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/f",<br>    "status": 200<br>  },<br>  {<br>    "method": "GET",<br>    "path": "/limas/api/users/i/899",<br>    "status": 200<br>  }<br>]</p></div>
+      <div class="actual-result"><h4>Actual Result</h4><p>{<br>  "testId": "LIMAS-SUD-1396",<br>  "status": "passed",<br>  "expectedStatus": "passed",<br>  "retry": 0,<br>  "profile": "SUPER_USER_ADMIN_USER",<br>  "annotations": [<br>    {<br>      "type": "testId",<br>      "description": "LIMAS-SUD-1396"<br>    }<br>  ]<br>}</p></div>
+      
+    </div>
+  </div>
+  </div>
+<script>
+function toggleExpand(id) {
+  document.getElementById(id).classList.toggle('expanded');
+}
+</script>
+</body>
+</html><script>function openLinkedCase(){const el=document.getElementById(location.hash.slice(1));if(el){el.classList.add("expanded");el.scrollIntoView()}}addEventListener("hashchange",openLinkedCase);openLinkedCase();</script>
